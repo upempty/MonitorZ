@@ -8,7 +8,8 @@ from centre.configs import *
 from centre.hostgroup import *
 #import *.....
 
-#loging, class module, testing, items for monitors, exception handling
+#loging, class module, testing, items for monitors, exception handling, and use json param py
+# method/params
 
 zapi = ZabbixAPI(Zserver)
 zapi.login(Zusername, Zpassword)
