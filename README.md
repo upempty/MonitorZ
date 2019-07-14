@@ -3,16 +3,32 @@ the dashboard for monitoring system
 
 ```bash
 .
-└── monitorDog
-    ├── agent
-    │   └── dbagent.py
-    ├── centre
-    │   ├── monitorapi.py
-    │   ├── zabbixlib.py
-    │   └── zabbixparams.py
-    ├── README.md
-    └── tests
-        └── test_config.py
+├── agent
+│   └── dbagent.py
+├── centre
+│   ├── configs.py
+│   ├── configs.pyc
+│   ├── hostgroup.py
+│   ├── hostgroup.pyc
+│   ├── host.py
+│   ├── host.pyc
+│   ├── __init__.py
+│   ├── __init__.pyc
+│   ├── item.py
+│   ├── jsonparams.py
+│   ├── monitorapi.py
+│   ├── monitorapi.pyc
+│   ├── pyhome.sh
+│   ├── template.py
+│   ├── trigger.py
+│   ├── zabbixlib.py
+│   └── zabbixlib.pyc
+├── main.py
+├── README.md
+└── tests
+    ├── dbagent.log.md
+    └── test_config.py
 
-4 directories, 6 files
+3 directories, 22 files
+
 ```
