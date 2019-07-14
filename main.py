@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #-*- coding: utf-8 -*-
 
-from centre.monitorapi import *
+from monitorapi import *
 
 
 if __name__ == '__main__':
