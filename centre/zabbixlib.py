@@ -1,17 +1,29 @@
 #!/usr/bin/env python
 #-*- coding: utf-8 -*-
 
-
+import sys
 import logging
+from logging.handlers import TimedRotatingFileHandler
+from configs import *
 import requests
 import json
 
-class _NullHandler(logging.Handler):
-    def emit(self, record):
-        pass
+logger = logging.getLogger('monitorZ')
+#stream log
+stream = logging.StreamHandler(sys.stdout)
+stream.setLevel(logging.DEBUG)
+logger.addHandler(stream)
 
-logger = logging.getLogger(__name__)
-logger.addHandler(_NullHandler())
+#file log
+filehandle = TimedRotatingFileHandler(LOG_FILE,when='D',interval=1,backupCount=30)
+datefmt = '%Y-%m-%d %H:%M:%S'
+format_str = '%(asctime)s %(levelname)s %(message)s'
+formatter = logging.Formatter(format_str, datefmt)
+filehandle.setFormatter(formatter)
+logger.addHandler(filehandle)
+
+logger.setLevel(logging.DEBUG)
+#logger.setLevel(logging.INFO)
 
 
 class ZabbixAPIException(Exception):
@@ -122,25 +134,35 @@ connect and read timeouts.)
             data=json.dumps(request_json),
             timeout=self.timeout
         )
-        logger.debug("Response Code: %s", str(response.status_code))
+        #todo <Response [404]>
+        logger.debug("Response Code: %s, %s", str(response.status_code), response.text)
 
         # NOTE: Getting a 412 response code means the headers are not in the
         # list of allowed headers.
-        response.raise_for_status()
-
+        #!!! response.raise_for_status()
+        #logger.debug("xxxxResponse Code: %s", str(response.status_code))
+        
+        fatal = '' 
         if not len(response.text):
-            raise ZabbixAPIException("Received empty response")
+            #raise ZabbixAPIException("Received empty response")
+            fatal = 'FATAL' 
 
         try:
             response_json = json.loads(response.text)
         except ValueError:
+            #logger.error("Unable to parse json: %s", response.text)
+            fatal = 'FATAL' 
+            response_json = {}
+            '''
             raise ZabbixAPIException(
                 "Unable to parse json: %s" % response.text
             )
+            '''
+        '''
         logger.debug("Response Body: %s", json.dumps(response_json,
                                                      indent=4,
                                                      separators=(',', ': ')))
-
+        '''
         self.id += 1
 
         if 'error' in response_json:  # some exception
@@ -151,7 +173,7 @@ connect and read timeouts.)
                 message=response_json['error']['message'],
                 data=response_json['error']['data']
             )
-            raise ZabbixAPIException(msg, response_json['error']['code'])
+            #raise ZabbixAPIException(msg, response_json['error']['code'])
 
         return response_json
 
@@ -171,13 +193,24 @@ class ZabbixAPIObjectClass(object):
         """Dynamically create a method (ie: get)"""
 
         def fn(*args, **kwargs):
+            fatal = ''
             if args and kwargs:
-                raise TypeError("Found both args and kwargs")
+                #raise TypeError("Found both args and kwargs")
+                fatal = 'FATAL'
+
+            
+            resp = self.parent.do_request(
+                '{0}.{1}'.format(self.name, attr),
+                args or kwargs
+            )
+            if not resp:
+                return {}
+            return resp['result']
+        return fn
+'''
 
             return self.parent.do_request(
                 '{0}.{1}'.format(self.name, attr),
                 args or kwargs
             )['result']
-
-        return fn
-
+'''

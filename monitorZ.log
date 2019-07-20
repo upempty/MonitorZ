@@ -1,0 +1,1625 @@
+2019-07-20 20:43:58 INFO JSON-RPC Server Endpoint: http://118.31.109.239/zabbix/api_jsonrpc.php
+2019-07-20 20:43:58 DEBUG Sending: {
+    "params": {
+        "password": "zabbix",
+        "user": "Admin"
+    },
+    "jsonrpc": "2.0",
+    "method": "user.login",
+    "id": 0
+}
+2019-07-20 20:43:58 DEBUG Response Code: 200
+2019-07-20 20:43:58 DEBUG Response Body: {
+    "jsonrpc": "2.0",
+    "result": "d9333587e55d3dab4078437af13d4d7d",
+    "id": 0
+}
+2019-07-20 20:43:58 DEBUG Sending: {
+    "params": {},
+    "jsonrpc": "2.0",
+    "method": "apiinfo.version",
+    "id": 1
+}
+2019-07-20 20:43:58 DEBUG Response Code: 200
+2019-07-20 20:43:58 DEBUG Response Body: {
+    "jsonrpc": "2.0",
+    "result": "3.4.15",
+    "id": 1
+}
+2019-07-20 20:43:58 INFO MMMMMMMMMMMMMMMMMMMMMMMM <centre.zabbixlib.ZabbixAPI object at 0x7fa5be3c59d0>
+2019-07-20 20:43:58 DEBUG Sending: {
+    "params": {
+        "filter": {
+            "name": [
+                "CF_Group713"
+            ]
+        }
+    },
+    "jsonrpc": "2.0",
+    "method": "hostgroup.get",
+    "auth": "d9333587e55d3dab4078437af13d4d7d",
+    "id": 2
+}
+2019-07-20 20:43:58 DEBUG Response Code: 200
+2019-07-20 20:43:58 DEBUG Response Body: {
+    "jsonrpc": "2.0",
+    "result": [
+        {
+            "internal": "0",
+            "flags": "0",
+            "groupid": "19",
+            "name": "CF_Group713"
+        }
+    ],
+    "id": 2
+}
+2019-07-20 20:43:58 DEBUG Sending: {
+    "params": {
+        "filter": {
+            "name": [
+                "CF_Group713xxxxx"
+            ]
+        }
+    },
+    "jsonrpc": "2.0",
+    "method": "hostgroup.get",
+    "auth": "d9333587e55d3dab4078437af13d4d7d",
+    "id": 3
+}
+2019-07-20 20:43:58 DEBUG Response Code: 200
+2019-07-20 20:43:58 DEBUG Response Body: {
+    "jsonrpc": "2.0",
+    "result": [],
+    "id": 3
+}
+2019-07-20 20:43:58 DEBUG [] {u'jsonrpc': u'2.0', u'result': [], u'id': 3}
+2019-07-20 20:45:27 INFO JSON-RPC Server Endpoint: http://118.31.109.239/zabbix/api_jsonrpc.php
+2019-07-20 20:45:27 DEBUG Sending: {
+    "params": {
+        "password": "zabbix",
+        "user": "Admin"
+    },
+    "jsonrpc": "2.0",
+    "method": "user.login",
+    "id": 0
+}
+2019-07-20 20:45:27 DEBUG Response Code: 200
+2019-07-20 20:45:27 DEBUG Response Body: {
+    "jsonrpc": "2.0",
+    "result": "e4c26175f226b7efe8c40ad85eab25f3",
+    "id": 0
+}
+2019-07-20 20:45:27 DEBUG Sending: {
+    "params": {},
+    "jsonrpc": "2.0",
+    "method": "apiinfo.version",
+    "id": 1
+}
+2019-07-20 20:45:27 DEBUG Response Code: 200
+2019-07-20 20:45:27 DEBUG Response Body: {
+    "jsonrpc": "2.0",
+    "result": "3.4.15",
+    "id": 1
+}
+2019-07-20 20:45:27 INFO Connected ZAPI version 3.4.15
+2019-07-20 20:45:27 DEBUG Sending: {
+    "params": {
+        "filter": {
+            "name": [
+                "CF_Group713"
+            ]
+        }
+    },
+    "jsonrpc": "2.0",
+    "method": "hostgroup.get",
+    "auth": "e4c26175f226b7efe8c40ad85eab25f3",
+    "id": 2
+}
+2019-07-20 20:45:27 DEBUG Response Code: 200
+2019-07-20 20:45:27 DEBUG Response Body: {
+    "jsonrpc": "2.0",
+    "result": [
+        {
+            "internal": "0",
+            "flags": "0",
+            "groupid": "19",
+            "name": "CF_Group713"
+        }
+    ],
+    "id": 2
+}
+2019-07-20 20:45:27 DEBUG Sending: {
+    "params": {
+        "filter": {
+            "name": [
+                "CF_Group713xxxxx"
+            ]
+        }
+    },
+    "jsonrpc": "2.0",
+    "method": "hostgroup.get",
+    "auth": "e4c26175f226b7efe8c40ad85eab25f3",
+    "id": 3
+}
+2019-07-20 20:45:27 DEBUG Response Code: 200
+2019-07-20 20:45:27 DEBUG Response Body: {
+    "jsonrpc": "2.0",
+    "result": [],
+    "id": 3
+}
+2019-07-20 20:45:27 DEBUG [] {u'jsonrpc': u'2.0', u'result': [], u'id': 3}
+2019-07-20 20:47:34 INFO JSON-RPC Server Endpoint: http://118.31.109.239/zabbix/api_jsonrpc.php
+2019-07-20 20:47:34 DEBUG Sending: {
+    "params": {
+        "password": "zabbix",
+        "user": "Admin"
+    },
+    "jsonrpc": "2.0",
+    "method": "user.login",
+    "id": 0
+}
+2019-07-20 20:47:35 DEBUG Response Code: 200
+2019-07-20 20:47:35 DEBUG Response Body: {
+    "jsonrpc": "2.0",
+    "result": "1dcd47e3d14479e4de08449ea355ee0b",
+    "id": 0
+}
+2019-07-20 20:47:35 DEBUG Sending: {
+    "params": {},
+    "jsonrpc": "2.0",
+    "method": "apiinfo.version",
+    "id": 1
+}
+2019-07-20 20:47:35 DEBUG Response Code: 200
+2019-07-20 20:47:35 DEBUG Response Body: {
+    "jsonrpc": "2.0",
+    "result": "3.4.15",
+    "id": 1
+}
+2019-07-20 20:47:35 INFO Connected ZAPI version 3.4.15
+2019-07-20 20:47:35 DEBUG Sending: {
+    "params": {
+        "filter": {
+            "name": [
+                "CF_Group713"
+            ]
+        }
+    },
+    "jsonrpc": "2.0",
+    "method": "hostgroup.get",
+    "auth": "1dcd47e3d14479e4de08449ea355ee0b",
+    "id": 2
+}
+2019-07-20 20:47:35 DEBUG Response Code: 200
+2019-07-20 20:47:35 DEBUG Response Body: {
+    "jsonrpc": "2.0",
+    "result": [
+        {
+            "internal": "0",
+            "flags": "0",
+            "groupid": "19",
+            "name": "CF_Group713"
+        }
+    ],
+    "id": 2
+}
+2019-07-20 20:47:35 DEBUG Sending: {
+    "params": {
+        "filter": {
+            "name": [
+                "CF_Group713xxxxx"
+            ]
+        }
+    },
+    "jsonrpc": "2.0",
+    "method": "hostgroup.get",
+    "auth": "1dcd47e3d14479e4de08449ea355ee0b",
+    "id": 3
+}
+2019-07-20 20:47:35 DEBUG Response Code: 200
+2019-07-20 20:47:35 DEBUG Response Body: {
+    "jsonrpc": "2.0",
+    "result": [],
+    "id": 3
+}
+2019-07-20 20:49:11 INFO JSON-RPC Server Endpoint: http://118.31.109.239/zabbix/api_jsonrpc.php
+2019-07-20 20:49:11 DEBUG Sending: {
+    "params": {
+        "password": "zabbix",
+        "user": "Admin"
+    },
+    "jsonrpc": "2.0",
+    "method": "user.login",
+    "id": 0
+}
+2019-07-20 20:49:11 DEBUG Response Code: 200
+2019-07-20 20:49:11 DEBUG Response Body: {
+    "jsonrpc": "2.0",
+    "result": "003187fa172723ffd6f2284d0f9336ec",
+    "id": 0
+}
+2019-07-20 20:49:11 DEBUG Sending: {
+    "params": {},
+    "jsonrpc": "2.0",
+    "method": "apiinfo.version",
+    "id": 1
+}
+2019-07-20 20:49:11 DEBUG Response Code: 200
+2019-07-20 20:49:11 DEBUG Response Body: {
+    "jsonrpc": "2.0",
+    "result": "3.4.15",
+    "id": 1
+}
+2019-07-20 20:49:11 INFO Connected ZAPI version 3.4.15
+2019-07-20 20:49:11 DEBUG Sending: {
+    "params": {
+        "filter": {
+            "name": [
+                "CF_Group713"
+            ]
+        }
+    },
+    "jsonrpc": "2.0",
+    "method": "hostgroup.get",
+    "auth": "003187fa172723ffd6f2284d0f9336ec",
+    "id": 2
+}
+2019-07-20 20:49:11 DEBUG Response Code: 200
+2019-07-20 20:49:11 DEBUG Response Body: {
+    "jsonrpc": "2.0",
+    "result": [
+        {
+            "internal": "0",
+            "flags": "0",
+            "groupid": "19",
+            "name": "CF_Group713"
+        }
+    ],
+    "id": 2
+}
+2019-07-20 20:49:11 DEBUG Sending: {
+    "params": {
+        "filter": {
+            "name": [
+                "CF_Group713xxxxx"
+            ]
+        }
+    },
+    "jsonrpc": "2.0",
+    "method": "hostgroup.get",
+    "auth": "003187fa172723ffd6f2284d0f9336ec",
+    "id": 3
+}
+2019-07-20 20:49:12 DEBUG Response Code: 200
+2019-07-20 20:49:12 DEBUG Response Body: {
+    "jsonrpc": "2.0",
+    "result": [],
+    "id": 3
+}
+2019-07-20 20:49:12 INFO a=== None
+2019-07-20 20:49:30 INFO JSON-RPC Server Endpoint: http://118.31.109.239/zabbix/api_jsonrpc.php
+2019-07-20 20:49:30 DEBUG Sending: {
+    "params": {
+        "password": "zabbix",
+        "user": "Admin"
+    },
+    "jsonrpc": "2.0",
+    "method": "user.login",
+    "id": 0
+}
+2019-07-20 20:49:30 DEBUG Response Code: 200
+2019-07-20 20:49:30 DEBUG Response Body: {
+    "jsonrpc": "2.0",
+    "result": "b3e3f0cff4895d2d01ed2207ead9664a",
+    "id": 0
+}
+2019-07-20 20:49:30 DEBUG Sending: {
+    "params": {},
+    "jsonrpc": "2.0",
+    "method": "apiinfo.version",
+    "id": 1
+}
+2019-07-20 20:49:30 DEBUG Response Code: 200
+2019-07-20 20:49:30 DEBUG Response Body: {
+    "jsonrpc": "2.0",
+    "result": "3.4.15",
+    "id": 1
+}
+2019-07-20 20:49:30 INFO Connected ZAPI version 3.4.15
+2019-07-20 20:49:30 DEBUG Sending: {
+    "params": {
+        "filter": {
+            "name": [
+                "CF_Group713"
+            ]
+        }
+    },
+    "jsonrpc": "2.0",
+    "method": "hostgroup.get",
+    "auth": "b3e3f0cff4895d2d01ed2207ead9664a",
+    "id": 2
+}
+2019-07-20 20:49:30 DEBUG Response Code: 200
+2019-07-20 20:49:30 DEBUG Response Body: {
+    "jsonrpc": "2.0",
+    "result": [
+        {
+            "internal": "0",
+            "flags": "0",
+            "groupid": "19",
+            "name": "CF_Group713"
+        }
+    ],
+    "id": 2
+}
+2019-07-20 20:49:30 DEBUG Sending: {
+    "params": {
+        "filter": {
+            "name": [
+                "CF_Group713xxxxx"
+            ]
+        }
+    },
+    "jsonrpc": "2.0",
+    "method": "hostgroup.get",
+    "auth": "b3e3f0cff4895d2d01ed2207ead9664a",
+    "id": 3
+}
+2019-07-20 20:49:30 DEBUG Response Code: 200
+2019-07-20 20:49:30 DEBUG Response Body: {
+    "jsonrpc": "2.0",
+    "result": [],
+    "id": 3
+}
+2019-07-20 20:49:30 INFO a=== None
+2019-07-20 22:22:08 INFO JSON-RPC Server Endpoint: http://118.31.109.239/zabbix/api_jsonrpc.php
+2019-07-20 22:22:08 DEBUG Sending: {
+    "params": {
+        "password": "zabbix",
+        "user": "Admin"
+    },
+    "jsonrpc": "2.0",
+    "method": "user.login",
+    "id": 0
+}
+2019-07-20 22:22:09 DEBUG Response Code: 200
+2019-07-20 22:22:09 DEBUG Response Body: {
+    "jsonrpc": "2.0",
+    "result": "153a7ee7b192f9a873f633df4e7d2a9b",
+    "id": 0
+}
+2019-07-20 22:22:09 DEBUG Sending: {
+    "params": {},
+    "jsonrpc": "2.0",
+    "method": "apiinfo.version",
+    "id": 1
+}
+2019-07-20 22:22:09 DEBUG Response Code: 200
+2019-07-20 22:22:09 DEBUG Response Body: {
+    "jsonrpc": "2.0",
+    "result": "3.4.15",
+    "id": 1
+}
+2019-07-20 22:22:09 INFO Connected ZAPI version 3.4.15
+2019-07-20 22:22:09 DEBUG Sending: {
+    "params": {
+        "filter": {
+            "name": [
+                "CF_Group713"
+            ]
+        }
+    },
+    "jsonrpc": "2.0",
+    "method": "hostgroup.get",
+    "auth": "153a7ee7b192f9a873f633df4e7d2a9b",
+    "id": 2
+}
+2019-07-20 22:22:09 DEBUG Response Code: 200
+2019-07-20 22:22:09 DEBUG Response Body: {
+    "jsonrpc": "2.0",
+    "result": [
+        {
+            "internal": "0",
+            "flags": "0",
+            "groupid": "19",
+            "name": "CF_Group713"
+        }
+    ],
+    "id": 2
+}
+2019-07-20 22:22:09 DEBUG Sending: {
+    "params": {
+        "filter": {
+            "name": [
+                "CF_Group713xxxxx"
+            ]
+        }
+    },
+    "jsonrpc": "2.0",
+    "method": "hostgroup.get",
+    "auth": "153a7ee7b192f9a873f633df4e7d2a9b",
+    "id": 3
+}
+2019-07-20 22:22:09 DEBUG Response Code: 200
+2019-07-20 22:22:09 DEBUG Response Body: {
+    "jsonrpc": "2.0",
+    "result": [],
+    "id": 3
+}
+2019-07-20 22:22:09 INFO a=== None
+2019-07-20 22:29:06 INFO JSON-RPC Server Endpoint: http://118.31.109.239/zabbixx/api_jsonrpc.php
+2019-07-20 22:29:06 DEBUG Sending: {
+    "params": {
+        "password": "zabbix",
+        "user": "Admin"
+    },
+    "jsonrpc": "2.0",
+    "method": "user.login",
+    "id": 0
+}
+2019-07-20 22:29:06 DEBUG Response Code: 404
+2019-07-20 22:31:22 INFO JSON-RPC Server Endpoint: http://118.31.109.239/zabbixx/api_jsonrpc.php
+2019-07-20 22:31:22 DEBUG Sending: {
+    "params": {
+        "password": "zabbix",
+        "user": "Admin"
+    },
+    "jsonrpc": "2.0",
+    "method": "user.login",
+    "id": 0
+}
+2019-07-20 22:31:22 DEBUG Response Code: 404
+2019-07-20 22:31:46 INFO JSON-RPC Server Endpoint: http://118.31.109.239/zabbixx/api_jsonrpc.php
+2019-07-20 22:31:46 DEBUG Sending: {
+    "params": {
+        "password": "zabbix",
+        "user": "Admin"
+    },
+    "jsonrpc": "2.0",
+    "method": "user.login",
+    "id": 0
+}
+2019-07-20 22:31:46 DEBUG Response Code: 404
+2019-07-20 22:31:46 DEBUG xxxxResponse Code: 404
+2019-07-20 22:32:34 INFO JSON-RPC Server Endpoint: http://118.31.109.239/zabbixx/api_jsonrpc.php
+2019-07-20 22:32:34 DEBUG Sending: {
+    "params": {
+        "password": "zabbix",
+        "user": "Admin"
+    },
+    "jsonrpc": "2.0",
+    "method": "user.login",
+    "id": 0
+}
+2019-07-20 22:32:34 DEBUG Response Code: 404, <Response [404]>
+2019-07-20 22:32:34 DEBUG xxxxResponse Code: 404
+2019-07-20 22:33:18 INFO JSON-RPC Server Endpoint: http://118.31.109.239/zabbixx/api_jsonrpc.php
+2019-07-20 22:33:18 DEBUG Sending: {
+    "params": {
+        "password": "zabbix",
+        "user": "Admin"
+    },
+    "jsonrpc": "2.0",
+    "method": "user.login",
+    "id": 0
+}
+2019-07-20 22:33:18 DEBUG Response Code: 404, <Response [404]>
+2019-07-20 22:33:18 DEBUG xxxxResponse Code: 404
+2019-07-20 22:36:30 INFO JSON-RPC Server Endpoint: http://118.31.109.239/zabbixx/api_jsonrpc.php
+2019-07-20 22:36:30 DEBUG Sending: {
+    "params": {
+        "password": "zabbix",
+        "user": "Admin"
+    },
+    "jsonrpc": "2.0",
+    "method": "user.login",
+    "id": 0
+}
+2019-07-20 22:36:30 DEBUG Response Code: 404, <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 22:36:30 DEBUG xxxxResponse Code: 404
+2019-07-20 22:42:31 INFO JSON-RPC Server Endpoint: http://118.31.109.239/zabbixx/api_jsonrpc.php
+2019-07-20 22:42:31 DEBUG Sending: {
+    "params": {
+        "password": "zabbix",
+        "user": "Admin"
+    },
+    "jsonrpc": "2.0",
+    "method": "user.login",
+    "id": 0
+}
+2019-07-20 22:42:31 DEBUG Response Code: 404, <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 22:42:31 DEBUG xxxxResponse Code: 404
+2019-07-20 22:42:31 ERROR Unable to parese json: <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 22:43:33 INFO JSON-RPC Server Endpoint: http://118.31.109.239/zabbixx/api_jsonrpc.php
+2019-07-20 22:43:33 DEBUG Sending: {
+    "params": {
+        "password": "zabbix",
+        "user": "Admin"
+    },
+    "jsonrpc": "2.0",
+    "method": "user.login",
+    "id": 0
+}
+2019-07-20 22:43:33 DEBUG Response Code: 404, <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 22:43:33 DEBUG xxxxResponse Code: 404
+2019-07-20 22:43:33 ERROR Unable to parese json: <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 22:43:33 DEBUG Response Body: {}
+2019-07-20 22:51:28 INFO JSON-RPC Server Endpoint: http://118.31.109.239/zabbixx/api_jsonrpc.php
+2019-07-20 22:51:28 DEBUG Sending: {
+    "params": {
+        "password": "zabbix",
+        "user": "Admin"
+    },
+    "jsonrpc": "2.0",
+    "method": "user.login",
+    "id": 0
+}
+2019-07-20 22:51:28 DEBUG Response Code: 404, <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 22:51:28 DEBUG xxxxResponse Code: 404
+2019-07-20 22:51:28 ERROR Unable to parese json: <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 22:51:28 DEBUG Response Body: {}
+2019-07-20 22:51:28 DEBUG Sending: {
+    "params": {},
+    "jsonrpc": "2.0",
+    "method": "apiinfo.version",
+    "id": 1
+}
+2019-07-20 22:51:28 DEBUG Response Code: 404, <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 22:51:28 DEBUG xxxxResponse Code: 404
+2019-07-20 22:51:28 ERROR Unable to parese json: <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 22:51:28 DEBUG Response Body: {}
+2019-07-20 22:51:28 INFO Connected ZAPI version {}
+2019-07-20 22:51:28 DEBUG Sending: {
+    "params": {
+        "filter": {
+            "name": [
+                "CF_Group713"
+            ]
+        }
+    },
+    "jsonrpc": "2.0",
+    "method": "hostgroup.get",
+    "id": 2
+}
+2019-07-20 22:51:28 DEBUG Response Code: 404, <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 22:51:28 DEBUG xxxxResponse Code: 404
+2019-07-20 22:51:28 ERROR Unable to parese json: <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 22:51:28 DEBUG Response Body: {}
+2019-07-20 22:52:17 INFO JSON-RPC Server Endpoint: http://118.31.109.239/zabbixx/api_jsonrpc.php
+2019-07-20 22:52:17 DEBUG Sending: {
+    "params": {
+        "password": "zabbix",
+        "user": "Admin"
+    },
+    "jsonrpc": "2.0",
+    "method": "user.login",
+    "id": 0
+}
+2019-07-20 22:52:17 DEBUG Response Code: 404, <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 22:52:17 DEBUG xxxxResponse Code: 404
+2019-07-20 22:52:17 ERROR Unable to parese json: <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 22:52:17 DEBUG Response Body: {}
+2019-07-20 22:52:17 DEBUG Sending: {
+    "params": {},
+    "jsonrpc": "2.0",
+    "method": "apiinfo.version",
+    "id": 1
+}
+2019-07-20 22:52:17 DEBUG Response Code: 404, <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 22:52:17 DEBUG xxxxResponse Code: 404
+2019-07-20 22:52:17 ERROR Unable to parese json: <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 22:52:17 DEBUG Response Body: {}
+2019-07-20 22:52:17 INFO Connected ZAPI version {}
+2019-07-20 22:52:17 DEBUG Sending: {
+    "params": {
+        "filter": {
+            "name": [
+                "CF_Group713"
+            ]
+        }
+    },
+    "jsonrpc": "2.0",
+    "method": "hostgroup.get",
+    "id": 2
+}
+2019-07-20 22:52:17 DEBUG Response Code: 404, <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 22:52:17 DEBUG xxxxResponse Code: 404
+2019-07-20 22:52:17 ERROR Unable to parese json: <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 22:52:17 DEBUG Response Body: {}
+2019-07-20 22:52:38 INFO JSON-RPC Server Endpoint: http://118.31.109.239/zabbixx/api_jsonrpc.php
+2019-07-20 22:52:38 DEBUG Sending: {
+    "params": {
+        "password": "zabbix",
+        "user": "Admin"
+    },
+    "jsonrpc": "2.0",
+    "method": "user.login",
+    "id": 0
+}
+2019-07-20 22:52:38 DEBUG Response Code: 404, <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 22:52:38 DEBUG xxxxResponse Code: 404
+2019-07-20 22:52:38 ERROR Unable to parese json: <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 22:52:38 DEBUG Response Body: {}
+2019-07-20 22:52:38 DEBUG Sending: {
+    "params": {},
+    "jsonrpc": "2.0",
+    "method": "apiinfo.version",
+    "id": 1
+}
+2019-07-20 22:52:38 DEBUG Response Code: 404, <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 22:52:38 DEBUG xxxxResponse Code: 404
+2019-07-20 22:52:38 ERROR Unable to parese json: <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 22:52:38 DEBUG Response Body: {}
+2019-07-20 22:52:38 INFO Connected ZAPI version {}
+2019-07-20 22:52:38 DEBUG Sending: {
+    "params": {
+        "filter": {
+            "name": [
+                "CF_Group713"
+            ]
+        }
+    },
+    "jsonrpc": "2.0",
+    "method": "hostgroup.get",
+    "id": 2
+}
+2019-07-20 22:52:38 DEBUG Response Code: 404, <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 22:52:38 DEBUG xxxxResponse Code: 404
+2019-07-20 22:52:38 ERROR Unable to parese json: <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 22:52:38 DEBUG Response Body: {}
+2019-07-20 22:56:46 INFO JSON-RPC Server Endpoint: http://118.31.109.239/zabbixx/api_jsonrpc.php
+2019-07-20 22:56:46 DEBUG Sending: {
+    "params": {
+        "password": "zabbix",
+        "user": "Admin"
+    },
+    "jsonrpc": "2.0",
+    "method": "user.login",
+    "id": 0
+}
+2019-07-20 22:56:46 DEBUG Response Code: 404, <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 22:56:46 DEBUG xxxxResponse Code: 404
+2019-07-20 22:56:46 ERROR Unable to parese json: <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 22:56:46 DEBUG Response Body: {}
+2019-07-20 22:56:46 DEBUG Sending: {
+    "params": {},
+    "jsonrpc": "2.0",
+    "method": "apiinfo.version",
+    "id": 1
+}
+2019-07-20 22:56:46 DEBUG Response Code: 404, <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 22:56:46 DEBUG xxxxResponse Code: 404
+2019-07-20 22:56:46 ERROR Unable to parese json: <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 22:56:46 DEBUG Response Body: {}
+2019-07-20 22:56:46 INFO Connected ZAPI version {}
+2019-07-20 22:56:46 DEBUG Sending: {
+    "params": {
+        "filter": {
+            "name": [
+                "CF_Group713"
+            ]
+        }
+    },
+    "jsonrpc": "2.0",
+    "method": "hostgroup.get",
+    "id": 2
+}
+2019-07-20 22:56:46 DEBUG Response Code: 404, <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 22:56:46 DEBUG xxxxResponse Code: 404
+2019-07-20 22:56:46 ERROR Unable to parese json: <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 22:56:46 DEBUG Response Body: {}
+2019-07-20 22:56:46 DEBUG Sending: {
+    "params": {
+        "filter": {
+            "name": [
+                "CF_Group713xxxxx"
+            ]
+        }
+    },
+    "jsonrpc": "2.0",
+    "method": "hostgroup.get",
+    "id": 3
+}
+2019-07-20 22:56:46 DEBUG Response Code: 404, <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 22:56:46 DEBUG xxxxResponse Code: 404
+2019-07-20 22:56:46 ERROR Unable to parese json: <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 22:56:46 DEBUG Response Body: {}
+2019-07-20 22:56:46 INFO a=== None
+2019-07-20 22:57:33 INFO JSON-RPC Server Endpoint: http://118.31.109.239/zabbixx/api_jsonrpc.php
+2019-07-20 22:57:33 DEBUG Sending: {
+    "params": {
+        "password": "zabbix",
+        "user": "Admin"
+    },
+    "jsonrpc": "2.0",
+    "method": "user.login",
+    "id": 0
+}
+2019-07-20 22:57:33 DEBUG Response Code: 404, <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 22:57:33 DEBUG xxxxResponse Code: 404
+2019-07-20 22:57:33 ERROR Unable to parese json: <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 22:57:33 DEBUG Response Body: {}
+2019-07-20 22:57:33 DEBUG Sending: {
+    "params": {},
+    "jsonrpc": "2.0",
+    "method": "apiinfo.version",
+    "id": 1
+}
+2019-07-20 22:57:33 DEBUG Response Code: 404, <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 22:57:33 DEBUG xxxxResponse Code: 404
+2019-07-20 22:57:33 ERROR Unable to parese json: <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 22:57:33 DEBUG Response Body: {}
+2019-07-20 22:57:33 INFO Connected ZAPI version {}
+2019-07-20 22:57:33 DEBUG Sending: {
+    "params": {
+        "filter": {
+            "name": [
+                "CF_Group713"
+            ]
+        }
+    },
+    "jsonrpc": "2.0",
+    "method": "hostgroup.get",
+    "id": 2
+}
+2019-07-20 22:57:33 DEBUG Response Code: 404, <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 22:57:33 DEBUG xxxxResponse Code: 404
+2019-07-20 22:57:33 ERROR Unable to parese json: <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 22:57:33 DEBUG Response Body: {}
+2019-07-20 22:57:33 DEBUG Sending: {
+    "params": {
+        "filter": {
+            "name": [
+                "CF_Group713xxxxx"
+            ]
+        }
+    },
+    "jsonrpc": "2.0",
+    "method": "hostgroup.get",
+    "id": 3
+}
+2019-07-20 22:57:33 DEBUG Response Code: 404, <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 22:57:33 DEBUG xxxxResponse Code: 404
+2019-07-20 22:57:33 ERROR Unable to parese json: <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 22:57:33 DEBUG Response Body: {}
+2019-07-20 22:57:33 INFO a=== None
+2019-07-20 22:59:35 INFO JSON-RPC Server Endpoint: http://118.31.109.239/zabbixx/api_jsonrpc.php
+2019-07-20 22:59:35 DEBUG Sending: {
+    "params": {
+        "password": "zabbix",
+        "user": "Admin"
+    },
+    "jsonrpc": "2.0",
+    "method": "user.login",
+    "id": 0
+}
+2019-07-20 22:59:35 DEBUG Response Code: 404, <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 22:59:35 ERROR Unable to parese json: <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 22:59:35 DEBUG Response Body: {}
+2019-07-20 22:59:35 DEBUG Sending: {
+    "params": {},
+    "jsonrpc": "2.0",
+    "method": "apiinfo.version",
+    "id": 1
+}
+2019-07-20 22:59:35 DEBUG Response Code: 404, <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 22:59:35 ERROR Unable to parese json: <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 22:59:35 DEBUG Response Body: {}
+2019-07-20 22:59:35 INFO Connected ZAPI version {}
+2019-07-20 22:59:35 DEBUG Sending: {
+    "params": {
+        "filter": {
+            "name": [
+                "CF_Group713"
+            ]
+        }
+    },
+    "jsonrpc": "2.0",
+    "method": "hostgroup.get",
+    "id": 2
+}
+2019-07-20 22:59:35 DEBUG Response Code: 404, <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 22:59:35 ERROR Unable to parese json: <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 22:59:35 DEBUG Response Body: {}
+2019-07-20 22:59:35 DEBUG Sending: {
+    "params": {
+        "filter": {
+            "name": [
+                "CF_Group713xxxxx"
+            ]
+        }
+    },
+    "jsonrpc": "2.0",
+    "method": "hostgroup.get",
+    "id": 3
+}
+2019-07-20 22:59:35 DEBUG Response Code: 404, <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 22:59:35 ERROR Unable to parese json: <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 22:59:35 DEBUG Response Body: {}
+2019-07-20 22:59:35 INFO a=== None
+2019-07-20 23:00:33 INFO JSON-RPC Server Endpoint: http://118.31.109.239/zabbixx/api_jsonrpc.php
+2019-07-20 23:00:33 DEBUG Sending: {
+    "params": {
+        "password": "zabbix",
+        "user": "Admin"
+    },
+    "jsonrpc": "2.0",
+    "method": "user.login",
+    "id": 0
+}
+2019-07-20 23:00:33 DEBUG Response Code: 404, <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 23:00:33 ERROR Unable to parese json: <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 23:00:33 DEBUG Sending: {
+    "params": {},
+    "jsonrpc": "2.0",
+    "method": "apiinfo.version",
+    "id": 1
+}
+2019-07-20 23:00:33 DEBUG Response Code: 404, <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 23:00:33 ERROR Unable to parese json: <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 23:00:33 INFO Connected ZAPI version {}
+2019-07-20 23:00:33 DEBUG Sending: {
+    "params": {
+        "filter": {
+            "name": [
+                "CF_Group713"
+            ]
+        }
+    },
+    "jsonrpc": "2.0",
+    "method": "hostgroup.get",
+    "id": 2
+}
+2019-07-20 23:00:33 DEBUG Response Code: 404, <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 23:00:33 ERROR Unable to parese json: <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 23:00:33 DEBUG Sending: {
+    "params": {
+        "filter": {
+            "name": [
+                "CF_Group713xxxxx"
+            ]
+        }
+    },
+    "jsonrpc": "2.0",
+    "method": "hostgroup.get",
+    "id": 3
+}
+2019-07-20 23:00:33 DEBUG Response Code: 404, <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 23:00:33 ERROR Unable to parese json: <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 23:00:33 INFO a=== None
+2019-07-20 23:01:02 INFO JSON-RPC Server Endpoint: http://118.31.109.239/zabbixx/api_jsonrpc.php
+2019-07-20 23:01:02 ERROR Unable to parese json: <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 23:01:02 ERROR Unable to parese json: <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 23:01:02 INFO Connected ZAPI version {}
+2019-07-20 23:01:02 ERROR Unable to parese json: <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 23:01:02 ERROR Unable to parese json: <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 23:01:02 INFO a=== None
+2019-07-20 23:02:54 INFO JSON-RPC Server Endpoint: http://118.31.109.239/zabbixx/api_jsonrpc.php
+2019-07-20 23:02:54 ERROR Unable to parse json: <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 23:02:54 ERROR Unable to parse json: <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 23:02:54 INFO Connected ZAPI version {}
+2019-07-20 23:02:54 ERROR Unable to parse json: <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 23:02:54 ERROR Unable to parse json: <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 23:02:54 INFO a=== None
+2019-07-20 23:04:38 INFO JSON-RPC Server Endpoint: http://118.31.109.239/zabbixx/api_jsonrpc.php
+2019-07-20 23:04:39 ERROR Unable to parse json: <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 23:04:39 ERROR Unable to parse json: <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 23:04:39 INFO Connected ZAPI version {}
+2019-07-20 23:04:39 ERROR Unable to parse json: <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 23:04:39 ERROR Unable to parse json: <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>404 Not Found</title>
+</head><body>
+<h1>Not Found</h1>
+<p>The requested URL /zabbixx/api_jsonrpc.php was not found on this server.</p>
+</body></html>
+
+2019-07-20 23:09:01 INFO JSON-RPC Server Endpoint: http://118.31.109.239/zabbixx/api_jsonrpc.php
+2019-07-20 23:10:36 INFO JSON-RPC Server Endpoint: http://118.31.109.239/zabbixx/api_jsonrpc.php
+2019-07-20 23:12:02 INFO JSON-RPC Server Endpoint: http://118.31.109.239/zabbixx/api_jsonrpc.php
+2019-07-20 23:13:48 INFO JSON-RPC Server Endpoint: http://118.31.109.239/zabbixx/api_jsonrpc.php
+2019-07-20 23:17:25 INFO JSON-RPC Server Endpoint: http://118.31.109.239/zabbixx/api_jsonrpc.php
+2019-07-20 23:17:51 INFO JSON-RPC Server Endpoint: http://118.31.109.239/zabbixx/api_jsonrpc.php
+2019-07-20 23:20:28 INFO JSON-RPC Server Endpoint: http://118.31.109.239/zabbixx/api_jsonrpc.php
+2019-07-20 23:20:28 INFO Connected ZAPI version {}
+2019-07-20 23:20:47 INFO JSON-RPC Server Endpoint: http://118.31.109.239/zabbixx/api_jsonrpc.php
+2019-07-20 23:20:47 INFO Connected ZAPI version {}
+2019-07-20 23:21:08 INFO JSON-RPC Server Endpoint: http://118.31.109.239/zabbix/api_jsonrpc.php
+2019-07-20 23:21:08 INFO Connected ZAPI version 3.4.15
+2019-07-20 23:22:22 INFO JSON-RPC Server Endpoint: http://118.31.109.239/zabbix/api_jsonrpc.php
+2019-07-20 23:22:22 DEBUG Sending: {
+    "params": {
+        "password": "zabbix",
+        "user": "Admin"
+    },
+    "jsonrpc": "2.0",
+    "method": "user.login",
+    "id": 0
+}
+2019-07-20 23:22:22 DEBUG Response Code: 200, {"jsonrpc":"2.0","result":"f087424fd76ea01839147b7ab04eb02f","id":0}
+2019-07-20 23:22:22 DEBUG Sending: {
+    "params": {},
+    "jsonrpc": "2.0",
+    "method": "apiinfo.version",
+    "id": 1
+}
+2019-07-20 23:22:23 DEBUG Response Code: 200, {"jsonrpc":"2.0","result":"3.4.15","id":1}
+2019-07-20 23:22:23 INFO Connected ZAPI version 3.4.15
+2019-07-20 23:22:23 DEBUG Sending: {
+    "params": {
+        "filter": {
+            "name": [
+                "CF_Group713"
+            ]
+        }
+    },
+    "jsonrpc": "2.0",
+    "method": "hostgroup.get",
+    "auth": "f087424fd76ea01839147b7ab04eb02f",
+    "id": 2
+}
+2019-07-20 23:22:23 DEBUG Response Code: 200, {"jsonrpc":"2.0","result":[{"groupid":"19","name":"CF_Group713","internal":"0","flags":"0"}],"id":2}
+2019-07-20 23:22:23 DEBUG Sending: {
+    "params": {
+        "filter": {
+            "name": [
+                "CF_Group713xxxxx"
+            ]
+        }
+    },
+    "jsonrpc": "2.0",
+    "method": "hostgroup.get",
+    "auth": "f087424fd76ea01839147b7ab04eb02f",
+    "id": 3
+}
+2019-07-20 23:22:23 DEBUG Response Code: 200, {"jsonrpc":"2.0","result":[],"id":3}
+2019-07-20 23:23:37 INFO JSON-RPC Server Endpoint: http://118.31.109.239/zabbix/api_jsonrpc.php
+2019-07-20 23:23:37 DEBUG Sending: {
+    "params": {
+        "password": "zabbix",
+        "user": "Admin"
+    },
+    "jsonrpc": "2.0",
+    "method": "user.login",
+    "id": 0
+}
+2019-07-20 23:23:37 DEBUG Response Code: 200, {"jsonrpc":"2.0","result":"b052c364a1bd5a42c89053c6ae190f89","id":0}
+2019-07-20 23:23:37 DEBUG Sending: {
+    "params": {},
+    "jsonrpc": "2.0",
+    "method": "apiinfo.version",
+    "id": 1
+}
+2019-07-20 23:23:37 DEBUG Response Code: 200, {"jsonrpc":"2.0","result":"3.4.15","id":1}
+2019-07-20 23:23:37 INFO Connected ZAPI version 3.4.15
+2019-07-20 23:23:37 DEBUG Sending: {
+    "params": {
+        "filter": {
+            "name": [
+                "CF_Group713"
+            ]
+        }
+    },
+    "jsonrpc": "2.0",
+    "method": "hostgroup.get",
+    "auth": "b052c364a1bd5a42c89053c6ae190f89",
+    "id": 2
+}
+2019-07-20 23:23:37 DEBUG Response Code: 200, {"jsonrpc":"2.0","result":[{"groupid":"19","name":"CF_Group713","internal":"0","flags":"0"}],"id":2}
+2019-07-20 23:23:37 DEBUG Sending: {
+    "params": {
+        "filter": {
+            "name": [
+                "CF_Group713xxxxx"
+            ]
+        }
+    },
+    "jsonrpc": "2.0",
+    "method": "hostgroup.get",
+    "auth": "b052c364a1bd5a42c89053c6ae190f89",
+    "id": 3
+}
+2019-07-20 23:23:37 DEBUG Response Code: 200, {"jsonrpc":"2.0","result":[],"id":3}
+2019-07-20 23:39:23 INFO JSON-RPC Server Endpoint: http://118.31.109.239/zabbix/api_jsonrpc.php
+2019-07-20 23:39:23 DEBUG Sending: {
+    "params": {
+        "password": "zabbix",
+        "user": "Admin"
+    },
+    "jsonrpc": "2.0",
+    "method": "user.login",
+    "id": 0
+}
+2019-07-20 23:39:23 DEBUG Response Code: 200, {"jsonrpc":"2.0","result":"a077595c8248414d3af91979c54b5698","id":0}
+2019-07-20 23:39:23 DEBUG Sending: {
+    "params": {},
+    "jsonrpc": "2.0",
+    "method": "apiinfo.version",
+    "id": 1
+}
+2019-07-20 23:39:23 DEBUG Response Code: 200, {"jsonrpc":"2.0","result":"3.4.15","id":1}
+2019-07-20 23:39:23 INFO Connected ZAPI version 3.4.15
+2019-07-20 23:39:23 DEBUG Sending: {
+    "params": {
+        "filter": {
+            "name": [
+                "CF_Group713"
+            ]
+        }
+    },
+    "jsonrpc": "2.0",
+    "method": "hostgroup.get",
+    "auth": "a077595c8248414d3af91979c54b5698",
+    "id": 2
+}
+2019-07-20 23:39:23 DEBUG Response Code: 200, {"jsonrpc":"2.0","result":[{"groupid":"19","name":"CF_Group713","internal":"0","flags":"0"}],"id":2}
+2019-07-20 23:39:23 DEBUG Sending: {
+    "params": {
+        "filter": {
+            "name": [
+                "CF_Group713xxxxx"
+            ]
+        }
+    },
+    "jsonrpc": "2.0",
+    "method": "hostgroup.get",
+    "auth": "a077595c8248414d3af91979c54b5698",
+    "id": 3
+}
+2019-07-20 23:39:23 DEBUG Response Code: 200, {"jsonrpc":"2.0","result":[],"id":3}
+2019-07-21 00:57:54 INFO JSON-RPC Server Endpoint: http://118.31.109.239/zabbix/api_jsonrpc.php
+2019-07-21 00:57:54 DEBUG Sending: {
+    "params": {
+        "password": "zabbix",
+        "user": "Admin"
+    },
+    "jsonrpc": "2.0",
+    "method": "user.login",
+    "id": 0
+}
+2019-07-21 00:57:54 DEBUG Response Code: 200, {"jsonrpc":"2.0","result":"bf113ebc12009875aa6bf2e013e90fae","id":0}
+2019-07-21 00:57:54 DEBUG Sending: {
+    "params": {},
+    "jsonrpc": "2.0",
+    "method": "apiinfo.version",
+    "id": 1
+}
+2019-07-21 00:57:54 DEBUG Response Code: 200, {"jsonrpc":"2.0","result":"3.4.15","id":1}
+2019-07-21 00:57:54 INFO Connected ZAPI version 3.4.15
+2019-07-21 00:57:54 DEBUG Sending: {
+    "params": {
+        "filter": {
+            "name": [
+                "CF_Group713"
+            ]
+        }
+    },
+    "jsonrpc": "2.0",
+    "method": "hostgroup.get",
+    "auth": "bf113ebc12009875aa6bf2e013e90fae",
+    "id": 2
+}
+2019-07-21 00:57:54 DEBUG Response Code: 200, {"jsonrpc":"2.0","result":[{"groupid":"19","name":"CF_Group713","internal":"0","flags":"0"}],"id":2}
+2019-07-21 00:57:54 DEBUG Sending: {
+    "params": {
+        "filter": {
+            "name": [
+                "CF_Group713xxxxx"
+            ]
+        }
+    },
+    "jsonrpc": "2.0",
+    "method": "hostgroup.get",
+    "auth": "bf113ebc12009875aa6bf2e013e90fae",
+    "id": 3
+}
+2019-07-21 00:57:54 DEBUG Response Code: 200, {"jsonrpc":"2.0","result":[],"id":3}
+2019-07-21 01:41:42 INFO JSON-RPC Server Endpoint: http://118.31.109.239/zabbix/api_jsonrpc.php
+2019-07-21 01:41:42 DEBUG Sending: {
+    "params": {
+        "password": "zabbix",
+        "user": "Admin"
+    },
+    "jsonrpc": "2.0",
+    "method": "user.login",
+    "id": 0
+}
+2019-07-21 01:41:42 DEBUG Response Code: 200, {"jsonrpc":"2.0","result":"720addb7b5f25a882cf524aa5eeb5bc5","id":0}
+2019-07-21 01:41:42 DEBUG Sending: {
+    "params": {},
+    "jsonrpc": "2.0",
+    "method": "apiinfo.version",
+    "id": 1
+}
+2019-07-21 01:41:42 DEBUG Response Code: 200, {"jsonrpc":"2.0","result":"3.4.15","id":1}
+2019-07-21 01:41:42 INFO Connected ZAPI version 3.4.15
+2019-07-21 01:41:42 DEBUG Sending: {
+    "params": {
+        "filter": {
+            "name": [
+                "CF_Group713"
+            ]
+        }
+    },
+    "jsonrpc": "2.0",
+    "method": "hostgroup.get",
+    "auth": "720addb7b5f25a882cf524aa5eeb5bc5",
+    "id": 2
+}
+2019-07-21 01:41:42 DEBUG Response Code: 200, {"jsonrpc":"2.0","result":[{"groupid":"19","name":"CF_Group713","internal":"0","flags":"0"}],"id":2}
+2019-07-21 01:41:42 DEBUG Sending: {
+    "params": {
+        "filter": {
+            "name": [
+                "CF_Group713xxxxx"
+            ]
+        }
+    },
+    "jsonrpc": "2.0",
+    "method": "hostgroup.get",
+    "auth": "720addb7b5f25a882cf524aa5eeb5bc5",
+    "id": 3
+}
+2019-07-21 01:41:42 DEBUG Response Code: 200, {"jsonrpc":"2.0","result":[],"id":3}
