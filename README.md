@@ -4,31 +4,24 @@ the dashboard for monitoring system
 ```bash
 .
 ├── agent
-│   └── dbagent.py
+│?? └── dbagent.py
 ├── centre
-│   ├── configs.py
-│   ├── configs.pyc
-│   ├── hostgroup.py
-│   ├── hostgroup.pyc
-│   ├── host.py
-│   ├── host.pyc
-│   ├── __init__.py
-│   ├── __init__.pyc
-│   ├── item.py
-│   ├── jsonparams.py
-│   ├── monitorapi.py
-│   ├── monitorapi.pyc
-│   ├── pyhome.sh
-│   ├── template.py
-│   ├── trigger.py
-│   ├── zabbixlib.py
-│   └── zabbixlib.pyc
+│?? ├── configs.py
+│?? ├── import_template.py
+│?? ├── __init__.py
+│?? ├── jsonparams.py
+│?? ├── monitorapi.py
+│?? ├── xml
+│?? │?? └── monitorz_template1.xml
+│?? └── zabbixlib.py
 ├── main.py
+├── monitorZ.log
 ├── README.md
 └── tests
     ├── dbagent.log.md
+    ├── pyhome.sh
+    ├── template11.2.xml.backup
     └── test_config.py
-
-3 directories, 22 files
+4 directories, 15 files
 
 ```
