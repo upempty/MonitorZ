@@ -87,7 +87,18 @@ if __name__ == '__main__':
         triggerid = monitorAPI.trigger_create(desc3, host_name, key3, func3, compareto3)
     monitorAPI.trigger_get_problem_by_desc(host_name, desc3)
     monitorAPI.trigger_get_problem_by_host(host_name)
+   
 
+
+ 
+
+    #OracleTemplateHostGroup721 needs to be created as first condition
+    hostgroup_namebatch = "OracleTemplateHostGroup721" 
+    gid = monitorAPI.hostgroup_get(hostgroup_namebatch)
+    if not gid:
+       gid = monitorAPI.hostgroup_create(hostgroup_namebatch)
+    path = './centre/xml' 
+    monitorAPI.template_import(path)
 
 if __name__ == '__main__xx':
     print("-----history----")

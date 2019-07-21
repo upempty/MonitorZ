@@ -2,7 +2,9 @@
 #-*- coding: utf-8 -*-
 
 import sys
-from centre.zabbixlib import ZabbixAPI
+import os
+import glob
+from centre.zabbixlib import ZabbixAPI, ZabbixAPIException
 from centre.zabbixlib import logger
 from centre.configs import *
 #from centre.hostgroup import *
@@ -484,6 +486,7 @@ class MonitorAPI:
         elif os.path.isfile(path):
             files = glob.glob(path)
             for file in files:
+                print(file)
                 with open(file, 'r') as f:
                     template = f.read()
                     try:

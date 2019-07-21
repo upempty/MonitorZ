@@ -15,7 +15,76 @@ import re
 version = 0.2
 
 
+#value_type: 0 numeric float,1-character,2-log,3-numeric unsigned,4-text
+
 class Checks(object):
+
+    def dbname(self):
+        #value_type = 1
+        sql = "select name from v$database"
+        self.cur.execute(sql)
+        res = self.cur.fetchall()
+        for i in res:
+            print (i[0])
+
+    def dbsystime(self):
+        #value_type = 1
+        sql = "select to_char(sysdate,'yyyy-MM-dd HH24:mi:ss') from dual"
+        self.cur.execute(sql)
+        res = self.cur.fetchall()
+        for i in res:
+            print (i[0])
+
+    def logmode(self):
+        #value_type = 1
+        sql = "SELECT log_mode FROM v$database"
+        self.cur.execute(sql)
+        res = self.cur.fetchall()
+        for i in res:
+            print (i[0])
+
+    def dbstatus(self):
+        #value_type = 1
+        sql = "select status from v$instance"
+        self.cur.execute(sql)
+        res = self.cur.fetchall()
+        for i in res:
+            print (i[0])
+
+    def currentscn(self):
+        #value_type = 3 
+        sql = "select current_scn from v$database"
+        self.cur.execute(sql)
+        res = self.cur.fetchall()
+        for i in res:
+            print (i[0])
+
+    def archthreadseq(self):
+        #value_type = 1 
+        sql = "select thread#||','||sequence#  as ts from v$archived_log"
+        self.cur.execute(sql)
+        res = self.cur.fetchall()
+        for i in res:
+            print (i[0])
+
+    def flash_areausage(self):
+        #value_type = 0 
+        sql = "select  percent_space_used as used  from v$flash_recovery_area_usage where file_type='FLASHBACK LOG'"
+        self.cur.execute(sql)
+        res = self.cur.fetchall()
+        for i in res:
+            print (i[0])
+
+    def backup_status(self):
+        #value_type = 1 
+        pass
+
+    def log_transfermode(self):
+        #value_type = 1 
+        pass
+
+
+
     def check_active(self):
         """Check Intance is active and open"""
         sql = "select to_char(case when inst_cnt > 0 then 1 else 0 end, \
@@ -27,7 +96,11 @@ class Checks(object):
         for i in res:
             print (i[0])
 
+
+
+
     def rcachehit(self):
+        #value_type = 0
         """Read Cache hit ratio"""
         sql = "SELECT nvl(to_char((1 - (phy.value - lob.value - dir.value) / \
               ses.value) * 100, 'FM99999990.9999'), '0') retvalue \
@@ -43,6 +116,7 @@ class Checks(object):
             print (i[0])
 
     def dsksortratio(self):
+        #value_type = 0
         """Disk sorts ratio"""
         sql = "SELECT nvl(to_char(d.value/(d.value + m.value)*100, \
               'FM99999990.9999'), '0') retvalue \
@@ -83,6 +157,7 @@ class Checks(object):
             print (i[0])
 
     def dbfilesize(self):
+        #value_type = 3
         """Size of all datafiles"""
         sql = "select to_char(sum(bytes), 'FM99999999999999990') retvalue \
               from dba_data_files"
@@ -109,6 +184,7 @@ class Checks(object):
             print (i[0])
 
     def commits(self):
+        #value_type = 3
         """User Commits"""
         sql = "select nvl(to_char(value, 'FM99999999999999990'), '0') retvalue from \
               v$sysstat where name = 'user commits'"
@@ -118,6 +194,7 @@ class Checks(object):
             print (i[0])
 
     def rollbacks(self):
+        #value_type = 3
         """User Rollbacks"""
         sql = "select nvl(to_char(value, 'FM99999999999999990'), '0') retvalue from " \
               "v$sysstat where name = 'user rollbacks'"
@@ -127,6 +204,7 @@ class Checks(object):
             print (i[0])
 
     def deadlocks(self):
+        #value_type = 3
         """Deadlocks"""
         sql = "select nvl(to_char(value, 'FM99999999999999990'), '0') retvalue from \
               v$sysstat where name = 'enqueue deadlocks'"
@@ -136,6 +214,7 @@ class Checks(object):
             print (i[0])
 
     def redowrites(self):
+        #value_type = 3
         """Redo Writes"""
         sql = "select nvl(to_char(value, 'FM99999999999999990'), '0') retvalue from \
               v$sysstat where name = 'redo writes'"
@@ -218,6 +297,7 @@ class Checks(object):
             print (i[0])
 
     def lastarclog(self):
+        #value_type = 3
         """Last archived log sequence"""
         sql = "select to_char(max(SEQUENCE#), 'FM99999999999999990') \
               retvalue from v$log where archived = 'YES'"
@@ -248,6 +328,7 @@ class Checks(object):
             print (i[0])
 
     def bufbusywaits(self):
+        #value_type = 3
         """Buffer busy waits"""
         sql = "select nvl(to_char(time_waited, 'FM99999999999999990'), '0') retvalue \
               from v$system_event se, v$event_name en where se.event(+) = \
@@ -268,6 +349,7 @@ class Checks(object):
             print (i[0])
 
     def logfilesync(self):
+        #value_type = 3
         """Log file sync"""
         sql = "select nvl(to_char(time_waited, 'FM99999999999999990'), '0') retvalue \
               from v$system_event se, v$event_name en \
@@ -368,6 +450,7 @@ class Checks(object):
             print (i[0])
 
     def tablespace(self, name):
+        #value_type = 3
         """Get tablespace usage"""
         sql = '''SELECT  tablespace_name,
         100-(TRUNC((max_free_mb/max_size_mb) * 100)) AS USED
@@ -421,6 +504,7 @@ class Checks(object):
         print (json.dumps({'data': lst}))
 
     def check_archive(self, archive):
+        #value_type = 3
         """List archive used"""
         sql = "select trunc((total_mb-free_mb)*100/(total_mb)) PCT from \
               v$asm_diskgroup_stat where name='{0}' \
@@ -452,6 +536,7 @@ class Checks(object):
             print (i[0])
 
     def query_lock(self):
+        #value_type = 3
         """Query lock"""
         sql = "SELECT count(*) FROM gv$lock l WHERE  block=1"
         self.cur.execute(sql)
@@ -460,6 +545,7 @@ class Checks(object):
             print (i[0])
 
     def query_redologs(self):
+        #value_type = 3
         """Redo logs"""
         sql = "select COUNT(*) from v$LOG WHERE STATUS='ACTIVE'"
         self.cur.execute(sql)
@@ -468,6 +554,7 @@ class Checks(object):
             print (i[0])
 
     def query_rollbacks(self):
+        #value_type = 3
         """Query Rollback"""
         sql = "select nvl(trunc(sum(used_ublk*4096)/1024/1024),0) from \
               gv$transaction t,gv$session s where ses_addr = saddr"
@@ -477,6 +564,7 @@ class Checks(object):
             print (i[0])
 
     def query_sessions(self):
+        #value_type = 3
         """Query Sessions"""
         sql = "select count(*) from gv$session where username is not null \
               and status='ACTIVE'"
@@ -512,8 +600,9 @@ class Checks(object):
         res = self.cur.fetchall()
         for i in res:
             print (i[0])
-
+    
     def show_users(self):
+        #value_type = 1
         """Query the list of users on the instance"""
         sql = "SELECT username FROM dba_users ORDER BY 1"
         self.cur.execute(sql)
@@ -526,6 +615,7 @@ class Checks(object):
         print (json.dumps({'data': lst}))
 
     def user_status(self, dbuser):
+        #value_type = 1
         """Determines whether a user is locked or not"""
         sql = "SELECT account_status FROM dba_users WHERE username='{0}'" \
             .format(dbuser)

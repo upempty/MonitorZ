@@ -14,4 +14,33 @@
 60
 [root@cfBareos agent]# python dbagent.py --username zabbix --password zabbix --address 127.0.0.1 --database XE tablespace SYSTEM
 
+=====
+python agent/dbagent.py --username zabbix --password zabbix --address 127.0.0.1 --database XE dbsize
+python agent/dbagent.py --username zabbix --password zabbix --address cfBareos --database XE dbsize
+
+zabbix_get -s cfBareos -p 10050 -k oracle.query[zabbix,zabbix,cfBareos,XE,dbfilesize]
+zabbix_get -s cfBareos -p 10050 -k oracle.query[zabbix,zabbix,cfBareos,XE,dbsize]
+zabbix_get -s cfBareos -p 10050 -k oracle.query[zabbix,zabbix,cfBareos,XE,version]
+zabbix_get -s cfBareos -p 10050 -k oracle.query[zabbix,zabbix,cfBareos,XE,check_active]
+
+
+"{$USERNAME}"="zabbix"
+"{$PASSWORD}"="zabbix"
+"{$ADDRESS}"="cfBareos"
+"{$DATABASE}"="XE"
+
+{template721:oracle.query[zabbix,zabbix,cfBareos,XE,version].strlen()}>0
+
+
+sqlplus /nolog
+conn / as sysdba
+SQL> conn / as sysdba
+
+oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},check_active]
+
+pyora[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},check_archive,{$ARCHIVE}]
+
+
+
+
 ```
