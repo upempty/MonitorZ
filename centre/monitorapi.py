@@ -35,7 +35,7 @@ class MonitorAPI:
         resp = self.__zapi.do_request('hostgroup.create', param)
         if not resp or not resp['result']:
             return None
-        return (resp['result']['groupids'])
+        return (resp['result']['groupids'][0])
     
     def hostgroup_get(self, name):
         param = {
@@ -71,7 +71,7 @@ class MonitorAPI:
         resp = self.__zapi.do_request('template.create', param)
         if not resp or not resp['result']:
             return None
-        return (resp['result']['templateids'])
+        return (resp['result']['templateids'][0])
     
     def template_get(self, name):
         param = {
@@ -99,23 +99,23 @@ class MonitorAPI:
     #item  value_type 
     #oracle.query[zabbix,zabbix,cfBareos,XE,redowrites]
     #oracle.query[zabbix,zabbix,cfBareos,XE,tablespace,SYSTEM]
-    def item_create(self, name, key, template_name):
+    def item_create(self, name, key, value_type, template_name):
         tid = self.template_get(template_name)
         param = {
             "name": name,
             "key_": key,
             "hostid": tid, #(real template id)--ID of the host or template that the item belongs to.
             "type": 0, #agent
-            "value_type": 3, # unsigned numeric
+            "value_type": value_type, # 3 unsigned numeric
             "interfaceid": "",
             "delay": "60s",
         }
-     
         resp = self.__zapi.do_request('item.create', param)
         if not resp or not resp['result']:
             return None
         itemids = resp['result']['itemids']
-        return (itemids)
+        logger.info("create items {}".format(itemids))
+        return (itemids[0])
     
     def item_get(self, key):
         param = {
@@ -163,10 +163,28 @@ class MonitorAPI:
         if not resp or not resp['result']:
             return None
         tiggerids = resp['result']['triggerids']
-        return tiggerids 
+        return tiggerids[0] 
 
-    # trigger get by host (restart zabbix-agent or wait more time???)
-    def trigger_get_by_host(self, host_name):
+    def trigger_get(self, host_name, desc):
+        hostid = self.host_get(host_name)
+        param = {
+            "output": ["triggerid", "description","priority"],
+            "selectHosts":"",
+            "filter": {"hostid":hostid},
+            "sortfield": "priority",
+            "sortorder": "DESC"
+        }
+        resp = self.__zapi.do_request('trigger.get', param)
+        if not resp or not resp['result']:
+            return None
+        for i in resp['result']:
+            if i['description'] == desc:
+                print ('already exists: {}'.format(i))
+                return i['triggerid']
+        return None
+ 
+
+    def trigger_get_problem_by_desc(self, host_name, desc):
         hostid = self.host_get(host_name)
         param = {
             "output": ["triggerid", "description","priority"],
@@ -179,14 +197,37 @@ class MonitorAPI:
         resp = self.__zapi.do_request('trigger.get', param)
         if not resp or not resp['result']:
             return None
-          
-        triggerid = resp['result'][0]['triggerid']
-        return triggerid
+        for i in resp['result']:
+            if i['description'] == desc:
+                print ('problem {}'.format(i))
+                return i['triggerid']
+        return None
+ 
+    # trigger get by host (restart zabbix-agent or wait more time???)
+    def trigger_get_problem_by_host(self, host_name):
+        hostid = self.host_get(host_name)
+        param = {
+            "output": ["triggerid", "description","priority"],
+            "selectHosts":"",
+            "filter": {"hostid":hostid,"status":"0","value":"1"}, #value 1: problem.?.
+            "sortfield": "priority",
+            "sortorder": "DESC"
+        }
+     
+        resp = self.__zapi.do_request('trigger.get', param)
+        if not resp or not resp['result']:
+            return None
+        triggerids = []
+        for i in resp['result']:
+            triggerids.append(i['triggerid'])
+            print ('host problem {}'.format(i))
+         
+        return triggerids
         # [{u'priority': u'0', u'triggerid': u'15641', u'hosts': [{u'hostid': u'10260'}], u'description': u'tablespace>10 trigger'}]
     
     
-    def trigger_delete(self, host_name):
-        triggerid = self.trigger_get_by_host(host_name)
+    def trigger_delete(self, host_name, desc):
+        triggerid = self.trigger_get(host_name, desc)
         param = [triggerid]
         resp = self.__zapi.do_request('trigger.delete', param)
         if not resp or not resp['result']:
@@ -197,7 +238,11 @@ class MonitorAPI:
 
     def host_create(self, host_name, host_ip, host_port, hostgroup_name, template_name):
         gid = self.hostgroup_get(hostgroup_name) 
+        if not gid:
+           return None
         tid = self.template_get(template_name)
+        if not tid:
+           return None
         param = {
             "host": host_name,
             "name": host_name,
@@ -226,7 +271,7 @@ class MonitorAPI:
         if not resp or not resp['result']:
             return None
         hostids = resp['result']['hostids']
-        return hostids 
+        return hostids[0] 
     
     def host_get(self, name):
         param = {
@@ -265,20 +310,25 @@ class MonitorAPI:
         return resp['result']
     
     # data_type, value_type: 0 numeric float,1-character,2-log,3-numeric unsigned,4-text 
-    def history_get(self, key):
+    def history_get(self, key, value_type):
         itemids = self.item_get(key)
         print ("itemids", itemids)
         param = {
             "output": "extend",
-            "history": 3,
+            "history": value_type,
             "itemids": itemids,
             "sortfield": "clock",
             "sortorder": "DESC",
-            "limit": 30
+            "limit": 10
         }
         resp = self.__zapi.do_request('history.get', param)
         if not resp or not resp['result']:
             return None
+
+        logger.info('item:{} history result=='.format(key))
+        for i,j in enumerate(resp['result']):
+            logger.info('{}: {}'.format(i, j))
+
         return resp['result']
 
 
@@ -304,7 +354,8 @@ class MonitorAPI:
             return None
  
         #以字典格式返回主机IP和对应监控状态：0为unknown、1为正常、2为异常
-        hosts = [(h["host"], h["available"]) for h in res["result"]]
+        hosts = [(h["host"], h["available"]) for h in resp["result"]]
+        logger.debug('hosts: {}'.format(hosts))
         return hosts
     
     def hostmacro_create(self, host_name, varmacro, value):
@@ -319,10 +370,10 @@ class MonitorAPI:
         if not resp or not resp['result']:
             return None
         ids = resp['result']['hostmacroids']
-        return (ids)
+        return (ids[0])
 
 
-    def hostmacro_get(self, host_name):
+    def hostmacro_get(self, host_name, varmacro):
         hostid = self.host_get(host_name)
         param = {
             "output": "extend",
@@ -331,14 +382,14 @@ class MonitorAPI:
         resp = self.__zapi.do_request('usermacro.get', param)
         if not resp or not resp['result']:
             return None
-        macroids = []
         for i in resp['result']:
-            macroids.append(i['hostmacroid'])
-        return macroids
+            if i['macro'] == varmacro:
+                return i['hostmacroid']
+        return None
 
-    def hostmacro_delete(self, host_name):
-        ids = hostmacro_get(host_name)
-        param = ids 
+    def hostmacro_delete(self, host_name, varmacro):
+        id = hostmacro_get(host_name, varmacro)
+        param = [id] 
         resp = self.__zapi.do_request('usermacro.delete', param)
         if not resp or not resp['result']:
             return None
@@ -347,28 +398,20 @@ class MonitorAPI:
 
         
     #combine function 
-    def transaction_create_item_on_template(self, template_name):
-        #hostgroup_create('CF_Group713')
-        gid = hostgroup_get('CF_Group713')
-        print (gid, type(gid))
-        #hostgroup_delete('CF_Group713')
-
-        #template_create('CF_Template713', 'CF_Group713')
-        tid = template_get('CF_Template713')
-        #template_delete('CF_Template713')
-        print ("tttemplate!!!=id=", tid)
-
-        key = "oracle.query[zabbix,zabbix,cfBareos,XE,tablespace,SYSTEM]"
+    def transaction_create_item_on_template(self, hostgroup_name,template_name, item_name, key, value_type):
+        gid = self.hostgroup_get(hostgroup_name)
+        if not gid:
+            gid = self.hostgroup_create(hostgroup_name)
+        tid = self.template_get(template_name)
+        if not tid:
+            tid = self.template_create(template_name, hostgroup_name)
+        #key = "oracle.query[zabbix,zabbix,cfBareos,XE,tablespace,SYSTEM]"
         #item_create("CF_Item_tbl_system", key, "CF_Template713")
-        iid = item_get(key)
-        print ("item....:", iid)
-        #item_delete(key)
+        ids = self.item_get(key)
+        if not ids:
+            ids = self.item_create(item_name, key, value_type, template_name)
+        return ids[0] 
 
-
-
-
-        pass
-    
     def template_import(self, path):
         rules = {
             'applications': {

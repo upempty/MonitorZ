@@ -5,52 +5,91 @@ from centre.monitorapi import *
 
 
 if __name__ == '__main__':
+    '''
 
-    monitorAPI.hostgroup_get('CF_Group713')
-    monitorAPI.hostgroup_get('CF_Group713xxxxx')
-    #logger.info('a=== {}'.format(a))
-    #monitorAPI.host_get('CF_Host713')
+    oracle.query[zabbix,zabbix,cfBareos,XE,tablespace,SYSTEM]
+    '''
+    hostgroup_name = 'hostgroup721'
+    template_name = 'template721'
+    item_name = 'ora version'
+    key = 'oracle.query[zabbix,zabbix,cfBareos,XE,version]'
+    value_type = 1
+    item_name2 = 'ora db size'
+    key2 = 'oracle.query[zabbix,zabbix,cfBareos,XE,dbsize]'
+    value_type2 = 3 
+    item_name3 = 'ora check active'
+    key3 = 'oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},check_active]'
+    value_type3 = 3 
+
+
+    monitorAPI.transaction_create_item_on_template(hostgroup_name,
+                                                   template_name, 
+                                                   item_name, 
+                                                   key, 
+                                                   value_type)
+
+    monitorAPI.transaction_create_item_on_template(hostgroup_name,
+                                                   template_name, 
+                                                   item_name2, 
+                                                   key2, 
+                                                   value_type2)
+
+    monitorAPI.transaction_create_item_on_template(hostgroup_name,
+                                                   template_name, 
+                                                   item_name3, 
+                                                   key3, 
+                                                   value_type3)
+
+    host_name = "host721" 
+    ip = "172.16.111.55"
+    port = "10050"
+    hid = monitorAPI.host_get(host_name)
+    if not hid:
+        monitorAPI.host_create(host_name, ip, port, hostgroup_name, template_name)
     
+    '''
+    "{$USERNAME}"="zabbix"
+    "{$PASSWORD}"="zabbix"
+    "{$ADDRESS}"="cfBareos"
+    "{$DATABASE}"="XE"
+    '''
+    macro1 = "{$USERNAME}"
+    value1 = "zabbix"
+    macro2 = "{$PASSWORD}"
+    value2 = "zabbix"
+    macro3 = "{$ADDRESS}"
+    value3 = "cfBareos"
+    macro4 = "{$DATABASE}"
+    value4 = "XE"
 
+    id = monitorAPI.hostmacro_get(host_name, macro1)
+    if not id:
+        monitorAPI.hostmacro_create(host_name, macro1, value1)
+    id2 = monitorAPI.hostmacro_get(host_name, macro2)
+    if not id2:
+        monitorAPI.hostmacro_create(host_name, macro2, value2)
+    id3 = monitorAPI.hostmacro_get(host_name, macro3)
+    if not id3:
+        monitorAPI.hostmacro_create(host_name, macro3, value3)
+    id4 = monitorAPI.hostmacro_get(host_name, macro4)
+    if not id4:
+        monitorAPI.hostmacro_create(host_name, macro4, value4)
+    
+    monitorAPI.history_get(key, value_type)
+    monitorAPI.history_get(key3, value_type3)
+    monitorAPI.host_get_abnormal()
 
-    #hostgroup_create('CF_Group713')
-    #gid = hostgroup_get('CF_Group713')
- 
+    desc3 = "It is fake active" 
+    func3 = "last()" 
+    compareto3 = ">0"
+    triggerid = monitorAPI.trigger_get(host_name, desc3)
+    if not triggerid:
+        triggerid = monitorAPI.trigger_create(desc3, host_name, key3, func3, compareto3)
+    monitorAPI.trigger_get_problem_by_desc(host_name, desc3)
+    monitorAPI.trigger_get_problem_by_host(host_name)
+
 
 if __name__ == '__main__xx':
-    #zapi = ZabbixAPI("http://118.31.109.239/zabbix")
-    #zapi.login("Admin", "zabbix")
-    print ("Connected ZAPI version %s" % zapi.api_version())
-
-
-    #hostgroup_create('CF_Group713')
-    gid = hostgroup_get('CF_Group713')
-    print (gid, type(gid))
-    #hostgroup_delete('CF_Group713')
-
-    #template_create('CF_Template713', 'CF_Group713')
-    tid = template_get('CF_Template713')
-    #template_delete('CF_Template713')
-    print ("tttemplate!!!=id=", tid)
-
-    key = "oracle.query[zabbix,zabbix,cfBareos,XE,tablespace,SYSTEM]"
-    #item_create("CF_Item_tbl_system", key, "CF_Template713")
-    iid = item_get(key)
-    print ("item....:", iid)
-    #item_delete(key)
-
-    #host_create("CF_Host713", "172.16.111.55","10050", "CF_Group713", "CF_Template713")
-    hostid = host_get("CF_Host713")
-    print ("hostid={}".format(hostid))
-    item_get_by_host("CF_Host713")
-    print ("host item get after host created=======")
-    #host_delete('CF_Host713')
- 
-
-    """ 
-    [{u'itemid': u'28272', u'status': u'0', u'lastvalue': u'60', u'hostid': u'10260', u'name': u'CF_Item_tbl_system', u'lastclock': u'1563031694'}]
-    itemid=28272
-    """
     print("-----history----")
     ##history_get(key)
     history_get(key)
