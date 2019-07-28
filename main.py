@@ -9,6 +9,14 @@ if __name__ == '__main__':
 
     oracle.query[zabbix,zabbix,cfBareos,XE,tablespace,SYSTEM]
     '''
+    monitorAPI = MonitorAPI()
+    ''' 
+    host_name = "host721" 
+    hid = monitorAPI.host_get(host_name)
+    print (hid)
+    exit(0) 
+    '''
+
     hostgroup_name = 'hostgroup721'
     template_name = 'template721'
     item_name = 'ora version'

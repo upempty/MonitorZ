@@ -4,7 +4,7 @@
 import sys
 import logging
 from logging.handlers import TimedRotatingFileHandler
-from configs import *
+from centre.configs import *
 import requests
 import json
 
@@ -36,6 +36,9 @@ class ZabbixAPIException(Exception):
 
 
 class ZabbixAPI(object):
+
+    auth = ''
+
     def __init__(self,
                  server='http://localhost/zabbix',
                  session=None,
@@ -63,7 +66,7 @@ connect and read timeouts.)
         })
 
         self.use_authenticate = use_authenticate
-        self.auth = ''
+        #self.auth = ''
         self.id = 0
 
         self.timeout = timeout
@@ -87,10 +90,6 @@ connect and read timeouts.)
         else:
             self.auth = self.user.login(user=user, password=password)
 
-    def check_authentication(self):
-        """Convenience method for calling user.checkAuthentication of the current session"""
-        return self.user.checkAuthentication(sessionid=self.auth)
-
     def confimport(self, confformat='', source='', rules=''):
         """Alias for configuration.import because it clashes with
            Python's import reserved keyword
@@ -113,8 +112,17 @@ connect and read timeouts.)
         res = requests.post(self.url, data=json.dumps(json_data), headers=headers)
         return res.json()
 
-    #api1 with seperate method + params: dict kvargs
     def do_request(self, method, params=None):
+        if method == 'apiinfo.version' or method == 'user.login':
+            return self.call_once(method, params)
+        else:
+            if not self.auth:
+                loginparams = {'user': Zusername, 'password': Zpassword}
+                self.auth = self.call_once('user.login', loginparams)['result']
+            return self.call_once(method, params)
+    
+    #api1 with seperate method + params: dict kvargs
+    def call_once(self, method, params=None):
         request_json = {
             'jsonrpc': '2.0',
             'method': method,
@@ -123,7 +131,7 @@ connect and read timeouts.)
         }
 
         # We don't have to pass the auth token if asking for the apiinfo.version or user.checkAuthentication
-        if self.auth and method != 'apiinfo.version' and method != 'user.checkAuthentication':
+        if self.auth and method != 'apiinfo.version' and method != 'user.login':
             request_json['auth'] = self.auth
 
         logger.debug("Sending: %s", json.dumps(request_json,
@@ -139,30 +147,25 @@ connect and read timeouts.)
 
         # NOTE: Getting a 412 response code means the headers are not in the
         # list of allowed headers.
-        #!!! response.raise_for_status()
-        #logger.debug("xxxxResponse Code: %s", str(response.status_code))
+        # HTTPError
+        #response.raise_for_status()
+        if response.status_code != 200:
+            raise ZabbixAPIException('HTTP error %s: %s' %(response.status_code, response.reason))
         
-        fatal = '' 
         if not len(response.text):
-            #raise ZabbixAPIException("Received empty response")
-            fatal = 'FATAL' 
+            raise ZabbixAPIException("Received empty response")
 
         try:
             response_json = json.loads(response.text)
         except ValueError:
-            #logger.error("Unable to parse json: %s", response.text)
-            fatal = 'FATAL' 
+            logger.error("Unable to parse json: %s", response.text)
             response_json = {}
-            '''
             raise ZabbixAPIException(
                 "Unable to parse json: %s" % response.text
             )
-            '''
-        '''
         logger.debug("Response Body: %s", json.dumps(response_json,
                                                      indent=4,
                                                      separators=(',', ': ')))
-        '''
         self.id += 1
 
         if 'error' in response_json:  # some exception
@@ -173,7 +176,7 @@ connect and read timeouts.)
                 message=response_json['error']['message'],
                 data=response_json['error']['data']
             )
-            #raise ZabbixAPIException(msg, response_json['error']['code'])
+            raise ZabbixAPIException(msg, response_json['error']['code'])
 
         return response_json
 
@@ -193,24 +196,14 @@ class ZabbixAPIObjectClass(object):
         """Dynamically create a method (ie: get)"""
 
         def fn(*args, **kwargs):
-            fatal = ''
             if args and kwargs:
-                #raise TypeError("Found both args and kwargs")
-                fatal = 'FATAL'
-
+                raise TypeError("Found both args and kwargs")
             
-            resp = self.parent.do_request(
-                '{0}.{1}'.format(self.name, attr),
-                args or kwargs
-            )
-            if not resp:
-                return {}
-            return resp['result']
-        return fn
-'''
-
-            return self.parent.do_request(
+            return self.parent.call_once(
                 '{0}.{1}'.format(self.name, attr),
                 args or kwargs
             )['result']
-'''
+
+        return fn
+
+
