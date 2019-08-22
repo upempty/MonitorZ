@@ -3,7 +3,12 @@
 
 from centre.monitorapi import *
 
+'''
+zabbix_server (Zabbix) 3.2.11
+zabbix_agentd (daemon) (Zabbix) 3.2.1
+# data_type, value_type: 0 numeric float,1-character,2-log,3-numeric unsigned,4-text
 
+'''
 if __name__ == '__main__':
     '''
 
@@ -16,44 +21,97 @@ if __name__ == '__main__':
     print (hid)
     exit(0) 
     '''
+    agent1 = "192.168.1.7"
+    db1 = "orcl"
+    hostgroup_name = 'hostgroup823'
+    template_name = 'template823'
 
-    hostgroup_name = 'hostgroup721'
-    template_name = 'template721'
-    item_name = 'ora version'
-    key = 'oracle.query[zabbix,zabbix,cfBareos,XE,version]'
-    value_type = 1
-    item_name2 = 'ora db size'
-    key2 = 'oracle.query[zabbix,zabbix,cfBareos,XE,dbsize]'
-    value_type2 = 3 
-    item_name3 = 'ora check active'
-    key3 = 'oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},check_active]'
-    value_type3 = 3 
+    #key = 'oracle.query[zabbix,zabbix,{},{},{}]'.format(agent1,db1,'version')
+    #key = 'oracle.query[zabbix,zabbix,cfBareos,XE,version]'
 
+    # "oracle.query[zabbix,zabbix,192.168.1.7,orcl,version]"    
+    input_items = [{"func":"version", "params":"version","value_type":1}, 
+                   {"func":"dbname", "params":"dbname","value_type":1},
+                   {"func":"dbsystime", "params":"dbsystime","value_type":1},
+                   {"func":"logmode", "params":"logmode","value_type":1},  
+                   {"func":"dbstatus", "params":"dbstatus","value_type":1},  
+                   {"func":"currentscn", "params":"currentscn","value_type":3},  
+                   {"func":"archthreadseq", "params":"archthreadseq","value_type":1},  
+                   {"func":"flash_areausage", "params":"flash_areausage","value_type":0},  
+                   {"func":"backup_status", "params":"backup_status","value_type":1},  
+                   {"func":"log_transfermode", "params":"log_transfermode","value_type":1},  
+                   {"func":"show_users", "params":"show_users","value_type":4},  
+                   {"func":"user_status", "params":"user_status,SYSTEM","value_type":1},  
+                   {"func":"tablespace", "params":"tablespace,SYSTEM","value_type":3},  
+                   {"func":"query_sessions", "params":"query_sessions","value_type":3},  
+                   {"func":"query_lock", "params":"query_lock","value_type":3},  
+                   {"func":"deadlocks", "params":"deadlocks","value_type":3},  
+                   {"func":"query_redologs", "params":"query_redologs","value_type":3},  
+                   {"func":"query_rollbacks", "params":"query_rollbacks","value_type":3},  
+                   {"func":"check_archive", "params":"check_archive,DATA","value_type":3},  
+                   {"func":"logfilesync", "params":"logfilesync","value_type":3},  
+                   {"func":"bufbusywaits", "params":"bufbusywaits","value_type":3},  
+                   {"func":"lastarclog", "params":"lastarclog","value_type":3},  
+                   {"func":"redowrites", "params":"redowrites","value_type":3},  
+                   {"func":"rollbacks", "params":"rollbacks","value_type":3},  
+                   {"func":"commits", "params":"commits","value_type":3},  
+                   {"func":"dbfilesize", "params":"dbfilesize","value_type":3},  
+                   {"func":"rcachehit", "params":"rcachehit","value_type":0},  
+                   {"func":"dsksortratio", "params":"dsksortratio","value_type":0},  
+                   {"func":"linux_cpucpu", "params":"system.cpu.util[,user]","value_type":0},  
+                   {"func":"linux_memorymem", "params":"vm.memory.size[pused]","value_type":0},  
+                  ]
 
-    monitorAPI.transaction_create_item_on_template(hostgroup_name,
-                                                   template_name, 
-                                                   item_name, 
-                                                   key, 
-                                                   value_type)
+    #input_items = [{"func":"linux_cpucpu", "params":"system.cpu.util[,user]","value_type":0}]  
+    '''
+    item_name = input_items[0]["func"]
+    key       = 'oracle.query[zabbix,zabbix,{},{},{}]'.format(agent1,db1,input_items[0]["params"])
+    value_type = input_items[0]["value_type"] 
 
-    monitorAPI.transaction_create_item_on_template(hostgroup_name,
-                                                   template_name, 
-                                                   item_name2, 
-                                                   key2, 
-                                                   value_type2)
+    print (key)
+    print (input_items[0]["func"], item_name, input_items[0]["value_type"])
+    print (item_name, key, value_type, len(input_items))
+    '''
 
-    monitorAPI.transaction_create_item_on_template(hostgroup_name,
-                                                   template_name, 
-                                                   item_name3, 
-                                                   key3, 
-                                                   value_type3)
+    for item in input_items:
+        item_name = item["func"]
+        if item_name.startswith("linux_"):
+            key       = item["params"]
+        else: 
+            key       = 'oracle.query[zabbix,zabbix,{},{},{}]'.format(agent1,db1,item["params"])
+        value_type = item["value_type"] 
 
-    host_name = "host721" 
-    ip = "172.16.111.55"
+        monitorAPI.transaction_create_item_on_template(hostgroup_name,
+                                                       template_name, 
+                                                       item_name, 
+                                                       key, 
+                                                       value_type)
+
+    host_name = "host823" 
+    #ip = "172.16.111.55"
+    ip = agent1
     port = "10050"
     hid = monitorAPI.host_get(host_name)
     if not hid:
         monitorAPI.host_create(host_name, ip, port, hostgroup_name, template_name)
+
+
+
+    for item in input_items:
+        item_name = item["func"]
+        if item_name.startswith("linux_"):
+            key       = item["params"]
+        else: 
+            key       = 'oracle.query[zabbix,zabbix,{},{},{}]'.format(agent1,db1,item["params"])
+        value_type = item["value_type"] 
+        print ('\n\n')
+        print (item_name, key, value_type)
+        monitorAPI.history_get(key, value_type)
+
+    #!!!!!!!!!
+    sys.exit() 
+
+
     
     '''
     "{$USERNAME}"="zabbix"
@@ -82,7 +140,7 @@ if __name__ == '__main__':
     id4 = monitorAPI.hostmacro_get(host_name, macro4)
     if not id4:
         monitorAPI.hostmacro_create(host_name, macro4, value4)
-    
+    print("Beggen")
     monitorAPI.history_get(key, value_type)
     monitorAPI.history_get(key3, value_type3)
     monitorAPI.host_get_abnormal()
@@ -99,29 +157,16 @@ if __name__ == '__main__':
 
 
  
-
+    print("williamtest1")
     #OracleTemplateHostGroup721 needs to be created as first condition
+    ''' 
     hostgroup_namebatch = "OracleTemplateHostGroup721" 
     gid = monitorAPI.hostgroup_get(hostgroup_namebatch)
     if not gid:
        gid = monitorAPI.hostgroup_create(hostgroup_namebatch)
     path = './centre/xml' 
     monitorAPI.template_import(path)
-
-if __name__ == '__main__xx':
-    print("-----history----")
-    ##history_get(key)
-    history_get(key)
-
-    desc="tablespace>10 trigger"
-    host="CF_Host713"
-    key="oracle.query[zabbix,zabbix,cfBareos,XE,tablespace,SYSTEM]"
-    #trigger_create_lastfun(desc, host, key)
-    print ('0-----get trigger-----')
-    ##trigger_get_by_host(host)
-    trigger_get_by_host(host)
-    print ('1-----get trigger-----')
-    #trigger_delete(host) 
+    '''
 
 
 

@@ -1,0 +1,1532 @@
+JSON-RPC Server Endpoint: http://192.168.1.131/zabbix/api_jsonrpc.php
+Sending: {
+    "params": {
+        "password": "zabbix",
+        "user": "Admin"
+    },
+    "jsonrpc": "2.0",
+    "method": "user.login",
+    "id": 0
+}
+Response Code: 200, {"jsonrpc":"2.0","result":"59babbf831c620c73e0c9f6ff4f44a0a","id":0}
+Response Body: {
+    "jsonrpc": "2.0",
+    "result": "59babbf831c620c73e0c9f6ff4f44a0a",
+    "id": 0
+}
+Sending: {
+    "params": {
+        "filter": {
+            "name": [
+                "hostgroup721"
+            ]
+        }
+    },
+    "jsonrpc": "2.0",
+    "method": "hostgroup.get",
+    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
+    "id": 1
+}
+Response Code: 200, {"jsonrpc":"2.0","result":[{"groupid":"8","name":"hostgroup721","internal":"0","flags":"0"}],"id":1}
+Response Body: {
+    "jsonrpc": "2.0",
+    "result": [
+        {
+            "internal": "0",
+            "flags": "0",
+            "groupid": "8",
+            "name": "hostgroup721"
+        }
+    ],
+    "id": 1
+}
+Sending: {
+    "params": {
+        "filter": {
+            "host": [
+                "template721"
+            ]
+        },
+        "output": "extend"
+    },
+    "jsonrpc": "2.0",
+    "method": "template.get",
+    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
+    "id": 2
+}
+Response Code: 200, {"jsonrpc":"2.0","result":[{"proxy_hostid":"0","host":"template721","status":"3","disable_until":"0","error":"","available":"0","errors_from":"0","lastaccess":"0","ipmi_authtype":"0","ipmi_privilege":"2","ipmi_username":"","ipmi_password":"","ipmi_disable_until":"0","ipmi_available":"0","snmp_disable_until":"0","snmp_available":"0","maintenanceid":"0","maintenance_status":"0","maintenance_type":"0","maintenance_from":"0","ipmi_errors_from":"0","snmp_errors_from":"0","ipmi_error":"","snmp_error":"","jmx_disable_until":"0","jmx_available":"0","jmx_errors_from":"0","jmx_error":"","name":"template721","flags":"0","templateid":"10105","description":"","tls_connect":"1","tls_accept":"1","tls_issuer":"","tls_subject":"","tls_psk_identity":"","tls_psk":""}],"id":2}
+Response Body: {
+    "jsonrpc": "2.0",
+    "result": [
+        {
+            "available": "0",
+            "tls_connect": "1",
+            "maintenance_type": "0",
+            "ipmi_errors_from": "0",
+            "ipmi_username": "",
+            "snmp_disable_until": "0",
+            "ipmi_authtype": "0",
+            "ipmi_disable_until": "0",
+            "lastaccess": "0",
+            "snmp_error": "",
+            "tls_psk": "",
+            "ipmi_privilege": "2",
+            "jmx_error": "",
+            "jmx_available": "0",
+            "maintenanceid": "0",
+            "snmp_available": "0",
+            "tls_psk_identity": "",
+            "status": "3",
+            "description": "",
+            "tls_accept": "1",
+            "host": "template721",
+            "disable_until": "0",
+            "ipmi_password": "",
+            "templateid": "10105",
+            "tls_issuer": "",
+            "ipmi_available": "0",
+            "maintenance_status": "0",
+            "snmp_errors_from": "0",
+            "ipmi_error": "",
+            "proxy_hostid": "0",
+            "name": "template721",
+            "jmx_errors_from": "0",
+            "jmx_disable_until": "0",
+            "flags": "0",
+            "error": "",
+            "maintenance_from": "0",
+            "tls_subject": "",
+            "errors_from": "0"
+        }
+    ],
+    "id": 2
+}
+Sending: {
+    "params": {
+        "output": "extend",
+        "search": {
+            "key_": "oracle.query[zabbix,zabbix,cfBareos,XE,version]"
+        },
+        "sortfield": "name"
+    },
+    "jsonrpc": "2.0",
+    "method": "item.get",
+    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
+    "id": 3
+}
+Response Code: 200, {"jsonrpc":"2.0","result":[],"id":3}
+Response Body: {
+    "jsonrpc": "2.0",
+    "result": [],
+    "id": 3
+}
+Sending: {
+    "params": {
+        "filter": {
+            "host": [
+                "template721"
+            ]
+        },
+        "output": "extend"
+    },
+    "jsonrpc": "2.0",
+    "method": "template.get",
+    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
+    "id": 4
+}
+Response Code: 200, {"jsonrpc":"2.0","result":[{"proxy_hostid":"0","host":"template721","status":"3","disable_until":"0","error":"","available":"0","errors_from":"0","lastaccess":"0","ipmi_authtype":"0","ipmi_privilege":"2","ipmi_username":"","ipmi_password":"","ipmi_disable_until":"0","ipmi_available":"0","snmp_disable_until":"0","snmp_available":"0","maintenanceid":"0","maintenance_status":"0","maintenance_type":"0","maintenance_from":"0","ipmi_errors_from":"0","snmp_errors_from":"0","ipmi_error":"","snmp_error":"","jmx_disable_until":"0","jmx_available":"0","jmx_errors_from":"0","jmx_error":"","name":"template721","flags":"0","templateid":"10105","description":"","tls_connect":"1","tls_accept":"1","tls_issuer":"","tls_subject":"","tls_psk_identity":"","tls_psk":""}],"id":4}
+Response Body: {
+    "jsonrpc": "2.0",
+    "result": [
+        {
+            "available": "0",
+            "tls_connect": "1",
+            "maintenance_type": "0",
+            "ipmi_errors_from": "0",
+            "ipmi_username": "",
+            "snmp_disable_until": "0",
+            "ipmi_authtype": "0",
+            "ipmi_disable_until": "0",
+            "lastaccess": "0",
+            "snmp_error": "",
+            "tls_psk": "",
+            "ipmi_privilege": "2",
+            "jmx_error": "",
+            "jmx_available": "0",
+            "maintenanceid": "0",
+            "snmp_available": "0",
+            "tls_psk_identity": "",
+            "status": "3",
+            "description": "",
+            "tls_accept": "1",
+            "host": "template721",
+            "disable_until": "0",
+            "ipmi_password": "",
+            "templateid": "10105",
+            "tls_issuer": "",
+            "ipmi_available": "0",
+            "maintenance_status": "0",
+            "snmp_errors_from": "0",
+            "ipmi_error": "",
+            "proxy_hostid": "0",
+            "name": "template721",
+            "jmx_errors_from": "0",
+            "jmx_disable_until": "0",
+            "flags": "0",
+            "error": "",
+            "maintenance_from": "0",
+            "tls_subject": "",
+            "errors_from": "0"
+        }
+    ],
+    "id": 4
+}
+Sending: {
+    "params": {
+        "interfaceid": "",
+        "hostid": "10105",
+        "key_": "oracle.query[zabbix,zabbix,cfBareos,XE,version]",
+        "name": "ora version",
+        "delay": "60s",
+        "value_type": 1,
+        "type": 0
+    },
+    "jsonrpc": "2.0",
+    "method": "item.create",
+    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
+    "id": 5
+}
+Response Code: 200, {"jsonrpc":"2.0","error":{"code":-32500,"message":"Application error.","data":"Incorrect value \"60s\" for int field \"delay\"."},"id":5}
+Response Body: {
+    "jsonrpc": "2.0",
+    "id": 5,
+    "error": {
+        "message": "Application error.",
+        "code": -32500,
+        "data": "Incorrect value \"60s\" for int field \"delay\"."
+    }
+}
+Try with Exception
+(u'Error -32500: Application error., Incorrect value "60s" for int field "delay".', -32500)
+Try with Exception
+'NoneType' object has no attribute '__getitem__'
+Sending: {
+    "params": {
+        "filter": {
+            "name": [
+                "hostgroup721"
+            ]
+        }
+    },
+    "jsonrpc": "2.0",
+    "method": "hostgroup.get",
+    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
+    "id": 6
+}
+Response Code: 200, {"jsonrpc":"2.0","result":[{"groupid":"8","name":"hostgroup721","internal":"0","flags":"0"}],"id":6}
+Response Body: {
+    "jsonrpc": "2.0",
+    "result": [
+        {
+            "internal": "0",
+            "flags": "0",
+            "groupid": "8",
+            "name": "hostgroup721"
+        }
+    ],
+    "id": 6
+}
+Sending: {
+    "params": {
+        "filter": {
+            "host": [
+                "template721"
+            ]
+        },
+        "output": "extend"
+    },
+    "jsonrpc": "2.0",
+    "method": "template.get",
+    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
+    "id": 7
+}
+Response Code: 200, {"jsonrpc":"2.0","result":[{"proxy_hostid":"0","host":"template721","status":"3","disable_until":"0","error":"","available":"0","errors_from":"0","lastaccess":"0","ipmi_authtype":"0","ipmi_privilege":"2","ipmi_username":"","ipmi_password":"","ipmi_disable_until":"0","ipmi_available":"0","snmp_disable_until":"0","snmp_available":"0","maintenanceid":"0","maintenance_status":"0","maintenance_type":"0","maintenance_from":"0","ipmi_errors_from":"0","snmp_errors_from":"0","ipmi_error":"","snmp_error":"","jmx_disable_until":"0","jmx_available":"0","jmx_errors_from":"0","jmx_error":"","name":"template721","flags":"0","templateid":"10105","description":"","tls_connect":"1","tls_accept":"1","tls_issuer":"","tls_subject":"","tls_psk_identity":"","tls_psk":""}],"id":7}
+Response Body: {
+    "jsonrpc": "2.0",
+    "result": [
+        {
+            "available": "0",
+            "tls_connect": "1",
+            "maintenance_type": "0",
+            "ipmi_errors_from": "0",
+            "ipmi_username": "",
+            "snmp_disable_until": "0",
+            "ipmi_authtype": "0",
+            "ipmi_disable_until": "0",
+            "lastaccess": "0",
+            "snmp_error": "",
+            "tls_psk": "",
+            "ipmi_privilege": "2",
+            "jmx_error": "",
+            "jmx_available": "0",
+            "maintenanceid": "0",
+            "snmp_available": "0",
+            "tls_psk_identity": "",
+            "status": "3",
+            "description": "",
+            "tls_accept": "1",
+            "host": "template721",
+            "disable_until": "0",
+            "ipmi_password": "",
+            "templateid": "10105",
+            "tls_issuer": "",
+            "ipmi_available": "0",
+            "maintenance_status": "0",
+            "snmp_errors_from": "0",
+            "ipmi_error": "",
+            "proxy_hostid": "0",
+            "name": "template721",
+            "jmx_errors_from": "0",
+            "jmx_disable_until": "0",
+            "flags": "0",
+            "error": "",
+            "maintenance_from": "0",
+            "tls_subject": "",
+            "errors_from": "0"
+        }
+    ],
+    "id": 7
+}
+Sending: {
+    "params": {
+        "output": "extend",
+        "search": {
+            "key_": "oracle.query[zabbix,zabbix,cfBareos,XE,dbsize]"
+        },
+        "sortfield": "name"
+    },
+    "jsonrpc": "2.0",
+    "method": "item.get",
+    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
+    "id": 8
+}
+Response Code: 200, {"jsonrpc":"2.0","result":[],"id":8}
+Response Body: {
+    "jsonrpc": "2.0",
+    "result": [],
+    "id": 8
+}
+Sending: {
+    "params": {
+        "filter": {
+            "host": [
+                "template721"
+            ]
+        },
+        "output": "extend"
+    },
+    "jsonrpc": "2.0",
+    "method": "template.get",
+    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
+    "id": 9
+}
+Response Code: 200, {"jsonrpc":"2.0","result":[{"proxy_hostid":"0","host":"template721","status":"3","disable_until":"0","error":"","available":"0","errors_from":"0","lastaccess":"0","ipmi_authtype":"0","ipmi_privilege":"2","ipmi_username":"","ipmi_password":"","ipmi_disable_until":"0","ipmi_available":"0","snmp_disable_until":"0","snmp_available":"0","maintenanceid":"0","maintenance_status":"0","maintenance_type":"0","maintenance_from":"0","ipmi_errors_from":"0","snmp_errors_from":"0","ipmi_error":"","snmp_error":"","jmx_disable_until":"0","jmx_available":"0","jmx_errors_from":"0","jmx_error":"","name":"template721","flags":"0","templateid":"10105","description":"","tls_connect":"1","tls_accept":"1","tls_issuer":"","tls_subject":"","tls_psk_identity":"","tls_psk":""}],"id":9}
+Response Body: {
+    "jsonrpc": "2.0",
+    "result": [
+        {
+            "available": "0",
+            "tls_connect": "1",
+            "maintenance_type": "0",
+            "ipmi_errors_from": "0",
+            "ipmi_username": "",
+            "snmp_disable_until": "0",
+            "ipmi_authtype": "0",
+            "ipmi_disable_until": "0",
+            "lastaccess": "0",
+            "snmp_error": "",
+            "tls_psk": "",
+            "ipmi_privilege": "2",
+            "jmx_error": "",
+            "jmx_available": "0",
+            "maintenanceid": "0",
+            "snmp_available": "0",
+            "tls_psk_identity": "",
+            "status": "3",
+            "description": "",
+            "tls_accept": "1",
+            "host": "template721",
+            "disable_until": "0",
+            "ipmi_password": "",
+            "templateid": "10105",
+            "tls_issuer": "",
+            "ipmi_available": "0",
+            "maintenance_status": "0",
+            "snmp_errors_from": "0",
+            "ipmi_error": "",
+            "proxy_hostid": "0",
+            "name": "template721",
+            "jmx_errors_from": "0",
+            "jmx_disable_until": "0",
+            "flags": "0",
+            "error": "",
+            "maintenance_from": "0",
+            "tls_subject": "",
+            "errors_from": "0"
+        }
+    ],
+    "id": 9
+}
+Sending: {
+    "params": {
+        "interfaceid": "",
+        "hostid": "10105",
+        "key_": "oracle.query[zabbix,zabbix,cfBareos,XE,dbsize]",
+        "name": "ora db size",
+        "delay": "60s",
+        "value_type": 3,
+        "type": 0
+    },
+    "jsonrpc": "2.0",
+    "method": "item.create",
+    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
+    "id": 10
+}
+Response Code: 200, {"jsonrpc":"2.0","error":{"code":-32500,"message":"Application error.","data":"Incorrect value \"60s\" for int field \"delay\"."},"id":10}
+Response Body: {
+    "jsonrpc": "2.0",
+    "id": 10,
+    "error": {
+        "message": "Application error.",
+        "code": -32500,
+        "data": "Incorrect value \"60s\" for int field \"delay\"."
+    }
+}
+Try with Exception
+(u'Error -32500: Application error., Incorrect value "60s" for int field "delay".', -32500)
+Try with Exception
+'NoneType' object has no attribute '__getitem__'
+Sending: {
+    "params": {
+        "filter": {
+            "name": [
+                "hostgroup721"
+            ]
+        }
+    },
+    "jsonrpc": "2.0",
+    "method": "hostgroup.get",
+    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
+    "id": 11
+}
+Response Code: 200, {"jsonrpc":"2.0","result":[{"groupid":"8","name":"hostgroup721","internal":"0","flags":"0"}],"id":11}
+Response Body: {
+    "jsonrpc": "2.0",
+    "result": [
+        {
+            "internal": "0",
+            "flags": "0",
+            "groupid": "8",
+            "name": "hostgroup721"
+        }
+    ],
+    "id": 11
+}
+Sending: {
+    "params": {
+        "filter": {
+            "host": [
+                "template721"
+            ]
+        },
+        "output": "extend"
+    },
+    "jsonrpc": "2.0",
+    "method": "template.get",
+    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
+    "id": 12
+}
+Response Code: 200, {"jsonrpc":"2.0","result":[{"proxy_hostid":"0","host":"template721","status":"3","disable_until":"0","error":"","available":"0","errors_from":"0","lastaccess":"0","ipmi_authtype":"0","ipmi_privilege":"2","ipmi_username":"","ipmi_password":"","ipmi_disable_until":"0","ipmi_available":"0","snmp_disable_until":"0","snmp_available":"0","maintenanceid":"0","maintenance_status":"0","maintenance_type":"0","maintenance_from":"0","ipmi_errors_from":"0","snmp_errors_from":"0","ipmi_error":"","snmp_error":"","jmx_disable_until":"0","jmx_available":"0","jmx_errors_from":"0","jmx_error":"","name":"template721","flags":"0","templateid":"10105","description":"","tls_connect":"1","tls_accept":"1","tls_issuer":"","tls_subject":"","tls_psk_identity":"","tls_psk":""}],"id":12}
+Response Body: {
+    "jsonrpc": "2.0",
+    "result": [
+        {
+            "available": "0",
+            "tls_connect": "1",
+            "maintenance_type": "0",
+            "ipmi_errors_from": "0",
+            "ipmi_username": "",
+            "snmp_disable_until": "0",
+            "ipmi_authtype": "0",
+            "ipmi_disable_until": "0",
+            "lastaccess": "0",
+            "snmp_error": "",
+            "tls_psk": "",
+            "ipmi_privilege": "2",
+            "jmx_error": "",
+            "jmx_available": "0",
+            "maintenanceid": "0",
+            "snmp_available": "0",
+            "tls_psk_identity": "",
+            "status": "3",
+            "description": "",
+            "tls_accept": "1",
+            "host": "template721",
+            "disable_until": "0",
+            "ipmi_password": "",
+            "templateid": "10105",
+            "tls_issuer": "",
+            "ipmi_available": "0",
+            "maintenance_status": "0",
+            "snmp_errors_from": "0",
+            "ipmi_error": "",
+            "proxy_hostid": "0",
+            "name": "template721",
+            "jmx_errors_from": "0",
+            "jmx_disable_until": "0",
+            "flags": "0",
+            "error": "",
+            "maintenance_from": "0",
+            "tls_subject": "",
+            "errors_from": "0"
+        }
+    ],
+    "id": 12
+}
+Sending: {
+    "params": {
+        "output": "extend",
+        "search": {
+            "key_": "oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},check_active]"
+        },
+        "sortfield": "name"
+    },
+    "jsonrpc": "2.0",
+    "method": "item.get",
+    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
+    "id": 13
+}
+Response Code: 200, {"jsonrpc":"2.0","result":[],"id":13}
+Response Body: {
+    "jsonrpc": "2.0",
+    "result": [],
+    "id": 13
+}
+Sending: {
+    "params": {
+        "filter": {
+            "host": [
+                "template721"
+            ]
+        },
+        "output": "extend"
+    },
+    "jsonrpc": "2.0",
+    "method": "template.get",
+    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
+    "id": 14
+}
+Response Code: 200, {"jsonrpc":"2.0","result":[{"proxy_hostid":"0","host":"template721","status":"3","disable_until":"0","error":"","available":"0","errors_from":"0","lastaccess":"0","ipmi_authtype":"0","ipmi_privilege":"2","ipmi_username":"","ipmi_password":"","ipmi_disable_until":"0","ipmi_available":"0","snmp_disable_until":"0","snmp_available":"0","maintenanceid":"0","maintenance_status":"0","maintenance_type":"0","maintenance_from":"0","ipmi_errors_from":"0","snmp_errors_from":"0","ipmi_error":"","snmp_error":"","jmx_disable_until":"0","jmx_available":"0","jmx_errors_from":"0","jmx_error":"","name":"template721","flags":"0","templateid":"10105","description":"","tls_connect":"1","tls_accept":"1","tls_issuer":"","tls_subject":"","tls_psk_identity":"","tls_psk":""}],"id":14}
+Response Body: {
+    "jsonrpc": "2.0",
+    "result": [
+        {
+            "available": "0",
+            "tls_connect": "1",
+            "maintenance_type": "0",
+            "ipmi_errors_from": "0",
+            "ipmi_username": "",
+            "snmp_disable_until": "0",
+            "ipmi_authtype": "0",
+            "ipmi_disable_until": "0",
+            "lastaccess": "0",
+            "snmp_error": "",
+            "tls_psk": "",
+            "ipmi_privilege": "2",
+            "jmx_error": "",
+            "jmx_available": "0",
+            "maintenanceid": "0",
+            "snmp_available": "0",
+            "tls_psk_identity": "",
+            "status": "3",
+            "description": "",
+            "tls_accept": "1",
+            "host": "template721",
+            "disable_until": "0",
+            "ipmi_password": "",
+            "templateid": "10105",
+            "tls_issuer": "",
+            "ipmi_available": "0",
+            "maintenance_status": "0",
+            "snmp_errors_from": "0",
+            "ipmi_error": "",
+            "proxy_hostid": "0",
+            "name": "template721",
+            "jmx_errors_from": "0",
+            "jmx_disable_until": "0",
+            "flags": "0",
+            "error": "",
+            "maintenance_from": "0",
+            "tls_subject": "",
+            "errors_from": "0"
+        }
+    ],
+    "id": 14
+}
+Sending: {
+    "params": {
+        "interfaceid": "",
+        "hostid": "10105",
+        "key_": "oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},check_active]",
+        "name": "ora check active",
+        "delay": "60s",
+        "value_type": 3,
+        "type": 0
+    },
+    "jsonrpc": "2.0",
+    "method": "item.create",
+    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
+    "id": 15
+}
+Response Code: 200, {"jsonrpc":"2.0","error":{"code":-32500,"message":"Application error.","data":"Incorrect value \"60s\" for int field \"delay\"."},"id":15}
+Response Body: {
+    "jsonrpc": "2.0",
+    "id": 15,
+    "error": {
+        "message": "Application error.",
+        "code": -32500,
+        "data": "Incorrect value \"60s\" for int field \"delay\"."
+    }
+}
+Try with Exception
+(u'Error -32500: Application error., Incorrect value "60s" for int field "delay".', -32500)
+Try with Exception
+'NoneType' object has no attribute '__getitem__'
+Sending: {
+    "params": {
+        "filter": {
+            "host": "host721"
+        },
+        "output": "extend"
+    },
+    "jsonrpc": "2.0",
+    "method": "host.get",
+    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
+    "id": 16
+}
+Response Code: 200, {"jsonrpc":"2.0","result":[{"hostid":"10106","proxy_hostid":"0","host":"host721","status":"0","disable_until":"0","error":"","available":"0","errors_from":"0","lastaccess":"0","ipmi_authtype":"0","ipmi_privilege":"2","ipmi_username":"","ipmi_password":"","ipmi_disable_until":"0","ipmi_available":"0","snmp_disable_until":"0","snmp_available":"0","maintenanceid":"0","maintenance_status":"0","maintenance_type":"0","maintenance_from":"0","ipmi_errors_from":"0","snmp_errors_from":"0","ipmi_error":"","snmp_error":"","jmx_disable_until":"0","jmx_available":"0","jmx_errors_from":"0","jmx_error":"","name":"host721","flags":"0","templateid":"0","description":"","tls_connect":"1","tls_accept":"1","tls_issuer":"","tls_subject":"","tls_psk_identity":"","tls_psk":""}],"id":16}
+Response Body: {
+    "jsonrpc": "2.0",
+    "result": [
+        {
+            "available": "0",
+            "tls_connect": "1",
+            "maintenance_type": "0",
+            "ipmi_errors_from": "0",
+            "ipmi_username": "",
+            "snmp_disable_until": "0",
+            "ipmi_authtype": "0",
+            "ipmi_disable_until": "0",
+            "lastaccess": "0",
+            "snmp_error": "",
+            "tls_psk": "",
+            "ipmi_privilege": "2",
+            "jmx_error": "",
+            "jmx_available": "0",
+            "maintenanceid": "0",
+            "snmp_available": "0",
+            "tls_psk_identity": "",
+            "status": "0",
+            "description": "",
+            "tls_accept": "1",
+            "host": "host721",
+            "disable_until": "0",
+            "ipmi_password": "",
+            "templateid": "0",
+            "tls_issuer": "",
+            "ipmi_available": "0",
+            "maintenance_status": "0",
+            "snmp_errors_from": "0",
+            "ipmi_error": "",
+            "proxy_hostid": "0",
+            "hostid": "10106",
+            "name": "host721",
+            "jmx_errors_from": "0",
+            "jmx_disable_until": "0",
+            "flags": "0",
+            "error": "",
+            "maintenance_from": "0",
+            "tls_subject": "",
+            "errors_from": "0"
+        }
+    ],
+    "id": 16
+}
+Sending: {
+    "params": {
+        "filter": {
+            "host": "host721"
+        },
+        "output": "extend"
+    },
+    "jsonrpc": "2.0",
+    "method": "host.get",
+    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
+    "id": 17
+}
+Response Code: 200, {"jsonrpc":"2.0","result":[{"hostid":"10106","proxy_hostid":"0","host":"host721","status":"0","disable_until":"0","error":"","available":"0","errors_from":"0","lastaccess":"0","ipmi_authtype":"0","ipmi_privilege":"2","ipmi_username":"","ipmi_password":"","ipmi_disable_until":"0","ipmi_available":"0","snmp_disable_until":"0","snmp_available":"0","maintenanceid":"0","maintenance_status":"0","maintenance_type":"0","maintenance_from":"0","ipmi_errors_from":"0","snmp_errors_from":"0","ipmi_error":"","snmp_error":"","jmx_disable_until":"0","jmx_available":"0","jmx_errors_from":"0","jmx_error":"","name":"host721","flags":"0","templateid":"0","description":"","tls_connect":"1","tls_accept":"1","tls_issuer":"","tls_subject":"","tls_psk_identity":"","tls_psk":""}],"id":17}
+Response Body: {
+    "jsonrpc": "2.0",
+    "result": [
+        {
+            "available": "0",
+            "tls_connect": "1",
+            "maintenance_type": "0",
+            "ipmi_errors_from": "0",
+            "ipmi_username": "",
+            "snmp_disable_until": "0",
+            "ipmi_authtype": "0",
+            "ipmi_disable_until": "0",
+            "lastaccess": "0",
+            "snmp_error": "",
+            "tls_psk": "",
+            "ipmi_privilege": "2",
+            "jmx_error": "",
+            "jmx_available": "0",
+            "maintenanceid": "0",
+            "snmp_available": "0",
+            "tls_psk_identity": "",
+            "status": "0",
+            "description": "",
+            "tls_accept": "1",
+            "host": "host721",
+            "disable_until": "0",
+            "ipmi_password": "",
+            "templateid": "0",
+            "tls_issuer": "",
+            "ipmi_available": "0",
+            "maintenance_status": "0",
+            "snmp_errors_from": "0",
+            "ipmi_error": "",
+            "proxy_hostid": "0",
+            "hostid": "10106",
+            "name": "host721",
+            "jmx_errors_from": "0",
+            "jmx_disable_until": "0",
+            "flags": "0",
+            "error": "",
+            "maintenance_from": "0",
+            "tls_subject": "",
+            "errors_from": "0"
+        }
+    ],
+    "id": 17
+}
+Sending: {
+    "params": {
+        "output": "extend",
+        "hostids": "10106"
+    },
+    "jsonrpc": "2.0",
+    "method": "usermacro.get",
+    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
+    "id": 18
+}
+Response Code: 200, {"jsonrpc":"2.0","result":[{"hostmacroid":"1","hostid":"10106","macro":"{$USERNAME}","value":"zabbix"},{"hostmacroid":"2","hostid":"10106","macro":"{$PASSWORD}","value":"zabbix"},{"hostmacroid":"3","hostid":"10106","macro":"{$ADDRESS}","value":"cfBareos"},{"hostmacroid":"4","hostid":"10106","macro":"{$DATABASE}","value":"XE"}],"id":18}
+Response Body: {
+    "jsonrpc": "2.0",
+    "result": [
+        {
+            "macro": "{$USERNAME}",
+            "hostmacroid": "1",
+            "hostid": "10106",
+            "value": "zabbix"
+        },
+        {
+            "macro": "{$PASSWORD}",
+            "hostmacroid": "2",
+            "hostid": "10106",
+            "value": "zabbix"
+        },
+        {
+            "macro": "{$ADDRESS}",
+            "hostmacroid": "3",
+            "hostid": "10106",
+            "value": "cfBareos"
+        },
+        {
+            "macro": "{$DATABASE}",
+            "hostmacroid": "4",
+            "hostid": "10106",
+            "value": "XE"
+        }
+    ],
+    "id": 18
+}
+Sending: {
+    "params": {
+        "filter": {
+            "host": "host721"
+        },
+        "output": "extend"
+    },
+    "jsonrpc": "2.0",
+    "method": "host.get",
+    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
+    "id": 19
+}
+Response Code: 200, {"jsonrpc":"2.0","result":[{"hostid":"10106","proxy_hostid":"0","host":"host721","status":"0","disable_until":"0","error":"","available":"0","errors_from":"0","lastaccess":"0","ipmi_authtype":"0","ipmi_privilege":"2","ipmi_username":"","ipmi_password":"","ipmi_disable_until":"0","ipmi_available":"0","snmp_disable_until":"0","snmp_available":"0","maintenanceid":"0","maintenance_status":"0","maintenance_type":"0","maintenance_from":"0","ipmi_errors_from":"0","snmp_errors_from":"0","ipmi_error":"","snmp_error":"","jmx_disable_until":"0","jmx_available":"0","jmx_errors_from":"0","jmx_error":"","name":"host721","flags":"0","templateid":"0","description":"","tls_connect":"1","tls_accept":"1","tls_issuer":"","tls_subject":"","tls_psk_identity":"","tls_psk":""}],"id":19}
+Response Body: {
+    "jsonrpc": "2.0",
+    "result": [
+        {
+            "available": "0",
+            "tls_connect": "1",
+            "maintenance_type": "0",
+            "ipmi_errors_from": "0",
+            "ipmi_username": "",
+            "snmp_disable_until": "0",
+            "ipmi_authtype": "0",
+            "ipmi_disable_until": "0",
+            "lastaccess": "0",
+            "snmp_error": "",
+            "tls_psk": "",
+            "ipmi_privilege": "2",
+            "jmx_error": "",
+            "jmx_available": "0",
+            "maintenanceid": "0",
+            "snmp_available": "0",
+            "tls_psk_identity": "",
+            "status": "0",
+            "description": "",
+            "tls_accept": "1",
+            "host": "host721",
+            "disable_until": "0",
+            "ipmi_password": "",
+            "templateid": "0",
+            "tls_issuer": "",
+            "ipmi_available": "0",
+            "maintenance_status": "0",
+            "snmp_errors_from": "0",
+            "ipmi_error": "",
+            "proxy_hostid": "0",
+            "hostid": "10106",
+            "name": "host721",
+            "jmx_errors_from": "0",
+            "jmx_disable_until": "0",
+            "flags": "0",
+            "error": "",
+            "maintenance_from": "0",
+            "tls_subject": "",
+            "errors_from": "0"
+        }
+    ],
+    "id": 19
+}
+Sending: {
+    "params": {
+        "output": "extend",
+        "hostids": "10106"
+    },
+    "jsonrpc": "2.0",
+    "method": "usermacro.get",
+    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
+    "id": 20
+}
+Response Code: 200, {"jsonrpc":"2.0","result":[{"hostmacroid":"1","hostid":"10106","macro":"{$USERNAME}","value":"zabbix"},{"hostmacroid":"2","hostid":"10106","macro":"{$PASSWORD}","value":"zabbix"},{"hostmacroid":"3","hostid":"10106","macro":"{$ADDRESS}","value":"cfBareos"},{"hostmacroid":"4","hostid":"10106","macro":"{$DATABASE}","value":"XE"}],"id":20}
+Response Body: {
+    "jsonrpc": "2.0",
+    "result": [
+        {
+            "macro": "{$USERNAME}",
+            "hostmacroid": "1",
+            "hostid": "10106",
+            "value": "zabbix"
+        },
+        {
+            "macro": "{$PASSWORD}",
+            "hostmacroid": "2",
+            "hostid": "10106",
+            "value": "zabbix"
+        },
+        {
+            "macro": "{$ADDRESS}",
+            "hostmacroid": "3",
+            "hostid": "10106",
+            "value": "cfBareos"
+        },
+        {
+            "macro": "{$DATABASE}",
+            "hostmacroid": "4",
+            "hostid": "10106",
+            "value": "XE"
+        }
+    ],
+    "id": 20
+}
+Sending: {
+    "params": {
+        "filter": {
+            "host": "host721"
+        },
+        "output": "extend"
+    },
+    "jsonrpc": "2.0",
+    "method": "host.get",
+    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
+    "id": 21
+}
+Response Code: 200, {"jsonrpc":"2.0","result":[{"hostid":"10106","proxy_hostid":"0","host":"host721","status":"0","disable_until":"0","error":"","available":"0","errors_from":"0","lastaccess":"0","ipmi_authtype":"0","ipmi_privilege":"2","ipmi_username":"","ipmi_password":"","ipmi_disable_until":"0","ipmi_available":"0","snmp_disable_until":"0","snmp_available":"0","maintenanceid":"0","maintenance_status":"0","maintenance_type":"0","maintenance_from":"0","ipmi_errors_from":"0","snmp_errors_from":"0","ipmi_error":"","snmp_error":"","jmx_disable_until":"0","jmx_available":"0","jmx_errors_from":"0","jmx_error":"","name":"host721","flags":"0","templateid":"0","description":"","tls_connect":"1","tls_accept":"1","tls_issuer":"","tls_subject":"","tls_psk_identity":"","tls_psk":""}],"id":21}
+Response Body: {
+    "jsonrpc": "2.0",
+    "result": [
+        {
+            "available": "0",
+            "tls_connect": "1",
+            "maintenance_type": "0",
+            "ipmi_errors_from": "0",
+            "ipmi_username": "",
+            "snmp_disable_until": "0",
+            "ipmi_authtype": "0",
+            "ipmi_disable_until": "0",
+            "lastaccess": "0",
+            "snmp_error": "",
+            "tls_psk": "",
+            "ipmi_privilege": "2",
+            "jmx_error": "",
+            "jmx_available": "0",
+            "maintenanceid": "0",
+            "snmp_available": "0",
+            "tls_psk_identity": "",
+            "status": "0",
+            "description": "",
+            "tls_accept": "1",
+            "host": "host721",
+            "disable_until": "0",
+            "ipmi_password": "",
+            "templateid": "0",
+            "tls_issuer": "",
+            "ipmi_available": "0",
+            "maintenance_status": "0",
+            "snmp_errors_from": "0",
+            "ipmi_error": "",
+            "proxy_hostid": "0",
+            "hostid": "10106",
+            "name": "host721",
+            "jmx_errors_from": "0",
+            "jmx_disable_until": "0",
+            "flags": "0",
+            "error": "",
+            "maintenance_from": "0",
+            "tls_subject": "",
+            "errors_from": "0"
+        }
+    ],
+    "id": 21
+}
+Sending: {
+    "params": {
+        "output": "extend",
+        "hostids": "10106"
+    },
+    "jsonrpc": "2.0",
+    "method": "usermacro.get",
+    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
+    "id": 22
+}
+Response Code: 200, {"jsonrpc":"2.0","result":[{"hostmacroid":"1","hostid":"10106","macro":"{$USERNAME}","value":"zabbix"},{"hostmacroid":"2","hostid":"10106","macro":"{$PASSWORD}","value":"zabbix"},{"hostmacroid":"3","hostid":"10106","macro":"{$ADDRESS}","value":"cfBareos"},{"hostmacroid":"4","hostid":"10106","macro":"{$DATABASE}","value":"XE"}],"id":22}
+Response Body: {
+    "jsonrpc": "2.0",
+    "result": [
+        {
+            "macro": "{$USERNAME}",
+            "hostmacroid": "1",
+            "hostid": "10106",
+            "value": "zabbix"
+        },
+        {
+            "macro": "{$PASSWORD}",
+            "hostmacroid": "2",
+            "hostid": "10106",
+            "value": "zabbix"
+        },
+        {
+            "macro": "{$ADDRESS}",
+            "hostmacroid": "3",
+            "hostid": "10106",
+            "value": "cfBareos"
+        },
+        {
+            "macro": "{$DATABASE}",
+            "hostmacroid": "4",
+            "hostid": "10106",
+            "value": "XE"
+        }
+    ],
+    "id": 22
+}
+Sending: {
+    "params": {
+        "filter": {
+            "host": "host721"
+        },
+        "output": "extend"
+    },
+    "jsonrpc": "2.0",
+    "method": "host.get",
+    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
+    "id": 23
+}
+Response Code: 200, {"jsonrpc":"2.0","result":[{"hostid":"10106","proxy_hostid":"0","host":"host721","status":"0","disable_until":"0","error":"","available":"0","errors_from":"0","lastaccess":"0","ipmi_authtype":"0","ipmi_privilege":"2","ipmi_username":"","ipmi_password":"","ipmi_disable_until":"0","ipmi_available":"0","snmp_disable_until":"0","snmp_available":"0","maintenanceid":"0","maintenance_status":"0","maintenance_type":"0","maintenance_from":"0","ipmi_errors_from":"0","snmp_errors_from":"0","ipmi_error":"","snmp_error":"","jmx_disable_until":"0","jmx_available":"0","jmx_errors_from":"0","jmx_error":"","name":"host721","flags":"0","templateid":"0","description":"","tls_connect":"1","tls_accept":"1","tls_issuer":"","tls_subject":"","tls_psk_identity":"","tls_psk":""}],"id":23}
+Response Body: {
+    "jsonrpc": "2.0",
+    "result": [
+        {
+            "available": "0",
+            "tls_connect": "1",
+            "maintenance_type": "0",
+            "ipmi_errors_from": "0",
+            "ipmi_username": "",
+            "snmp_disable_until": "0",
+            "ipmi_authtype": "0",
+            "ipmi_disable_until": "0",
+            "lastaccess": "0",
+            "snmp_error": "",
+            "tls_psk": "",
+            "ipmi_privilege": "2",
+            "jmx_error": "",
+            "jmx_available": "0",
+            "maintenanceid": "0",
+            "snmp_available": "0",
+            "tls_psk_identity": "",
+            "status": "0",
+            "description": "",
+            "tls_accept": "1",
+            "host": "host721",
+            "disable_until": "0",
+            "ipmi_password": "",
+            "templateid": "0",
+            "tls_issuer": "",
+            "ipmi_available": "0",
+            "maintenance_status": "0",
+            "snmp_errors_from": "0",
+            "ipmi_error": "",
+            "proxy_hostid": "0",
+            "hostid": "10106",
+            "name": "host721",
+            "jmx_errors_from": "0",
+            "jmx_disable_until": "0",
+            "flags": "0",
+            "error": "",
+            "maintenance_from": "0",
+            "tls_subject": "",
+            "errors_from": "0"
+        }
+    ],
+    "id": 23
+}
+Sending: {
+    "params": {
+        "output": "extend",
+        "hostids": "10106"
+    },
+    "jsonrpc": "2.0",
+    "method": "usermacro.get",
+    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
+    "id": 24
+}
+Response Code: 200, {"jsonrpc":"2.0","result":[{"hostmacroid":"1","hostid":"10106","macro":"{$USERNAME}","value":"zabbix"},{"hostmacroid":"2","hostid":"10106","macro":"{$PASSWORD}","value":"zabbix"},{"hostmacroid":"3","hostid":"10106","macro":"{$ADDRESS}","value":"cfBareos"},{"hostmacroid":"4","hostid":"10106","macro":"{$DATABASE}","value":"XE"}],"id":24}
+Response Body: {
+    "jsonrpc": "2.0",
+    "result": [
+        {
+            "macro": "{$USERNAME}",
+            "hostmacroid": "1",
+            "hostid": "10106",
+            "value": "zabbix"
+        },
+        {
+            "macro": "{$PASSWORD}",
+            "hostmacroid": "2",
+            "hostid": "10106",
+            "value": "zabbix"
+        },
+        {
+            "macro": "{$ADDRESS}",
+            "hostmacroid": "3",
+            "hostid": "10106",
+            "value": "cfBareos"
+        },
+        {
+            "macro": "{$DATABASE}",
+            "hostmacroid": "4",
+            "hostid": "10106",
+            "value": "XE"
+        }
+    ],
+    "id": 24
+}
+Beggen
+Sending: {
+    "params": {
+        "output": "extend",
+        "search": {
+            "key_": "oracle.query[zabbix,zabbix,cfBareos,XE,version]"
+        },
+        "sortfield": "name"
+    },
+    "jsonrpc": "2.0",
+    "method": "item.get",
+    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
+    "id": 25
+}
+Response Code: 200, {"jsonrpc":"2.0","result":[],"id":25}
+Response Body: {
+    "jsonrpc": "2.0",
+    "result": [],
+    "id": 25
+}
+('itemids', None)
+Sending: {
+    "params": {
+        "itemids": null,
+        "sortfield": "clock",
+        "limit": 10,
+        "sortorder": "DESC",
+        "output": "extend",
+        "history": 1
+    },
+    "jsonrpc": "2.0",
+    "method": "history.get",
+    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
+    "id": 26
+}
+Response Code: 200, {"jsonrpc":"2.0","result":[],"id":26}
+Response Body: {
+    "jsonrpc": "2.0",
+    "result": [],
+    "id": 26
+}
+Sending: {
+    "params": {
+        "output": "extend",
+        "search": {
+            "key_": "oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},check_active]"
+        },
+        "sortfield": "name"
+    },
+    "jsonrpc": "2.0",
+    "method": "item.get",
+    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
+    "id": 27
+}
+Response Code: 200, {"jsonrpc":"2.0","result":[],"id":27}
+Response Body: {
+    "jsonrpc": "2.0",
+    "result": [],
+    "id": 27
+}
+('itemids', None)
+Sending: {
+    "params": {
+        "itemids": null,
+        "sortfield": "clock",
+        "limit": 10,
+        "sortorder": "DESC",
+        "output": "extend",
+        "history": 3
+    },
+    "jsonrpc": "2.0",
+    "method": "history.get",
+    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
+    "id": 28
+}
+Response Code: 200, {"jsonrpc":"2.0","result":[],"id":28}
+Response Body: {
+    "jsonrpc": "2.0",
+    "result": [],
+    "id": 28
+}
+hosts: [(u'host721', u'0'), (u'Zabbix server', u'0')]
+Sending: {
+    "params": {
+        "filter": {
+            "host": "host721"
+        },
+        "output": "extend"
+    },
+    "jsonrpc": "2.0",
+    "method": "host.get",
+    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
+    "id": 29
+}
+Response Code: 200, {"jsonrpc":"2.0","result":[{"hostid":"10106","proxy_hostid":"0","host":"host721","status":"0","disable_until":"0","error":"","available":"0","errors_from":"0","lastaccess":"0","ipmi_authtype":"0","ipmi_privilege":"2","ipmi_username":"","ipmi_password":"","ipmi_disable_until":"0","ipmi_available":"0","snmp_disable_until":"0","snmp_available":"0","maintenanceid":"0","maintenance_status":"0","maintenance_type":"0","maintenance_from":"0","ipmi_errors_from":"0","snmp_errors_from":"0","ipmi_error":"","snmp_error":"","jmx_disable_until":"0","jmx_available":"0","jmx_errors_from":"0","jmx_error":"","name":"host721","flags":"0","templateid":"0","description":"","tls_connect":"1","tls_accept":"1","tls_issuer":"","tls_subject":"","tls_psk_identity":"","tls_psk":""}],"id":29}
+Response Body: {
+    "jsonrpc": "2.0",
+    "result": [
+        {
+            "available": "0",
+            "tls_connect": "1",
+            "maintenance_type": "0",
+            "ipmi_errors_from": "0",
+            "ipmi_username": "",
+            "snmp_disable_until": "0",
+            "ipmi_authtype": "0",
+            "ipmi_disable_until": "0",
+            "lastaccess": "0",
+            "snmp_error": "",
+            "tls_psk": "",
+            "ipmi_privilege": "2",
+            "jmx_error": "",
+            "jmx_available": "0",
+            "maintenanceid": "0",
+            "snmp_available": "0",
+            "tls_psk_identity": "",
+            "status": "0",
+            "description": "",
+            "tls_accept": "1",
+            "host": "host721",
+            "disable_until": "0",
+            "ipmi_password": "",
+            "templateid": "0",
+            "tls_issuer": "",
+            "ipmi_available": "0",
+            "maintenance_status": "0",
+            "snmp_errors_from": "0",
+            "ipmi_error": "",
+            "proxy_hostid": "0",
+            "hostid": "10106",
+            "name": "host721",
+            "jmx_errors_from": "0",
+            "jmx_disable_until": "0",
+            "flags": "0",
+            "error": "",
+            "maintenance_from": "0",
+            "tls_subject": "",
+            "errors_from": "0"
+        }
+    ],
+    "id": 29
+}
+Sending: {
+    "params": {
+        "filter": {
+            "hostid": "10106"
+        },
+        "output": [
+            "triggerid",
+            "description",
+            "priority"
+        ],
+        "selectHosts": "",
+        "sortorder": "DESC",
+        "sortfield": "priority"
+    },
+    "jsonrpc": "2.0",
+    "method": "trigger.get",
+    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
+    "id": 30
+}
+Response Code: 200, {"jsonrpc":"2.0","result":[],"id":30}
+Response Body: {
+    "jsonrpc": "2.0",
+    "result": [],
+    "id": 30
+}
+('EEEXXXexpr=', '{host721:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},check_active].last()}>0')
+Sending: {
+    "params": {
+        "expression": "{host721:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},check_active].last()}>0",
+        "description": "It is fake active"
+    },
+    "jsonrpc": "2.0",
+    "method": "trigger.create",
+    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
+    "id": 31
+}
+Response Code: 200, {"jsonrpc":"2.0","error":{"code":-32602,"message":"Invalid params.","data":"Incorrect item key \"oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},check_active]\" provided for trigger expression on \"host721\"."},"id":31}
+Response Body: {
+    "jsonrpc": "2.0",
+    "id": 31,
+    "error": {
+        "message": "Invalid params.",
+        "code": -32602,
+        "data": "Incorrect item key \"oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},check_active]\" provided for trigger expression on \"host721\"."
+    }
+}
+Try with Exception
+(u'Error -32602: Invalid params., Incorrect item key "oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},check_active]" provided for trigger expression on "host721".', -32602)
+Sending: {
+    "params": {
+        "filter": {
+            "host": "host721"
+        },
+        "output": "extend"
+    },
+    "jsonrpc": "2.0",
+    "method": "host.get",
+    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
+    "id": 32
+}
+Response Code: 200, {"jsonrpc":"2.0","result":[{"hostid":"10106","proxy_hostid":"0","host":"host721","status":"0","disable_until":"0","error":"","available":"0","errors_from":"0","lastaccess":"0","ipmi_authtype":"0","ipmi_privilege":"2","ipmi_username":"","ipmi_password":"","ipmi_disable_until":"0","ipmi_available":"0","snmp_disable_until":"0","snmp_available":"0","maintenanceid":"0","maintenance_status":"0","maintenance_type":"0","maintenance_from":"0","ipmi_errors_from":"0","snmp_errors_from":"0","ipmi_error":"","snmp_error":"","jmx_disable_until":"0","jmx_available":"0","jmx_errors_from":"0","jmx_error":"","name":"host721","flags":"0","templateid":"0","description":"","tls_connect":"1","tls_accept":"1","tls_issuer":"","tls_subject":"","tls_psk_identity":"","tls_psk":""}],"id":32}
+Response Body: {
+    "jsonrpc": "2.0",
+    "result": [
+        {
+            "available": "0",
+            "tls_connect": "1",
+            "maintenance_type": "0",
+            "ipmi_errors_from": "0",
+            "ipmi_username": "",
+            "snmp_disable_until": "0",
+            "ipmi_authtype": "0",
+            "ipmi_disable_until": "0",
+            "lastaccess": "0",
+            "snmp_error": "",
+            "tls_psk": "",
+            "ipmi_privilege": "2",
+            "jmx_error": "",
+            "jmx_available": "0",
+            "maintenanceid": "0",
+            "snmp_available": "0",
+            "tls_psk_identity": "",
+            "status": "0",
+            "description": "",
+            "tls_accept": "1",
+            "host": "host721",
+            "disable_until": "0",
+            "ipmi_password": "",
+            "templateid": "0",
+            "tls_issuer": "",
+            "ipmi_available": "0",
+            "maintenance_status": "0",
+            "snmp_errors_from": "0",
+            "ipmi_error": "",
+            "proxy_hostid": "0",
+            "hostid": "10106",
+            "name": "host721",
+            "jmx_errors_from": "0",
+            "jmx_disable_until": "0",
+            "flags": "0",
+            "error": "",
+            "maintenance_from": "0",
+            "tls_subject": "",
+            "errors_from": "0"
+        }
+    ],
+    "id": 32
+}
+Sending: {
+    "params": {
+        "filter": {
+            "status": "0",
+            "hostid": "10106",
+            "value": "1"
+        },
+        "output": [
+            "triggerid",
+            "description",
+            "priority"
+        ],
+        "selectHosts": "",
+        "sortorder": "DESC",
+        "sortfield": "priority"
+    },
+    "jsonrpc": "2.0",
+    "method": "trigger.get",
+    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
+    "id": 33
+}
+Response Code: 200, {"jsonrpc":"2.0","result":[],"id":33}
+Response Body: {
+    "jsonrpc": "2.0",
+    "result": [],
+    "id": 33
+}
+Sending: {
+    "params": {
+        "filter": {
+            "host": "host721"
+        },
+        "output": "extend"
+    },
+    "jsonrpc": "2.0",
+    "method": "host.get",
+    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
+    "id": 34
+}
+Response Code: 200, {"jsonrpc":"2.0","result":[{"hostid":"10106","proxy_hostid":"0","host":"host721","status":"0","disable_until":"0","error":"","available":"0","errors_from":"0","lastaccess":"0","ipmi_authtype":"0","ipmi_privilege":"2","ipmi_username":"","ipmi_password":"","ipmi_disable_until":"0","ipmi_available":"0","snmp_disable_until":"0","snmp_available":"0","maintenanceid":"0","maintenance_status":"0","maintenance_type":"0","maintenance_from":"0","ipmi_errors_from":"0","snmp_errors_from":"0","ipmi_error":"","snmp_error":"","jmx_disable_until":"0","jmx_available":"0","jmx_errors_from":"0","jmx_error":"","name":"host721","flags":"0","templateid":"0","description":"","tls_connect":"1","tls_accept":"1","tls_issuer":"","tls_subject":"","tls_psk_identity":"","tls_psk":""}],"id":34}
+Response Body: {
+    "jsonrpc": "2.0",
+    "result": [
+        {
+            "available": "0",
+            "tls_connect": "1",
+            "maintenance_type": "0",
+            "ipmi_errors_from": "0",
+            "ipmi_username": "",
+            "snmp_disable_until": "0",
+            "ipmi_authtype": "0",
+            "ipmi_disable_until": "0",
+            "lastaccess": "0",
+            "snmp_error": "",
+            "tls_psk": "",
+            "ipmi_privilege": "2",
+            "jmx_error": "",
+            "jmx_available": "0",
+            "maintenanceid": "0",
+            "snmp_available": "0",
+            "tls_psk_identity": "",
+            "status": "0",
+            "description": "",
+            "tls_accept": "1",
+            "host": "host721",
+            "disable_until": "0",
+            "ipmi_password": "",
+            "templateid": "0",
+            "tls_issuer": "",
+            "ipmi_available": "0",
+            "maintenance_status": "0",
+            "snmp_errors_from": "0",
+            "ipmi_error": "",
+            "proxy_hostid": "0",
+            "hostid": "10106",
+            "name": "host721",
+            "jmx_errors_from": "0",
+            "jmx_disable_until": "0",
+            "flags": "0",
+            "error": "",
+            "maintenance_from": "0",
+            "tls_subject": "",
+            "errors_from": "0"
+        }
+    ],
+    "id": 34
+}
+Sending: {
+    "params": {
+        "filter": {
+            "status": "0",
+            "hostid": "10106",
+            "value": "1"
+        },
+        "output": [
+            "triggerid",
+            "description",
+            "priority"
+        ],
+        "selectHosts": "",
+        "sortorder": "DESC",
+        "sortfield": "priority"
+    },
+    "jsonrpc": "2.0",
+    "method": "trigger.get",
+    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
+    "id": 35
+}
+Response Code: 200, {"jsonrpc":"2.0","result":[],"id":35}
+Response Body: {
+    "jsonrpc": "2.0",
+    "result": [],
+    "id": 35
+}
+williamtest1
+Sending: {
+    "params": {
+        "filter": {
+            "name": [
+                "OracleTemplateHostGroup721"
+            ]
+        }
+    },
+    "jsonrpc": "2.0",
+    "method": "hostgroup.get",
+    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
+    "id": 36
+}
+Response Code: 200, {"jsonrpc":"2.0","result":[{"groupid":"9","name":"OracleTemplateHostGroup721","internal":"0","flags":"0"}],"id":36}
+Response Body: {
+    "jsonrpc": "2.0",
+    "result": [
+        {
+            "internal": "0",
+            "flags": "0",
+            "groupid": "9",
+            "name": "OracleTemplateHostGroup721"
+        }
+    ],
+    "id": 36
+}
+./centre/xml/monitorz_template1.xml
+Sending: {
+    "params": {
+        "rules": {
+            "templates": {
+                "createMissing": true,
+                "updateExisting": true
+            },
+            "valueMaps": {
+                "createMissing": true,
+                "updateExisting": true
+            },
+            "screens": {
+                "createMissing": true,
+                "updateExisting": true
+            },
+            "applications": {
+                "createMissing": true
+            },
+            "groups": {
+                "createMissing": true
+            },
+            "images": {
+                "createMissing": true,
+                "updateExisting": true
+            },
+            "templateScreens": {
+                "createMissing": true,
+                "updateExisting": true
+            },
+            "templateLinkage": {
+                "createMissing": true
+            },
+            "maps": {
+                "createMissing": true,
+                "updateExisting": true
+            },
+            "items": {
+                "createMissing": true,
+                "updateExisting": true
+            },
+            "triggers": {
+                "createMissing": true,
+                "updateExisting": true
+            },
+            "graphs": {
+                "createMissing": true,
+                "updateExisting": true
+            },
+            "hosts": {
+                "createMissing": true,
+                "updateExisting": true
+            },
+            "discoveryRules": {
+                "createMissing": true,
+                "updateExisting": true
+            }
+        },
+        "source": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<zabbix_export>\n    <version>2.0</version>\n    <date>2019-07-11T17:33:58Z</date>\n    <groups>\n        <group>\n            <name>Templates</name>\n        </group>\n    </groups>\n    <templates>\n        <template>\n            <template>TemplateOracle721</template>\n            <name>TemplateOracle721</name>\n            <groups>\n                <group>\n                    <name>OracleTemplateHostGroup721</name>\n                </group>\n            </groups>\n            <applications>\n                <application>\n                    <name>Oracle721</name>\n                </application>\n            </applications>\n            <items>\n                <item>\n                    <name>Oracle/Active user count on {$DATABASE}</name>\n                    <type>10</type>\n                    <snmp_community/>\n                    <multiplier>0</multiplier>\n                    <snmp_oid/>\n                    <key>dbagent[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},activeusercount]</key>\n                    <delay>300</delay>\n                    <history>7</history>\n                    <trends>90</trends>\n                    <status>0</status>\n                    <value_type>3</value_type>\n                    <allowed_hosts/>\n                    <units/>\n                    <delta>0</delta>\n                    <snmpv3_securityname/>\n                    <snmpv3_securitylevel>0</snmpv3_securitylevel>\n                    <snmpv3_authpassphrase/>\n                    <snmpv3_privpassphrase/>\n                    <formula>1</formula>\n                    <delay_flex/>\n                    <params/>\n                    <ipmi_sensor/>\n                    <data_type>0</data_type>\n                    <authtype>0</authtype>\n                    <username/>\n                    <password/>\n                    <publickey/>\n                    <privatekey/>\n                    <port/>\n                    <description/>\n                    <inventory_link>0</inventory_link>\n                    <applications>\n                        <application>\n                            <name>Oracle721</name>\n                        </application>\n                    </applications>\n                    <valuemap/>\n                </item>\n                <item>\n                    <name>Oracle/Archive {$ARCHIVE} on {$DATABASE}</name>\n                    <type>10</type>\n                    <snmp_community/>\n                    <multiplier>0</multiplier>\n                    <snmp_oid/>\n                    <key>dbagent[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},check_archive,{$ARCHIVE}]</key>\n                    <delay>300</delay>\n                    <history>7</history>\n                    <trends>90</trends>\n                    <status>0</status>\n                    <value_type>3</value_type>\n                    <allowed_hosts/>\n                    <units>%</units>\n                    <delta>0</delta>\n                    <snmpv3_securityname/>\n                    <snmpv3_securitylevel>0</snmpv3_securitylevel>\n                    <snmpv3_authpassphrase/>\n                    <snmpv3_privpassphrase/>\n                    <formula>1</formula>\n                    <delay_flex/>\n                    <params/>\n                    <ipmi_sensor/>\n                    <data_type>0</data_type>\n                    <authtype>0</authtype>\n                    <username/>\n                    <password/>\n                    <publickey/>\n                    <privatekey/>\n                    <port/>\n                    <description/>\n                    <inventory_link>0</inventory_link>\n                    <applications>\n                        <application>\n                            <name>Oracle721</name>\n                        </application>\n                    </applications>\n                    <valuemap/>\n                </item>\n                <item>\n                    <name>Oracle/Buffer busy waits on {$DATABASE}</name>\n                    <type>10</type>\n                    <snmp_community/>\n                    <multiplier>0</multiplier>\n                    <snmp_oid/>\n                    <key>dbagent[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},bufbusywaits]</key>\n                    <delay>300</delay>\n                    <history>7</history>\n                    <trends>90</trends>\n                    <status>0</status>\n                    <value_type>3</value_type>\n                    <allowed_hosts/>\n                    <units/>\n                    <delta>0</delta>\n                    <snmpv3_securityname/>\n                    <snmpv3_securitylevel>0</snmpv3_securitylevel>\n                    <snmpv3_authpassphrase/>\n                    <snmpv3_privpassphrase/>\n                    <formula>1</formula>\n                    <delay_flex/>\n                    <params/>\n                    <ipmi_sensor/>\n                    <data_type>0</data_type>\n                    <authtype>0</authtype>\n                    <username/>\n                    <password/>\n                    <publickey/>\n                    <privatekey/>\n                    <port/>\n                    <description/>\n                    <inventory_link>0</inventory_link>\n                    <applications>\n                        <application>\n                            <name>Oracle721</name>\n                        </application>\n                    </applications>\n                    <valuemap/>\n                </item>\n              \n\t\t\t  \n                <item>\n                    <name>Oracle/Deadlocks on {$DATABASE}</name>\n                    <type>10</type>\n                    <snmp_community/>\n                    <multiplier>0</multiplier>\n                    <snmp_oid/>\n                    <key>dbagent[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},deadlocks]</key>\n                    <delay>600</delay>\n                    <history>7</history>\n                    <trends>90</trends>\n                    <status>0</status>\n                    <value_type>3</value_type>\n                    <allowed_hosts/>\n                    <units/>\n                    <delta>1</delta>\n                    <snmpv3_securityname/>\n                    <snmpv3_securitylevel>0</snmpv3_securitylevel>\n                    <snmpv3_authpassphrase/>\n                    <snmpv3_privpassphrase/>\n                    <formula>1</formula>\n                    <delay_flex/>\n                    <params/>\n                    <ipmi_sensor/>\n                    <data_type>0</data_type>\n                    <authtype>0</authtype>\n                    <username/>\n                    <password/>\n                    <publickey/>\n                    <privatekey/>\n                    <port/>\n                    <description/>\n                    <inventory_link>0</inventory_link>\n                    <applications>\n                        <application>\n                            <name>Oracle721</name>\n                        </application>\n                    </applications>\n                    <valuemap/>\n                </item>\n              \n                <item>\n                    <name>Oracle/Disk sorts ratio on {$DATABASE}</name>\n                    <type>10</type>\n                    <snmp_community/>\n                    <multiplier>0</multiplier>\n                    <snmp_oid/>\n                    <key>dbagent[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},dsksortratio]</key>\n                    <delay>600</delay>\n                    <history>7</history>\n                    <trends>90</trends>\n                    <status>0</status>\n                    <value_type>0</value_type>\n                    <allowed_hosts/>\n                    <units>%</units>\n                    <delta>0</delta>\n                    <snmpv3_securityname/>\n                    <snmpv3_securitylevel>0</snmpv3_securitylevel>\n                    <snmpv3_authpassphrase/>\n                    <snmpv3_privpassphrase/>\n                    <formula>1</formula>\n                    <delay_flex/>\n                    <params/>\n                    <ipmi_sensor/>\n                    <data_type>0</data_type>\n                    <authtype>0</authtype>\n                    <username/>\n                    <password/>\n                    <publickey/>\n                    <privatekey/>\n                    <port/>\n                    <description/>\n                    <inventory_link>0</inventory_link>\n                    <applications>\n                        <application>\n                            <name>Oracle721</name>\n                        </application>\n                    </applications>\n                    <valuemap/>\n                </item>\n       \n          \n                <item>\n                    <name>Oracle/Intance is active and open on {$DATABASE}</name>\n                    <type>10</type>\n                    <snmp_community/>\n                    <multiplier>0</multiplier>\n                    <snmp_oid/>\n                    <key>dbagent[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},check_active]</key>\n                    <delay>300</delay>\n                    <history>7</history>\n                    <trends>90</trends>\n                    <status>0</status>\n                    <value_type>3</value_type>\n                    <allowed_hosts/>\n                    <units/>\n                    <delta>0</delta>\n                    <snmpv3_securityname/>\n                    <snmpv3_securitylevel>0</snmpv3_securitylevel>\n                    <snmpv3_authpassphrase/>\n                    <snmpv3_privpassphrase/>\n                    <formula>1</formula>\n                    <delay_flex/>\n                    <params/>\n                    <ipmi_sensor/>\n                    <data_type>0</data_type>\n                    <authtype>0</authtype>\n                    <username/>\n                    <password/>\n                    <publickey/>\n                    <privatekey/>\n                    <port/>\n                    <description/>\n                    <inventory_link>0</inventory_link>\n                    <applications>\n                        <application>\n                            <name>Oracle721</name>\n                        </application>\n                    </applications>\n                    <valuemap/>\n                </item>\n                \n                <item>\n                    <name>Oracle/Lastarclog on {$DATABASE}</name>\n                    <type>10</type>\n                    <snmp_community/>\n                    <multiplier>0</multiplier>\n                    <snmp_oid/>\n                    <key>dbagent[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},lastarclog]</key>\n                    <delay>300</delay>\n                    <history>7</history>\n                    <trends>90</trends>\n                    <status>0</status>\n                    <value_type>3</value_type>\n                    <allowed_hosts/>\n                    <units/>\n                    <delta>0</delta>\n                    <snmpv3_securityname/>\n                    <snmpv3_securitylevel>0</snmpv3_securitylevel>\n                    <snmpv3_authpassphrase/>\n                    <snmpv3_privpassphrase/>\n                    <formula>1</formula>\n                    <delay_flex/>\n                    <params/>\n                    <ipmi_sensor/>\n                    <data_type>3</data_type>\n                    <authtype>0</authtype>\n                    <username/>\n                    <password/>\n                    <publickey/>\n                    <privatekey/>\n                    <port/>\n                    <description/>\n                    <inventory_link>0</inventory_link>\n                    <applications>\n                        <application>\n                            <name>Oracle721</name>\n                        </application>\n                    </applications>\n                    <valuemap/>\n                </item>\n                \n                <item>\n                    <name>Oracle/Logfilesync on {$DATABASE}</name>\n                    <type>10</type>\n                    <snmp_community/>\n                    <multiplier>0</multiplier>\n                    <snmp_oid/>\n                    <key>dbagent[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},logfilesync]</key>\n                    <delay>300</delay>\n                    <history>7</history>\n                    <trends>90</trends>\n                    <status>0</status>\n                    <value_type>3</value_type>\n                    <allowed_hosts/>\n                    <units/>\n                    <delta>0</delta>\n                    <snmpv3_securityname/>\n                    <snmpv3_securitylevel>0</snmpv3_securitylevel>\n                    <snmpv3_authpassphrase/>\n                    <snmpv3_privpassphrase/>\n                    <formula>1</formula>\n                    <delay_flex/>\n                    <params/>\n                    <ipmi_sensor/>\n                    <data_type>0</data_type>\n                    <authtype>0</authtype>\n                    <username/>\n                    <password/>\n                    <publickey/>\n                    <privatekey/>\n                    <port/>\n                    <description/>\n                    <inventory_link>0</inventory_link>\n                    <applications>\n                        <application>\n                            <name>Oracle721</name>\n                        </application>\n                    </applications>\n                    <valuemap/>\n                </item>\n\n                <item>\n                    <name>Oracle/Query Lock on {$DATABASE}</name>\n                    <type>10</type>\n                    <snmp_community/>\n                    <multiplier>0</multiplier>\n                    <snmp_oid/>\n                    <key>dbagent[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},query_lock]</key>\n                    <delay>300</delay>\n                    <history>7</history>\n                    <trends>90</trends>\n                    <status>0</status>\n                    <value_type>3</value_type>\n                    <allowed_hosts/>\n                    <units/>\n                    <delta>0</delta>\n                    <snmpv3_securityname/>\n                    <snmpv3_securitylevel>0</snmpv3_securitylevel>\n                    <snmpv3_authpassphrase/>\n                    <snmpv3_privpassphrase/>\n                    <formula>1</formula>\n                    <delay_flex/>\n                    <params/>\n                    <ipmi_sensor/>\n                    <data_type>0</data_type>\n                    <authtype>0</authtype>\n                    <username/>\n                    <password/>\n                    <publickey/>\n                    <privatekey/>\n                    <port/>\n                    <description/>\n                    <inventory_link>0</inventory_link>\n                    <applications>\n                        <application>\n                            <name>Oracle721</name>\n                        </application>\n                    </applications>\n                    <valuemap/>\n                </item>\n                <item>\n                    <name>Oracle/Query Redologs on {$DATABASE}</name>\n                    <type>10</type>\n                    <snmp_community/>\n                    <multiplier>0</multiplier>\n                    <snmp_oid/>\n                    <key>dbagent[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},query_redologs]</key>\n                    <delay>300</delay>\n                    <history>7</history>\n                    <trends>90</trends>\n                    <status>0</status>\n                    <value_type>3</value_type>\n                    <allowed_hosts/>\n                    <units/>\n                    <delta>0</delta>\n                    <snmpv3_securityname/>\n                    <snmpv3_securitylevel>0</snmpv3_securitylevel>\n                    <snmpv3_authpassphrase/>\n                    <snmpv3_privpassphrase/>\n                    <formula>1</formula>\n                    <delay_flex/>\n                    <params/>\n                    <ipmi_sensor/>\n                    <data_type>0</data_type>\n                    <authtype>0</authtype>\n                    <username/>\n                    <password/>\n                    <publickey/>\n                    <privatekey/>\n                    <port/>\n                    <description/>\n                    <inventory_link>0</inventory_link>\n                    <applications>\n                        <application>\n                            <name>Oracle721</name>\n                        </application>\n                    </applications>\n                    <valuemap/>\n                </item>\n                <item>\n                    <name>Oracle/Query Rollbacks on {$DATABASE}</name>\n                    <type>10</type>\n                    <snmp_community/>\n                    <multiplier>0</multiplier>\n                    <snmp_oid/>\n                    <key>dbagent[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},query_rollbacks]</key>\n                    <delay>300</delay>\n                    <history>7</history>\n                    <trends>90</trends>\n                    <status>0</status>\n                    <value_type>3</value_type>\n                    <allowed_hosts/>\n                    <units/>\n                    <delta>0</delta>\n                    <snmpv3_securityname/>\n                    <snmpv3_securitylevel>0</snmpv3_securitylevel>\n                    <snmpv3_authpassphrase/>\n                    <snmpv3_privpassphrase/>\n                    <formula>1</formula>\n                    <delay_flex/>\n                    <params/>\n                    <ipmi_sensor/>\n                    <data_type>0</data_type>\n                    <authtype>0</authtype>\n                    <username/>\n                    <password/>\n                    <publickey/>\n                    <privatekey/>\n                    <port/>\n                    <description/>\n                    <inventory_link>0</inventory_link>\n                    <applications>\n                        <application>\n                            <name>Oracle721</name>\n                        </application>\n                    </applications>\n                    <valuemap/>\n                </item>\n                <item>\n                    <name>Oracle/Query Sessions on {$DATABASE}</name>\n                    <type>10</type>\n                    <snmp_community/>\n                    <multiplier>0</multiplier>\n                    <snmp_oid/>\n                    <key>dbagent[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},query_sessions]</key>\n                    <delay>300</delay>\n                    <history>7</history>\n                    <trends>90</trends>\n                    <status>0</status>\n                    <value_type>3</value_type>\n                    <allowed_hosts/>\n                    <units/>\n                    <delta>0</delta>\n                    <snmpv3_securityname/>\n                    <snmpv3_securitylevel>0</snmpv3_securitylevel>\n                    <snmpv3_authpassphrase/>\n                    <snmpv3_privpassphrase/>\n                    <formula>1</formula>\n                    <delay_flex/>\n                    <params/>\n                    <ipmi_sensor/>\n                    <data_type>0</data_type>\n                    <authtype>0</authtype>\n                    <username/>\n                    <password/>\n                    <publickey/>\n                    <privatekey/>\n                    <port/>\n                    <description/>\n                    <inventory_link>0</inventory_link>\n                    <applications>\n                        <application>\n                            <name>Oracle721</name>\n                        </application>\n                    </applications>\n                    <valuemap/>\n                </item>\n  \n                <item>\n                    <name>Oracle/Read Cache hit ratio on {$DATABASE}</name>\n                    <type>10</type>\n                    <snmp_community/>\n                    <multiplier>0</multiplier>\n                    <snmp_oid/>\n                    <key>dbagent[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},rcachehit]</key>\n                    <delay>600</delay>\n                    <history>7</history>\n                    <trends>90</trends>\n                    <status>0</status>\n                    <value_type>0</value_type>\n                    <allowed_hosts/>\n                    <units>%</units>\n                    <delta>0</delta>\n                    <snmpv3_securityname/>\n                    <snmpv3_securitylevel>0</snmpv3_securitylevel>\n                    <snmpv3_authpassphrase/>\n                    <snmpv3_privpassphrase/>\n                    <formula>1</formula>\n                    <delay_flex/>\n                    <params/>\n                    <ipmi_sensor/>\n                    <data_type>0</data_type>\n                    <authtype>0</authtype>\n                    <username/>\n                    <password/>\n                    <publickey/>\n                    <privatekey/>\n                    <port/>\n                    <description/>\n                    <inventory_link>0</inventory_link>\n                    <applications>\n                        <application>\n                            <name>Oracle721</name>\n                        </application>\n                    </applications>\n                    <valuemap/>\n                </item>\n                <item>\n                    <name>Oracle/Redo Writes on {$DATABASE}</name>\n                    <type>10</type>\n                    <snmp_community/>\n                    <multiplier>0</multiplier>\n                    <snmp_oid/>\n                    <key>dbagent[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},redowrites]</key>\n                    <delay>300</delay>\n                    <history>7</history>\n                    <trends>90</trends>\n                    <status>0</status>\n                    <value_type>3</value_type>\n                    <allowed_hosts/>\n                    <units/>\n                    <delta>1</delta>\n                    <snmpv3_securityname/>\n                    <snmpv3_securitylevel>0</snmpv3_securitylevel>\n                    <snmpv3_authpassphrase/>\n                    <snmpv3_privpassphrase/>\n                    <formula>1</formula>\n                    <delay_flex/>\n                    <params/>\n                    <ipmi_sensor/>\n                    <data_type>0</data_type>\n                    <authtype>0</authtype>\n                    <username/>\n                    <password/>\n                    <publickey/>\n                    <privatekey/>\n                    <port/>\n                    <description/>\n                    <inventory_link>0</inventory_link>\n                    <applications>\n                        <application>\n                            <name>Oracle721</name>\n                        </application>\n                    </applications>\n                    <valuemap/>\n                </item>\n                <item>\n                    <name>Oracle/Size of all datafiles on {$DATABASE}</name>\n                    <type>10</type>\n                    <snmp_community/>\n                    <multiplier>0</multiplier>\n                    <snmp_oid/>\n                    <key>dbagent[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},dbfilesize]</key>\n                    <delay>7200</delay>\n                    <history>7</history>\n                    <trends>90</trends>\n                    <status>0</status>\n                    <value_type>3</value_type>\n                    <allowed_hosts/>\n                    <units>B</units>\n                    <delta>0</delta>\n                    <snmpv3_securityname/>\n                    <snmpv3_securitylevel>0</snmpv3_securitylevel>\n                    <snmpv3_authpassphrase/>\n                    <snmpv3_privpassphrase/>\n                    <formula>1</formula>\n                    <delay_flex/>\n                    <params/>\n                    <ipmi_sensor/>\n                    <data_type>0</data_type>\n                    <authtype>0</authtype>\n                    <username/>\n                    <password/>\n                    <publickey/>\n                    <privatekey/>\n                    <port/>\n                    <description/>\n                    <inventory_link>0</inventory_link>\n                    <applications>\n                        <application>\n                            <name>Oracle721</name>\n                        </application>\n                    </applications>\n                    <valuemap/>\n                </item>\n               \n              \n                <item>\n                    <name>Oracle/User Commits on {$DATABASE}</name>\n                    <type>10</type>\n                    <snmp_community/>\n                    <multiplier>0</multiplier>\n                    <snmp_oid/>\n                    <key>dbagent[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},commits]</key>\n                    <delay>600</delay>\n                    <history>7</history>\n                    <trends>90</trends>\n                    <status>0</status>\n                    <value_type>3</value_type>\n                    <allowed_hosts/>\n                    <units/>\n                    <delta>1</delta>\n                    <snmpv3_securityname/>\n                    <snmpv3_securitylevel>0</snmpv3_securitylevel>\n                    <snmpv3_authpassphrase/>\n                    <snmpv3_privpassphrase/>\n                    <formula>1</formula>\n                    <delay_flex/>\n                    <params/>\n                    <ipmi_sensor/>\n                    <data_type>0</data_type>\n                    <authtype>0</authtype>\n                    <username/>\n                    <password/>\n                    <publickey/>\n                    <privatekey/>\n                    <port/>\n                    <description/>\n                    <inventory_link>0</inventory_link>\n                    <applications>\n                        <application>\n                            <name>Oracle721</name>\n                        </application>\n                    </applications>\n                    <valuemap/>\n                </item>\n           \n                <item>\n                    <name>Oracle/Version on {$DATABASE}</name>\n                    <type>10</type>\n                    <snmp_community/>\n                    <multiplier>0</multiplier>\n                    <snmp_oid/>\n                    <key>dbagent[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},version]</key>\n                    <delay>7200</delay>\n                    <history>90</history>\n                    <trends>365</trends>\n                    <status>0</status>\n                    <value_type>1</value_type>\n                    <allowed_hosts/>\n                    <units/>\n                    <delta>0</delta>\n                    <snmpv3_securityname/>\n                    <snmpv3_securitylevel>0</snmpv3_securitylevel>\n                    <snmpv3_authpassphrase/>\n                    <snmpv3_privpassphrase/>\n                    <formula>1</formula>\n                    <delay_flex/>\n                    <params/>\n                    <ipmi_sensor/>\n                    <data_type>0</data_type>\n                    <authtype>0</authtype>\n                    <username/>\n                    <password/>\n                    <publickey/>\n                    <privatekey/>\n                    <port/>\n                    <description/>\n                    <inventory_link>0</inventory_link>\n                    <applications>\n                        <application>\n                            <name>Oracle721</name>\n                        </application>\n                    </applications>\n                    <valuemap/>\n                </item>\n                <item>\n                    <name>Oracle/dbname on {$DATABASE}</name>\n                    <type>10</type>\n                    <snmp_community/>\n                    <multiplier>0</multiplier>\n                    <snmp_oid/>\n                    <key>dbagent[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},dbname]</key>\n                    <delay>7200</delay>\n                    <history>90</history>\n                    <trends>365</trends>\n                    <status>0</status>\n                    <value_type>1</value_type>\n                    <allowed_hosts/>\n                    <units/>\n                    <delta>0</delta>\n                    <snmpv3_securityname/>\n                    <snmpv3_securitylevel>0</snmpv3_securitylevel>\n                    <snmpv3_authpassphrase/>\n                    <snmpv3_privpassphrase/>\n                    <formula>1</formula>\n                    <delay_flex/>\n                    <params/>\n                    <ipmi_sensor/>\n                    <data_type>0</data_type>\n                    <authtype>0</authtype>\n                    <username/>\n                    <password/>\n                    <publickey/>\n                    <privatekey/>\n                    <port/>\n                    <description/>\n                    <inventory_link>0</inventory_link>\n                    <applications>\n                        <application>\n                            <name>Oracle721</name>\n                        </application>\n                    </applications>\n                    <valuemap/>\n                </item>\n                <item>\n                    <name>Oracle/dbsystime on {$DATABASE}</name>\n                    <type>10</type>\n                    <snmp_community/>\n                    <multiplier>0</multiplier>\n                    <snmp_oid/>\n                    <key>dbagent[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},dbsystime]</key>\n                    <delay>120</delay>\n                    <history>90</history>\n                    <trends>365</trends>\n                    <status>0</status>\n                    <value_type>1</value_type>\n                    <allowed_hosts/>\n                    <units/>\n                    <delta>0</delta>\n                    <snmpv3_securityname/>\n                    <snmpv3_securitylevel>0</snmpv3_securitylevel>\n                    <snmpv3_authpassphrase/>\n                    <snmpv3_privpassphrase/>\n                    <formula>1</formula>\n                    <delay_flex/>\n                    <params/>\n                    <ipmi_sensor/>\n                    <data_type>0</data_type>\n                    <authtype>0</authtype>\n                    <username/>\n                    <password/>\n                    <publickey/>\n                    <privatekey/>\n                    <port/>\n                    <description/>\n                    <inventory_link>0</inventory_link>\n                    <applications>\n                        <application>\n                            <name>Oracle721</name>\n                        </application>\n                    </applications>\n                    <valuemap/>\n                </item>\n                <item>\n                    <name>Oracle/logmode on {$DATABASE}</name>\n                    <type>10</type>\n                    <snmp_community/>\n                    <multiplier>0</multiplier>\n                    <snmp_oid/>\n                    <key>dbagent[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},logmode]</key>\n                    <delay>7200</delay>\n                    <history>90</history>\n                    <trends>365</trends>\n                    <status>0</status>\n                    <value_type>1</value_type>\n                    <allowed_hosts/>\n                    <units/>\n                    <delta>0</delta>\n                    <snmpv3_securityname/>\n                    <snmpv3_securitylevel>0</snmpv3_securitylevel>\n                    <snmpv3_authpassphrase/>\n                    <snmpv3_privpassphrase/>\n                    <formula>1</formula>\n                    <delay_flex/>\n                    <params/>\n                    <ipmi_sensor/>\n                    <data_type>0</data_type>\n                    <authtype>0</authtype>\n                    <username/>\n                    <password/>\n                    <publickey/>\n                    <privatekey/>\n                    <port/>\n                    <description/>\n                    <inventory_link>0</inventory_link>\n                    <applications>\n                        <application>\n                            <name>Oracle721</name>\n                        </application>\n                    </applications>\n                    <valuemap/>\n                </item>\n                <item>\n                    <name>Oracle/dbstatus on {$DATABASE}</name>\n                    <type>10</type>\n                    <snmp_community/>\n                    <multiplier>0</multiplier>\n                    <snmp_oid/>\n                    <key>dbagent[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},dbstatus]</key>\n                    <delay>60</delay>\n                    <history>90</history>\n                    <trends>365</trends>\n                    <status>0</status>\n                    <value_type>1</value_type>\n                    <allowed_hosts/>\n                    <units/>\n                    <delta>0</delta>\n                    <snmpv3_securityname/>\n                    <snmpv3_securitylevel>0</snmpv3_securitylevel>\n                    <snmpv3_authpassphrase/>\n                    <snmpv3_privpassphrase/>\n                    <formula>1</formula>\n                    <delay_flex/>\n                    <params/>\n                    <ipmi_sensor/>\n                    <data_type>0</data_type>\n                    <authtype>0</authtype>\n                    <username/>\n                    <password/>\n                    <publickey/>\n                    <privatekey/>\n                    <port/>\n                    <description/>\n                    <inventory_link>0</inventory_link>\n                    <applications>\n                        <application>\n                            <name>Oracle721</name>\n                        </application>\n                    </applications>\n                    <valuemap/>\n                </item>\t\t\t\t\n                <item>\n                    <name>Oracle/currentscn on {$DATABASE}</name>\n                    <type>10</type>\n                    <snmp_community/>\n                    <multiplier>0</multiplier>\n                    <snmp_oid/>\n                    <key>dbagent[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},currentscn]</key>\n                    <delay>60</delay>\n                    <history>7</history>\n                    <trends>90</trends>\n                    <status>0</status>\n                    <value_type>3</value_type>\n                    <allowed_hosts/>\n                    <units/>\n                    <delta>0</delta>\n                    <snmpv3_securityname/>\n                    <snmpv3_securitylevel>0</snmpv3_securitylevel>\n                    <snmpv3_authpassphrase/>\n                    <snmpv3_privpassphrase/>\n                    <formula>1</formula>\n                    <delay_flex/>\n                    <params/>\n                    <ipmi_sensor/>\n                    <data_type>0</data_type>\n                    <authtype>0</authtype>\n                    <username/>\n                    <password/>\n                    <publickey/>\n                    <privatekey/>\n                    <port/>\n                    <description/>\n                    <inventory_link>0</inventory_link>\n                    <applications>\n                        <application>\n                            <name>Oracle721</name>\n                        </application>\n                    </applications>\n                    <valuemap/>\n                </item>\n                \n                <item>\n                    <name>Oracle/archthreadseq on {$DATABASE}</name>\n                    <type>10</type>\n                    <snmp_community/>\n                    <multiplier>0</multiplier>\n                    <snmp_oid/>\n                    <key>dbagent[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},archthreadseq]</key>\n                    <delay>60</delay>\n                    <history>90</history>\n                    <trends>365</trends>\n                    <status>0</status>\n                    <value_type>1</value_type>\n                    <allowed_hosts/>\n                    <units/>\n                    <delta>0</delta>\n                    <snmpv3_securityname/>\n                    <snmpv3_securitylevel>0</snmpv3_securitylevel>\n                    <snmpv3_authpassphrase/>\n                    <snmpv3_privpassphrase/>\n                    <formula>1</formula>\n                    <delay_flex/>\n                    <params/>\n                    <ipmi_sensor/>\n                    <data_type>0</data_type>\n                    <authtype>0</authtype>\n                    <username/>\n                    <password/>\n                    <publickey/>\n                    <privatekey/>\n                    <port/>\n                    <description/>\n                    <inventory_link>0</inventory_link>\n                    <applications>\n                        <application>\n                            <name>Oracle721</name>\n                        </application>\n                    </applications>\n                    <valuemap/>\n                </item>\t\t\t\t\n                <item>\n                    <name>Oracle/flash_areausage on {$DATABASE}</name>\n                    <type>10</type>\n                    <snmp_community/>\n                    <multiplier>0</multiplier>\n                    <snmp_oid/>\n                    <key>dbagent[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},flash_areausage]</key>\n                    <delay>600</delay>\n                    <history>7</history>\n                    <trends>90</trends>\n                    <status>0</status>\n                    <value_type>0</value_type>\n                    <allowed_hosts/>\n                    <units>%</units>\n                    <delta>0</delta>\n                    <snmpv3_securityname/>\n                    <snmpv3_securitylevel>0</snmpv3_securitylevel>\n                    <snmpv3_authpassphrase/>\n                    <snmpv3_privpassphrase/>\n                    <formula>1</formula>\n                    <delay_flex/>\n                    <params/>\n                    <ipmi_sensor/>\n                    <data_type>0</data_type>\n                    <authtype>0</authtype>\n                    <username/>\n                    <password/>\n                    <publickey/>\n                    <privatekey/>\n                    <port/>\n                    <description/>\n                    <inventory_link>0</inventory_link>\n                    <applications>\n                        <application>\n                            <name>Oracle721</name>\n                        </application>\n                    </applications>\n                    <valuemap/>\n                </item>\t\t\t\t\n\n                <item>\n                    <name>Oracle/show_users on {$DATABASE}</name>\n                    <type>10</type>\n                    <snmp_community/>\n                    <multiplier>0</multiplier>\n                    <snmp_oid/>\n                    <key>dbagent[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},show_users]</key>\n                    <delay>360</delay>\n                    <history>90</history>\n                    <trends>365</trends>\n                    <status>0</status>\n                    <value_type>1</value_type>\n                    <allowed_hosts/>\n                    <units/>\n                    <delta>0</delta>\n                    <snmpv3_securityname/>\n                    <snmpv3_securitylevel>0</snmpv3_securitylevel>\n                    <snmpv3_authpassphrase/>\n                    <snmpv3_privpassphrase/>\n                    <formula>1</formula>\n                    <delay_flex/>\n                    <params/>\n                    <ipmi_sensor/>\n                    <data_type>0</data_type>\n                    <authtype>0</authtype>\n                    <username/>\n                    <password/>\n                    <publickey/>\n                    <privatekey/>\n                    <port/>\n                    <description/>\n                    <inventory_link>0</inventory_link>\n                    <applications>\n                        <application>\n                            <name>Oracle721</name>\n                        </application>\n                    </applications>\n                    <valuemap/>\n                </item>\t\t\t\t\t\t\t\t\n                <item>\n                    <name>Oracle/user_status on {$DATABASE}</name>\n                    <type>10</type>\n                    <snmp_community/>\n                    <multiplier>0</multiplier>\n                    <snmp_oid/>\n                    <key>dbagent[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},user_status,{$USERNAME}]</key>\n                    <delay>360</delay>\n                    <history>90</history>\n                    <trends>365</trends>\n                    <status>0</status>\n                    <value_type>1</value_type>\n                    <allowed_hosts/>\n                    <units/>\n                    <delta>0</delta>\n                    <snmpv3_securityname/>\n                    <snmpv3_securitylevel>0</snmpv3_securitylevel>\n                    <snmpv3_authpassphrase/>\n                    <snmpv3_privpassphrase/>\n                    <formula>1</formula>\n                    <delay_flex/>\n                    <params/>\n                    <ipmi_sensor/>\n                    <data_type>0</data_type>\n                    <authtype>0</authtype>\n                    <username/>\n                    <password/>\n                    <publickey/>\n                    <privatekey/>\n                    <port/>\n                    <description/>\n                    <inventory_link>0</inventory_link>\n                    <applications>\n                        <application>\n                            <name>Oracle721</name>\n                        </application>\n                    </applications>\n                    <valuemap/>\n                </item>\t\t\t\t\t\t\t\t\n\n                <item>\n                    <name>Oracle/tablespace SYSTEM count on {$DATABASE}</name>\n                    <type>10</type>\n                    <snmp_community/>\n                    <multiplier>0</multiplier>\n                    <snmp_oid/>\n                    <key>dbagent[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},tablespace,SYSTEM]</key>\n                    <delay>300</delay>\n                    <history>7</history>\n                    <trends>90</trends>\n                    <status>0</status>\n                    <value_type>3</value_type>\n                    <allowed_hosts/>\n                    <units/>\n                    <delta>0</delta>\n                    <snmpv3_securityname/>\n                    <snmpv3_securitylevel>0</snmpv3_securitylevel>\n                    <snmpv3_authpassphrase/>\n                    <snmpv3_privpassphrase/>\n                    <formula>1</formula>\n                    <delay_flex/>\n                    <params/>\n                    <ipmi_sensor/>\n                    <data_type>0</data_type>\n                    <authtype>0</authtype>\n                    <username/>\n                    <password/>\n                    <publickey/>\n                    <privatekey/>\n                    <port/>\n                    <description/>\n                    <inventory_link>0</inventory_link>\n                    <applications>\n                        <application>\n                            <name>Oracle721</name>\n                        </application>\n                    </applications>\n                    <valuemap/>\n                </item>\t\t\t\t\n                <item>\n                    <name>Oracle/User Rollbacks on {$DATABASE}</name>\n                    <type>10</type>\n                    <snmp_community/>\n                    <multiplier>0</multiplier>\n                    <snmp_oid/>\n                    <key>dbagent[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},rollbacks]</key>\n                    <delay>300</delay>\n                    <history>7</history>\n                    <trends>90</trends>\n                    <status>0</status>\n                    <value_type>3</value_type>\n                    <allowed_hosts/>\n                    <units/>\n                    <delta>0</delta>\n                    <snmpv3_securityname/>\n                    <snmpv3_securitylevel>0</snmpv3_securitylevel>\n                    <snmpv3_authpassphrase/>\n                    <snmpv3_privpassphrase/>\n                    <formula>1</formula>\n                    <delay_flex/>\n                    <params/>\n                    <ipmi_sensor/>\n                    <data_type>0</data_type>\n                    <authtype>0</authtype>\n                    <username/>\n                    <password/>\n                    <publickey/>\n                    <privatekey/>\n                    <port/>\n                    <description/>\n                    <inventory_link>0</inventory_link>\n                    <applications>\n                        <application>\n                            <name>Oracle721</name>\n                        </application>\n                    </applications>\n                    <valuemap/>\n                </item>\n\n\t\t\t\t\n\t\t\t\t\n            </items>\n            <templates/>\n            <screens/>\n        </template>\n    </templates>\n</zabbix_export>\n",
+        "format": "xml"
+    },
+    "jsonrpc": "2.0",
+    "method": "configuration.import",
+    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
+    "id": 37
+}
+Response Code: 200, {"jsonrpc":"2.0","result":true,"id":37}
+Response Body: {
+    "jsonrpc": "2.0",
+    "result": true,
+    "id": 37
+}
+

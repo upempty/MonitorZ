@@ -11,7 +11,7 @@ import json
 logger = logging.getLogger('monitorZ')
 #stream log
 stream = logging.StreamHandler(sys.stdout)
-stream.setLevel(logging.DEBUG)
+stream.setLevel(logging.INFO)
 logger.addHandler(stream)
 
 #file log

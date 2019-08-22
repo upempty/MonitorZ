@@ -7,6 +7,7 @@ import glob
 from centre.zabbixlib import ZabbixAPI, ZabbixAPIException
 from centre.zabbixlib import logger
 from centre.configs import *
+import time
 #from centre.hostgroup import *
 #import *.....
 
@@ -134,7 +135,8 @@ class MonitorAPI:
             "type": 0, #agent
             "value_type": value_type, # 3 unsigned numeric
             "interfaceid": "",
-            "delay": "60s",
+            #"delay": "60s", not supported by 3.2.11, but 3.4.15
+            "delay": "60",
         }
         resp = self.__zapi.do_request('item.create', param)
         if not resp or not resp['result']:
@@ -350,7 +352,7 @@ class MonitorAPI:
     @tryme 
     def history_get(self, key, value_type):
         itemids = self.item_get(key)
-        print ("itemids", itemids)
+        #print ("itemids", itemids)
         param = {
             "output": "extend",
             "history": value_type,
@@ -363,9 +365,15 @@ class MonitorAPI:
         if not resp or not resp['result']:
             return None
 
-        logger.info('item:{} history result=='.format(key))
+        logger.info('========================================')
+        logger.info('item:{} history raw result=='.format(key))
         for i,j in enumerate(resp['result']):
             logger.info('{}: {}'.format(i, j))
+
+        logger.info('\nitem:{} history human format result=='.format(key))
+        for i,j in enumerate(resp['result']):
+            timestr = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(long(j['clock'])))
+            logger.info('item:{}, id:{}, value:{}, time:{}'.format(key, j['itemid'],j['value'], timestr))
 
         return resp['result']
 
