@@ -149,6 +149,7 @@ class MonitorAPI:
     def item_get(self, key):
         param = {
             "output": "extend",
+            #"hostids": "10112",
             #"hostids": tid,
             #"filter": {"hostid": hostid},
             #"filter": {"hostids": hid},
@@ -352,7 +353,7 @@ class MonitorAPI:
     @tryme 
     def history_get(self, key, value_type):
         itemids = self.item_get(key)
-        #print ("itemids", itemids)
+        print ("itemids", itemids)
         param = {
             "output": "extend",
             "history": value_type,
@@ -376,6 +377,37 @@ class MonitorAPI:
             logger.info('item:{}, id:{}, value:{}, time:{}'.format(key, j['itemid'],j['value'], timestr))
 
         return resp['result']
+
+    @tryme 
+    def history_get_host(self, host_name, key, value_type):
+        hostid = self.host_get(host_name)
+        itemids = self.item_get(key)
+        print ("itemids", itemids)
+        param = {
+            "output": "extend",
+            "history": value_type,
+            "hostids": [hostid],
+            "itemids": itemids,
+            "sortfield": "clock",
+            "sortorder": "DESC",
+            "limit": 10
+        }
+        resp = self.__zapi.do_request('history.get', param)
+        if not resp or not resp['result']:
+            return None
+
+        logger.info('========================================')
+        logger.info('item:{} history raw result=='.format(key))
+        for i,j in enumerate(resp['result']):
+            logger.info('{}: {}'.format(i, j))
+
+        logger.info('\nitem:{} history human format result=='.format(key))
+        for i,j in enumerate(resp['result']):
+            timestr = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(long(j['clock'])))
+            logger.info('item:{}, id:{}, value:{}, time:{}'.format(key, j['itemid'],j['value'], timestr))
+
+        return resp['result']
+
 
 
     @tryme 
