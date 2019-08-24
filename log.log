@@ -1,1532 +1,841 @@
 JSON-RPC Server Endpoint: http://192.168.1.131/zabbix/api_jsonrpc.php
-Sending: {
-    "params": {
-        "password": "zabbix",
-        "user": "Admin"
-    },
-    "jsonrpc": "2.0",
-    "method": "user.login",
-    "id": 0
-}
-Response Code: 200, {"jsonrpc":"2.0","result":"59babbf831c620c73e0c9f6ff4f44a0a","id":0}
-Response Body: {
-    "jsonrpc": "2.0",
-    "result": "59babbf831c620c73e0c9f6ff4f44a0a",
-    "id": 0
-}
-Sending: {
-    "params": {
-        "filter": {
-            "name": [
-                "hostgroup721"
-            ]
-        }
-    },
-    "jsonrpc": "2.0",
-    "method": "hostgroup.get",
-    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
-    "id": 1
-}
-Response Code: 200, {"jsonrpc":"2.0","result":[{"groupid":"8","name":"hostgroup721","internal":"0","flags":"0"}],"id":1}
-Response Body: {
-    "jsonrpc": "2.0",
-    "result": [
-        {
-            "internal": "0",
-            "flags": "0",
-            "groupid": "8",
-            "name": "hostgroup721"
-        }
-    ],
-    "id": 1
-}
-Sending: {
-    "params": {
-        "filter": {
-            "host": [
-                "template721"
-            ]
-        },
-        "output": "extend"
-    },
-    "jsonrpc": "2.0",
-    "method": "template.get",
-    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
-    "id": 2
-}
-Response Code: 200, {"jsonrpc":"2.0","result":[{"proxy_hostid":"0","host":"template721","status":"3","disable_until":"0","error":"","available":"0","errors_from":"0","lastaccess":"0","ipmi_authtype":"0","ipmi_privilege":"2","ipmi_username":"","ipmi_password":"","ipmi_disable_until":"0","ipmi_available":"0","snmp_disable_until":"0","snmp_available":"0","maintenanceid":"0","maintenance_status":"0","maintenance_type":"0","maintenance_from":"0","ipmi_errors_from":"0","snmp_errors_from":"0","ipmi_error":"","snmp_error":"","jmx_disable_until":"0","jmx_available":"0","jmx_errors_from":"0","jmx_error":"","name":"template721","flags":"0","templateid":"10105","description":"","tls_connect":"1","tls_accept":"1","tls_issuer":"","tls_subject":"","tls_psk_identity":"","tls_psk":""}],"id":2}
-Response Body: {
-    "jsonrpc": "2.0",
-    "result": [
-        {
-            "available": "0",
-            "tls_connect": "1",
-            "maintenance_type": "0",
-            "ipmi_errors_from": "0",
-            "ipmi_username": "",
-            "snmp_disable_until": "0",
-            "ipmi_authtype": "0",
-            "ipmi_disable_until": "0",
-            "lastaccess": "0",
-            "snmp_error": "",
-            "tls_psk": "",
-            "ipmi_privilege": "2",
-            "jmx_error": "",
-            "jmx_available": "0",
-            "maintenanceid": "0",
-            "snmp_available": "0",
-            "tls_psk_identity": "",
-            "status": "3",
-            "description": "",
-            "tls_accept": "1",
-            "host": "template721",
-            "disable_until": "0",
-            "ipmi_password": "",
-            "templateid": "10105",
-            "tls_issuer": "",
-            "ipmi_available": "0",
-            "maintenance_status": "0",
-            "snmp_errors_from": "0",
-            "ipmi_error": "",
-            "proxy_hostid": "0",
-            "name": "template721",
-            "jmx_errors_from": "0",
-            "jmx_disable_until": "0",
-            "flags": "0",
-            "error": "",
-            "maintenance_from": "0",
-            "tls_subject": "",
-            "errors_from": "0"
-        }
-    ],
-    "id": 2
-}
-Sending: {
-    "params": {
-        "output": "extend",
-        "search": {
-            "key_": "oracle.query[zabbix,zabbix,cfBareos,XE,version]"
-        },
-        "sortfield": "name"
-    },
-    "jsonrpc": "2.0",
-    "method": "item.get",
-    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
-    "id": 3
-}
-Response Code: 200, {"jsonrpc":"2.0","result":[],"id":3}
-Response Body: {
-    "jsonrpc": "2.0",
-    "result": [],
-    "id": 3
-}
-Sending: {
-    "params": {
-        "filter": {
-            "host": [
-                "template721"
-            ]
-        },
-        "output": "extend"
-    },
-    "jsonrpc": "2.0",
-    "method": "template.get",
-    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
-    "id": 4
-}
-Response Code: 200, {"jsonrpc":"2.0","result":[{"proxy_hostid":"0","host":"template721","status":"3","disable_until":"0","error":"","available":"0","errors_from":"0","lastaccess":"0","ipmi_authtype":"0","ipmi_privilege":"2","ipmi_username":"","ipmi_password":"","ipmi_disable_until":"0","ipmi_available":"0","snmp_disable_until":"0","snmp_available":"0","maintenanceid":"0","maintenance_status":"0","maintenance_type":"0","maintenance_from":"0","ipmi_errors_from":"0","snmp_errors_from":"0","ipmi_error":"","snmp_error":"","jmx_disable_until":"0","jmx_available":"0","jmx_errors_from":"0","jmx_error":"","name":"template721","flags":"0","templateid":"10105","description":"","tls_connect":"1","tls_accept":"1","tls_issuer":"","tls_subject":"","tls_psk_identity":"","tls_psk":""}],"id":4}
-Response Body: {
-    "jsonrpc": "2.0",
-    "result": [
-        {
-            "available": "0",
-            "tls_connect": "1",
-            "maintenance_type": "0",
-            "ipmi_errors_from": "0",
-            "ipmi_username": "",
-            "snmp_disable_until": "0",
-            "ipmi_authtype": "0",
-            "ipmi_disable_until": "0",
-            "lastaccess": "0",
-            "snmp_error": "",
-            "tls_psk": "",
-            "ipmi_privilege": "2",
-            "jmx_error": "",
-            "jmx_available": "0",
-            "maintenanceid": "0",
-            "snmp_available": "0",
-            "tls_psk_identity": "",
-            "status": "3",
-            "description": "",
-            "tls_accept": "1",
-            "host": "template721",
-            "disable_until": "0",
-            "ipmi_password": "",
-            "templateid": "10105",
-            "tls_issuer": "",
-            "ipmi_available": "0",
-            "maintenance_status": "0",
-            "snmp_errors_from": "0",
-            "ipmi_error": "",
-            "proxy_hostid": "0",
-            "name": "template721",
-            "jmx_errors_from": "0",
-            "jmx_disable_until": "0",
-            "flags": "0",
-            "error": "",
-            "maintenance_from": "0",
-            "tls_subject": "",
-            "errors_from": "0"
-        }
-    ],
-    "id": 4
-}
-Sending: {
-    "params": {
-        "interfaceid": "",
-        "hostid": "10105",
-        "key_": "oracle.query[zabbix,zabbix,cfBareos,XE,version]",
-        "name": "ora version",
-        "delay": "60s",
-        "value_type": 1,
-        "type": 0
-    },
-    "jsonrpc": "2.0",
-    "method": "item.create",
-    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
-    "id": 5
-}
-Response Code: 200, {"jsonrpc":"2.0","error":{"code":-32500,"message":"Application error.","data":"Incorrect value \"60s\" for int field \"delay\"."},"id":5}
-Response Body: {
-    "jsonrpc": "2.0",
-    "id": 5,
-    "error": {
-        "message": "Application error.",
-        "code": -32500,
-        "data": "Incorrect value \"60s\" for int field \"delay\"."
-    }
-}
-Try with Exception
-(u'Error -32500: Application error., Incorrect value "60s" for int field "delay".', -32500)
-Try with Exception
-'NoneType' object has no attribute '__getitem__'
-Sending: {
-    "params": {
-        "filter": {
-            "name": [
-                "hostgroup721"
-            ]
-        }
-    },
-    "jsonrpc": "2.0",
-    "method": "hostgroup.get",
-    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
-    "id": 6
-}
-Response Code: 200, {"jsonrpc":"2.0","result":[{"groupid":"8","name":"hostgroup721","internal":"0","flags":"0"}],"id":6}
-Response Body: {
-    "jsonrpc": "2.0",
-    "result": [
-        {
-            "internal": "0",
-            "flags": "0",
-            "groupid": "8",
-            "name": "hostgroup721"
-        }
-    ],
-    "id": 6
-}
-Sending: {
-    "params": {
-        "filter": {
-            "host": [
-                "template721"
-            ]
-        },
-        "output": "extend"
-    },
-    "jsonrpc": "2.0",
-    "method": "template.get",
-    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
-    "id": 7
-}
-Response Code: 200, {"jsonrpc":"2.0","result":[{"proxy_hostid":"0","host":"template721","status":"3","disable_until":"0","error":"","available":"0","errors_from":"0","lastaccess":"0","ipmi_authtype":"0","ipmi_privilege":"2","ipmi_username":"","ipmi_password":"","ipmi_disable_until":"0","ipmi_available":"0","snmp_disable_until":"0","snmp_available":"0","maintenanceid":"0","maintenance_status":"0","maintenance_type":"0","maintenance_from":"0","ipmi_errors_from":"0","snmp_errors_from":"0","ipmi_error":"","snmp_error":"","jmx_disable_until":"0","jmx_available":"0","jmx_errors_from":"0","jmx_error":"","name":"template721","flags":"0","templateid":"10105","description":"","tls_connect":"1","tls_accept":"1","tls_issuer":"","tls_subject":"","tls_psk_identity":"","tls_psk":""}],"id":7}
-Response Body: {
-    "jsonrpc": "2.0",
-    "result": [
-        {
-            "available": "0",
-            "tls_connect": "1",
-            "maintenance_type": "0",
-            "ipmi_errors_from": "0",
-            "ipmi_username": "",
-            "snmp_disable_until": "0",
-            "ipmi_authtype": "0",
-            "ipmi_disable_until": "0",
-            "lastaccess": "0",
-            "snmp_error": "",
-            "tls_psk": "",
-            "ipmi_privilege": "2",
-            "jmx_error": "",
-            "jmx_available": "0",
-            "maintenanceid": "0",
-            "snmp_available": "0",
-            "tls_psk_identity": "",
-            "status": "3",
-            "description": "",
-            "tls_accept": "1",
-            "host": "template721",
-            "disable_until": "0",
-            "ipmi_password": "",
-            "templateid": "10105",
-            "tls_issuer": "",
-            "ipmi_available": "0",
-            "maintenance_status": "0",
-            "snmp_errors_from": "0",
-            "ipmi_error": "",
-            "proxy_hostid": "0",
-            "name": "template721",
-            "jmx_errors_from": "0",
-            "jmx_disable_until": "0",
-            "flags": "0",
-            "error": "",
-            "maintenance_from": "0",
-            "tls_subject": "",
-            "errors_from": "0"
-        }
-    ],
-    "id": 7
-}
-Sending: {
-    "params": {
-        "output": "extend",
-        "search": {
-            "key_": "oracle.query[zabbix,zabbix,cfBareos,XE,dbsize]"
-        },
-        "sortfield": "name"
-    },
-    "jsonrpc": "2.0",
-    "method": "item.get",
-    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
-    "id": 8
-}
-Response Code: 200, {"jsonrpc":"2.0","result":[],"id":8}
-Response Body: {
-    "jsonrpc": "2.0",
-    "result": [],
-    "id": 8
-}
-Sending: {
-    "params": {
-        "filter": {
-            "host": [
-                "template721"
-            ]
-        },
-        "output": "extend"
-    },
-    "jsonrpc": "2.0",
-    "method": "template.get",
-    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
-    "id": 9
-}
-Response Code: 200, {"jsonrpc":"2.0","result":[{"proxy_hostid":"0","host":"template721","status":"3","disable_until":"0","error":"","available":"0","errors_from":"0","lastaccess":"0","ipmi_authtype":"0","ipmi_privilege":"2","ipmi_username":"","ipmi_password":"","ipmi_disable_until":"0","ipmi_available":"0","snmp_disable_until":"0","snmp_available":"0","maintenanceid":"0","maintenance_status":"0","maintenance_type":"0","maintenance_from":"0","ipmi_errors_from":"0","snmp_errors_from":"0","ipmi_error":"","snmp_error":"","jmx_disable_until":"0","jmx_available":"0","jmx_errors_from":"0","jmx_error":"","name":"template721","flags":"0","templateid":"10105","description":"","tls_connect":"1","tls_accept":"1","tls_issuer":"","tls_subject":"","tls_psk_identity":"","tls_psk":""}],"id":9}
-Response Body: {
-    "jsonrpc": "2.0",
-    "result": [
-        {
-            "available": "0",
-            "tls_connect": "1",
-            "maintenance_type": "0",
-            "ipmi_errors_from": "0",
-            "ipmi_username": "",
-            "snmp_disable_until": "0",
-            "ipmi_authtype": "0",
-            "ipmi_disable_until": "0",
-            "lastaccess": "0",
-            "snmp_error": "",
-            "tls_psk": "",
-            "ipmi_privilege": "2",
-            "jmx_error": "",
-            "jmx_available": "0",
-            "maintenanceid": "0",
-            "snmp_available": "0",
-            "tls_psk_identity": "",
-            "status": "3",
-            "description": "",
-            "tls_accept": "1",
-            "host": "template721",
-            "disable_until": "0",
-            "ipmi_password": "",
-            "templateid": "10105",
-            "tls_issuer": "",
-            "ipmi_available": "0",
-            "maintenance_status": "0",
-            "snmp_errors_from": "0",
-            "ipmi_error": "",
-            "proxy_hostid": "0",
-            "name": "template721",
-            "jmx_errors_from": "0",
-            "jmx_disable_until": "0",
-            "flags": "0",
-            "error": "",
-            "maintenance_from": "0",
-            "tls_subject": "",
-            "errors_from": "0"
-        }
-    ],
-    "id": 9
-}
-Sending: {
-    "params": {
-        "interfaceid": "",
-        "hostid": "10105",
-        "key_": "oracle.query[zabbix,zabbix,cfBareos,XE,dbsize]",
-        "name": "ora db size",
-        "delay": "60s",
-        "value_type": 3,
-        "type": 0
-    },
-    "jsonrpc": "2.0",
-    "method": "item.create",
-    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
-    "id": 10
-}
-Response Code: 200, {"jsonrpc":"2.0","error":{"code":-32500,"message":"Application error.","data":"Incorrect value \"60s\" for int field \"delay\"."},"id":10}
-Response Body: {
-    "jsonrpc": "2.0",
-    "id": 10,
-    "error": {
-        "message": "Application error.",
-        "code": -32500,
-        "data": "Incorrect value \"60s\" for int field \"delay\"."
-    }
-}
-Try with Exception
-(u'Error -32500: Application error., Incorrect value "60s" for int field "delay".', -32500)
-Try with Exception
-'NoneType' object has no attribute '__getitem__'
-Sending: {
-    "params": {
-        "filter": {
-            "name": [
-                "hostgroup721"
-            ]
-        }
-    },
-    "jsonrpc": "2.0",
-    "method": "hostgroup.get",
-    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
-    "id": 11
-}
-Response Code: 200, {"jsonrpc":"2.0","result":[{"groupid":"8","name":"hostgroup721","internal":"0","flags":"0"}],"id":11}
-Response Body: {
-    "jsonrpc": "2.0",
-    "result": [
-        {
-            "internal": "0",
-            "flags": "0",
-            "groupid": "8",
-            "name": "hostgroup721"
-        }
-    ],
-    "id": 11
-}
-Sending: {
-    "params": {
-        "filter": {
-            "host": [
-                "template721"
-            ]
-        },
-        "output": "extend"
-    },
-    "jsonrpc": "2.0",
-    "method": "template.get",
-    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
-    "id": 12
-}
-Response Code: 200, {"jsonrpc":"2.0","result":[{"proxy_hostid":"0","host":"template721","status":"3","disable_until":"0","error":"","available":"0","errors_from":"0","lastaccess":"0","ipmi_authtype":"0","ipmi_privilege":"2","ipmi_username":"","ipmi_password":"","ipmi_disable_until":"0","ipmi_available":"0","snmp_disable_until":"0","snmp_available":"0","maintenanceid":"0","maintenance_status":"0","maintenance_type":"0","maintenance_from":"0","ipmi_errors_from":"0","snmp_errors_from":"0","ipmi_error":"","snmp_error":"","jmx_disable_until":"0","jmx_available":"0","jmx_errors_from":"0","jmx_error":"","name":"template721","flags":"0","templateid":"10105","description":"","tls_connect":"1","tls_accept":"1","tls_issuer":"","tls_subject":"","tls_psk_identity":"","tls_psk":""}],"id":12}
-Response Body: {
-    "jsonrpc": "2.0",
-    "result": [
-        {
-            "available": "0",
-            "tls_connect": "1",
-            "maintenance_type": "0",
-            "ipmi_errors_from": "0",
-            "ipmi_username": "",
-            "snmp_disable_until": "0",
-            "ipmi_authtype": "0",
-            "ipmi_disable_until": "0",
-            "lastaccess": "0",
-            "snmp_error": "",
-            "tls_psk": "",
-            "ipmi_privilege": "2",
-            "jmx_error": "",
-            "jmx_available": "0",
-            "maintenanceid": "0",
-            "snmp_available": "0",
-            "tls_psk_identity": "",
-            "status": "3",
-            "description": "",
-            "tls_accept": "1",
-            "host": "template721",
-            "disable_until": "0",
-            "ipmi_password": "",
-            "templateid": "10105",
-            "tls_issuer": "",
-            "ipmi_available": "0",
-            "maintenance_status": "0",
-            "snmp_errors_from": "0",
-            "ipmi_error": "",
-            "proxy_hostid": "0",
-            "name": "template721",
-            "jmx_errors_from": "0",
-            "jmx_disable_until": "0",
-            "flags": "0",
-            "error": "",
-            "maintenance_from": "0",
-            "tls_subject": "",
-            "errors_from": "0"
-        }
-    ],
-    "id": 12
-}
-Sending: {
-    "params": {
-        "output": "extend",
-        "search": {
-            "key_": "oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},check_active]"
-        },
-        "sortfield": "name"
-    },
-    "jsonrpc": "2.0",
-    "method": "item.get",
-    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
-    "id": 13
-}
-Response Code: 200, {"jsonrpc":"2.0","result":[],"id":13}
-Response Body: {
-    "jsonrpc": "2.0",
-    "result": [],
-    "id": 13
-}
-Sending: {
-    "params": {
-        "filter": {
-            "host": [
-                "template721"
-            ]
-        },
-        "output": "extend"
-    },
-    "jsonrpc": "2.0",
-    "method": "template.get",
-    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
-    "id": 14
-}
-Response Code: 200, {"jsonrpc":"2.0","result":[{"proxy_hostid":"0","host":"template721","status":"3","disable_until":"0","error":"","available":"0","errors_from":"0","lastaccess":"0","ipmi_authtype":"0","ipmi_privilege":"2","ipmi_username":"","ipmi_password":"","ipmi_disable_until":"0","ipmi_available":"0","snmp_disable_until":"0","snmp_available":"0","maintenanceid":"0","maintenance_status":"0","maintenance_type":"0","maintenance_from":"0","ipmi_errors_from":"0","snmp_errors_from":"0","ipmi_error":"","snmp_error":"","jmx_disable_until":"0","jmx_available":"0","jmx_errors_from":"0","jmx_error":"","name":"template721","flags":"0","templateid":"10105","description":"","tls_connect":"1","tls_accept":"1","tls_issuer":"","tls_subject":"","tls_psk_identity":"","tls_psk":""}],"id":14}
-Response Body: {
-    "jsonrpc": "2.0",
-    "result": [
-        {
-            "available": "0",
-            "tls_connect": "1",
-            "maintenance_type": "0",
-            "ipmi_errors_from": "0",
-            "ipmi_username": "",
-            "snmp_disable_until": "0",
-            "ipmi_authtype": "0",
-            "ipmi_disable_until": "0",
-            "lastaccess": "0",
-            "snmp_error": "",
-            "tls_psk": "",
-            "ipmi_privilege": "2",
-            "jmx_error": "",
-            "jmx_available": "0",
-            "maintenanceid": "0",
-            "snmp_available": "0",
-            "tls_psk_identity": "",
-            "status": "3",
-            "description": "",
-            "tls_accept": "1",
-            "host": "template721",
-            "disable_until": "0",
-            "ipmi_password": "",
-            "templateid": "10105",
-            "tls_issuer": "",
-            "ipmi_available": "0",
-            "maintenance_status": "0",
-            "snmp_errors_from": "0",
-            "ipmi_error": "",
-            "proxy_hostid": "0",
-            "name": "template721",
-            "jmx_errors_from": "0",
-            "jmx_disable_until": "0",
-            "flags": "0",
-            "error": "",
-            "maintenance_from": "0",
-            "tls_subject": "",
-            "errors_from": "0"
-        }
-    ],
-    "id": 14
-}
-Sending: {
-    "params": {
-        "interfaceid": "",
-        "hostid": "10105",
-        "key_": "oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},check_active]",
-        "name": "ora check active",
-        "delay": "60s",
-        "value_type": 3,
-        "type": 0
-    },
-    "jsonrpc": "2.0",
-    "method": "item.create",
-    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
-    "id": 15
-}
-Response Code: 200, {"jsonrpc":"2.0","error":{"code":-32500,"message":"Application error.","data":"Incorrect value \"60s\" for int field \"delay\"."},"id":15}
-Response Body: {
-    "jsonrpc": "2.0",
-    "id": 15,
-    "error": {
-        "message": "Application error.",
-        "code": -32500,
-        "data": "Incorrect value \"60s\" for int field \"delay\"."
-    }
-}
-Try with Exception
-(u'Error -32500: Application error., Incorrect value "60s" for int field "delay".', -32500)
-Try with Exception
-'NoneType' object has no attribute '__getitem__'
-Sending: {
-    "params": {
-        "filter": {
-            "host": "host721"
-        },
-        "output": "extend"
-    },
-    "jsonrpc": "2.0",
-    "method": "host.get",
-    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
-    "id": 16
-}
-Response Code: 200, {"jsonrpc":"2.0","result":[{"hostid":"10106","proxy_hostid":"0","host":"host721","status":"0","disable_until":"0","error":"","available":"0","errors_from":"0","lastaccess":"0","ipmi_authtype":"0","ipmi_privilege":"2","ipmi_username":"","ipmi_password":"","ipmi_disable_until":"0","ipmi_available":"0","snmp_disable_until":"0","snmp_available":"0","maintenanceid":"0","maintenance_status":"0","maintenance_type":"0","maintenance_from":"0","ipmi_errors_from":"0","snmp_errors_from":"0","ipmi_error":"","snmp_error":"","jmx_disable_until":"0","jmx_available":"0","jmx_errors_from":"0","jmx_error":"","name":"host721","flags":"0","templateid":"0","description":"","tls_connect":"1","tls_accept":"1","tls_issuer":"","tls_subject":"","tls_psk_identity":"","tls_psk":""}],"id":16}
-Response Body: {
-    "jsonrpc": "2.0",
-    "result": [
-        {
-            "available": "0",
-            "tls_connect": "1",
-            "maintenance_type": "0",
-            "ipmi_errors_from": "0",
-            "ipmi_username": "",
-            "snmp_disable_until": "0",
-            "ipmi_authtype": "0",
-            "ipmi_disable_until": "0",
-            "lastaccess": "0",
-            "snmp_error": "",
-            "tls_psk": "",
-            "ipmi_privilege": "2",
-            "jmx_error": "",
-            "jmx_available": "0",
-            "maintenanceid": "0",
-            "snmp_available": "0",
-            "tls_psk_identity": "",
-            "status": "0",
-            "description": "",
-            "tls_accept": "1",
-            "host": "host721",
-            "disable_until": "0",
-            "ipmi_password": "",
-            "templateid": "0",
-            "tls_issuer": "",
-            "ipmi_available": "0",
-            "maintenance_status": "0",
-            "snmp_errors_from": "0",
-            "ipmi_error": "",
-            "proxy_hostid": "0",
-            "hostid": "10106",
-            "name": "host721",
-            "jmx_errors_from": "0",
-            "jmx_disable_until": "0",
-            "flags": "0",
-            "error": "",
-            "maintenance_from": "0",
-            "tls_subject": "",
-            "errors_from": "0"
-        }
-    ],
-    "id": 16
-}
-Sending: {
-    "params": {
-        "filter": {
-            "host": "host721"
-        },
-        "output": "extend"
-    },
-    "jsonrpc": "2.0",
-    "method": "host.get",
-    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
-    "id": 17
-}
-Response Code: 200, {"jsonrpc":"2.0","result":[{"hostid":"10106","proxy_hostid":"0","host":"host721","status":"0","disable_until":"0","error":"","available":"0","errors_from":"0","lastaccess":"0","ipmi_authtype":"0","ipmi_privilege":"2","ipmi_username":"","ipmi_password":"","ipmi_disable_until":"0","ipmi_available":"0","snmp_disable_until":"0","snmp_available":"0","maintenanceid":"0","maintenance_status":"0","maintenance_type":"0","maintenance_from":"0","ipmi_errors_from":"0","snmp_errors_from":"0","ipmi_error":"","snmp_error":"","jmx_disable_until":"0","jmx_available":"0","jmx_errors_from":"0","jmx_error":"","name":"host721","flags":"0","templateid":"0","description":"","tls_connect":"1","tls_accept":"1","tls_issuer":"","tls_subject":"","tls_psk_identity":"","tls_psk":""}],"id":17}
-Response Body: {
-    "jsonrpc": "2.0",
-    "result": [
-        {
-            "available": "0",
-            "tls_connect": "1",
-            "maintenance_type": "0",
-            "ipmi_errors_from": "0",
-            "ipmi_username": "",
-            "snmp_disable_until": "0",
-            "ipmi_authtype": "0",
-            "ipmi_disable_until": "0",
-            "lastaccess": "0",
-            "snmp_error": "",
-            "tls_psk": "",
-            "ipmi_privilege": "2",
-            "jmx_error": "",
-            "jmx_available": "0",
-            "maintenanceid": "0",
-            "snmp_available": "0",
-            "tls_psk_identity": "",
-            "status": "0",
-            "description": "",
-            "tls_accept": "1",
-            "host": "host721",
-            "disable_until": "0",
-            "ipmi_password": "",
-            "templateid": "0",
-            "tls_issuer": "",
-            "ipmi_available": "0",
-            "maintenance_status": "0",
-            "snmp_errors_from": "0",
-            "ipmi_error": "",
-            "proxy_hostid": "0",
-            "hostid": "10106",
-            "name": "host721",
-            "jmx_errors_from": "0",
-            "jmx_disable_until": "0",
-            "flags": "0",
-            "error": "",
-            "maintenance_from": "0",
-            "tls_subject": "",
-            "errors_from": "0"
-        }
-    ],
-    "id": 17
-}
-Sending: {
-    "params": {
-        "output": "extend",
-        "hostids": "10106"
-    },
-    "jsonrpc": "2.0",
-    "method": "usermacro.get",
-    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
-    "id": 18
-}
-Response Code: 200, {"jsonrpc":"2.0","result":[{"hostmacroid":"1","hostid":"10106","macro":"{$USERNAME}","value":"zabbix"},{"hostmacroid":"2","hostid":"10106","macro":"{$PASSWORD}","value":"zabbix"},{"hostmacroid":"3","hostid":"10106","macro":"{$ADDRESS}","value":"cfBareos"},{"hostmacroid":"4","hostid":"10106","macro":"{$DATABASE}","value":"XE"}],"id":18}
-Response Body: {
-    "jsonrpc": "2.0",
-    "result": [
-        {
-            "macro": "{$USERNAME}",
-            "hostmacroid": "1",
-            "hostid": "10106",
-            "value": "zabbix"
-        },
-        {
-            "macro": "{$PASSWORD}",
-            "hostmacroid": "2",
-            "hostid": "10106",
-            "value": "zabbix"
-        },
-        {
-            "macro": "{$ADDRESS}",
-            "hostmacroid": "3",
-            "hostid": "10106",
-            "value": "cfBareos"
-        },
-        {
-            "macro": "{$DATABASE}",
-            "hostmacroid": "4",
-            "hostid": "10106",
-            "value": "XE"
-        }
-    ],
-    "id": 18
-}
-Sending: {
-    "params": {
-        "filter": {
-            "host": "host721"
-        },
-        "output": "extend"
-    },
-    "jsonrpc": "2.0",
-    "method": "host.get",
-    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
-    "id": 19
-}
-Response Code: 200, {"jsonrpc":"2.0","result":[{"hostid":"10106","proxy_hostid":"0","host":"host721","status":"0","disable_until":"0","error":"","available":"0","errors_from":"0","lastaccess":"0","ipmi_authtype":"0","ipmi_privilege":"2","ipmi_username":"","ipmi_password":"","ipmi_disable_until":"0","ipmi_available":"0","snmp_disable_until":"0","snmp_available":"0","maintenanceid":"0","maintenance_status":"0","maintenance_type":"0","maintenance_from":"0","ipmi_errors_from":"0","snmp_errors_from":"0","ipmi_error":"","snmp_error":"","jmx_disable_until":"0","jmx_available":"0","jmx_errors_from":"0","jmx_error":"","name":"host721","flags":"0","templateid":"0","description":"","tls_connect":"1","tls_accept":"1","tls_issuer":"","tls_subject":"","tls_psk_identity":"","tls_psk":""}],"id":19}
-Response Body: {
-    "jsonrpc": "2.0",
-    "result": [
-        {
-            "available": "0",
-            "tls_connect": "1",
-            "maintenance_type": "0",
-            "ipmi_errors_from": "0",
-            "ipmi_username": "",
-            "snmp_disable_until": "0",
-            "ipmi_authtype": "0",
-            "ipmi_disable_until": "0",
-            "lastaccess": "0",
-            "snmp_error": "",
-            "tls_psk": "",
-            "ipmi_privilege": "2",
-            "jmx_error": "",
-            "jmx_available": "0",
-            "maintenanceid": "0",
-            "snmp_available": "0",
-            "tls_psk_identity": "",
-            "status": "0",
-            "description": "",
-            "tls_accept": "1",
-            "host": "host721",
-            "disable_until": "0",
-            "ipmi_password": "",
-            "templateid": "0",
-            "tls_issuer": "",
-            "ipmi_available": "0",
-            "maintenance_status": "0",
-            "snmp_errors_from": "0",
-            "ipmi_error": "",
-            "proxy_hostid": "0",
-            "hostid": "10106",
-            "name": "host721",
-            "jmx_errors_from": "0",
-            "jmx_disable_until": "0",
-            "flags": "0",
-            "error": "",
-            "maintenance_from": "0",
-            "tls_subject": "",
-            "errors_from": "0"
-        }
-    ],
-    "id": 19
-}
-Sending: {
-    "params": {
-        "output": "extend",
-        "hostids": "10106"
-    },
-    "jsonrpc": "2.0",
-    "method": "usermacro.get",
-    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
-    "id": 20
-}
-Response Code: 200, {"jsonrpc":"2.0","result":[{"hostmacroid":"1","hostid":"10106","macro":"{$USERNAME}","value":"zabbix"},{"hostmacroid":"2","hostid":"10106","macro":"{$PASSWORD}","value":"zabbix"},{"hostmacroid":"3","hostid":"10106","macro":"{$ADDRESS}","value":"cfBareos"},{"hostmacroid":"4","hostid":"10106","macro":"{$DATABASE}","value":"XE"}],"id":20}
-Response Body: {
-    "jsonrpc": "2.0",
-    "result": [
-        {
-            "macro": "{$USERNAME}",
-            "hostmacroid": "1",
-            "hostid": "10106",
-            "value": "zabbix"
-        },
-        {
-            "macro": "{$PASSWORD}",
-            "hostmacroid": "2",
-            "hostid": "10106",
-            "value": "zabbix"
-        },
-        {
-            "macro": "{$ADDRESS}",
-            "hostmacroid": "3",
-            "hostid": "10106",
-            "value": "cfBareos"
-        },
-        {
-            "macro": "{$DATABASE}",
-            "hostmacroid": "4",
-            "hostid": "10106",
-            "value": "XE"
-        }
-    ],
-    "id": 20
-}
-Sending: {
-    "params": {
-        "filter": {
-            "host": "host721"
-        },
-        "output": "extend"
-    },
-    "jsonrpc": "2.0",
-    "method": "host.get",
-    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
-    "id": 21
-}
-Response Code: 200, {"jsonrpc":"2.0","result":[{"hostid":"10106","proxy_hostid":"0","host":"host721","status":"0","disable_until":"0","error":"","available":"0","errors_from":"0","lastaccess":"0","ipmi_authtype":"0","ipmi_privilege":"2","ipmi_username":"","ipmi_password":"","ipmi_disable_until":"0","ipmi_available":"0","snmp_disable_until":"0","snmp_available":"0","maintenanceid":"0","maintenance_status":"0","maintenance_type":"0","maintenance_from":"0","ipmi_errors_from":"0","snmp_errors_from":"0","ipmi_error":"","snmp_error":"","jmx_disable_until":"0","jmx_available":"0","jmx_errors_from":"0","jmx_error":"","name":"host721","flags":"0","templateid":"0","description":"","tls_connect":"1","tls_accept":"1","tls_issuer":"","tls_subject":"","tls_psk_identity":"","tls_psk":""}],"id":21}
-Response Body: {
-    "jsonrpc": "2.0",
-    "result": [
-        {
-            "available": "0",
-            "tls_connect": "1",
-            "maintenance_type": "0",
-            "ipmi_errors_from": "0",
-            "ipmi_username": "",
-            "snmp_disable_until": "0",
-            "ipmi_authtype": "0",
-            "ipmi_disable_until": "0",
-            "lastaccess": "0",
-            "snmp_error": "",
-            "tls_psk": "",
-            "ipmi_privilege": "2",
-            "jmx_error": "",
-            "jmx_available": "0",
-            "maintenanceid": "0",
-            "snmp_available": "0",
-            "tls_psk_identity": "",
-            "status": "0",
-            "description": "",
-            "tls_accept": "1",
-            "host": "host721",
-            "disable_until": "0",
-            "ipmi_password": "",
-            "templateid": "0",
-            "tls_issuer": "",
-            "ipmi_available": "0",
-            "maintenance_status": "0",
-            "snmp_errors_from": "0",
-            "ipmi_error": "",
-            "proxy_hostid": "0",
-            "hostid": "10106",
-            "name": "host721",
-            "jmx_errors_from": "0",
-            "jmx_disable_until": "0",
-            "flags": "0",
-            "error": "",
-            "maintenance_from": "0",
-            "tls_subject": "",
-            "errors_from": "0"
-        }
-    ],
-    "id": 21
-}
-Sending: {
-    "params": {
-        "output": "extend",
-        "hostids": "10106"
-    },
-    "jsonrpc": "2.0",
-    "method": "usermacro.get",
-    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
-    "id": 22
-}
-Response Code: 200, {"jsonrpc":"2.0","result":[{"hostmacroid":"1","hostid":"10106","macro":"{$USERNAME}","value":"zabbix"},{"hostmacroid":"2","hostid":"10106","macro":"{$PASSWORD}","value":"zabbix"},{"hostmacroid":"3","hostid":"10106","macro":"{$ADDRESS}","value":"cfBareos"},{"hostmacroid":"4","hostid":"10106","macro":"{$DATABASE}","value":"XE"}],"id":22}
-Response Body: {
-    "jsonrpc": "2.0",
-    "result": [
-        {
-            "macro": "{$USERNAME}",
-            "hostmacroid": "1",
-            "hostid": "10106",
-            "value": "zabbix"
-        },
-        {
-            "macro": "{$PASSWORD}",
-            "hostmacroid": "2",
-            "hostid": "10106",
-            "value": "zabbix"
-        },
-        {
-            "macro": "{$ADDRESS}",
-            "hostmacroid": "3",
-            "hostid": "10106",
-            "value": "cfBareos"
-        },
-        {
-            "macro": "{$DATABASE}",
-            "hostmacroid": "4",
-            "hostid": "10106",
-            "value": "XE"
-        }
-    ],
-    "id": 22
-}
-Sending: {
-    "params": {
-        "filter": {
-            "host": "host721"
-        },
-        "output": "extend"
-    },
-    "jsonrpc": "2.0",
-    "method": "host.get",
-    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
-    "id": 23
-}
-Response Code: 200, {"jsonrpc":"2.0","result":[{"hostid":"10106","proxy_hostid":"0","host":"host721","status":"0","disable_until":"0","error":"","available":"0","errors_from":"0","lastaccess":"0","ipmi_authtype":"0","ipmi_privilege":"2","ipmi_username":"","ipmi_password":"","ipmi_disable_until":"0","ipmi_available":"0","snmp_disable_until":"0","snmp_available":"0","maintenanceid":"0","maintenance_status":"0","maintenance_type":"0","maintenance_from":"0","ipmi_errors_from":"0","snmp_errors_from":"0","ipmi_error":"","snmp_error":"","jmx_disable_until":"0","jmx_available":"0","jmx_errors_from":"0","jmx_error":"","name":"host721","flags":"0","templateid":"0","description":"","tls_connect":"1","tls_accept":"1","tls_issuer":"","tls_subject":"","tls_psk_identity":"","tls_psk":""}],"id":23}
-Response Body: {
-    "jsonrpc": "2.0",
-    "result": [
-        {
-            "available": "0",
-            "tls_connect": "1",
-            "maintenance_type": "0",
-            "ipmi_errors_from": "0",
-            "ipmi_username": "",
-            "snmp_disable_until": "0",
-            "ipmi_authtype": "0",
-            "ipmi_disable_until": "0",
-            "lastaccess": "0",
-            "snmp_error": "",
-            "tls_psk": "",
-            "ipmi_privilege": "2",
-            "jmx_error": "",
-            "jmx_available": "0",
-            "maintenanceid": "0",
-            "snmp_available": "0",
-            "tls_psk_identity": "",
-            "status": "0",
-            "description": "",
-            "tls_accept": "1",
-            "host": "host721",
-            "disable_until": "0",
-            "ipmi_password": "",
-            "templateid": "0",
-            "tls_issuer": "",
-            "ipmi_available": "0",
-            "maintenance_status": "0",
-            "snmp_errors_from": "0",
-            "ipmi_error": "",
-            "proxy_hostid": "0",
-            "hostid": "10106",
-            "name": "host721",
-            "jmx_errors_from": "0",
-            "jmx_disable_until": "0",
-            "flags": "0",
-            "error": "",
-            "maintenance_from": "0",
-            "tls_subject": "",
-            "errors_from": "0"
-        }
-    ],
-    "id": 23
-}
-Sending: {
-    "params": {
-        "output": "extend",
-        "hostids": "10106"
-    },
-    "jsonrpc": "2.0",
-    "method": "usermacro.get",
-    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
-    "id": 24
-}
-Response Code: 200, {"jsonrpc":"2.0","result":[{"hostmacroid":"1","hostid":"10106","macro":"{$USERNAME}","value":"zabbix"},{"hostmacroid":"2","hostid":"10106","macro":"{$PASSWORD}","value":"zabbix"},{"hostmacroid":"3","hostid":"10106","macro":"{$ADDRESS}","value":"cfBareos"},{"hostmacroid":"4","hostid":"10106","macro":"{$DATABASE}","value":"XE"}],"id":24}
-Response Body: {
-    "jsonrpc": "2.0",
-    "result": [
-        {
-            "macro": "{$USERNAME}",
-            "hostmacroid": "1",
-            "hostid": "10106",
-            "value": "zabbix"
-        },
-        {
-            "macro": "{$PASSWORD}",
-            "hostmacroid": "2",
-            "hostid": "10106",
-            "value": "zabbix"
-        },
-        {
-            "macro": "{$ADDRESS}",
-            "hostmacroid": "3",
-            "hostid": "10106",
-            "value": "cfBareos"
-        },
-        {
-            "macro": "{$DATABASE}",
-            "hostmacroid": "4",
-            "hostid": "10106",
-            "value": "XE"
-        }
-    ],
-    "id": 24
-}
-Beggen
-Sending: {
-    "params": {
-        "output": "extend",
-        "search": {
-            "key_": "oracle.query[zabbix,zabbix,cfBareos,XE,version]"
-        },
-        "sortfield": "name"
-    },
-    "jsonrpc": "2.0",
-    "method": "item.get",
-    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
-    "id": 25
-}
-Response Code: 200, {"jsonrpc":"2.0","result":[],"id":25}
-Response Body: {
-    "jsonrpc": "2.0",
-    "result": [],
-    "id": 25
-}
-('itemids', None)
-Sending: {
-    "params": {
-        "itemids": null,
-        "sortfield": "clock",
-        "limit": 10,
-        "sortorder": "DESC",
-        "output": "extend",
-        "history": 1
-    },
-    "jsonrpc": "2.0",
-    "method": "history.get",
-    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
-    "id": 26
-}
-Response Code: 200, {"jsonrpc":"2.0","result":[],"id":26}
-Response Body: {
-    "jsonrpc": "2.0",
-    "result": [],
-    "id": 26
-}
-Sending: {
-    "params": {
-        "output": "extend",
-        "search": {
-            "key_": "oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},check_active]"
-        },
-        "sortfield": "name"
-    },
-    "jsonrpc": "2.0",
-    "method": "item.get",
-    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
-    "id": 27
-}
-Response Code: 200, {"jsonrpc":"2.0","result":[],"id":27}
-Response Body: {
-    "jsonrpc": "2.0",
-    "result": [],
-    "id": 27
-}
-('itemids', None)
-Sending: {
-    "params": {
-        "itemids": null,
-        "sortfield": "clock",
-        "limit": 10,
-        "sortorder": "DESC",
-        "output": "extend",
-        "history": 3
-    },
-    "jsonrpc": "2.0",
-    "method": "history.get",
-    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
-    "id": 28
-}
-Response Code: 200, {"jsonrpc":"2.0","result":[],"id":28}
-Response Body: {
-    "jsonrpc": "2.0",
-    "result": [],
-    "id": 28
-}
-hosts: [(u'host721', u'0'), (u'Zabbix server', u'0')]
-Sending: {
-    "params": {
-        "filter": {
-            "host": "host721"
-        },
-        "output": "extend"
-    },
-    "jsonrpc": "2.0",
-    "method": "host.get",
-    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
-    "id": 29
-}
-Response Code: 200, {"jsonrpc":"2.0","result":[{"hostid":"10106","proxy_hostid":"0","host":"host721","status":"0","disable_until":"0","error":"","available":"0","errors_from":"0","lastaccess":"0","ipmi_authtype":"0","ipmi_privilege":"2","ipmi_username":"","ipmi_password":"","ipmi_disable_until":"0","ipmi_available":"0","snmp_disable_until":"0","snmp_available":"0","maintenanceid":"0","maintenance_status":"0","maintenance_type":"0","maintenance_from":"0","ipmi_errors_from":"0","snmp_errors_from":"0","ipmi_error":"","snmp_error":"","jmx_disable_until":"0","jmx_available":"0","jmx_errors_from":"0","jmx_error":"","name":"host721","flags":"0","templateid":"0","description":"","tls_connect":"1","tls_accept":"1","tls_issuer":"","tls_subject":"","tls_psk_identity":"","tls_psk":""}],"id":29}
-Response Body: {
-    "jsonrpc": "2.0",
-    "result": [
-        {
-            "available": "0",
-            "tls_connect": "1",
-            "maintenance_type": "0",
-            "ipmi_errors_from": "0",
-            "ipmi_username": "",
-            "snmp_disable_until": "0",
-            "ipmi_authtype": "0",
-            "ipmi_disable_until": "0",
-            "lastaccess": "0",
-            "snmp_error": "",
-            "tls_psk": "",
-            "ipmi_privilege": "2",
-            "jmx_error": "",
-            "jmx_available": "0",
-            "maintenanceid": "0",
-            "snmp_available": "0",
-            "tls_psk_identity": "",
-            "status": "0",
-            "description": "",
-            "tls_accept": "1",
-            "host": "host721",
-            "disable_until": "0",
-            "ipmi_password": "",
-            "templateid": "0",
-            "tls_issuer": "",
-            "ipmi_available": "0",
-            "maintenance_status": "0",
-            "snmp_errors_from": "0",
-            "ipmi_error": "",
-            "proxy_hostid": "0",
-            "hostid": "10106",
-            "name": "host721",
-            "jmx_errors_from": "0",
-            "jmx_disable_until": "0",
-            "flags": "0",
-            "error": "",
-            "maintenance_from": "0",
-            "tls_subject": "",
-            "errors_from": "0"
-        }
-    ],
-    "id": 29
-}
-Sending: {
-    "params": {
-        "filter": {
-            "hostid": "10106"
-        },
-        "output": [
-            "triggerid",
-            "description",
-            "priority"
-        ],
-        "selectHosts": "",
-        "sortorder": "DESC",
-        "sortfield": "priority"
-    },
-    "jsonrpc": "2.0",
-    "method": "trigger.get",
-    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
-    "id": 30
-}
-Response Code: 200, {"jsonrpc":"2.0","result":[],"id":30}
-Response Body: {
-    "jsonrpc": "2.0",
-    "result": [],
-    "id": 30
-}
-('EEEXXXexpr=', '{host721:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},check_active].last()}>0')
-Sending: {
-    "params": {
-        "expression": "{host721:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},check_active].last()}>0",
-        "description": "It is fake active"
-    },
-    "jsonrpc": "2.0",
-    "method": "trigger.create",
-    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
-    "id": 31
-}
-Response Code: 200, {"jsonrpc":"2.0","error":{"code":-32602,"message":"Invalid params.","data":"Incorrect item key \"oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},check_active]\" provided for trigger expression on \"host721\"."},"id":31}
-Response Body: {
-    "jsonrpc": "2.0",
-    "id": 31,
-    "error": {
-        "message": "Invalid params.",
-        "code": -32602,
-        "data": "Incorrect item key \"oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},check_active]\" provided for trigger expression on \"host721\"."
-    }
-}
-Try with Exception
-(u'Error -32602: Invalid params., Incorrect item key "oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},check_active]" provided for trigger expression on "host721".', -32602)
-Sending: {
-    "params": {
-        "filter": {
-            "host": "host721"
-        },
-        "output": "extend"
-    },
-    "jsonrpc": "2.0",
-    "method": "host.get",
-    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
-    "id": 32
-}
-Response Code: 200, {"jsonrpc":"2.0","result":[{"hostid":"10106","proxy_hostid":"0","host":"host721","status":"0","disable_until":"0","error":"","available":"0","errors_from":"0","lastaccess":"0","ipmi_authtype":"0","ipmi_privilege":"2","ipmi_username":"","ipmi_password":"","ipmi_disable_until":"0","ipmi_available":"0","snmp_disable_until":"0","snmp_available":"0","maintenanceid":"0","maintenance_status":"0","maintenance_type":"0","maintenance_from":"0","ipmi_errors_from":"0","snmp_errors_from":"0","ipmi_error":"","snmp_error":"","jmx_disable_until":"0","jmx_available":"0","jmx_errors_from":"0","jmx_error":"","name":"host721","flags":"0","templateid":"0","description":"","tls_connect":"1","tls_accept":"1","tls_issuer":"","tls_subject":"","tls_psk_identity":"","tls_psk":""}],"id":32}
-Response Body: {
-    "jsonrpc": "2.0",
-    "result": [
-        {
-            "available": "0",
-            "tls_connect": "1",
-            "maintenance_type": "0",
-            "ipmi_errors_from": "0",
-            "ipmi_username": "",
-            "snmp_disable_until": "0",
-            "ipmi_authtype": "0",
-            "ipmi_disable_until": "0",
-            "lastaccess": "0",
-            "snmp_error": "",
-            "tls_psk": "",
-            "ipmi_privilege": "2",
-            "jmx_error": "",
-            "jmx_available": "0",
-            "maintenanceid": "0",
-            "snmp_available": "0",
-            "tls_psk_identity": "",
-            "status": "0",
-            "description": "",
-            "tls_accept": "1",
-            "host": "host721",
-            "disable_until": "0",
-            "ipmi_password": "",
-            "templateid": "0",
-            "tls_issuer": "",
-            "ipmi_available": "0",
-            "maintenance_status": "0",
-            "snmp_errors_from": "0",
-            "ipmi_error": "",
-            "proxy_hostid": "0",
-            "hostid": "10106",
-            "name": "host721",
-            "jmx_errors_from": "0",
-            "jmx_disable_until": "0",
-            "flags": "0",
-            "error": "",
-            "maintenance_from": "0",
-            "tls_subject": "",
-            "errors_from": "0"
-        }
-    ],
-    "id": 32
-}
-Sending: {
-    "params": {
-        "filter": {
-            "status": "0",
-            "hostid": "10106",
-            "value": "1"
-        },
-        "output": [
-            "triggerid",
-            "description",
-            "priority"
-        ],
-        "selectHosts": "",
-        "sortorder": "DESC",
-        "sortfield": "priority"
-    },
-    "jsonrpc": "2.0",
-    "method": "trigger.get",
-    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
-    "id": 33
-}
-Response Code: 200, {"jsonrpc":"2.0","result":[],"id":33}
-Response Body: {
-    "jsonrpc": "2.0",
-    "result": [],
-    "id": 33
-}
-Sending: {
-    "params": {
-        "filter": {
-            "host": "host721"
-        },
-        "output": "extend"
-    },
-    "jsonrpc": "2.0",
-    "method": "host.get",
-    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
-    "id": 34
-}
-Response Code: 200, {"jsonrpc":"2.0","result":[{"hostid":"10106","proxy_hostid":"0","host":"host721","status":"0","disable_until":"0","error":"","available":"0","errors_from":"0","lastaccess":"0","ipmi_authtype":"0","ipmi_privilege":"2","ipmi_username":"","ipmi_password":"","ipmi_disable_until":"0","ipmi_available":"0","snmp_disable_until":"0","snmp_available":"0","maintenanceid":"0","maintenance_status":"0","maintenance_type":"0","maintenance_from":"0","ipmi_errors_from":"0","snmp_errors_from":"0","ipmi_error":"","snmp_error":"","jmx_disable_until":"0","jmx_available":"0","jmx_errors_from":"0","jmx_error":"","name":"host721","flags":"0","templateid":"0","description":"","tls_connect":"1","tls_accept":"1","tls_issuer":"","tls_subject":"","tls_psk_identity":"","tls_psk":""}],"id":34}
-Response Body: {
-    "jsonrpc": "2.0",
-    "result": [
-        {
-            "available": "0",
-            "tls_connect": "1",
-            "maintenance_type": "0",
-            "ipmi_errors_from": "0",
-            "ipmi_username": "",
-            "snmp_disable_until": "0",
-            "ipmi_authtype": "0",
-            "ipmi_disable_until": "0",
-            "lastaccess": "0",
-            "snmp_error": "",
-            "tls_psk": "",
-            "ipmi_privilege": "2",
-            "jmx_error": "",
-            "jmx_available": "0",
-            "maintenanceid": "0",
-            "snmp_available": "0",
-            "tls_psk_identity": "",
-            "status": "0",
-            "description": "",
-            "tls_accept": "1",
-            "host": "host721",
-            "disable_until": "0",
-            "ipmi_password": "",
-            "templateid": "0",
-            "tls_issuer": "",
-            "ipmi_available": "0",
-            "maintenance_status": "0",
-            "snmp_errors_from": "0",
-            "ipmi_error": "",
-            "proxy_hostid": "0",
-            "hostid": "10106",
-            "name": "host721",
-            "jmx_errors_from": "0",
-            "jmx_disable_until": "0",
-            "flags": "0",
-            "error": "",
-            "maintenance_from": "0",
-            "tls_subject": "",
-            "errors_from": "0"
-        }
-    ],
-    "id": 34
-}
-Sending: {
-    "params": {
-        "filter": {
-            "status": "0",
-            "hostid": "10106",
-            "value": "1"
-        },
-        "output": [
-            "triggerid",
-            "description",
-            "priority"
-        ],
-        "selectHosts": "",
-        "sortorder": "DESC",
-        "sortfield": "priority"
-    },
-    "jsonrpc": "2.0",
-    "method": "trigger.get",
-    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
-    "id": 35
-}
-Response Code: 200, {"jsonrpc":"2.0","result":[],"id":35}
-Response Body: {
-    "jsonrpc": "2.0",
-    "result": [],
-    "id": 35
-}
-williamtest1
-Sending: {
-    "params": {
-        "filter": {
-            "name": [
-                "OracleTemplateHostGroup721"
-            ]
-        }
-    },
-    "jsonrpc": "2.0",
-    "method": "hostgroup.get",
-    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
-    "id": 36
-}
-Response Code: 200, {"jsonrpc":"2.0","result":[{"groupid":"9","name":"OracleTemplateHostGroup721","internal":"0","flags":"0"}],"id":36}
-Response Body: {
-    "jsonrpc": "2.0",
-    "result": [
-        {
-            "internal": "0",
-            "flags": "0",
-            "groupid": "9",
-            "name": "OracleTemplateHostGroup721"
-        }
-    ],
-    "id": 36
-}
-./centre/xml/monitorz_template1.xml
-Sending: {
-    "params": {
-        "rules": {
-            "templates": {
-                "createMissing": true,
-                "updateExisting": true
-            },
-            "valueMaps": {
-                "createMissing": true,
-                "updateExisting": true
-            },
-            "screens": {
-                "createMissing": true,
-                "updateExisting": true
-            },
-            "applications": {
-                "createMissing": true
-            },
-            "groups": {
-                "createMissing": true
-            },
-            "images": {
-                "createMissing": true,
-                "updateExisting": true
-            },
-            "templateScreens": {
-                "createMissing": true,
-                "updateExisting": true
-            },
-            "templateLinkage": {
-                "createMissing": true
-            },
-            "maps": {
-                "createMissing": true,
-                "updateExisting": true
-            },
-            "items": {
-                "createMissing": true,
-                "updateExisting": true
-            },
-            "triggers": {
-                "createMissing": true,
-                "updateExisting": true
-            },
-            "graphs": {
-                "createMissing": true,
-                "updateExisting": true
-            },
-            "hosts": {
-                "createMissing": true,
-                "updateExisting": true
-            },
-            "discoveryRules": {
-                "createMissing": true,
-                "updateExisting": true
-            }
-        },
-        "source": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<zabbix_export>\n    <version>2.0</version>\n    <date>2019-07-11T17:33:58Z</date>\n    <groups>\n        <group>\n            <name>Templates</name>\n        </group>\n    </groups>\n    <templates>\n        <template>\n            <template>TemplateOracle721</template>\n            <name>TemplateOracle721</name>\n            <groups>\n                <group>\n                    <name>OracleTemplateHostGroup721</name>\n                </group>\n            </groups>\n            <applications>\n                <application>\n                    <name>Oracle721</name>\n                </application>\n            </applications>\n            <items>\n                <item>\n                    <name>Oracle/Active user count on {$DATABASE}</name>\n                    <type>10</type>\n                    <snmp_community/>\n                    <multiplier>0</multiplier>\n                    <snmp_oid/>\n                    <key>dbagent[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},activeusercount]</key>\n                    <delay>300</delay>\n                    <history>7</history>\n                    <trends>90</trends>\n                    <status>0</status>\n                    <value_type>3</value_type>\n                    <allowed_hosts/>\n                    <units/>\n                    <delta>0</delta>\n                    <snmpv3_securityname/>\n                    <snmpv3_securitylevel>0</snmpv3_securitylevel>\n                    <snmpv3_authpassphrase/>\n                    <snmpv3_privpassphrase/>\n                    <formula>1</formula>\n                    <delay_flex/>\n                    <params/>\n                    <ipmi_sensor/>\n                    <data_type>0</data_type>\n                    <authtype>0</authtype>\n                    <username/>\n                    <password/>\n                    <publickey/>\n                    <privatekey/>\n                    <port/>\n                    <description/>\n                    <inventory_link>0</inventory_link>\n                    <applications>\n                        <application>\n                            <name>Oracle721</name>\n                        </application>\n                    </applications>\n                    <valuemap/>\n                </item>\n                <item>\n                    <name>Oracle/Archive {$ARCHIVE} on {$DATABASE}</name>\n                    <type>10</type>\n                    <snmp_community/>\n                    <multiplier>0</multiplier>\n                    <snmp_oid/>\n                    <key>dbagent[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},check_archive,{$ARCHIVE}]</key>\n                    <delay>300</delay>\n                    <history>7</history>\n                    <trends>90</trends>\n                    <status>0</status>\n                    <value_type>3</value_type>\n                    <allowed_hosts/>\n                    <units>%</units>\n                    <delta>0</delta>\n                    <snmpv3_securityname/>\n                    <snmpv3_securitylevel>0</snmpv3_securitylevel>\n                    <snmpv3_authpassphrase/>\n                    <snmpv3_privpassphrase/>\n                    <formula>1</formula>\n                    <delay_flex/>\n                    <params/>\n                    <ipmi_sensor/>\n                    <data_type>0</data_type>\n                    <authtype>0</authtype>\n                    <username/>\n                    <password/>\n                    <publickey/>\n                    <privatekey/>\n                    <port/>\n                    <description/>\n                    <inventory_link>0</inventory_link>\n                    <applications>\n                        <application>\n                            <name>Oracle721</name>\n                        </application>\n                    </applications>\n                    <valuemap/>\n                </item>\n                <item>\n                    <name>Oracle/Buffer busy waits on {$DATABASE}</name>\n                    <type>10</type>\n                    <snmp_community/>\n                    <multiplier>0</multiplier>\n                    <snmp_oid/>\n                    <key>dbagent[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},bufbusywaits]</key>\n                    <delay>300</delay>\n                    <history>7</history>\n                    <trends>90</trends>\n                    <status>0</status>\n                    <value_type>3</value_type>\n                    <allowed_hosts/>\n                    <units/>\n                    <delta>0</delta>\n                    <snmpv3_securityname/>\n                    <snmpv3_securitylevel>0</snmpv3_securitylevel>\n                    <snmpv3_authpassphrase/>\n                    <snmpv3_privpassphrase/>\n                    <formula>1</formula>\n                    <delay_flex/>\n                    <params/>\n                    <ipmi_sensor/>\n                    <data_type>0</data_type>\n                    <authtype>0</authtype>\n                    <username/>\n                    <password/>\n                    <publickey/>\n                    <privatekey/>\n                    <port/>\n                    <description/>\n                    <inventory_link>0</inventory_link>\n                    <applications>\n                        <application>\n                            <name>Oracle721</name>\n                        </application>\n                    </applications>\n                    <valuemap/>\n                </item>\n              \n\t\t\t  \n                <item>\n                    <name>Oracle/Deadlocks on {$DATABASE}</name>\n                    <type>10</type>\n                    <snmp_community/>\n                    <multiplier>0</multiplier>\n                    <snmp_oid/>\n                    <key>dbagent[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},deadlocks]</key>\n                    <delay>600</delay>\n                    <history>7</history>\n                    <trends>90</trends>\n                    <status>0</status>\n                    <value_type>3</value_type>\n                    <allowed_hosts/>\n                    <units/>\n                    <delta>1</delta>\n                    <snmpv3_securityname/>\n                    <snmpv3_securitylevel>0</snmpv3_securitylevel>\n                    <snmpv3_authpassphrase/>\n                    <snmpv3_privpassphrase/>\n                    <formula>1</formula>\n                    <delay_flex/>\n                    <params/>\n                    <ipmi_sensor/>\n                    <data_type>0</data_type>\n                    <authtype>0</authtype>\n                    <username/>\n                    <password/>\n                    <publickey/>\n                    <privatekey/>\n                    <port/>\n                    <description/>\n                    <inventory_link>0</inventory_link>\n                    <applications>\n                        <application>\n                            <name>Oracle721</name>\n                        </application>\n                    </applications>\n                    <valuemap/>\n                </item>\n              \n                <item>\n                    <name>Oracle/Disk sorts ratio on {$DATABASE}</name>\n                    <type>10</type>\n                    <snmp_community/>\n                    <multiplier>0</multiplier>\n                    <snmp_oid/>\n                    <key>dbagent[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},dsksortratio]</key>\n                    <delay>600</delay>\n                    <history>7</history>\n                    <trends>90</trends>\n                    <status>0</status>\n                    <value_type>0</value_type>\n                    <allowed_hosts/>\n                    <units>%</units>\n                    <delta>0</delta>\n                    <snmpv3_securityname/>\n                    <snmpv3_securitylevel>0</snmpv3_securitylevel>\n                    <snmpv3_authpassphrase/>\n                    <snmpv3_privpassphrase/>\n                    <formula>1</formula>\n                    <delay_flex/>\n                    <params/>\n                    <ipmi_sensor/>\n                    <data_type>0</data_type>\n                    <authtype>0</authtype>\n                    <username/>\n                    <password/>\n                    <publickey/>\n                    <privatekey/>\n                    <port/>\n                    <description/>\n                    <inventory_link>0</inventory_link>\n                    <applications>\n                        <application>\n                            <name>Oracle721</name>\n                        </application>\n                    </applications>\n                    <valuemap/>\n                </item>\n       \n          \n                <item>\n                    <name>Oracle/Intance is active and open on {$DATABASE}</name>\n                    <type>10</type>\n                    <snmp_community/>\n                    <multiplier>0</multiplier>\n                    <snmp_oid/>\n                    <key>dbagent[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},check_active]</key>\n                    <delay>300</delay>\n                    <history>7</history>\n                    <trends>90</trends>\n                    <status>0</status>\n                    <value_type>3</value_type>\n                    <allowed_hosts/>\n                    <units/>\n                    <delta>0</delta>\n                    <snmpv3_securityname/>\n                    <snmpv3_securitylevel>0</snmpv3_securitylevel>\n                    <snmpv3_authpassphrase/>\n                    <snmpv3_privpassphrase/>\n                    <formula>1</formula>\n                    <delay_flex/>\n                    <params/>\n                    <ipmi_sensor/>\n                    <data_type>0</data_type>\n                    <authtype>0</authtype>\n                    <username/>\n                    <password/>\n                    <publickey/>\n                    <privatekey/>\n                    <port/>\n                    <description/>\n                    <inventory_link>0</inventory_link>\n                    <applications>\n                        <application>\n                            <name>Oracle721</name>\n                        </application>\n                    </applications>\n                    <valuemap/>\n                </item>\n                \n                <item>\n                    <name>Oracle/Lastarclog on {$DATABASE}</name>\n                    <type>10</type>\n                    <snmp_community/>\n                    <multiplier>0</multiplier>\n                    <snmp_oid/>\n                    <key>dbagent[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},lastarclog]</key>\n                    <delay>300</delay>\n                    <history>7</history>\n                    <trends>90</trends>\n                    <status>0</status>\n                    <value_type>3</value_type>\n                    <allowed_hosts/>\n                    <units/>\n                    <delta>0</delta>\n                    <snmpv3_securityname/>\n                    <snmpv3_securitylevel>0</snmpv3_securitylevel>\n                    <snmpv3_authpassphrase/>\n                    <snmpv3_privpassphrase/>\n                    <formula>1</formula>\n                    <delay_flex/>\n                    <params/>\n                    <ipmi_sensor/>\n                    <data_type>3</data_type>\n                    <authtype>0</authtype>\n                    <username/>\n                    <password/>\n                    <publickey/>\n                    <privatekey/>\n                    <port/>\n                    <description/>\n                    <inventory_link>0</inventory_link>\n                    <applications>\n                        <application>\n                            <name>Oracle721</name>\n                        </application>\n                    </applications>\n                    <valuemap/>\n                </item>\n                \n                <item>\n                    <name>Oracle/Logfilesync on {$DATABASE}</name>\n                    <type>10</type>\n                    <snmp_community/>\n                    <multiplier>0</multiplier>\n                    <snmp_oid/>\n                    <key>dbagent[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},logfilesync]</key>\n                    <delay>300</delay>\n                    <history>7</history>\n                    <trends>90</trends>\n                    <status>0</status>\n                    <value_type>3</value_type>\n                    <allowed_hosts/>\n                    <units/>\n                    <delta>0</delta>\n                    <snmpv3_securityname/>\n                    <snmpv3_securitylevel>0</snmpv3_securitylevel>\n                    <snmpv3_authpassphrase/>\n                    <snmpv3_privpassphrase/>\n                    <formula>1</formula>\n                    <delay_flex/>\n                    <params/>\n                    <ipmi_sensor/>\n                    <data_type>0</data_type>\n                    <authtype>0</authtype>\n                    <username/>\n                    <password/>\n                    <publickey/>\n                    <privatekey/>\n                    <port/>\n                    <description/>\n                    <inventory_link>0</inventory_link>\n                    <applications>\n                        <application>\n                            <name>Oracle721</name>\n                        </application>\n                    </applications>\n                    <valuemap/>\n                </item>\n\n                <item>\n                    <name>Oracle/Query Lock on {$DATABASE}</name>\n                    <type>10</type>\n                    <snmp_community/>\n                    <multiplier>0</multiplier>\n                    <snmp_oid/>\n                    <key>dbagent[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},query_lock]</key>\n                    <delay>300</delay>\n                    <history>7</history>\n                    <trends>90</trends>\n                    <status>0</status>\n                    <value_type>3</value_type>\n                    <allowed_hosts/>\n                    <units/>\n                    <delta>0</delta>\n                    <snmpv3_securityname/>\n                    <snmpv3_securitylevel>0</snmpv3_securitylevel>\n                    <snmpv3_authpassphrase/>\n                    <snmpv3_privpassphrase/>\n                    <formula>1</formula>\n                    <delay_flex/>\n                    <params/>\n                    <ipmi_sensor/>\n                    <data_type>0</data_type>\n                    <authtype>0</authtype>\n                    <username/>\n                    <password/>\n                    <publickey/>\n                    <privatekey/>\n                    <port/>\n                    <description/>\n                    <inventory_link>0</inventory_link>\n                    <applications>\n                        <application>\n                            <name>Oracle721</name>\n                        </application>\n                    </applications>\n                    <valuemap/>\n                </item>\n                <item>\n                    <name>Oracle/Query Redologs on {$DATABASE}</name>\n                    <type>10</type>\n                    <snmp_community/>\n                    <multiplier>0</multiplier>\n                    <snmp_oid/>\n                    <key>dbagent[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},query_redologs]</key>\n                    <delay>300</delay>\n                    <history>7</history>\n                    <trends>90</trends>\n                    <status>0</status>\n                    <value_type>3</value_type>\n                    <allowed_hosts/>\n                    <units/>\n                    <delta>0</delta>\n                    <snmpv3_securityname/>\n                    <snmpv3_securitylevel>0</snmpv3_securitylevel>\n                    <snmpv3_authpassphrase/>\n                    <snmpv3_privpassphrase/>\n                    <formula>1</formula>\n                    <delay_flex/>\n                    <params/>\n                    <ipmi_sensor/>\n                    <data_type>0</data_type>\n                    <authtype>0</authtype>\n                    <username/>\n                    <password/>\n                    <publickey/>\n                    <privatekey/>\n                    <port/>\n                    <description/>\n                    <inventory_link>0</inventory_link>\n                    <applications>\n                        <application>\n                            <name>Oracle721</name>\n                        </application>\n                    </applications>\n                    <valuemap/>\n                </item>\n                <item>\n                    <name>Oracle/Query Rollbacks on {$DATABASE}</name>\n                    <type>10</type>\n                    <snmp_community/>\n                    <multiplier>0</multiplier>\n                    <snmp_oid/>\n                    <key>dbagent[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},query_rollbacks]</key>\n                    <delay>300</delay>\n                    <history>7</history>\n                    <trends>90</trends>\n                    <status>0</status>\n                    <value_type>3</value_type>\n                    <allowed_hosts/>\n                    <units/>\n                    <delta>0</delta>\n                    <snmpv3_securityname/>\n                    <snmpv3_securitylevel>0</snmpv3_securitylevel>\n                    <snmpv3_authpassphrase/>\n                    <snmpv3_privpassphrase/>\n                    <formula>1</formula>\n                    <delay_flex/>\n                    <params/>\n                    <ipmi_sensor/>\n                    <data_type>0</data_type>\n                    <authtype>0</authtype>\n                    <username/>\n                    <password/>\n                    <publickey/>\n                    <privatekey/>\n                    <port/>\n                    <description/>\n                    <inventory_link>0</inventory_link>\n                    <applications>\n                        <application>\n                            <name>Oracle721</name>\n                        </application>\n                    </applications>\n                    <valuemap/>\n                </item>\n                <item>\n                    <name>Oracle/Query Sessions on {$DATABASE}</name>\n                    <type>10</type>\n                    <snmp_community/>\n                    <multiplier>0</multiplier>\n                    <snmp_oid/>\n                    <key>dbagent[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},query_sessions]</key>\n                    <delay>300</delay>\n                    <history>7</history>\n                    <trends>90</trends>\n                    <status>0</status>\n                    <value_type>3</value_type>\n                    <allowed_hosts/>\n                    <units/>\n                    <delta>0</delta>\n                    <snmpv3_securityname/>\n                    <snmpv3_securitylevel>0</snmpv3_securitylevel>\n                    <snmpv3_authpassphrase/>\n                    <snmpv3_privpassphrase/>\n                    <formula>1</formula>\n                    <delay_flex/>\n                    <params/>\n                    <ipmi_sensor/>\n                    <data_type>0</data_type>\n                    <authtype>0</authtype>\n                    <username/>\n                    <password/>\n                    <publickey/>\n                    <privatekey/>\n                    <port/>\n                    <description/>\n                    <inventory_link>0</inventory_link>\n                    <applications>\n                        <application>\n                            <name>Oracle721</name>\n                        </application>\n                    </applications>\n                    <valuemap/>\n                </item>\n  \n                <item>\n                    <name>Oracle/Read Cache hit ratio on {$DATABASE}</name>\n                    <type>10</type>\n                    <snmp_community/>\n                    <multiplier>0</multiplier>\n                    <snmp_oid/>\n                    <key>dbagent[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},rcachehit]</key>\n                    <delay>600</delay>\n                    <history>7</history>\n                    <trends>90</trends>\n                    <status>0</status>\n                    <value_type>0</value_type>\n                    <allowed_hosts/>\n                    <units>%</units>\n                    <delta>0</delta>\n                    <snmpv3_securityname/>\n                    <snmpv3_securitylevel>0</snmpv3_securitylevel>\n                    <snmpv3_authpassphrase/>\n                    <snmpv3_privpassphrase/>\n                    <formula>1</formula>\n                    <delay_flex/>\n                    <params/>\n                    <ipmi_sensor/>\n                    <data_type>0</data_type>\n                    <authtype>0</authtype>\n                    <username/>\n                    <password/>\n                    <publickey/>\n                    <privatekey/>\n                    <port/>\n                    <description/>\n                    <inventory_link>0</inventory_link>\n                    <applications>\n                        <application>\n                            <name>Oracle721</name>\n                        </application>\n                    </applications>\n                    <valuemap/>\n                </item>\n                <item>\n                    <name>Oracle/Redo Writes on {$DATABASE}</name>\n                    <type>10</type>\n                    <snmp_community/>\n                    <multiplier>0</multiplier>\n                    <snmp_oid/>\n                    <key>dbagent[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},redowrites]</key>\n                    <delay>300</delay>\n                    <history>7</history>\n                    <trends>90</trends>\n                    <status>0</status>\n                    <value_type>3</value_type>\n                    <allowed_hosts/>\n                    <units/>\n                    <delta>1</delta>\n                    <snmpv3_securityname/>\n                    <snmpv3_securitylevel>0</snmpv3_securitylevel>\n                    <snmpv3_authpassphrase/>\n                    <snmpv3_privpassphrase/>\n                    <formula>1</formula>\n                    <delay_flex/>\n                    <params/>\n                    <ipmi_sensor/>\n                    <data_type>0</data_type>\n                    <authtype>0</authtype>\n                    <username/>\n                    <password/>\n                    <publickey/>\n                    <privatekey/>\n                    <port/>\n                    <description/>\n                    <inventory_link>0</inventory_link>\n                    <applications>\n                        <application>\n                            <name>Oracle721</name>\n                        </application>\n                    </applications>\n                    <valuemap/>\n                </item>\n                <item>\n                    <name>Oracle/Size of all datafiles on {$DATABASE}</name>\n                    <type>10</type>\n                    <snmp_community/>\n                    <multiplier>0</multiplier>\n                    <snmp_oid/>\n                    <key>dbagent[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},dbfilesize]</key>\n                    <delay>7200</delay>\n                    <history>7</history>\n                    <trends>90</trends>\n                    <status>0</status>\n                    <value_type>3</value_type>\n                    <allowed_hosts/>\n                    <units>B</units>\n                    <delta>0</delta>\n                    <snmpv3_securityname/>\n                    <snmpv3_securitylevel>0</snmpv3_securitylevel>\n                    <snmpv3_authpassphrase/>\n                    <snmpv3_privpassphrase/>\n                    <formula>1</formula>\n                    <delay_flex/>\n                    <params/>\n                    <ipmi_sensor/>\n                    <data_type>0</data_type>\n                    <authtype>0</authtype>\n                    <username/>\n                    <password/>\n                    <publickey/>\n                    <privatekey/>\n                    <port/>\n                    <description/>\n                    <inventory_link>0</inventory_link>\n                    <applications>\n                        <application>\n                            <name>Oracle721</name>\n                        </application>\n                    </applications>\n                    <valuemap/>\n                </item>\n               \n              \n                <item>\n                    <name>Oracle/User Commits on {$DATABASE}</name>\n                    <type>10</type>\n                    <snmp_community/>\n                    <multiplier>0</multiplier>\n                    <snmp_oid/>\n                    <key>dbagent[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},commits]</key>\n                    <delay>600</delay>\n                    <history>7</history>\n                    <trends>90</trends>\n                    <status>0</status>\n                    <value_type>3</value_type>\n                    <allowed_hosts/>\n                    <units/>\n                    <delta>1</delta>\n                    <snmpv3_securityname/>\n                    <snmpv3_securitylevel>0</snmpv3_securitylevel>\n                    <snmpv3_authpassphrase/>\n                    <snmpv3_privpassphrase/>\n                    <formula>1</formula>\n                    <delay_flex/>\n                    <params/>\n                    <ipmi_sensor/>\n                    <data_type>0</data_type>\n                    <authtype>0</authtype>\n                    <username/>\n                    <password/>\n                    <publickey/>\n                    <privatekey/>\n                    <port/>\n                    <description/>\n                    <inventory_link>0</inventory_link>\n                    <applications>\n                        <application>\n                            <name>Oracle721</name>\n                        </application>\n                    </applications>\n                    <valuemap/>\n                </item>\n           \n                <item>\n                    <name>Oracle/Version on {$DATABASE}</name>\n                    <type>10</type>\n                    <snmp_community/>\n                    <multiplier>0</multiplier>\n                    <snmp_oid/>\n                    <key>dbagent[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},version]</key>\n                    <delay>7200</delay>\n                    <history>90</history>\n                    <trends>365</trends>\n                    <status>0</status>\n                    <value_type>1</value_type>\n                    <allowed_hosts/>\n                    <units/>\n                    <delta>0</delta>\n                    <snmpv3_securityname/>\n                    <snmpv3_securitylevel>0</snmpv3_securitylevel>\n                    <snmpv3_authpassphrase/>\n                    <snmpv3_privpassphrase/>\n                    <formula>1</formula>\n                    <delay_flex/>\n                    <params/>\n                    <ipmi_sensor/>\n                    <data_type>0</data_type>\n                    <authtype>0</authtype>\n                    <username/>\n                    <password/>\n                    <publickey/>\n                    <privatekey/>\n                    <port/>\n                    <description/>\n                    <inventory_link>0</inventory_link>\n                    <applications>\n                        <application>\n                            <name>Oracle721</name>\n                        </application>\n                    </applications>\n                    <valuemap/>\n                </item>\n                <item>\n                    <name>Oracle/dbname on {$DATABASE}</name>\n                    <type>10</type>\n                    <snmp_community/>\n                    <multiplier>0</multiplier>\n                    <snmp_oid/>\n                    <key>dbagent[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},dbname]</key>\n                    <delay>7200</delay>\n                    <history>90</history>\n                    <trends>365</trends>\n                    <status>0</status>\n                    <value_type>1</value_type>\n                    <allowed_hosts/>\n                    <units/>\n                    <delta>0</delta>\n                    <snmpv3_securityname/>\n                    <snmpv3_securitylevel>0</snmpv3_securitylevel>\n                    <snmpv3_authpassphrase/>\n                    <snmpv3_privpassphrase/>\n                    <formula>1</formula>\n                    <delay_flex/>\n                    <params/>\n                    <ipmi_sensor/>\n                    <data_type>0</data_type>\n                    <authtype>0</authtype>\n                    <username/>\n                    <password/>\n                    <publickey/>\n                    <privatekey/>\n                    <port/>\n                    <description/>\n                    <inventory_link>0</inventory_link>\n                    <applications>\n                        <application>\n                            <name>Oracle721</name>\n                        </application>\n                    </applications>\n                    <valuemap/>\n                </item>\n                <item>\n                    <name>Oracle/dbsystime on {$DATABASE}</name>\n                    <type>10</type>\n                    <snmp_community/>\n                    <multiplier>0</multiplier>\n                    <snmp_oid/>\n                    <key>dbagent[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},dbsystime]</key>\n                    <delay>120</delay>\n                    <history>90</history>\n                    <trends>365</trends>\n                    <status>0</status>\n                    <value_type>1</value_type>\n                    <allowed_hosts/>\n                    <units/>\n                    <delta>0</delta>\n                    <snmpv3_securityname/>\n                    <snmpv3_securitylevel>0</snmpv3_securitylevel>\n                    <snmpv3_authpassphrase/>\n                    <snmpv3_privpassphrase/>\n                    <formula>1</formula>\n                    <delay_flex/>\n                    <params/>\n                    <ipmi_sensor/>\n                    <data_type>0</data_type>\n                    <authtype>0</authtype>\n                    <username/>\n                    <password/>\n                    <publickey/>\n                    <privatekey/>\n                    <port/>\n                    <description/>\n                    <inventory_link>0</inventory_link>\n                    <applications>\n                        <application>\n                            <name>Oracle721</name>\n                        </application>\n                    </applications>\n                    <valuemap/>\n                </item>\n                <item>\n                    <name>Oracle/logmode on {$DATABASE}</name>\n                    <type>10</type>\n                    <snmp_community/>\n                    <multiplier>0</multiplier>\n                    <snmp_oid/>\n                    <key>dbagent[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},logmode]</key>\n                    <delay>7200</delay>\n                    <history>90</history>\n                    <trends>365</trends>\n                    <status>0</status>\n                    <value_type>1</value_type>\n                    <allowed_hosts/>\n                    <units/>\n                    <delta>0</delta>\n                    <snmpv3_securityname/>\n                    <snmpv3_securitylevel>0</snmpv3_securitylevel>\n                    <snmpv3_authpassphrase/>\n                    <snmpv3_privpassphrase/>\n                    <formula>1</formula>\n                    <delay_flex/>\n                    <params/>\n                    <ipmi_sensor/>\n                    <data_type>0</data_type>\n                    <authtype>0</authtype>\n                    <username/>\n                    <password/>\n                    <publickey/>\n                    <privatekey/>\n                    <port/>\n                    <description/>\n                    <inventory_link>0</inventory_link>\n                    <applications>\n                        <application>\n                            <name>Oracle721</name>\n                        </application>\n                    </applications>\n                    <valuemap/>\n                </item>\n                <item>\n                    <name>Oracle/dbstatus on {$DATABASE}</name>\n                    <type>10</type>\n                    <snmp_community/>\n                    <multiplier>0</multiplier>\n                    <snmp_oid/>\n                    <key>dbagent[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},dbstatus]</key>\n                    <delay>60</delay>\n                    <history>90</history>\n                    <trends>365</trends>\n                    <status>0</status>\n                    <value_type>1</value_type>\n                    <allowed_hosts/>\n                    <units/>\n                    <delta>0</delta>\n                    <snmpv3_securityname/>\n                    <snmpv3_securitylevel>0</snmpv3_securitylevel>\n                    <snmpv3_authpassphrase/>\n                    <snmpv3_privpassphrase/>\n                    <formula>1</formula>\n                    <delay_flex/>\n                    <params/>\n                    <ipmi_sensor/>\n                    <data_type>0</data_type>\n                    <authtype>0</authtype>\n                    <username/>\n                    <password/>\n                    <publickey/>\n                    <privatekey/>\n                    <port/>\n                    <description/>\n                    <inventory_link>0</inventory_link>\n                    <applications>\n                        <application>\n                            <name>Oracle721</name>\n                        </application>\n                    </applications>\n                    <valuemap/>\n                </item>\t\t\t\t\n                <item>\n                    <name>Oracle/currentscn on {$DATABASE}</name>\n                    <type>10</type>\n                    <snmp_community/>\n                    <multiplier>0</multiplier>\n                    <snmp_oid/>\n                    <key>dbagent[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},currentscn]</key>\n                    <delay>60</delay>\n                    <history>7</history>\n                    <trends>90</trends>\n                    <status>0</status>\n                    <value_type>3</value_type>\n                    <allowed_hosts/>\n                    <units/>\n                    <delta>0</delta>\n                    <snmpv3_securityname/>\n                    <snmpv3_securitylevel>0</snmpv3_securitylevel>\n                    <snmpv3_authpassphrase/>\n                    <snmpv3_privpassphrase/>\n                    <formula>1</formula>\n                    <delay_flex/>\n                    <params/>\n                    <ipmi_sensor/>\n                    <data_type>0</data_type>\n                    <authtype>0</authtype>\n                    <username/>\n                    <password/>\n                    <publickey/>\n                    <privatekey/>\n                    <port/>\n                    <description/>\n                    <inventory_link>0</inventory_link>\n                    <applications>\n                        <application>\n                            <name>Oracle721</name>\n                        </application>\n                    </applications>\n                    <valuemap/>\n                </item>\n                \n                <item>\n                    <name>Oracle/archthreadseq on {$DATABASE}</name>\n                    <type>10</type>\n                    <snmp_community/>\n                    <multiplier>0</multiplier>\n                    <snmp_oid/>\n                    <key>dbagent[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},archthreadseq]</key>\n                    <delay>60</delay>\n                    <history>90</history>\n                    <trends>365</trends>\n                    <status>0</status>\n                    <value_type>1</value_type>\n                    <allowed_hosts/>\n                    <units/>\n                    <delta>0</delta>\n                    <snmpv3_securityname/>\n                    <snmpv3_securitylevel>0</snmpv3_securitylevel>\n                    <snmpv3_authpassphrase/>\n                    <snmpv3_privpassphrase/>\n                    <formula>1</formula>\n                    <delay_flex/>\n                    <params/>\n                    <ipmi_sensor/>\n                    <data_type>0</data_type>\n                    <authtype>0</authtype>\n                    <username/>\n                    <password/>\n                    <publickey/>\n                    <privatekey/>\n                    <port/>\n                    <description/>\n                    <inventory_link>0</inventory_link>\n                    <applications>\n                        <application>\n                            <name>Oracle721</name>\n                        </application>\n                    </applications>\n                    <valuemap/>\n                </item>\t\t\t\t\n                <item>\n                    <name>Oracle/flash_areausage on {$DATABASE}</name>\n                    <type>10</type>\n                    <snmp_community/>\n                    <multiplier>0</multiplier>\n                    <snmp_oid/>\n                    <key>dbagent[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},flash_areausage]</key>\n                    <delay>600</delay>\n                    <history>7</history>\n                    <trends>90</trends>\n                    <status>0</status>\n                    <value_type>0</value_type>\n                    <allowed_hosts/>\n                    <units>%</units>\n                    <delta>0</delta>\n                    <snmpv3_securityname/>\n                    <snmpv3_securitylevel>0</snmpv3_securitylevel>\n                    <snmpv3_authpassphrase/>\n                    <snmpv3_privpassphrase/>\n                    <formula>1</formula>\n                    <delay_flex/>\n                    <params/>\n                    <ipmi_sensor/>\n                    <data_type>0</data_type>\n                    <authtype>0</authtype>\n                    <username/>\n                    <password/>\n                    <publickey/>\n                    <privatekey/>\n                    <port/>\n                    <description/>\n                    <inventory_link>0</inventory_link>\n                    <applications>\n                        <application>\n                            <name>Oracle721</name>\n                        </application>\n                    </applications>\n                    <valuemap/>\n                </item>\t\t\t\t\n\n                <item>\n                    <name>Oracle/show_users on {$DATABASE}</name>\n                    <type>10</type>\n                    <snmp_community/>\n                    <multiplier>0</multiplier>\n                    <snmp_oid/>\n                    <key>dbagent[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},show_users]</key>\n                    <delay>360</delay>\n                    <history>90</history>\n                    <trends>365</trends>\n                    <status>0</status>\n                    <value_type>1</value_type>\n                    <allowed_hosts/>\n                    <units/>\n                    <delta>0</delta>\n                    <snmpv3_securityname/>\n                    <snmpv3_securitylevel>0</snmpv3_securitylevel>\n                    <snmpv3_authpassphrase/>\n                    <snmpv3_privpassphrase/>\n                    <formula>1</formula>\n                    <delay_flex/>\n                    <params/>\n                    <ipmi_sensor/>\n                    <data_type>0</data_type>\n                    <authtype>0</authtype>\n                    <username/>\n                    <password/>\n                    <publickey/>\n                    <privatekey/>\n                    <port/>\n                    <description/>\n                    <inventory_link>0</inventory_link>\n                    <applications>\n                        <application>\n                            <name>Oracle721</name>\n                        </application>\n                    </applications>\n                    <valuemap/>\n                </item>\t\t\t\t\t\t\t\t\n                <item>\n                    <name>Oracle/user_status on {$DATABASE}</name>\n                    <type>10</type>\n                    <snmp_community/>\n                    <multiplier>0</multiplier>\n                    <snmp_oid/>\n                    <key>dbagent[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},user_status,{$USERNAME}]</key>\n                    <delay>360</delay>\n                    <history>90</history>\n                    <trends>365</trends>\n                    <status>0</status>\n                    <value_type>1</value_type>\n                    <allowed_hosts/>\n                    <units/>\n                    <delta>0</delta>\n                    <snmpv3_securityname/>\n                    <snmpv3_securitylevel>0</snmpv3_securitylevel>\n                    <snmpv3_authpassphrase/>\n                    <snmpv3_privpassphrase/>\n                    <formula>1</formula>\n                    <delay_flex/>\n                    <params/>\n                    <ipmi_sensor/>\n                    <data_type>0</data_type>\n                    <authtype>0</authtype>\n                    <username/>\n                    <password/>\n                    <publickey/>\n                    <privatekey/>\n                    <port/>\n                    <description/>\n                    <inventory_link>0</inventory_link>\n                    <applications>\n                        <application>\n                            <name>Oracle721</name>\n                        </application>\n                    </applications>\n                    <valuemap/>\n                </item>\t\t\t\t\t\t\t\t\n\n                <item>\n                    <name>Oracle/tablespace SYSTEM count on {$DATABASE}</name>\n                    <type>10</type>\n                    <snmp_community/>\n                    <multiplier>0</multiplier>\n                    <snmp_oid/>\n                    <key>dbagent[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},tablespace,SYSTEM]</key>\n                    <delay>300</delay>\n                    <history>7</history>\n                    <trends>90</trends>\n                    <status>0</status>\n                    <value_type>3</value_type>\n                    <allowed_hosts/>\n                    <units/>\n                    <delta>0</delta>\n                    <snmpv3_securityname/>\n                    <snmpv3_securitylevel>0</snmpv3_securitylevel>\n                    <snmpv3_authpassphrase/>\n                    <snmpv3_privpassphrase/>\n                    <formula>1</formula>\n                    <delay_flex/>\n                    <params/>\n                    <ipmi_sensor/>\n                    <data_type>0</data_type>\n                    <authtype>0</authtype>\n                    <username/>\n                    <password/>\n                    <publickey/>\n                    <privatekey/>\n                    <port/>\n                    <description/>\n                    <inventory_link>0</inventory_link>\n                    <applications>\n                        <application>\n                            <name>Oracle721</name>\n                        </application>\n                    </applications>\n                    <valuemap/>\n                </item>\t\t\t\t\n                <item>\n                    <name>Oracle/User Rollbacks on {$DATABASE}</name>\n                    <type>10</type>\n                    <snmp_community/>\n                    <multiplier>0</multiplier>\n                    <snmp_oid/>\n                    <key>dbagent[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},rollbacks]</key>\n                    <delay>300</delay>\n                    <history>7</history>\n                    <trends>90</trends>\n                    <status>0</status>\n                    <value_type>3</value_type>\n                    <allowed_hosts/>\n                    <units/>\n                    <delta>0</delta>\n                    <snmpv3_securityname/>\n                    <snmpv3_securitylevel>0</snmpv3_securitylevel>\n                    <snmpv3_authpassphrase/>\n                    <snmpv3_privpassphrase/>\n                    <formula>1</formula>\n                    <delay_flex/>\n                    <params/>\n                    <ipmi_sensor/>\n                    <data_type>0</data_type>\n                    <authtype>0</authtype>\n                    <username/>\n                    <password/>\n                    <publickey/>\n                    <privatekey/>\n                    <port/>\n                    <description/>\n                    <inventory_link>0</inventory_link>\n                    <applications>\n                        <application>\n                            <name>Oracle721</name>\n                        </application>\n                    </applications>\n                    <valuemap/>\n                </item>\n\n\t\t\t\t\n\t\t\t\t\n            </items>\n            <templates/>\n            <screens/>\n        </template>\n    </templates>\n</zabbix_export>\n",
-        "format": "xml"
-    },
-    "jsonrpc": "2.0",
-    "method": "configuration.import",
-    "auth": "59babbf831c620c73e0c9f6ff4f44a0a",
-    "id": 37
-}
-Response Code: 200, {"jsonrpc":"2.0","result":true,"id":37}
-Response Body: {
-    "jsonrpc": "2.0",
-    "result": true,
-    "id": 37
-}
 
+
+
+('version', 'oracle.query[zabbix,zabbix,192.168.1.7,orcl,version]', 1)
+========================================
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,version] history raw result==
+0: {u'itemid': u'25483', u'ns': u'951762212', u'value': u'Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production', u'clock': u'1566524563'}
+1: {u'itemid': u'25483', u'ns': u'70571386', u'value': u'Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production', u'clock': u'1566524504'}
+2: {u'itemid': u'25483', u'ns': u'211543130', u'value': u'Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production', u'clock': u'1566524443'}
+3: {u'itemid': u'25483', u'ns': u'110456742', u'value': u'Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production', u'clock': u'1566524384'}
+4: {u'itemid': u'25483', u'ns': u'51032479', u'value': u'Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production', u'clock': u'1566524324'}
+5: {u'itemid': u'25483', u'ns': u'214872069', u'value': u'Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production', u'clock': u'1566524263'}
+6: {u'itemid': u'25483', u'ns': u'345290056', u'value': u'Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production', u'clock': u'1566524203'}
+7: {u'itemid': u'25483', u'ns': u'143559652', u'value': u'Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production', u'clock': u'1566524143'}
+8: {u'itemid': u'25483', u'ns': u'419105036', u'value': u'Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production', u'clock': u'1566524083'}
+9: {u'itemid': u'25483', u'ns': u'649430186', u'value': u'Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production', u'clock': u'1566524023'}
+
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,version] history human format result==
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,version], id:25483, value:Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production, time:2019-08-22 21:42:43
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,version], id:25483, value:Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production, time:2019-08-22 21:41:44
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,version], id:25483, value:Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production, time:2019-08-22 21:40:43
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,version], id:25483, value:Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production, time:2019-08-22 21:39:44
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,version], id:25483, value:Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production, time:2019-08-22 21:38:44
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,version], id:25483, value:Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production, time:2019-08-22 21:37:43
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,version], id:25483, value:Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production, time:2019-08-22 21:36:43
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,version], id:25483, value:Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production, time:2019-08-22 21:35:43
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,version], id:25483, value:Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production, time:2019-08-22 21:34:43
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,version], id:25483, value:Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production, time:2019-08-22 21:33:43
+
+
+
+('dbname', 'oracle.query[zabbix,zabbix,192.168.1.7,orcl,dbname]', 1)
+========================================
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,dbname] history raw result==
+0: {u'itemid': u'25464', u'ns': u'898503630', u'value': u'ORCL', u'clock': u'1566524604'}
+1: {u'itemid': u'25464', u'ns': u'59007000', u'value': u'ORCL', u'clock': u'1566524545'}
+2: {u'itemid': u'25464', u'ns': u'252464364', u'value': u'ORCL', u'clock': u'1566524484'}
+3: {u'itemid': u'25464', u'ns': u'393484784', u'value': u'ORCL', u'clock': u'1566524424'}
+4: {u'itemid': u'25464', u'ns': u'315565019', u'value': u'ORCL', u'clock': u'1566524364'}
+5: {u'itemid': u'25464', u'ns': u'187818329', u'value': u'ORCL', u'clock': u'1566524304'}
+6: {u'itemid': u'25464', u'ns': u'449508313', u'value': u'ORCL', u'clock': u'1566524244'}
+7: {u'itemid': u'25464', u'ns': u'845956018', u'value': u'ORCL', u'clock': u'1566524184'}
+8: {u'itemid': u'25464', u'ns': u'827603553', u'value': u'ORCL', u'clock': u'1566524124'}
+9: {u'itemid': u'25464', u'ns': u'608735898', u'value': u'ORCL', u'clock': u'1566524064'}
+
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,dbname] history human format result==
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,dbname], id:25464, value:ORCL, time:2019-08-22 21:43:24
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,dbname], id:25464, value:ORCL, time:2019-08-22 21:42:25
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,dbname], id:25464, value:ORCL, time:2019-08-22 21:41:24
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,dbname], id:25464, value:ORCL, time:2019-08-22 21:40:24
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,dbname], id:25464, value:ORCL, time:2019-08-22 21:39:24
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,dbname], id:25464, value:ORCL, time:2019-08-22 21:38:24
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,dbname], id:25464, value:ORCL, time:2019-08-22 21:37:24
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,dbname], id:25464, value:ORCL, time:2019-08-22 21:36:24
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,dbname], id:25464, value:ORCL, time:2019-08-22 21:35:24
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,dbname], id:25464, value:ORCL, time:2019-08-22 21:34:24
+
+
+
+('dbsystime', 'oracle.query[zabbix,zabbix,192.168.1.7,orcl,dbsystime]', 1)
+========================================
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,dbsystime] history raw result==
+0: {u'itemid': u'25466', u'ns': u'182909058', u'value': u'2019-08-23 01:43:15', u'clock': u'1566524606'}
+1: {u'itemid': u'25466', u'ns': u'346739505', u'value': u'2019-08-23 01:42:16', u'clock': u'1566524546'}
+2: {u'itemid': u'25466', u'ns': u'547148118', u'value': u'2019-08-23 01:41:16', u'clock': u'1566524486'}
+3: {u'itemid': u'25466', u'ns': u'142693269', u'value': u'2019-08-23 01:40:15', u'clock': u'1566524426'}
+4: {u'itemid': u'25466', u'ns': u'613346491', u'value': u'2019-08-23 01:39:16', u'clock': u'1566524366'}
+5: {u'itemid': u'25466', u'ns': u'491106854', u'value': u'2019-08-23 01:38:16', u'clock': u'1566524306'}
+6: {u'itemid': u'25466', u'ns': u'743983378', u'value': u'2019-08-23 01:37:16', u'clock': u'1566524246'}
+7: {u'itemid': u'25466', u'ns': u'914902303', u'value': u'2019-08-23 01:36:16', u'clock': u'1566524186'}
+8: {u'itemid': u'25466', u'ns': u'960426001', u'value': u'2019-08-23 01:35:16', u'clock': u'1566524126'}
+9: {u'itemid': u'25466', u'ns': u'910788579', u'value': u'2019-08-23 01:34:16', u'clock': u'1566524066'}
+
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,dbsystime] history human format result==
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,dbsystime], id:25466, value:2019-08-23 01:43:15, time:2019-08-22 21:43:26
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,dbsystime], id:25466, value:2019-08-23 01:42:16, time:2019-08-22 21:42:26
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,dbsystime], id:25466, value:2019-08-23 01:41:16, time:2019-08-22 21:41:26
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,dbsystime], id:25466, value:2019-08-23 01:40:15, time:2019-08-22 21:40:26
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,dbsystime], id:25466, value:2019-08-23 01:39:16, time:2019-08-22 21:39:26
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,dbsystime], id:25466, value:2019-08-23 01:38:16, time:2019-08-22 21:38:26
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,dbsystime], id:25466, value:2019-08-23 01:37:16, time:2019-08-22 21:37:26
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,dbsystime], id:25466, value:2019-08-23 01:36:16, time:2019-08-22 21:36:26
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,dbsystime], id:25466, value:2019-08-23 01:35:16, time:2019-08-22 21:35:26
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,dbsystime], id:25466, value:2019-08-23 01:34:16, time:2019-08-22 21:34:26
+
+
+
+('logmode', 'oracle.query[zabbix,zabbix,192.168.1.7,orcl,logmode]', 1)
+========================================
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,logmode] history raw result==
+0: {u'itemid': u'25473', u'ns': u'196781812', u'value': u'ARCHIVELOG', u'clock': u'1566524613'}
+1: {u'itemid': u'25473', u'ns': u'472636113', u'value': u'ARCHIVELOG', u'clock': u'1566524553'}
+2: {u'itemid': u'25473', u'ns': u'290143822', u'value': u'ARCHIVELOG', u'clock': u'1566524493'}
+3: {u'itemid': u'25473', u'ns': u'403553463', u'value': u'ARCHIVELOG', u'clock': u'1566524433'}
+4: {u'itemid': u'25473', u'ns': u'403414655', u'value': u'ARCHIVELOG', u'clock': u'1566524373'}
+5: {u'itemid': u'25473', u'ns': u'137814880', u'value': u'ARCHIVELOG', u'clock': u'1566524314'}
+6: {u'itemid': u'25473', u'ns': u'404569123', u'value': u'ARCHIVELOG', u'clock': u'1566524253'}
+7: {u'itemid': u'25473', u'ns': u'505225795', u'value': u'ARCHIVELOG', u'clock': u'1566524193'}
+8: {u'itemid': u'25473', u'ns': u'428558571', u'value': u'ARCHIVELOG', u'clock': u'1566524133'}
+9: {u'itemid': u'25473', u'ns': u'594919214', u'value': u'ARCHIVELOG', u'clock': u'1566524073'}
+
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,logmode] history human format result==
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,logmode], id:25473, value:ARCHIVELOG, time:2019-08-22 21:43:33
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,logmode], id:25473, value:ARCHIVELOG, time:2019-08-22 21:42:33
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,logmode], id:25473, value:ARCHIVELOG, time:2019-08-22 21:41:33
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,logmode], id:25473, value:ARCHIVELOG, time:2019-08-22 21:40:33
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,logmode], id:25473, value:ARCHIVELOG, time:2019-08-22 21:39:33
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,logmode], id:25473, value:ARCHIVELOG, time:2019-08-22 21:38:34
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,logmode], id:25473, value:ARCHIVELOG, time:2019-08-22 21:37:33
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,logmode], id:25473, value:ARCHIVELOG, time:2019-08-22 21:36:33
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,logmode], id:25473, value:ARCHIVELOG, time:2019-08-22 21:35:33
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,logmode], id:25473, value:ARCHIVELOG, time:2019-08-22 21:34:33
+
+
+
+('dbstatus', 'oracle.query[zabbix,zabbix,192.168.1.7,orcl,dbstatus]', 1)
+========================================
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,dbstatus] history raw result==
+0: {u'itemid': u'25465', u'ns': u'42418292', u'value': u'OPEN', u'clock': u'1566524606'}
+1: {u'itemid': u'25465', u'ns': u'201407115', u'value': u'OPEN', u'clock': u'1566524545'}
+2: {u'itemid': u'25465', u'ns': u'400529421', u'value': u'OPEN', u'clock': u'1566524485'}
+3: {u'itemid': u'25465', u'ns': u'541048721', u'value': u'OPEN', u'clock': u'1566524425'}
+4: {u'itemid': u'25465', u'ns': u'464847407', u'value': u'OPEN', u'clock': u'1566524365'}
+5: {u'itemid': u'25465', u'ns': u'336973947', u'value': u'OPEN', u'clock': u'1566524305'}
+6: {u'itemid': u'25465', u'ns': u'597148262', u'value': u'OPEN', u'clock': u'1566524245'}
+7: {u'itemid': u'25465', u'ns': u'851221121', u'value': u'OPEN', u'clock': u'1566524185'}
+8: {u'itemid': u'25465', u'ns': u'941486188', u'value': u'OPEN', u'clock': u'1566524125'}
+9: {u'itemid': u'25465', u'ns': u'758625354', u'value': u'OPEN', u'clock': u'1566524065'}
+
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,dbstatus] history human format result==
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,dbstatus], id:25465, value:OPEN, time:2019-08-22 21:43:26
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,dbstatus], id:25465, value:OPEN, time:2019-08-22 21:42:25
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,dbstatus], id:25465, value:OPEN, time:2019-08-22 21:41:25
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,dbstatus], id:25465, value:OPEN, time:2019-08-22 21:40:25
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,dbstatus], id:25465, value:OPEN, time:2019-08-22 21:39:25
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,dbstatus], id:25465, value:OPEN, time:2019-08-22 21:38:25
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,dbstatus], id:25465, value:OPEN, time:2019-08-22 21:37:25
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,dbstatus], id:25465, value:OPEN, time:2019-08-22 21:36:25
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,dbstatus], id:25465, value:OPEN, time:2019-08-22 21:35:25
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,dbstatus], id:25465, value:OPEN, time:2019-08-22 21:34:25
+
+
+
+('currentscn', 'oracle.query[zabbix,zabbix,192.168.1.7,orcl,currentscn]', 3)
+========================================
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,currentscn] history raw result==
+0: {u'itemid': u'25462', u'ns': u'553683626', u'value': u'2317941', u'clock': u'1566524602'}
+1: {u'itemid': u'25462', u'ns': u'809034933', u'value': u'2317787', u'clock': u'1566524542'}
+2: {u'itemid': u'25462', u'ns': u'906927418', u'value': u'2317620', u'clock': u'1566524482'}
+3: {u'itemid': u'25462', u'ns': u'46998446', u'value': u'2317449', u'clock': u'1566524423'}
+4: {u'itemid': u'25462', u'ns': u'865097244', u'value': u'2317309', u'clock': u'1566524362'}
+5: {u'itemid': u'25462', u'ns': u'826189269', u'value': u'2317155', u'clock': u'1566524302'}
+6: {u'itemid': u'25462', u'ns': u'41431760', u'value': u'2316995', u'clock': u'1566524243'}
+7: {u'itemid': u'25462', u'ns': u'682496738', u'value': u'2316842', u'clock': u'1566524182'}
+8: {u'itemid': u'25462', u'ns': u'660194469', u'value': u'2316666', u'clock': u'1566524122'}
+9: {u'itemid': u'25462', u'ns': u'257613297', u'value': u'2316525', u'clock': u'1566524062'}
+
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,currentscn] history human format result==
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,currentscn], id:25462, value:2317941, time:2019-08-22 21:43:22
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,currentscn], id:25462, value:2317787, time:2019-08-22 21:42:22
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,currentscn], id:25462, value:2317620, time:2019-08-22 21:41:22
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,currentscn], id:25462, value:2317449, time:2019-08-22 21:40:23
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,currentscn], id:25462, value:2317309, time:2019-08-22 21:39:22
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,currentscn], id:25462, value:2317155, time:2019-08-22 21:38:22
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,currentscn], id:25462, value:2316995, time:2019-08-22 21:37:23
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,currentscn], id:25462, value:2316842, time:2019-08-22 21:36:22
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,currentscn], id:25462, value:2316666, time:2019-08-22 21:35:22
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,currentscn], id:25462, value:2316525, time:2019-08-22 21:34:22
+
+
+
+('archthreadseq', 'oracle.query[zabbix,zabbix,192.168.1.7,orcl,archthreadseq]', 1)
+========================================
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,archthreadseq] history raw result==
+0: {u'itemid': u'25457', u'ns': u'466087016', u'value': u'1,17', u'clock': u'1566524597'}
+1: {u'itemid': u'25457', u'ns': u'172205434', u'value': u'1,17', u'clock': u'1566524537'}
+2: {u'itemid': u'25457', u'ns': u'163816133', u'value': u'1,17', u'clock': u'1566524477'}
+3: {u'itemid': u'25457', u'ns': u'973729263', u'value': u'1,17', u'clock': u'1566524417'}
+4: {u'itemid': u'25457', u'ns': u'591444571', u'value': u'1,17', u'clock': u'1566524357'}
+5: {u'itemid': u'25457', u'ns': u'761652241', u'value': u'1,17', u'clock': u'1566524297'}
+6: {u'itemid': u'25457', u'ns': u'909218710', u'value': u'1,17', u'clock': u'1566524237'}
+7: {u'itemid': u'25457', u'ns': u'183050881', u'value': u'1,17', u'clock': u'1566524177'}
+8: {u'itemid': u'25457', u'ns': u'186060244', u'value': u'1,17', u'clock': u'1566524117'}
+9: {u'itemid': u'25457', u'ns': u'182943001', u'value': u'1,17', u'clock': u'1566524057'}
+
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,archthreadseq] history human format result==
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,archthreadseq], id:25457, value:1,17, time:2019-08-22 21:43:17
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,archthreadseq], id:25457, value:1,17, time:2019-08-22 21:42:17
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,archthreadseq], id:25457, value:1,17, time:2019-08-22 21:41:17
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,archthreadseq], id:25457, value:1,17, time:2019-08-22 21:40:17
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,archthreadseq], id:25457, value:1,17, time:2019-08-22 21:39:17
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,archthreadseq], id:25457, value:1,17, time:2019-08-22 21:38:17
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,archthreadseq], id:25457, value:1,17, time:2019-08-22 21:37:17
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,archthreadseq], id:25457, value:1,17, time:2019-08-22 21:36:17
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,archthreadseq], id:25457, value:1,17, time:2019-08-22 21:35:17
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,archthreadseq], id:25457, value:1,17, time:2019-08-22 21:34:17
+
+
+
+('flash_areausage', 'oracle.query[zabbix,zabbix,192.168.1.7,orcl,flash_areausage]', 0)
+========================================
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,flash_areausage] history raw result==
+0: {u'itemid': u'25469', u'ns': u'531815143', u'value': u'0.0000', u'clock': u'1566524609'}
+1: {u'itemid': u'25469', u'ns': u'244170962', u'value': u'0.0000', u'clock': u'1566524549'}
+2: {u'itemid': u'25469', u'ns': u'417512741', u'value': u'0.0000', u'clock': u'1566524489'}
+3: {u'itemid': u'25469', u'ns': u'753915630', u'value': u'0.0000', u'clock': u'1566524429'}
+4: {u'itemid': u'25469', u'ns': u'624159106', u'value': u'0.0000', u'clock': u'1566524369'}
+5: {u'itemid': u'25469', u'ns': u'348815383', u'value': u'0.0000', u'clock': u'1566524309'}
+6: {u'itemid': u'25469', u'ns': u'641519199', u'value': u'0.0000', u'clock': u'1566524249'}
+7: {u'itemid': u'25469', u'ns': u'708691421', u'value': u'0.0000', u'clock': u'1566524189'}
+8: {u'itemid': u'25469', u'ns': u'843975720', u'value': u'0.0000', u'clock': u'1566524129'}
+9: {u'itemid': u'25469', u'ns': u'777839329', u'value': u'0.0000', u'clock': u'1566524069'}
+
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,flash_areausage] history human format result==
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,flash_areausage], id:25469, value:0.0000, time:2019-08-22 21:43:29
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,flash_areausage], id:25469, value:0.0000, time:2019-08-22 21:42:29
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,flash_areausage], id:25469, value:0.0000, time:2019-08-22 21:41:29
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,flash_areausage], id:25469, value:0.0000, time:2019-08-22 21:40:29
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,flash_areausage], id:25469, value:0.0000, time:2019-08-22 21:39:29
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,flash_areausage], id:25469, value:0.0000, time:2019-08-22 21:38:29
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,flash_areausage], id:25469, value:0.0000, time:2019-08-22 21:37:29
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,flash_areausage], id:25469, value:0.0000, time:2019-08-22 21:36:29
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,flash_areausage], id:25469, value:0.0000, time:2019-08-22 21:35:29
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,flash_areausage], id:25469, value:0.0000, time:2019-08-22 21:34:29
+
+
+
+('backup_status', 'oracle.query[zabbix,zabbix,192.168.1.7,orcl,backup_status]', 1)
+========================================
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,backup_status] history raw result==
+0: {u'itemid': u'25458', u'ns': u'619828860', u'value': u'', u'clock': u'1566524598'}
+1: {u'itemid': u'25458', u'ns': u'319565716', u'value': u'', u'clock': u'1566524538'}
+2: {u'itemid': u'25458', u'ns': u'309606084', u'value': u'', u'clock': u'1566524478'}
+3: {u'itemid': u'25458', u'ns': u'116101511', u'value': u'', u'clock': u'1566524419'}
+4: {u'itemid': u'25458', u'ns': u'749061159', u'value': u'', u'clock': u'1566524358'}
+5: {u'itemid': u'25458', u'ns': u'908224093', u'value': u'', u'clock': u'1566524298'}
+6: {u'itemid': u'25458', u'ns': u'41676788', u'value': u'', u'clock': u'1566524239'}
+7: {u'itemid': u'25458', u'ns': u'298212487', u'value': u'', u'clock': u'1566524178'}
+8: {u'itemid': u'25458', u'ns': u'143554126', u'value': u'', u'clock': u'1566524118'}
+9: {u'itemid': u'25458', u'ns': u'325700674', u'value': u'', u'clock': u'1566524058'}
+
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,backup_status] history human format result==
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,backup_status], id:25458, value:, time:2019-08-22 21:43:18
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,backup_status], id:25458, value:, time:2019-08-22 21:42:18
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,backup_status], id:25458, value:, time:2019-08-22 21:41:18
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,backup_status], id:25458, value:, time:2019-08-22 21:40:19
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,backup_status], id:25458, value:, time:2019-08-22 21:39:18
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,backup_status], id:25458, value:, time:2019-08-22 21:38:18
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,backup_status], id:25458, value:, time:2019-08-22 21:37:19
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,backup_status], id:25458, value:, time:2019-08-22 21:36:18
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,backup_status], id:25458, value:, time:2019-08-22 21:35:18
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,backup_status], id:25458, value:, time:2019-08-22 21:34:18
+
+
+
+('log_transfermode', 'oracle.query[zabbix,zabbix,192.168.1.7,orcl,log_transfermode]', 1)
+========================================
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,log_transfermode] history raw result==
+0: {u'itemid': u'25471', u'ns': u'695768564', u'value': u'', u'clock': u'1566524611'}
+1: {u'itemid': u'25471', u'ns': u'308901726', u'value': u'', u'clock': u'1566524551'}
+2: {u'itemid': u'25471', u'ns': u'793697200', u'value': u'', u'clock': u'1566524491'}
+3: {u'itemid': u'25471', u'ns': u'962292012', u'value': u'', u'clock': u'1566524431'}
+4: {u'itemid': u'25471', u'ns': u'941405290', u'value': u'', u'clock': u'1566524371'}
+5: {u'itemid': u'25471', u'ns': u'664228654', u'value': u'', u'clock': u'1566524311'}
+6: {u'itemid': u'25471', u'ns': u'959646953', u'value': u'', u'clock': u'1566524251'}
+7: {u'itemid': u'25471', u'ns': u'2044421', u'value': u'', u'clock': u'1566524192'}
+8: {u'itemid': u'25471', u'ns': u'991317104', u'value': u'', u'clock': u'1566524131'}
+9: {u'itemid': u'25471', u'ns': u'98700176', u'value': u'', u'clock': u'1566524072'}
+
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,log_transfermode] history human format result==
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,log_transfermode], id:25471, value:, time:2019-08-22 21:43:31
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,log_transfermode], id:25471, value:, time:2019-08-22 21:42:31
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,log_transfermode], id:25471, value:, time:2019-08-22 21:41:31
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,log_transfermode], id:25471, value:, time:2019-08-22 21:40:31
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,log_transfermode], id:25471, value:, time:2019-08-22 21:39:31
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,log_transfermode], id:25471, value:, time:2019-08-22 21:38:31
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,log_transfermode], id:25471, value:, time:2019-08-22 21:37:31
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,log_transfermode], id:25471, value:, time:2019-08-22 21:36:32
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,log_transfermode], id:25471, value:, time:2019-08-22 21:35:31
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,log_transfermode], id:25471, value:, time:2019-08-22 21:34:32
+
+
+
+('show_users', 'oracle.query[zabbix,zabbix,192.168.1.7,orcl,show_users]', 4)
+========================================
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,show_users] history raw result==
+0: {u'itemid': u'25480', u'ns': u'472064228', u'value': u'{"data": [{"{#DBUSER}": "ANONYMOUS"}, {"{#DBUSER}": "APEX_030200"}, {"{#DBUSER}": "APEX_PUBLIC_USER"}, {"{#DBUSER}": "APPQOSSYS"}, {"{#DBUSER}": "CTXSYS"}, {"{#DBUSER}": "DBSNMP"}, {"{#DBUSER}": "DIP"}, {"{#DBUSER}": "EXFSYS"}, {"{#DBUSER}": "FLOWS_FILES"}, {"{#DBUSER}": "MDDATA"}, {"{#DBUSER}": "MDSYS"}, {"{#DBUSER}": "MGMT_VIEW"}, {"{#DBUSER}": "OLAPSYS"}, {"{#DBUSER}": "ORACLE_OCM"}, {"{#DBUSER}": "ORDDATA"}, {"{#DBUSER}": "ORDPLUGINS"}, {"{#DBUSER}": "ORDSYS"}, {"{#DBUSER}": "OUTLN"}, {"{#DBUSER}": "OWBSYS"}, {"{#DBUSER}": "OWBSYS_AUDIT"}, {"{#DBUSER}": "SCOTT"}, {"{#DBUSER}": "SI_INFORMTN_SCHEMA"}, {"{#DBUSER}": "SPATIAL_CSW_ADMIN_USR"}, {"{#DBUSER}": "SPATIAL_WFS_ADMIN_USR"}, {"{#DBUSER}": "SYS"}, {"{#DBUSER}": "SYSMAN"}, {"{#DBUSER}": "SYSTEM"}, {"{#DBUSER}": "WMSYS"}, {"{#DBUSER}": "XDB"}, {"{#DBUSER}": "XS$NULL"}, {"{#DBUSER}": "ZABBIX"}]}', u'clock': u'1566524560'}
+1: {u'itemid': u'25480', u'ns': u'607006101', u'value': u'{"data": [{"{#DBUSER}": "ANONYMOUS"}, {"{#DBUSER}": "APEX_030200"}, {"{#DBUSER}": "APEX_PUBLIC_USER"}, {"{#DBUSER}": "APPQOSSYS"}, {"{#DBUSER}": "CTXSYS"}, {"{#DBUSER}": "DBSNMP"}, {"{#DBUSER}": "DIP"}, {"{#DBUSER}": "EXFSYS"}, {"{#DBUSER}": "FLOWS_FILES"}, {"{#DBUSER}": "MDDATA"}, {"{#DBUSER}": "MDSYS"}, {"{#DBUSER}": "MGMT_VIEW"}, {"{#DBUSER}": "OLAPSYS"}, {"{#DBUSER}": "ORACLE_OCM"}, {"{#DBUSER}": "ORDDATA"}, {"{#DBUSER}": "ORDPLUGINS"}, {"{#DBUSER}": "ORDSYS"}, {"{#DBUSER}": "OUTLN"}, {"{#DBUSER}": "OWBSYS"}, {"{#DBUSER}": "OWBSYS_AUDIT"}, {"{#DBUSER}": "SCOTT"}, {"{#DBUSER}": "SI_INFORMTN_SCHEMA"}, {"{#DBUSER}": "SPATIAL_CSW_ADMIN_USR"}, {"{#DBUSER}": "SPATIAL_WFS_ADMIN_USR"}, {"{#DBUSER}": "SYS"}, {"{#DBUSER}": "SYSMAN"}, {"{#DBUSER}": "SYSTEM"}, {"{#DBUSER}": "WMSYS"}, {"{#DBUSER}": "XDB"}, {"{#DBUSER}": "XS$NULL"}, {"{#DBUSER}": "ZABBIX"}]}', u'clock': u'1566524500'}
+2: {u'itemid': u'25480', u'ns': u'737321071', u'value': u'{"data": [{"{#DBUSER}": "ANONYMOUS"}, {"{#DBUSER}": "APEX_030200"}, {"{#DBUSER}": "APEX_PUBLIC_USER"}, {"{#DBUSER}": "APPQOSSYS"}, {"{#DBUSER}": "CTXSYS"}, {"{#DBUSER}": "DBSNMP"}, {"{#DBUSER}": "DIP"}, {"{#DBUSER}": "EXFSYS"}, {"{#DBUSER}": "FLOWS_FILES"}, {"{#DBUSER}": "MDDATA"}, {"{#DBUSER}": "MDSYS"}, {"{#DBUSER}": "MGMT_VIEW"}, {"{#DBUSER}": "OLAPSYS"}, {"{#DBUSER}": "ORACLE_OCM"}, {"{#DBUSER}": "ORDDATA"}, {"{#DBUSER}": "ORDPLUGINS"}, {"{#DBUSER}": "ORDSYS"}, {"{#DBUSER}": "OUTLN"}, {"{#DBUSER}": "OWBSYS"}, {"{#DBUSER}": "OWBSYS_AUDIT"}, {"{#DBUSER}": "SCOTT"}, {"{#DBUSER}": "SI_INFORMTN_SCHEMA"}, {"{#DBUSER}": "SPATIAL_CSW_ADMIN_USR"}, {"{#DBUSER}": "SPATIAL_WFS_ADMIN_USR"}, {"{#DBUSER}": "SYS"}, {"{#DBUSER}": "SYSMAN"}, {"{#DBUSER}": "SYSTEM"}, {"{#DBUSER}": "WMSYS"}, {"{#DBUSER}": "XDB"}, {"{#DBUSER}": "XS$NULL"}, {"{#DBUSER}": "ZABBIX"}]}', u'clock': u'1566524440'}
+3: {u'itemid': u'25480', u'ns': u'633169695', u'value': u'{"data": [{"{#DBUSER}": "ANONYMOUS"}, {"{#DBUSER}": "APEX_030200"}, {"{#DBUSER}": "APEX_PUBLIC_USER"}, {"{#DBUSER}": "APPQOSSYS"}, {"{#DBUSER}": "CTXSYS"}, {"{#DBUSER}": "DBSNMP"}, {"{#DBUSER}": "DIP"}, {"{#DBUSER}": "EXFSYS"}, {"{#DBUSER}": "FLOWS_FILES"}, {"{#DBUSER}": "MDDATA"}, {"{#DBUSER}": "MDSYS"}, {"{#DBUSER}": "MGMT_VIEW"}, {"{#DBUSER}": "OLAPSYS"}, {"{#DBUSER}": "ORACLE_OCM"}, {"{#DBUSER}": "ORDDATA"}, {"{#DBUSER}": "ORDPLUGINS"}, {"{#DBUSER}": "ORDSYS"}, {"{#DBUSER}": "OUTLN"}, {"{#DBUSER}": "OWBSYS"}, {"{#DBUSER}": "OWBSYS_AUDIT"}, {"{#DBUSER}": "SCOTT"}, {"{#DBUSER}": "SI_INFORMTN_SCHEMA"}, {"{#DBUSER}": "SPATIAL_CSW_ADMIN_USR"}, {"{#DBUSER}": "SPATIAL_WFS_ADMIN_USR"}, {"{#DBUSER}": "SYS"}, {"{#DBUSER}": "SYSMAN"}, {"{#DBUSER}": "SYSTEM"}, {"{#DBUSER}": "WMSYS"}, {"{#DBUSER}": "XDB"}, {"{#DBUSER}": "XS$NULL"}, {"{#DBUSER}": "ZABBIX"}]}', u'clock': u'1566524380'}
+4: {u'itemid': u'25480', u'ns': u'754651453', u'value': u'{"data": [{"{#DBUSER}": "ANONYMOUS"}, {"{#DBUSER}": "APEX_030200"}, {"{#DBUSER}": "APEX_PUBLIC_USER"}, {"{#DBUSER}": "APPQOSSYS"}, {"{#DBUSER}": "CTXSYS"}, {"{#DBUSER}": "DBSNMP"}, {"{#DBUSER}": "DIP"}, {"{#DBUSER}": "EXFSYS"}, {"{#DBUSER}": "FLOWS_FILES"}, {"{#DBUSER}": "MDDATA"}, {"{#DBUSER}": "MDSYS"}, {"{#DBUSER}": "MGMT_VIEW"}, {"{#DBUSER}": "OLAPSYS"}, {"{#DBUSER}": "ORACLE_OCM"}, {"{#DBUSER}": "ORDDATA"}, {"{#DBUSER}": "ORDPLUGINS"}, {"{#DBUSER}": "ORDSYS"}, {"{#DBUSER}": "OUTLN"}, {"{#DBUSER}": "OWBSYS"}, {"{#DBUSER}": "OWBSYS_AUDIT"}, {"{#DBUSER}": "SCOTT"}, {"{#DBUSER}": "SI_INFORMTN_SCHEMA"}, {"{#DBUSER}": "SPATIAL_CSW_ADMIN_USR"}, {"{#DBUSER}": "SPATIAL_WFS_ADMIN_USR"}, {"{#DBUSER}": "SYS"}, {"{#DBUSER}": "SYSMAN"}, {"{#DBUSER}": "SYSTEM"}, {"{#DBUSER}": "WMSYS"}, {"{#DBUSER}": "XDB"}, {"{#DBUSER}": "XS$NULL"}, {"{#DBUSER}": "ZABBIX"}]}', u'clock': u'1566524320'}
+5: {u'itemid': u'25480', u'ns': u'742996244', u'value': u'{"data": [{"{#DBUSER}": "ANONYMOUS"}, {"{#DBUSER}": "APEX_030200"}, {"{#DBUSER}": "APEX_PUBLIC_USER"}, {"{#DBUSER}": "APPQOSSYS"}, {"{#DBUSER}": "CTXSYS"}, {"{#DBUSER}": "DBSNMP"}, {"{#DBUSER}": "DIP"}, {"{#DBUSER}": "EXFSYS"}, {"{#DBUSER}": "FLOWS_FILES"}, {"{#DBUSER}": "MDDATA"}, {"{#DBUSER}": "MDSYS"}, {"{#DBUSER}": "MGMT_VIEW"}, {"{#DBUSER}": "OLAPSYS"}, {"{#DBUSER}": "ORACLE_OCM"}, {"{#DBUSER}": "ORDDATA"}, {"{#DBUSER}": "ORDPLUGINS"}, {"{#DBUSER}": "ORDSYS"}, {"{#DBUSER}": "OUTLN"}, {"{#DBUSER}": "OWBSYS"}, {"{#DBUSER}": "OWBSYS_AUDIT"}, {"{#DBUSER}": "SCOTT"}, {"{#DBUSER}": "SI_INFORMTN_SCHEMA"}, {"{#DBUSER}": "SPATIAL_CSW_ADMIN_USR"}, {"{#DBUSER}": "SPATIAL_WFS_ADMIN_USR"}, {"{#DBUSER}": "SYS"}, {"{#DBUSER}": "SYSMAN"}, {"{#DBUSER}": "SYSTEM"}, {"{#DBUSER}": "WMSYS"}, {"{#DBUSER}": "XDB"}, {"{#DBUSER}": "XS$NULL"}, {"{#DBUSER}": "ZABBIX"}]}', u'clock': u'1566524260'}
+6: {u'itemid': u'25480', u'ns': u'887736288', u'value': u'{"data": [{"{#DBUSER}": "ANONYMOUS"}, {"{#DBUSER}": "APEX_030200"}, {"{#DBUSER}": "APEX_PUBLIC_USER"}, {"{#DBUSER}": "APPQOSSYS"}, {"{#DBUSER}": "CTXSYS"}, {"{#DBUSER}": "DBSNMP"}, {"{#DBUSER}": "DIP"}, {"{#DBUSER}": "EXFSYS"}, {"{#DBUSER}": "FLOWS_FILES"}, {"{#DBUSER}": "MDDATA"}, {"{#DBUSER}": "MDSYS"}, {"{#DBUSER}": "MGMT_VIEW"}, {"{#DBUSER}": "OLAPSYS"}, {"{#DBUSER}": "ORACLE_OCM"}, {"{#DBUSER}": "ORDDATA"}, {"{#DBUSER}": "ORDPLUGINS"}, {"{#DBUSER}": "ORDSYS"}, {"{#DBUSER}": "OUTLN"}, {"{#DBUSER}": "OWBSYS"}, {"{#DBUSER}": "OWBSYS_AUDIT"}, {"{#DBUSER}": "SCOTT"}, {"{#DBUSER}": "SI_INFORMTN_SCHEMA"}, {"{#DBUSER}": "SPATIAL_CSW_ADMIN_USR"}, {"{#DBUSER}": "SPATIAL_WFS_ADMIN_USR"}, {"{#DBUSER}": "SYS"}, {"{#DBUSER}": "SYSMAN"}, {"{#DBUSER}": "SYSTEM"}, {"{#DBUSER}": "WMSYS"}, {"{#DBUSER}": "XDB"}, {"{#DBUSER}": "XS$NULL"}, {"{#DBUSER}": "ZABBIX"}]}', u'clock': u'1566524200'}
+7: {u'itemid': u'25480', u'ns': u'705783531', u'value': u'{"data": [{"{#DBUSER}": "ANONYMOUS"}, {"{#DBUSER}": "APEX_030200"}, {"{#DBUSER}": "APEX_PUBLIC_USER"}, {"{#DBUSER}": "APPQOSSYS"}, {"{#DBUSER}": "CTXSYS"}, {"{#DBUSER}": "DBSNMP"}, {"{#DBUSER}": "DIP"}, {"{#DBUSER}": "EXFSYS"}, {"{#DBUSER}": "FLOWS_FILES"}, {"{#DBUSER}": "MDDATA"}, {"{#DBUSER}": "MDSYS"}, {"{#DBUSER}": "MGMT_VIEW"}, {"{#DBUSER}": "OLAPSYS"}, {"{#DBUSER}": "ORACLE_OCM"}, {"{#DBUSER}": "ORDDATA"}, {"{#DBUSER}": "ORDPLUGINS"}, {"{#DBUSER}": "ORDSYS"}, {"{#DBUSER}": "OUTLN"}, {"{#DBUSER}": "OWBSYS"}, {"{#DBUSER}": "OWBSYS_AUDIT"}, {"{#DBUSER}": "SCOTT"}, {"{#DBUSER}": "SI_INFORMTN_SCHEMA"}, {"{#DBUSER}": "SPATIAL_CSW_ADMIN_USR"}, {"{#DBUSER}": "SPATIAL_WFS_ADMIN_USR"}, {"{#DBUSER}": "SYS"}, {"{#DBUSER}": "SYSMAN"}, {"{#DBUSER}": "SYSTEM"}, {"{#DBUSER}": "WMSYS"}, {"{#DBUSER}": "XDB"}, {"{#DBUSER}": "XS$NULL"}, {"{#DBUSER}": "ZABBIX"}]}', u'clock': u'1566524140'}
+8: {u'itemid': u'25480', u'ns': u'944689823', u'value': u'{"data": [{"{#DBUSER}": "ANONYMOUS"}, {"{#DBUSER}": "APEX_030200"}, {"{#DBUSER}": "APEX_PUBLIC_USER"}, {"{#DBUSER}": "APPQOSSYS"}, {"{#DBUSER}": "CTXSYS"}, {"{#DBUSER}": "DBSNMP"}, {"{#DBUSER}": "DIP"}, {"{#DBUSER}": "EXFSYS"}, {"{#DBUSER}": "FLOWS_FILES"}, {"{#DBUSER}": "MDDATA"}, {"{#DBUSER}": "MDSYS"}, {"{#DBUSER}": "MGMT_VIEW"}, {"{#DBUSER}": "OLAPSYS"}, {"{#DBUSER}": "ORACLE_OCM"}, {"{#DBUSER}": "ORDDATA"}, {"{#DBUSER}": "ORDPLUGINS"}, {"{#DBUSER}": "ORDSYS"}, {"{#DBUSER}": "OUTLN"}, {"{#DBUSER}": "OWBSYS"}, {"{#DBUSER}": "OWBSYS_AUDIT"}, {"{#DBUSER}": "SCOTT"}, {"{#DBUSER}": "SI_INFORMTN_SCHEMA"}, {"{#DBUSER}": "SPATIAL_CSW_ADMIN_USR"}, {"{#DBUSER}": "SPATIAL_WFS_ADMIN_USR"}, {"{#DBUSER}": "SYS"}, {"{#DBUSER}": "SYSMAN"}, {"{#DBUSER}": "SYSTEM"}, {"{#DBUSER}": "WMSYS"}, {"{#DBUSER}": "XDB"}, {"{#DBUSER}": "XS$NULL"}, {"{#DBUSER}": "ZABBIX"}]}', u'clock': u'1566524080'}
+9: {u'itemid': u'25480', u'ns': u'159648093', u'value': u'{"data": [{"{#DBUSER}": "ANONYMOUS"}, {"{#DBUSER}": "APEX_030200"}, {"{#DBUSER}": "APEX_PUBLIC_USER"}, {"{#DBUSER}": "APPQOSSYS"}, {"{#DBUSER}": "CTXSYS"}, {"{#DBUSER}": "DBSNMP"}, {"{#DBUSER}": "DIP"}, {"{#DBUSER}": "EXFSYS"}, {"{#DBUSER}": "FLOWS_FILES"}, {"{#DBUSER}": "MDDATA"}, {"{#DBUSER}": "MDSYS"}, {"{#DBUSER}": "MGMT_VIEW"}, {"{#DBUSER}": "OLAPSYS"}, {"{#DBUSER}": "ORACLE_OCM"}, {"{#DBUSER}": "ORDDATA"}, {"{#DBUSER}": "ORDPLUGINS"}, {"{#DBUSER}": "ORDSYS"}, {"{#DBUSER}": "OUTLN"}, {"{#DBUSER}": "OWBSYS"}, {"{#DBUSER}": "OWBSYS_AUDIT"}, {"{#DBUSER}": "SCOTT"}, {"{#DBUSER}": "SI_INFORMTN_SCHEMA"}, {"{#DBUSER}": "SPATIAL_CSW_ADMIN_USR"}, {"{#DBUSER}": "SPATIAL_WFS_ADMIN_USR"}, {"{#DBUSER}": "SYS"}, {"{#DBUSER}": "SYSMAN"}, {"{#DBUSER}": "SYSTEM"}, {"{#DBUSER}": "WMSYS"}, {"{#DBUSER}": "XDB"}, {"{#DBUSER}": "XS$NULL"}, {"{#DBUSER}": "ZABBIX"}]}', u'clock': u'1566524020'}
+
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,show_users] history human format result==
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,show_users], id:25480, value:{"data": [{"{#DBUSER}": "ANONYMOUS"}, {"{#DBUSER}": "APEX_030200"}, {"{#DBUSER}": "APEX_PUBLIC_USER"}, {"{#DBUSER}": "APPQOSSYS"}, {"{#DBUSER}": "CTXSYS"}, {"{#DBUSER}": "DBSNMP"}, {"{#DBUSER}": "DIP"}, {"{#DBUSER}": "EXFSYS"}, {"{#DBUSER}": "FLOWS_FILES"}, {"{#DBUSER}": "MDDATA"}, {"{#DBUSER}": "MDSYS"}, {"{#DBUSER}": "MGMT_VIEW"}, {"{#DBUSER}": "OLAPSYS"}, {"{#DBUSER}": "ORACLE_OCM"}, {"{#DBUSER}": "ORDDATA"}, {"{#DBUSER}": "ORDPLUGINS"}, {"{#DBUSER}": "ORDSYS"}, {"{#DBUSER}": "OUTLN"}, {"{#DBUSER}": "OWBSYS"}, {"{#DBUSER}": "OWBSYS_AUDIT"}, {"{#DBUSER}": "SCOTT"}, {"{#DBUSER}": "SI_INFORMTN_SCHEMA"}, {"{#DBUSER}": "SPATIAL_CSW_ADMIN_USR"}, {"{#DBUSER}": "SPATIAL_WFS_ADMIN_USR"}, {"{#DBUSER}": "SYS"}, {"{#DBUSER}": "SYSMAN"}, {"{#DBUSER}": "SYSTEM"}, {"{#DBUSER}": "WMSYS"}, {"{#DBUSER}": "XDB"}, {"{#DBUSER}": "XS$NULL"}, {"{#DBUSER}": "ZABBIX"}]}, time:2019-08-22 21:42:40
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,show_users], id:25480, value:{"data": [{"{#DBUSER}": "ANONYMOUS"}, {"{#DBUSER}": "APEX_030200"}, {"{#DBUSER}": "APEX_PUBLIC_USER"}, {"{#DBUSER}": "APPQOSSYS"}, {"{#DBUSER}": "CTXSYS"}, {"{#DBUSER}": "DBSNMP"}, {"{#DBUSER}": "DIP"}, {"{#DBUSER}": "EXFSYS"}, {"{#DBUSER}": "FLOWS_FILES"}, {"{#DBUSER}": "MDDATA"}, {"{#DBUSER}": "MDSYS"}, {"{#DBUSER}": "MGMT_VIEW"}, {"{#DBUSER}": "OLAPSYS"}, {"{#DBUSER}": "ORACLE_OCM"}, {"{#DBUSER}": "ORDDATA"}, {"{#DBUSER}": "ORDPLUGINS"}, {"{#DBUSER}": "ORDSYS"}, {"{#DBUSER}": "OUTLN"}, {"{#DBUSER}": "OWBSYS"}, {"{#DBUSER}": "OWBSYS_AUDIT"}, {"{#DBUSER}": "SCOTT"}, {"{#DBUSER}": "SI_INFORMTN_SCHEMA"}, {"{#DBUSER}": "SPATIAL_CSW_ADMIN_USR"}, {"{#DBUSER}": "SPATIAL_WFS_ADMIN_USR"}, {"{#DBUSER}": "SYS"}, {"{#DBUSER}": "SYSMAN"}, {"{#DBUSER}": "SYSTEM"}, {"{#DBUSER}": "WMSYS"}, {"{#DBUSER}": "XDB"}, {"{#DBUSER}": "XS$NULL"}, {"{#DBUSER}": "ZABBIX"}]}, time:2019-08-22 21:41:40
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,show_users], id:25480, value:{"data": [{"{#DBUSER}": "ANONYMOUS"}, {"{#DBUSER}": "APEX_030200"}, {"{#DBUSER}": "APEX_PUBLIC_USER"}, {"{#DBUSER}": "APPQOSSYS"}, {"{#DBUSER}": "CTXSYS"}, {"{#DBUSER}": "DBSNMP"}, {"{#DBUSER}": "DIP"}, {"{#DBUSER}": "EXFSYS"}, {"{#DBUSER}": "FLOWS_FILES"}, {"{#DBUSER}": "MDDATA"}, {"{#DBUSER}": "MDSYS"}, {"{#DBUSER}": "MGMT_VIEW"}, {"{#DBUSER}": "OLAPSYS"}, {"{#DBUSER}": "ORACLE_OCM"}, {"{#DBUSER}": "ORDDATA"}, {"{#DBUSER}": "ORDPLUGINS"}, {"{#DBUSER}": "ORDSYS"}, {"{#DBUSER}": "OUTLN"}, {"{#DBUSER}": "OWBSYS"}, {"{#DBUSER}": "OWBSYS_AUDIT"}, {"{#DBUSER}": "SCOTT"}, {"{#DBUSER}": "SI_INFORMTN_SCHEMA"}, {"{#DBUSER}": "SPATIAL_CSW_ADMIN_USR"}, {"{#DBUSER}": "SPATIAL_WFS_ADMIN_USR"}, {"{#DBUSER}": "SYS"}, {"{#DBUSER}": "SYSMAN"}, {"{#DBUSER}": "SYSTEM"}, {"{#DBUSER}": "WMSYS"}, {"{#DBUSER}": "XDB"}, {"{#DBUSER}": "XS$NULL"}, {"{#DBUSER}": "ZABBIX"}]}, time:2019-08-22 21:40:40
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,show_users], id:25480, value:{"data": [{"{#DBUSER}": "ANONYMOUS"}, {"{#DBUSER}": "APEX_030200"}, {"{#DBUSER}": "APEX_PUBLIC_USER"}, {"{#DBUSER}": "APPQOSSYS"}, {"{#DBUSER}": "CTXSYS"}, {"{#DBUSER}": "DBSNMP"}, {"{#DBUSER}": "DIP"}, {"{#DBUSER}": "EXFSYS"}, {"{#DBUSER}": "FLOWS_FILES"}, {"{#DBUSER}": "MDDATA"}, {"{#DBUSER}": "MDSYS"}, {"{#DBUSER}": "MGMT_VIEW"}, {"{#DBUSER}": "OLAPSYS"}, {"{#DBUSER}": "ORACLE_OCM"}, {"{#DBUSER}": "ORDDATA"}, {"{#DBUSER}": "ORDPLUGINS"}, {"{#DBUSER}": "ORDSYS"}, {"{#DBUSER}": "OUTLN"}, {"{#DBUSER}": "OWBSYS"}, {"{#DBUSER}": "OWBSYS_AUDIT"}, {"{#DBUSER}": "SCOTT"}, {"{#DBUSER}": "SI_INFORMTN_SCHEMA"}, {"{#DBUSER}": "SPATIAL_CSW_ADMIN_USR"}, {"{#DBUSER}": "SPATIAL_WFS_ADMIN_USR"}, {"{#DBUSER}": "SYS"}, {"{#DBUSER}": "SYSMAN"}, {"{#DBUSER}": "SYSTEM"}, {"{#DBUSER}": "WMSYS"}, {"{#DBUSER}": "XDB"}, {"{#DBUSER}": "XS$NULL"}, {"{#DBUSER}": "ZABBIX"}]}, time:2019-08-22 21:39:40
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,show_users], id:25480, value:{"data": [{"{#DBUSER}": "ANONYMOUS"}, {"{#DBUSER}": "APEX_030200"}, {"{#DBUSER}": "APEX_PUBLIC_USER"}, {"{#DBUSER}": "APPQOSSYS"}, {"{#DBUSER}": "CTXSYS"}, {"{#DBUSER}": "DBSNMP"}, {"{#DBUSER}": "DIP"}, {"{#DBUSER}": "EXFSYS"}, {"{#DBUSER}": "FLOWS_FILES"}, {"{#DBUSER}": "MDDATA"}, {"{#DBUSER}": "MDSYS"}, {"{#DBUSER}": "MGMT_VIEW"}, {"{#DBUSER}": "OLAPSYS"}, {"{#DBUSER}": "ORACLE_OCM"}, {"{#DBUSER}": "ORDDATA"}, {"{#DBUSER}": "ORDPLUGINS"}, {"{#DBUSER}": "ORDSYS"}, {"{#DBUSER}": "OUTLN"}, {"{#DBUSER}": "OWBSYS"}, {"{#DBUSER}": "OWBSYS_AUDIT"}, {"{#DBUSER}": "SCOTT"}, {"{#DBUSER}": "SI_INFORMTN_SCHEMA"}, {"{#DBUSER}": "SPATIAL_CSW_ADMIN_USR"}, {"{#DBUSER}": "SPATIAL_WFS_ADMIN_USR"}, {"{#DBUSER}": "SYS"}, {"{#DBUSER}": "SYSMAN"}, {"{#DBUSER}": "SYSTEM"}, {"{#DBUSER}": "WMSYS"}, {"{#DBUSER}": "XDB"}, {"{#DBUSER}": "XS$NULL"}, {"{#DBUSER}": "ZABBIX"}]}, time:2019-08-22 21:38:40
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,show_users], id:25480, value:{"data": [{"{#DBUSER}": "ANONYMOUS"}, {"{#DBUSER}": "APEX_030200"}, {"{#DBUSER}": "APEX_PUBLIC_USER"}, {"{#DBUSER}": "APPQOSSYS"}, {"{#DBUSER}": "CTXSYS"}, {"{#DBUSER}": "DBSNMP"}, {"{#DBUSER}": "DIP"}, {"{#DBUSER}": "EXFSYS"}, {"{#DBUSER}": "FLOWS_FILES"}, {"{#DBUSER}": "MDDATA"}, {"{#DBUSER}": "MDSYS"}, {"{#DBUSER}": "MGMT_VIEW"}, {"{#DBUSER}": "OLAPSYS"}, {"{#DBUSER}": "ORACLE_OCM"}, {"{#DBUSER}": "ORDDATA"}, {"{#DBUSER}": "ORDPLUGINS"}, {"{#DBUSER}": "ORDSYS"}, {"{#DBUSER}": "OUTLN"}, {"{#DBUSER}": "OWBSYS"}, {"{#DBUSER}": "OWBSYS_AUDIT"}, {"{#DBUSER}": "SCOTT"}, {"{#DBUSER}": "SI_INFORMTN_SCHEMA"}, {"{#DBUSER}": "SPATIAL_CSW_ADMIN_USR"}, {"{#DBUSER}": "SPATIAL_WFS_ADMIN_USR"}, {"{#DBUSER}": "SYS"}, {"{#DBUSER}": "SYSMAN"}, {"{#DBUSER}": "SYSTEM"}, {"{#DBUSER}": "WMSYS"}, {"{#DBUSER}": "XDB"}, {"{#DBUSER}": "XS$NULL"}, {"{#DBUSER}": "ZABBIX"}]}, time:2019-08-22 21:37:40
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,show_users], id:25480, value:{"data": [{"{#DBUSER}": "ANONYMOUS"}, {"{#DBUSER}": "APEX_030200"}, {"{#DBUSER}": "APEX_PUBLIC_USER"}, {"{#DBUSER}": "APPQOSSYS"}, {"{#DBUSER}": "CTXSYS"}, {"{#DBUSER}": "DBSNMP"}, {"{#DBUSER}": "DIP"}, {"{#DBUSER}": "EXFSYS"}, {"{#DBUSER}": "FLOWS_FILES"}, {"{#DBUSER}": "MDDATA"}, {"{#DBUSER}": "MDSYS"}, {"{#DBUSER}": "MGMT_VIEW"}, {"{#DBUSER}": "OLAPSYS"}, {"{#DBUSER}": "ORACLE_OCM"}, {"{#DBUSER}": "ORDDATA"}, {"{#DBUSER}": "ORDPLUGINS"}, {"{#DBUSER}": "ORDSYS"}, {"{#DBUSER}": "OUTLN"}, {"{#DBUSER}": "OWBSYS"}, {"{#DBUSER}": "OWBSYS_AUDIT"}, {"{#DBUSER}": "SCOTT"}, {"{#DBUSER}": "SI_INFORMTN_SCHEMA"}, {"{#DBUSER}": "SPATIAL_CSW_ADMIN_USR"}, {"{#DBUSER}": "SPATIAL_WFS_ADMIN_USR"}, {"{#DBUSER}": "SYS"}, {"{#DBUSER}": "SYSMAN"}, {"{#DBUSER}": "SYSTEM"}, {"{#DBUSER}": "WMSYS"}, {"{#DBUSER}": "XDB"}, {"{#DBUSER}": "XS$NULL"}, {"{#DBUSER}": "ZABBIX"}]}, time:2019-08-22 21:36:40
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,show_users], id:25480, value:{"data": [{"{#DBUSER}": "ANONYMOUS"}, {"{#DBUSER}": "APEX_030200"}, {"{#DBUSER}": "APEX_PUBLIC_USER"}, {"{#DBUSER}": "APPQOSSYS"}, {"{#DBUSER}": "CTXSYS"}, {"{#DBUSER}": "DBSNMP"}, {"{#DBUSER}": "DIP"}, {"{#DBUSER}": "EXFSYS"}, {"{#DBUSER}": "FLOWS_FILES"}, {"{#DBUSER}": "MDDATA"}, {"{#DBUSER}": "MDSYS"}, {"{#DBUSER}": "MGMT_VIEW"}, {"{#DBUSER}": "OLAPSYS"}, {"{#DBUSER}": "ORACLE_OCM"}, {"{#DBUSER}": "ORDDATA"}, {"{#DBUSER}": "ORDPLUGINS"}, {"{#DBUSER}": "ORDSYS"}, {"{#DBUSER}": "OUTLN"}, {"{#DBUSER}": "OWBSYS"}, {"{#DBUSER}": "OWBSYS_AUDIT"}, {"{#DBUSER}": "SCOTT"}, {"{#DBUSER}": "SI_INFORMTN_SCHEMA"}, {"{#DBUSER}": "SPATIAL_CSW_ADMIN_USR"}, {"{#DBUSER}": "SPATIAL_WFS_ADMIN_USR"}, {"{#DBUSER}": "SYS"}, {"{#DBUSER}": "SYSMAN"}, {"{#DBUSER}": "SYSTEM"}, {"{#DBUSER}": "WMSYS"}, {"{#DBUSER}": "XDB"}, {"{#DBUSER}": "XS$NULL"}, {"{#DBUSER}": "ZABBIX"}]}, time:2019-08-22 21:35:40
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,show_users], id:25480, value:{"data": [{"{#DBUSER}": "ANONYMOUS"}, {"{#DBUSER}": "APEX_030200"}, {"{#DBUSER}": "APEX_PUBLIC_USER"}, {"{#DBUSER}": "APPQOSSYS"}, {"{#DBUSER}": "CTXSYS"}, {"{#DBUSER}": "DBSNMP"}, {"{#DBUSER}": "DIP"}, {"{#DBUSER}": "EXFSYS"}, {"{#DBUSER}": "FLOWS_FILES"}, {"{#DBUSER}": "MDDATA"}, {"{#DBUSER}": "MDSYS"}, {"{#DBUSER}": "MGMT_VIEW"}, {"{#DBUSER}": "OLAPSYS"}, {"{#DBUSER}": "ORACLE_OCM"}, {"{#DBUSER}": "ORDDATA"}, {"{#DBUSER}": "ORDPLUGINS"}, {"{#DBUSER}": "ORDSYS"}, {"{#DBUSER}": "OUTLN"}, {"{#DBUSER}": "OWBSYS"}, {"{#DBUSER}": "OWBSYS_AUDIT"}, {"{#DBUSER}": "SCOTT"}, {"{#DBUSER}": "SI_INFORMTN_SCHEMA"}, {"{#DBUSER}": "SPATIAL_CSW_ADMIN_USR"}, {"{#DBUSER}": "SPATIAL_WFS_ADMIN_USR"}, {"{#DBUSER}": "SYS"}, {"{#DBUSER}": "SYSMAN"}, {"{#DBUSER}": "SYSTEM"}, {"{#DBUSER}": "WMSYS"}, {"{#DBUSER}": "XDB"}, {"{#DBUSER}": "XS$NULL"}, {"{#DBUSER}": "ZABBIX"}]}, time:2019-08-22 21:34:40
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,show_users], id:25480, value:{"data": [{"{#DBUSER}": "ANONYMOUS"}, {"{#DBUSER}": "APEX_030200"}, {"{#DBUSER}": "APEX_PUBLIC_USER"}, {"{#DBUSER}": "APPQOSSYS"}, {"{#DBUSER}": "CTXSYS"}, {"{#DBUSER}": "DBSNMP"}, {"{#DBUSER}": "DIP"}, {"{#DBUSER}": "EXFSYS"}, {"{#DBUSER}": "FLOWS_FILES"}, {"{#DBUSER}": "MDDATA"}, {"{#DBUSER}": "MDSYS"}, {"{#DBUSER}": "MGMT_VIEW"}, {"{#DBUSER}": "OLAPSYS"}, {"{#DBUSER}": "ORACLE_OCM"}, {"{#DBUSER}": "ORDDATA"}, {"{#DBUSER}": "ORDPLUGINS"}, {"{#DBUSER}": "ORDSYS"}, {"{#DBUSER}": "OUTLN"}, {"{#DBUSER}": "OWBSYS"}, {"{#DBUSER}": "OWBSYS_AUDIT"}, {"{#DBUSER}": "SCOTT"}, {"{#DBUSER}": "SI_INFORMTN_SCHEMA"}, {"{#DBUSER}": "SPATIAL_CSW_ADMIN_USR"}, {"{#DBUSER}": "SPATIAL_WFS_ADMIN_USR"}, {"{#DBUSER}": "SYS"}, {"{#DBUSER}": "SYSMAN"}, {"{#DBUSER}": "SYSTEM"}, {"{#DBUSER}": "WMSYS"}, {"{#DBUSER}": "XDB"}, {"{#DBUSER}": "XS$NULL"}, {"{#DBUSER}": "ZABBIX"}]}, time:2019-08-22 21:33:40
+
+
+
+('user_status', 'oracle.query[zabbix,zabbix,192.168.1.7,orcl,user_status,SYSTEM]', 1)
+========================================
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,user_status,SYSTEM] history raw result==
+0: {u'itemid': u'25482', u'ns': u'787308905', u'value': u'OPEN', u'clock': u'1566524562'}
+1: {u'itemid': u'25482', u'ns': u'921632266', u'value': u'OPEN', u'clock': u'1566524502'}
+2: {u'itemid': u'25482', u'ns': u'59002075', u'value': u'OPEN', u'clock': u'1566524443'}
+3: {u'itemid': u'25482', u'ns': u'959965774', u'value': u'OPEN', u'clock': u'1566524382'}
+4: {u'itemid': u'25482', u'ns': u'902446244', u'value': u'OPEN', u'clock': u'1566524322'}
+5: {u'itemid': u'25482', u'ns': u'64823429', u'value': u'OPEN', u'clock': u'1566524263'}
+6: {u'itemid': u'25482', u'ns': u'198071650', u'value': u'OPEN', u'clock': u'1566524202'}
+7: {u'itemid': u'25482', u'ns': u'147664139', u'value': u'OPEN', u'clock': u'1566524142'}
+8: {u'itemid': u'25482', u'ns': u'270281176', u'value': u'OPEN', u'clock': u'1566524082'}
+9: {u'itemid': u'25482', u'ns': u'489740434', u'value': u'OPEN', u'clock': u'1566524022'}
+
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,user_status,SYSTEM] history human format result==
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,user_status,SYSTEM], id:25482, value:OPEN, time:2019-08-22 21:42:42
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,user_status,SYSTEM], id:25482, value:OPEN, time:2019-08-22 21:41:42
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,user_status,SYSTEM], id:25482, value:OPEN, time:2019-08-22 21:40:43
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,user_status,SYSTEM], id:25482, value:OPEN, time:2019-08-22 21:39:42
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,user_status,SYSTEM], id:25482, value:OPEN, time:2019-08-22 21:38:42
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,user_status,SYSTEM], id:25482, value:OPEN, time:2019-08-22 21:37:43
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,user_status,SYSTEM], id:25482, value:OPEN, time:2019-08-22 21:36:42
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,user_status,SYSTEM], id:25482, value:OPEN, time:2019-08-22 21:35:42
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,user_status,SYSTEM], id:25482, value:OPEN, time:2019-08-22 21:34:42
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,user_status,SYSTEM], id:25482, value:OPEN, time:2019-08-22 21:33:42
+
+
+
+('tablespace', 'oracle.query[zabbix,zabbix,192.168.1.7,orcl,tablespace,SYSTEM]', 3)
+========================================
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,tablespace,SYSTEM] history raw result==
+0: {u'itemid': u'25481', u'ns': u'641800010', u'value': u'3', u'clock': u'1566524561'}
+1: {u'itemid': u'25481', u'ns': u'774393122', u'value': u'3', u'clock': u'1566524501'}
+2: {u'itemid': u'25481', u'ns': u'908237493', u'value': u'3', u'clock': u'1566524441'}
+3: {u'itemid': u'25481', u'ns': u'803460870', u'value': u'3', u'clock': u'1566524381'}
+4: {u'itemid': u'25481', u'ns': u'899884310', u'value': u'3', u'clock': u'1566524321'}
+5: {u'itemid': u'25481', u'ns': u'913880226', u'value': u'3', u'clock': u'1566524261'}
+6: {u'itemid': u'25481', u'ns': u'52528734', u'value': u'3', u'clock': u'1566524202'}
+7: {u'itemid': u'25481', u'ns': u'875445882', u'value': u'3', u'clock': u'1566524141'}
+8: {u'itemid': u'25481', u'ns': u'113152943', u'value': u'3', u'clock': u'1566524082'}
+9: {u'itemid': u'25481', u'ns': u'326231435', u'value': u'3', u'clock': u'1566524021'}
+
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,tablespace,SYSTEM] history human format result==
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,tablespace,SYSTEM], id:25481, value:3, time:2019-08-22 21:42:41
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,tablespace,SYSTEM], id:25481, value:3, time:2019-08-22 21:41:41
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,tablespace,SYSTEM], id:25481, value:3, time:2019-08-22 21:40:41
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,tablespace,SYSTEM], id:25481, value:3, time:2019-08-22 21:39:41
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,tablespace,SYSTEM], id:25481, value:3, time:2019-08-22 21:38:41
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,tablespace,SYSTEM], id:25481, value:3, time:2019-08-22 21:37:41
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,tablespace,SYSTEM], id:25481, value:3, time:2019-08-22 21:36:42
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,tablespace,SYSTEM], id:25481, value:3, time:2019-08-22 21:35:41
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,tablespace,SYSTEM], id:25481, value:3, time:2019-08-22 21:34:42
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,tablespace,SYSTEM], id:25481, value:3, time:2019-08-22 21:33:41
+
+
+
+('query_sessions', 'oracle.query[zabbix,zabbix,192.168.1.7,orcl,query_sessions]', 3)
+========================================
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,query_sessions] history raw result==
+0: {u'itemid': u'25486', u'ns': u'295957137', u'value': u'4', u'clock': u'1566524567'}
+1: {u'itemid': u'25486', u'ns': u'435146129', u'value': u'4', u'clock': u'1566524506'}
+2: {u'itemid': u'25486', u'ns': u'572059968', u'value': u'4', u'clock': u'1566524446'}
+3: {u'itemid': u'25486', u'ns': u'806297010', u'value': u'4', u'clock': u'1566524387'}
+4: {u'itemid': u'25486', u'ns': u'421622221', u'value': u'4', u'clock': u'1566524326'}
+5: {u'itemid': u'25486', u'ns': u'573715899', u'value': u'4', u'clock': u'1566524266'}
+6: {u'itemid': u'25486', u'ns': u'718728231', u'value': u'4', u'clock': u'1566524206'}
+7: {u'itemid': u'25486', u'ns': u'514055808', u'value': u'4', u'clock': u'1566524146'}
+8: {u'itemid': u'25486', u'ns': u'784978891', u'value': u'4', u'clock': u'1566524086'}
+9: {u'itemid': u'25486', u'ns': u'11959339', u'value': u'4', u'clock': u'1566524027'}
+
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,query_sessions] history human format result==
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,query_sessions], id:25486, value:4, time:2019-08-22 21:42:47
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,query_sessions], id:25486, value:4, time:2019-08-22 21:41:46
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,query_sessions], id:25486, value:4, time:2019-08-22 21:40:46
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,query_sessions], id:25486, value:4, time:2019-08-22 21:39:47
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,query_sessions], id:25486, value:4, time:2019-08-22 21:38:46
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,query_sessions], id:25486, value:4, time:2019-08-22 21:37:46
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,query_sessions], id:25486, value:4, time:2019-08-22 21:36:46
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,query_sessions], id:25486, value:4, time:2019-08-22 21:35:46
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,query_sessions], id:25486, value:4, time:2019-08-22 21:34:46
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,query_sessions], id:25486, value:4, time:2019-08-22 21:33:47
+
+
+
+('query_lock', 'oracle.query[zabbix,zabbix,192.168.1.7,orcl,query_lock]', 3)
+========================================
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,query_lock] history raw result==
+0: {u'itemid': u'25474', u'ns': u'710667487', u'value': u'0', u'clock': u'1566524614'}
+1: {u'itemid': u'25474', u'ns': u'931022830', u'value': u'0', u'clock': u'1566524554'}
+2: {u'itemid': u'25474', u'ns': u'742714360', u'value': u'0', u'clock': u'1566524494'}
+3: {u'itemid': u'25474', u'ns': u'860113105', u'value': u'0', u'clock': u'1566524434'}
+4: {u'itemid': u'25474', u'ns': u'864231618', u'value': u'0', u'clock': u'1566524374'}
+5: {u'itemid': u'25474', u'ns': u'603049295', u'value': u'0', u'clock': u'1566524314'}
+6: {u'itemid': u'25474', u'ns': u'909370274', u'value': u'0', u'clock': u'1566524254'}
+7: {u'itemid': u'25474', u'ns': u'963966260', u'value': u'0', u'clock': u'1566524194'}
+8: {u'itemid': u'25474', u'ns': u'878284683', u'value': u'0', u'clock': u'1566524134'}
+9: {u'itemid': u'25474', u'ns': u'103884067', u'value': u'0', u'clock': u'1566524075'}
+
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,query_lock] history human format result==
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,query_lock], id:25474, value:0, time:2019-08-22 21:43:34
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,query_lock], id:25474, value:0, time:2019-08-22 21:42:34
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,query_lock], id:25474, value:0, time:2019-08-22 21:41:34
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,query_lock], id:25474, value:0, time:2019-08-22 21:40:34
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,query_lock], id:25474, value:0, time:2019-08-22 21:39:34
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,query_lock], id:25474, value:0, time:2019-08-22 21:38:34
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,query_lock], id:25474, value:0, time:2019-08-22 21:37:34
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,query_lock], id:25474, value:0, time:2019-08-22 21:36:34
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,query_lock], id:25474, value:0, time:2019-08-22 21:35:34
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,query_lock], id:25474, value:0, time:2019-08-22 21:34:35
+
+
+
+('deadlocks', 'oracle.query[zabbix,zabbix,192.168.1.7,orcl,deadlocks]', 3)
+========================================
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,deadlocks] history raw result==
+0: {u'itemid': u'25467', u'ns': u'270559746', u'value': u'0', u'clock': u'1566524607'}
+1: {u'itemid': u'25467', u'ns': u'620285299', u'value': u'0', u'clock': u'1566524547'}
+2: {u'itemid': u'25467', u'ns': u'814303971', u'value': u'0', u'clock': u'1566524487'}
+3: {u'itemid': u'25467', u'ns': u'408256966', u'value': u'0', u'clock': u'1566524427'}
+4: {u'itemid': u'25467', u'ns': u'886633086', u'value': u'0', u'clock': u'1566524367'}
+5: {u'itemid': u'25467', u'ns': u'761680927', u'value': u'0', u'clock': u'1566524307'}
+6: {u'itemid': u'25467', u'ns': u'6653627', u'value': u'0', u'clock': u'1566524248'}
+7: {u'itemid': u'25467', u'ns': u'113900388', u'value': u'0', u'clock': u'1566524188'}
+8: {u'itemid': u'25467', u'ns': u'269925799', u'value': u'0', u'clock': u'1566524127'}
+9: {u'itemid': u'25467', u'ns': u'177646196', u'value': u'0', u'clock': u'1566524068'}
+
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,deadlocks] history human format result==
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,deadlocks], id:25467, value:0, time:2019-08-22 21:43:27
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,deadlocks], id:25467, value:0, time:2019-08-22 21:42:27
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,deadlocks], id:25467, value:0, time:2019-08-22 21:41:27
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,deadlocks], id:25467, value:0, time:2019-08-22 21:40:27
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,deadlocks], id:25467, value:0, time:2019-08-22 21:39:27
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,deadlocks], id:25467, value:0, time:2019-08-22 21:38:27
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,deadlocks], id:25467, value:0, time:2019-08-22 21:37:28
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,deadlocks], id:25467, value:0, time:2019-08-22 21:36:28
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,deadlocks], id:25467, value:0, time:2019-08-22 21:35:27
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,deadlocks], id:25467, value:0, time:2019-08-22 21:34:28
+
+
+
+('query_redologs', 'oracle.query[zabbix,zabbix,192.168.1.7,orcl,query_redologs]', 3)
+========================================
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,query_redologs] history raw result==
+0: {u'itemid': u'25475', u'ns': u'878385785', u'value': u'0', u'clock': u'1566524615'}
+1: {u'itemid': u'25475', u'ns': u'818587348', u'value': u'0', u'clock': u'1566524555'}
+2: {u'itemid': u'25475', u'ns': u'917775053', u'value': u'0', u'clock': u'1566524495'}
+3: {u'itemid': u'25475', u'ns': u'95611553', u'value': u'0', u'clock': u'1566524436'}
+4: {u'itemid': u'25475', u'ns': u'41588471', u'value': u'0', u'clock': u'1566524376'}
+5: {u'itemid': u'25475', u'ns': u'176507172', u'value': u'0', u'clock': u'1566524315'}
+6: {u'itemid': u'25475', u'ns': u'89880114', u'value': u'0', u'clock': u'1566524256'}
+7: {u'itemid': u'25475', u'ns': u'138321947', u'value': u'0', u'clock': u'1566524196'}
+8: {u'itemid': u'25475', u'ns': u'51156189', u'value': u'0', u'clock': u'1566524136'}
+9: {u'itemid': u'25475', u'ns': u'280768864', u'value': u'0', u'clock': u'1566524075'}
+
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,query_redologs] history human format result==
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,query_redologs], id:25475, value:0, time:2019-08-22 21:43:35
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,query_redologs], id:25475, value:0, time:2019-08-22 21:42:35
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,query_redologs], id:25475, value:0, time:2019-08-22 21:41:35
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,query_redologs], id:25475, value:0, time:2019-08-22 21:40:36
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,query_redologs], id:25475, value:0, time:2019-08-22 21:39:36
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,query_redologs], id:25475, value:0, time:2019-08-22 21:38:35
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,query_redologs], id:25475, value:0, time:2019-08-22 21:37:36
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,query_redologs], id:25475, value:0, time:2019-08-22 21:36:36
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,query_redologs], id:25475, value:0, time:2019-08-22 21:35:36
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,query_redologs], id:25475, value:0, time:2019-08-22 21:34:35
+
+
+
+('query_rollbacks', 'oracle.query[zabbix,zabbix,192.168.1.7,orcl,query_rollbacks]', 3)
+========================================
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,query_rollbacks] history raw result==
+0: {u'itemid': u'25476', u'ns': u'75422947', u'value': u'0', u'clock': u'1566524617'}
+1: {u'itemid': u'25476', u'ns': u'190514842', u'value': u'0', u'clock': u'1566524557'}
+2: {u'itemid': u'25476', u'ns': u'283990453', u'value': u'0', u'clock': u'1566524497'}
+3: {u'itemid': u'25476', u'ns': u'467760990', u'value': u'0', u'clock': u'1566524436'}
+4: {u'itemid': u'25476', u'ns': u'406659659', u'value': u'0', u'clock': u'1566524376'}
+5: {u'itemid': u'25476', u'ns': u'546449588', u'value': u'0', u'clock': u'1566524316'}
+6: {u'itemid': u'25476', u'ns': u'465841138', u'value': u'0', u'clock': u'1566524256'}
+7: {u'itemid': u'25476', u'ns': u'363895314', u'value': u'0', u'clock': u'1566524196'}
+8: {u'itemid': u'25476', u'ns': u'424232349', u'value': u'0', u'clock': u'1566524136'}
+9: {u'itemid': u'25476', u'ns': u'654611333', u'value': u'0', u'clock': u'1566524076'}
+
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,query_rollbacks] history human format result==
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,query_rollbacks], id:25476, value:0, time:2019-08-22 21:43:37
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,query_rollbacks], id:25476, value:0, time:2019-08-22 21:42:37
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,query_rollbacks], id:25476, value:0, time:2019-08-22 21:41:37
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,query_rollbacks], id:25476, value:0, time:2019-08-22 21:40:36
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,query_rollbacks], id:25476, value:0, time:2019-08-22 21:39:36
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,query_rollbacks], id:25476, value:0, time:2019-08-22 21:38:36
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,query_rollbacks], id:25476, value:0, time:2019-08-22 21:37:36
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,query_rollbacks], id:25476, value:0, time:2019-08-22 21:36:36
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,query_rollbacks], id:25476, value:0, time:2019-08-22 21:35:36
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,query_rollbacks], id:25476, value:0, time:2019-08-22 21:34:36
+
+
+
+('check_archive', 'oracle.query[zabbix,zabbix,192.168.1.7,orcl,check_archive,DATA]', 3)
+========================================
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,check_archive,DATA] history raw result==
+0: {u'itemid': u'25460', u'ns': u'130670880', u'value': u'2', u'clock': u'1566524601'}
+1: {u'itemid': u'25460', u'ns': u'627952324', u'value': u'2', u'clock': u'1566524540'}
+2: {u'itemid': u'25460', u'ns': u'744316862', u'value': u'2', u'clock': u'1566524480'}
+3: {u'itemid': u'25460', u'ns': u'617068105', u'value': u'2', u'clock': u'1566524420'}
+4: {u'itemid': u'25460', u'ns': u'263316089', u'value': u'2', u'clock': u'1566524360'}
+5: {u'itemid': u'25460', u'ns': u'404927692', u'value': u'2', u'clock': u'1566524300'}
+6: {u'itemid': u'25460', u'ns': u'608896914', u'value': u'2', u'clock': u'1566524240'}
+7: {u'itemid': u'25460', u'ns': u'469552308', u'value': u'2', u'clock': u'1566524180'}
+8: {u'itemid': u'25460', u'ns': u'355193111', u'value': u'2', u'clock': u'1566524120'}
+9: {u'itemid': u'25460', u'ns': u'816885095', u'value': u'2', u'clock': u'1566524060'}
+
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,check_archive,DATA] history human format result==
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,check_archive,DATA], id:25460, value:2, time:2019-08-22 21:43:21
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,check_archive,DATA], id:25460, value:2, time:2019-08-22 21:42:20
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,check_archive,DATA], id:25460, value:2, time:2019-08-22 21:41:20
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,check_archive,DATA], id:25460, value:2, time:2019-08-22 21:40:20
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,check_archive,DATA], id:25460, value:2, time:2019-08-22 21:39:20
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,check_archive,DATA], id:25460, value:2, time:2019-08-22 21:38:20
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,check_archive,DATA], id:25460, value:2, time:2019-08-22 21:37:20
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,check_archive,DATA], id:25460, value:2, time:2019-08-22 21:36:20
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,check_archive,DATA], id:25460, value:2, time:2019-08-22 21:35:20
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,check_archive,DATA], id:25460, value:2, time:2019-08-22 21:34:20
+
+
+
+('logfilesync', 'oracle.query[zabbix,zabbix,192.168.1.7,orcl,logfilesync]', 3)
+========================================
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,logfilesync] history raw result==
+0: {u'itemid': u'25472', u'ns': u'25768702', u'value': u'5349', u'clock': u'1566524613'}
+1: {u'itemid': u'25472', u'ns': u'621846064', u'value': u'5339', u'clock': u'1566524552'}
+2: {u'itemid': u'25472', u'ns': u'128917102', u'value': u'5329', u'clock': u'1566524493'}
+3: {u'itemid': u'25472', u'ns': u'244940212', u'value': u'5318', u'clock': u'1566524433'}
+4: {u'itemid': u'25472', u'ns': u'237186674', u'value': u'5308', u'clock': u'1566524373'}
+5: {u'itemid': u'25472', u'ns': u'789915', u'value': u'5294', u'clock': u'1566524313'}
+6: {u'itemid': u'25472', u'ns': u'238816558', u'value': u'5284', u'clock': u'1566524253'}
+7: {u'itemid': u'25472', u'ns': u'337731005', u'value': u'5274', u'clock': u'1566524192'}
+8: {u'itemid': u'25472', u'ns': u'268697425', u'value': u'5264', u'clock': u'1566524133'}
+9: {u'itemid': u'25472', u'ns': u'428235784', u'value': u'5253', u'clock': u'1566524072'}
+
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,logfilesync] history human format result==
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,logfilesync], id:25472, value:5349, time:2019-08-22 21:43:33
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,logfilesync], id:25472, value:5339, time:2019-08-22 21:42:32
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,logfilesync], id:25472, value:5329, time:2019-08-22 21:41:33
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,logfilesync], id:25472, value:5318, time:2019-08-22 21:40:33
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,logfilesync], id:25472, value:5308, time:2019-08-22 21:39:33
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,logfilesync], id:25472, value:5294, time:2019-08-22 21:38:33
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,logfilesync], id:25472, value:5284, time:2019-08-22 21:37:33
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,logfilesync], id:25472, value:5274, time:2019-08-22 21:36:32
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,logfilesync], id:25472, value:5264, time:2019-08-22 21:35:33
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,logfilesync], id:25472, value:5253, time:2019-08-22 21:34:32
+
+
+
+('bufbusywaits', 'oracle.query[zabbix,zabbix,192.168.1.7,orcl,bufbusywaits]', 3)
+========================================
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,bufbusywaits] history raw result==
+0: {u'itemid': u'25459', u'ns': u'953616633', u'value': u'1', u'clock': u'1566524599'}
+1: {u'itemid': u'25459', u'ns': u'648634964', u'value': u'1', u'clock': u'1566524539'}
+2: {u'itemid': u'25459', u'ns': u'723316147', u'value': u'1', u'clock': u'1566524479'}
+3: {u'itemid': u'25459', u'ns': u'449681583', u'value': u'1', u'clock': u'1566524419'}
+4: {u'itemid': u'25459', u'ns': u'83212406', u'value': u'1', u'clock': u'1566524360'}
+5: {u'itemid': u'25459', u'ns': u'235346432', u'value': u'1', u'clock': u'1566524300'}
+6: {u'itemid': u'25459', u'ns': u'436623400', u'value': u'1', u'clock': u'1566524239'}
+7: {u'itemid': u'25459', u'ns': u'522234947', u'value': u'1', u'clock': u'1566524179'}
+8: {u'itemid': u'25459', u'ns': u'483216887', u'value': u'1', u'clock': u'1566524119'}
+9: {u'itemid': u'25459', u'ns': u'651228293', u'value': u'1', u'clock': u'1566524059'}
+
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,bufbusywaits] history human format result==
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,bufbusywaits], id:25459, value:1, time:2019-08-22 21:43:19
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,bufbusywaits], id:25459, value:1, time:2019-08-22 21:42:19
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,bufbusywaits], id:25459, value:1, time:2019-08-22 21:41:19
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,bufbusywaits], id:25459, value:1, time:2019-08-22 21:40:19
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,bufbusywaits], id:25459, value:1, time:2019-08-22 21:39:20
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,bufbusywaits], id:25459, value:1, time:2019-08-22 21:38:20
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,bufbusywaits], id:25459, value:1, time:2019-08-22 21:37:19
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,bufbusywaits], id:25459, value:1, time:2019-08-22 21:36:19
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,bufbusywaits], id:25459, value:1, time:2019-08-22 21:35:19
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,bufbusywaits], id:25459, value:1, time:2019-08-22 21:34:19
+
+
+
+('lastarclog', 'oracle.query[zabbix,zabbix,192.168.1.7,orcl,lastarclog]', 3)
+========================================
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,lastarclog] history raw result==
+0: {u'itemid': u'25470', u'ns': u'697756426', u'value': u'17', u'clock': u'1566524610'}
+1: {u'itemid': u'25470', u'ns': u'164893257', u'value': u'17', u'clock': u'1566524550'}
+2: {u'itemid': u'25470', u'ns': u'584410889', u'value': u'17', u'clock': u'1566524490'}
+3: {u'itemid': u'25470', u'ns': u'918522516', u'value': u'17', u'clock': u'1566524430'}
+4: {u'itemid': u'25470', u'ns': u'793403624', u'value': u'17', u'clock': u'1566524370'}
+5: {u'itemid': u'25470', u'ns': u'519067185', u'value': u'17', u'clock': u'1566524310'}
+6: {u'itemid': u'25470', u'ns': u'807230992', u'value': u'17', u'clock': u'1566524250'}
+7: {u'itemid': u'25470', u'ns': u'884365371', u'value': u'17', u'clock': u'1566524190'}
+8: {u'itemid': u'25470', u'ns': u'998643258', u'value': u'17', u'clock': u'1566524130'}
+9: {u'itemid': u'25470', u'ns': u'952217415', u'value': u'17', u'clock': u'1566524070'}
+
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,lastarclog] history human format result==
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,lastarclog], id:25470, value:17, time:2019-08-22 21:43:30
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,lastarclog], id:25470, value:17, time:2019-08-22 21:42:30
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,lastarclog], id:25470, value:17, time:2019-08-22 21:41:30
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,lastarclog], id:25470, value:17, time:2019-08-22 21:40:30
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,lastarclog], id:25470, value:17, time:2019-08-22 21:39:30
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,lastarclog], id:25470, value:17, time:2019-08-22 21:38:30
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,lastarclog], id:25470, value:17, time:2019-08-22 21:37:30
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,lastarclog], id:25470, value:17, time:2019-08-22 21:36:30
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,lastarclog], id:25470, value:17, time:2019-08-22 21:35:30
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,lastarclog], id:25470, value:17, time:2019-08-22 21:34:30
+
+
+
+('redowrites', 'oracle.query[zabbix,zabbix,192.168.1.7,orcl,redowrites]', 3)
+========================================
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,redowrites] history raw result==
+0: {u'itemid': u'25478', u'ns': u'953795638', u'value': u'57132', u'clock': u'1566524618'}
+1: {u'itemid': u'25478', u'ns': u'58734104', u'value': u'57076', u'clock': u'1566524559'}
+2: {u'itemid': u'25478', u'ns': u'159045413', u'value': u'57017', u'clock': u'1566524499'}
+3: {u'itemid': u'25478', u'ns': u'325944102', u'value': u'56961', u'clock': u'1566524438'}
+4: {u'itemid': u'25478', u'ns': u'220593799', u'value': u'56905', u'clock': u'1566524379'}
+5: {u'itemid': u'25478', u'ns': u'465320935', u'value': u'56849', u'clock': u'1566524318'}
+6: {u'itemid': u'25478', u'ns': u'322239558', u'value': u'56793', u'clock': u'1566524258'}
+7: {u'itemid': u'25478', u'ns': u'632780889', u'value': u'56735', u'clock': u'1566524198'}
+8: {u'itemid': u'25478', u'ns': u'286034688', u'value': u'56678', u'clock': u'1566524139'}
+9: {u'itemid': u'25478', u'ns': u'526010777', u'value': u'56622', u'clock': u'1566524078'}
+
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,redowrites] history human format result==
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,redowrites], id:25478, value:57132, time:2019-08-22 21:43:38
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,redowrites], id:25478, value:57076, time:2019-08-22 21:42:39
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,redowrites], id:25478, value:57017, time:2019-08-22 21:41:39
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,redowrites], id:25478, value:56961, time:2019-08-22 21:40:38
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,redowrites], id:25478, value:56905, time:2019-08-22 21:39:39
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,redowrites], id:25478, value:56849, time:2019-08-22 21:38:38
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,redowrites], id:25478, value:56793, time:2019-08-22 21:37:38
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,redowrites], id:25478, value:56735, time:2019-08-22 21:36:38
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,redowrites], id:25478, value:56678, time:2019-08-22 21:35:39
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,redowrites], id:25478, value:56622, time:2019-08-22 21:34:38
+
+
+
+('rollbacks', 'oracle.query[zabbix,zabbix,192.168.1.7,orcl,rollbacks]', 3)
+========================================
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,rollbacks] history raw result==
+0: {u'itemid': u'25479', u'ns': u'152597012', u'value': u'13637', u'clock': u'1566524620'}
+1: {u'itemid': u'25479', u'ns': u'321168353', u'value': u'13609', u'clock': u'1566524559'}
+2: {u'itemid': u'25479', u'ns': u'422103178', u'value': u'13581', u'clock': u'1566524499'}
+3: {u'itemid': u'25479', u'ns': u'590209128', u'value': u'13553', u'clock': u'1566524439'}
+4: {u'itemid': u'25479', u'ns': u'480433003', u'value': u'13525', u'clock': u'1566524379'}
+5: {u'itemid': u'25479', u'ns': u'731575032', u'value': u'13497', u'clock': u'1566524319'}
+6: {u'itemid': u'25479', u'ns': u'593755346', u'value': u'13469', u'clock': u'1566524259'}
+7: {u'itemid': u'25479', u'ns': u'896023099', u'value': u'13441', u'clock': u'1566524199'}
+8: {u'itemid': u'25479', u'ns': u'553268400', u'value': u'13413', u'clock': u'1566524139'}
+9: {u'itemid': u'25479', u'ns': u'788292433', u'value': u'13385', u'clock': u'1566524079'}
+
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,rollbacks] history human format result==
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,rollbacks], id:25479, value:13637, time:2019-08-22 21:43:40
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,rollbacks], id:25479, value:13609, time:2019-08-22 21:42:39
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,rollbacks], id:25479, value:13581, time:2019-08-22 21:41:39
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,rollbacks], id:25479, value:13553, time:2019-08-22 21:40:39
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,rollbacks], id:25479, value:13525, time:2019-08-22 21:39:39
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,rollbacks], id:25479, value:13497, time:2019-08-22 21:38:39
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,rollbacks], id:25479, value:13469, time:2019-08-22 21:37:39
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,rollbacks], id:25479, value:13441, time:2019-08-22 21:36:39
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,rollbacks], id:25479, value:13413, time:2019-08-22 21:35:39
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,rollbacks], id:25479, value:13385, time:2019-08-22 21:34:39
+
+
+
+('commits', 'oracle.query[zabbix,zabbix,192.168.1.7,orcl,commits]', 3)
+========================================
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,commits] history raw result==
+0: {u'itemid': u'25461', u'ns': u'390247865', u'value': u'3285', u'clock': u'1566524601'}
+1: {u'itemid': u'25461', u'ns': u'893081778', u'value': u'3285', u'clock': u'1566524541'}
+2: {u'itemid': u'25461', u'ns': u'995964095', u'value': u'3285', u'clock': u'1566524481'}
+3: {u'itemid': u'25461', u'ns': u'880605696', u'value': u'3285', u'clock': u'1566524421'}
+4: {u'itemid': u'25461', u'ns': u'700206266', u'value': u'3285', u'clock': u'1566524361'}
+5: {u'itemid': u'25461', u'ns': u'664855306', u'value': u'3285', u'clock': u'1566524301'}
+6: {u'itemid': u'25461', u'ns': u'870589470', u'value': u'3285', u'clock': u'1566524241'}
+7: {u'itemid': u'25461', u'ns': u'746882038', u'value': u'3285', u'clock': u'1566524181'}
+8: {u'itemid': u'25461', u'ns': u'618020756', u'value': u'3285', u'clock': u'1566524121'}
+9: {u'itemid': u'25461', u'ns': u'94188329', u'value': u'3285', u'clock': u'1566524062'}
+
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,commits] history human format result==
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,commits], id:25461, value:3285, time:2019-08-22 21:43:21
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,commits], id:25461, value:3285, time:2019-08-22 21:42:21
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,commits], id:25461, value:3285, time:2019-08-22 21:41:21
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,commits], id:25461, value:3285, time:2019-08-22 21:40:21
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,commits], id:25461, value:3285, time:2019-08-22 21:39:21
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,commits], id:25461, value:3285, time:2019-08-22 21:38:21
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,commits], id:25461, value:3285, time:2019-08-22 21:37:21
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,commits], id:25461, value:3285, time:2019-08-22 21:36:21
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,commits], id:25461, value:3285, time:2019-08-22 21:35:21
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,commits], id:25461, value:3285, time:2019-08-22 21:34:22
+
+
+
+('dbfilesize', 'oracle.query[zabbix,zabbix,192.168.1.7,orcl,dbfilesize]', 3)
+========================================
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,dbfilesize] history raw result==
+0: {u'itemid': u'25463', u'ns': u'736243458', u'value': u'1766850560', u'clock': u'1566524603'}
+1: {u'itemid': u'25463', u'ns': u'989740411', u'value': u'1766850560', u'clock': u'1566524543'}
+2: {u'itemid': u'25463', u'ns': u'88197127', u'value': u'1766850560', u'clock': u'1566524484'}
+3: {u'itemid': u'25463', u'ns': u'221664956', u'value': u'1766850560', u'clock': u'1566524423'}
+4: {u'itemid': u'25463', u'ns': u'72626656', u'value': u'1766850560', u'clock': u'1566524364'}
+5: {u'itemid': u'25463', u'ns': u'5292435', u'value': u'1766850560', u'clock': u'1566524304'}
+6: {u'itemid': u'25463', u'ns': u'214459452', u'value': u'1766850560', u'clock': u'1566524243'}
+7: {u'itemid': u'25463', u'ns': u'704595628', u'value': u'1766850560', u'clock': u'1566524183'}
+8: {u'itemid': u'25463', u'ns': u'814387399', u'value': u'1766850560', u'clock': u'1566524123'}
+9: {u'itemid': u'25463', u'ns': u'444841980', u'value': u'1766850560', u'clock': u'1566524063'}
+
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,dbfilesize] history human format result==
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,dbfilesize], id:25463, value:1766850560, time:2019-08-22 21:43:23
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,dbfilesize], id:25463, value:1766850560, time:2019-08-22 21:42:23
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,dbfilesize], id:25463, value:1766850560, time:2019-08-22 21:41:24
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,dbfilesize], id:25463, value:1766850560, time:2019-08-22 21:40:23
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,dbfilesize], id:25463, value:1766850560, time:2019-08-22 21:39:24
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,dbfilesize], id:25463, value:1766850560, time:2019-08-22 21:38:24
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,dbfilesize], id:25463, value:1766850560, time:2019-08-22 21:37:23
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,dbfilesize], id:25463, value:1766850560, time:2019-08-22 21:36:23
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,dbfilesize], id:25463, value:1766850560, time:2019-08-22 21:35:23
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,dbfilesize], id:25463, value:1766850560, time:2019-08-22 21:34:23
+
+
+
+('rcachehit', 'oracle.query[zabbix,zabbix,192.168.1.7,orcl,rcachehit]', 0)
+========================================
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,rcachehit] history raw result==
+0: {u'itemid': u'25477', u'ns': u'662751056', u'value': u'99.8002', u'clock': u'1566524617'}
+1: {u'itemid': u'25477', u'ns': u'781604937', u'value': u'99.8002', u'clock': u'1566524557'}
+2: {u'itemid': u'25477', u'ns': u'884187707', u'value': u'99.8001', u'clock': u'1566524497'}
+3: {u'itemid': u'25477', u'ns': u'64473780', u'value': u'99.8001', u'clock': u'1566524438'}
+4: {u'itemid': u'25477', u'ns': u'994582916', u'value': u'99.8001', u'clock': u'1566524377'}
+5: {u'itemid': u'25477', u'ns': u'154674052', u'value': u'99.8001', u'clock': u'1566524318'}
+6: {u'itemid': u'25477', u'ns': u'58055221', u'value': u'99.8001', u'clock': u'1566524258'}
+7: {u'itemid': u'25477', u'ns': u'732227716', u'value': u'99.8000', u'clock': u'1566524197'}
+8: {u'itemid': u'25477', u'ns': u'997671613', u'value': u'99.8000', u'clock': u'1566524137'}
+9: {u'itemid': u'25477', u'ns': u'259880825', u'value': u'99.8000', u'clock': u'1566524078'}
+
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,rcachehit] history human format result==
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,rcachehit], id:25477, value:99.8002, time:2019-08-22 21:43:37
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,rcachehit], id:25477, value:99.8002, time:2019-08-22 21:42:37
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,rcachehit], id:25477, value:99.8001, time:2019-08-22 21:41:37
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,rcachehit], id:25477, value:99.8001, time:2019-08-22 21:40:38
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,rcachehit], id:25477, value:99.8001, time:2019-08-22 21:39:37
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,rcachehit], id:25477, value:99.8001, time:2019-08-22 21:38:38
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,rcachehit], id:25477, value:99.8001, time:2019-08-22 21:37:38
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,rcachehit], id:25477, value:99.8000, time:2019-08-22 21:36:37
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,rcachehit], id:25477, value:99.8000, time:2019-08-22 21:35:37
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,rcachehit], id:25477, value:99.8000, time:2019-08-22 21:34:38
+
+
+
+('dsksortratio', 'oracle.query[zabbix,zabbix,192.168.1.7,orcl,dsksortratio]', 0)
+========================================
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,dsksortratio] history raw result==
+0: {u'itemid': u'25468', u'ns': u'554666929', u'value': u'0.0000', u'clock': u'1566524608'}
+1: {u'itemid': u'25468', u'ns': u'1466685', u'value': u'0.0000', u'clock': u'1566524549'}
+2: {u'itemid': u'25468', u'ns': u'206701737', u'value': u'0.0000', u'clock': u'1566524489'}
+3: {u'itemid': u'25468', u'ns': u'816611414', u'value': u'0.0000', u'clock': u'1566524428'}
+4: {u'itemid': u'25468', u'ns': u'274711038', u'value': u'0.0000', u'clock': u'1566524369'}
+5: {u'itemid': u'25468', u'ns': u'143216547', u'value': u'0.0000', u'clock': u'1566524309'}
+6: {u'itemid': u'25468', u'ns': u'382489079', u'value': u'0.0000', u'clock': u'1566524248'}
+7: {u'itemid': u'25468', u'ns': u'485034731', u'value': u'0.0000', u'clock': u'1566524188'}
+8: {u'itemid': u'25468', u'ns': u'635092183', u'value': u'0.0000', u'clock': u'1566524128'}
+9: {u'itemid': u'25468', u'ns': u'562652677', u'value': u'0.0000', u'clock': u'1566524068'}
+
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,dsksortratio] history human format result==
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,dsksortratio], id:25468, value:0.0000, time:2019-08-22 21:43:28
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,dsksortratio], id:25468, value:0.0000, time:2019-08-22 21:42:29
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,dsksortratio], id:25468, value:0.0000, time:2019-08-22 21:41:29
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,dsksortratio], id:25468, value:0.0000, time:2019-08-22 21:40:28
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,dsksortratio], id:25468, value:0.0000, time:2019-08-22 21:39:29
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,dsksortratio], id:25468, value:0.0000, time:2019-08-22 21:38:29
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,dsksortratio], id:25468, value:0.0000, time:2019-08-22 21:37:28
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,dsksortratio], id:25468, value:0.0000, time:2019-08-22 21:36:28
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,dsksortratio], id:25468, value:0.0000, time:2019-08-22 21:35:28
+item:oracle.query[zabbix,zabbix,192.168.1.7,orcl,dsksortratio], id:25468, value:0.0000, time:2019-08-22 21:34:28
+
+
+
+('linux_cpucpu', 'system.cpu.util[,user]', 0)
+========================================
+item:system.cpu.util[,user] history raw result==
+0: {u'itemid': u'25488', u'ns': u'296758151', u'value': u'3.6103', u'clock': u'1566524568'}
+1: {u'itemid': u'25488', u'ns': u'436045310', u'value': u'3.6265', u'clock': u'1566524508'}
+2: {u'itemid': u'25488', u'ns': u'573111016', u'value': u'3.6458', u'clock': u'1566524448'}
+3: {u'itemid': u'25488', u'ns': u'807162446', u'value': u'3.6485', u'clock': u'1566524388'}
+4: {u'itemid': u'25488', u'ns': u'422576559', u'value': u'3.6079', u'clock': u'1566524328'}
+5: {u'itemid': u'25488', u'ns': u'574611289', u'value': u'3.6618', u'clock': u'1566524268'}
+6: {u'itemid': u'25488', u'ns': u'719729900', u'value': u'3.6197', u'clock': u'1566524208'}
+7: {u'itemid': u'25488', u'ns': u'149178635', u'value': u'3.6590', u'clock': u'1566524148'}
+8: {u'itemid': u'25488', u'ns': u'785906770', u'value': u'3.6433', u'clock': u'1566524088'}
+9: {u'itemid': u'25488', u'ns': u'12797184', u'value': u'3.6436', u'clock': u'1566524028'}
+
+item:system.cpu.util[,user] history human format result==
+item:system.cpu.util[,user], id:25488, value:3.6103, time:2019-08-22 21:42:48
+item:system.cpu.util[,user], id:25488, value:3.6265, time:2019-08-22 21:41:48
+item:system.cpu.util[,user], id:25488, value:3.6458, time:2019-08-22 21:40:48
+item:system.cpu.util[,user], id:25488, value:3.6485, time:2019-08-22 21:39:48
+item:system.cpu.util[,user], id:25488, value:3.6079, time:2019-08-22 21:38:48
+item:system.cpu.util[,user], id:25488, value:3.6618, time:2019-08-22 21:37:48
+item:system.cpu.util[,user], id:25488, value:3.6197, time:2019-08-22 21:36:48
+item:system.cpu.util[,user], id:25488, value:3.6590, time:2019-08-22 21:35:48
+item:system.cpu.util[,user], id:25488, value:3.6433, time:2019-08-22 21:34:48
+item:system.cpu.util[,user], id:25488, value:3.6436, time:2019-08-22 21:33:48
+
+
+
+('linux_memorymem', 'vm.memory.size[pused]', 0)
+========================================
+item:vm.memory.size[pused] history raw result==
+0: {u'itemid': u'25484', u'ns': u'933375589', u'value': u'83.4770', u'clock': u'1566524564'}
+1: {u'itemid': u'25484', u'ns': u'71165479', u'value': u'83.5228', u'clock': u'1566524504'}
+2: {u'itemid': u'25484', u'ns': u'212378094', u'value': u'83.4484', u'clock': u'1566524444'}
+3: {u'itemid': u'25484', u'ns': u'110999627', u'value': u'83.4436', u'clock': u'1566524384'}
+4: {u'itemid': u'25484', u'ns': u'51579542', u'value': u'83.4356', u'clock': u'1566524324'}
+5: {u'itemid': u'25484', u'ns': u'215756960', u'value': u'83.4529', u'clock': u'1566524264'}
+6: {u'itemid': u'25484', u'ns': u'346093183', u'value': u'83.4700', u'clock': u'1566524204'}
+7: {u'itemid': u'25484', u'ns': u'144460081', u'value': u'83.4384', u'clock': u'1566524144'}
+8: {u'itemid': u'25484', u'ns': u'420150381', u'value': u'83.3819', u'clock': u'1566524084'}
+9: {u'itemid': u'25484', u'ns': u'650283837', u'value': u'83.3849', u'clock': u'1566524024'}
+
+item:vm.memory.size[pused] history human format result==
+item:vm.memory.size[pused], id:25484, value:83.4770, time:2019-08-22 21:42:44
+item:vm.memory.size[pused], id:25484, value:83.5228, time:2019-08-22 21:41:44
+item:vm.memory.size[pused], id:25484, value:83.4484, time:2019-08-22 21:40:44
+item:vm.memory.size[pused], id:25484, value:83.4436, time:2019-08-22 21:39:44
+item:vm.memory.size[pused], id:25484, value:83.4356, time:2019-08-22 21:38:44
+item:vm.memory.size[pused], id:25484, value:83.4529, time:2019-08-22 21:37:44
+item:vm.memory.size[pused], id:25484, value:83.4700, time:2019-08-22 21:36:44
+item:vm.memory.size[pused], id:25484, value:83.4384, time:2019-08-22 21:35:44
+item:vm.memory.size[pused], id:25484, value:83.3819, time:2019-08-22 21:34:44
+item:vm.memory.size[pused], id:25484, value:83.3849, time:2019-08-22 21:33:44

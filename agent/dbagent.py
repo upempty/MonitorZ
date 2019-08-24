@@ -1,11 +1,6 @@
 #!/usr/bin/env python
 #-*- coding: utf-8 -*-
 
-"""
-    Author: Danilo F. Chilene
-	Email:	bicofino at gmail dot com
-"""
-
 import argparse
 import cx_Oracle
 import inspect
@@ -61,7 +56,8 @@ class Checks(object):
 
     def archthreadseq(self):
         #value_type = 1 
-        sql = "select thread#||','||sequence#  as ts from v$archived_log"
+        #sql = "select thread#||','||sequence#  as ts from v$archived_log"
+        sql = "select thread#||','||sequence#  as ts from (select * from v$archived_log order by recid desc) where rownum=1"
         self.cur.execute(sql)
         res = self.cur.fetchall()
         for i in res:
@@ -690,4 +686,3 @@ class Main(Checks):
 if __name__ == "__main__":
     main = Main()
     main()
-
