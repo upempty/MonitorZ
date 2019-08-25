@@ -164,10 +164,34 @@ class MonitorAPI:
             items.append(i['itemid'])
         logger.debug("items:{} in {}".format(items, sys._getframe().f_code.co_name))
         return (items)
+
+    @tryme 
+    def item_get_via_id(self, key, id):
+        param = {
+            "output": "extend",
+            "hostids": id,
+            #"templateids": id,
+            #"filter": {"hostid": hostid},
+            #"filter": {"hostids": hid},
+            "search": {"key_": key},
+            "sortfield": "name",
+        }
+        resp = self.__zapi.do_request('item.get', param)
+        if not resp or not resp['result']:
+            return None
+        items = []
+        for i in resp['result']:
+            items.append(i['itemid'])
+        logger.info("items:{} in {}".format(items, sys._getframe().f_code.co_name))
+        return (items)
+
+
  
     @tryme 
     def item_delete(self, key):
         itemids = self.item_get(key)
+        if not itemids:
+            return None
         param = [itemids[0]] # first item id which is related with template, not host, can be delete
         resp = self.__zapi.do_request('item.delete', param)
         if not resp or not resp['result']:
@@ -481,6 +505,25 @@ class MonitorAPI:
         
     #combine function 
     @tryme 
+    def transaction_delete_item_on_template(self, hostgroup_name,template_name, item_name, key):
+        ids = self.item_get(key)
+        if not ids:
+            print ('items null for {}'.format(key))
+            return
+        print ('items {} for key:{}'.format(ids, key))
+
+        gid = self.hostgroup_get(hostgroup_name)
+        print ('items for :{} gid:{}'.format(key, gid))
+        tid = self.template_get(template_name)
+        print ('items for :{} tid:{}'.format(key, tid))
+        ids = self.item_get(key)
+        print ('items before delete for :{} ids:{}'.format(key, ids))
+        d = self.item_delete(key)
+        ids = self.item_get(key)
+        print ('items after deleted: {} for :{} ids:{}'.format(d, key, ids))
+
+    #combine function 
+    @tryme 
     def transaction_create_item_on_template(self, hostgroup_name,template_name, item_name, key, value_type):
         gid = self.hostgroup_get(hostgroup_name)
         if not gid:
@@ -490,10 +533,14 @@ class MonitorAPI:
             tid = self.template_create(template_name, hostgroup_name)
         #key = "oracle.query[zabbix,zabbix,cfBareos,XE,tablespace,SYSTEM]"
         #item_create("CF_Item_tbl_system", key, "CF_Template713")
+        print ('templateid {}'.format(tid))
         ids = self.item_get(key)
         if not ids:
             ids = self.item_create(item_name, key, value_type, template_name)
         return ids[0] 
+
+
+
 
     @tryme 
     def template_import(self, path):
