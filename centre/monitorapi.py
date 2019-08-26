@@ -397,7 +397,7 @@ class MonitorAPI:
 
         logger.info('\nitem:{} history human format result=='.format(key))
         for i,j in enumerate(resp['result']):
-            timestr = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(long(j['clock'])))
+            timestr = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(float(j['clock'])))
             logger.info('item:{}, id:{}, value:{}, time:{}'.format(key, j['itemid'],j['value'], timestr))
 
         return resp['result']
@@ -427,7 +427,7 @@ class MonitorAPI:
 
         logger.info('\nitem:{} history human format result=='.format(key))
         for i,j in enumerate(resp['result']):
-            timestr = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(long(j['clock'])))
+            timestr = time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(float(j['clock'])))
             logger.info('item:{}, id:{}, value:{}, time:{}'.format(key, j['itemid'],j['value'], timestr))
 
         return resp['result']

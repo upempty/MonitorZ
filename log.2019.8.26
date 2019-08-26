@@ -1,0 +1,1263 @@
+JSON-RPC Server Endpoint: http://192.168.1.131/zabbix/api_jsonrpc.php
+templateid 10113
+templateid 10113
+templateid 10113
+templateid 10113
+templateid 10113
+templateid 10113
+templateid 10113
+templateid 10113
+templateid 10113
+templateid 10113
+templateid 10113
+templateid 10113
+templateid 10113
+templateid 10113
+templateid 10113
+templateid 10113
+templateid 10113
+templateid 10113
+templateid 10113
+templateid 10113
+templateid 10113
+templateid 10113
+templateid 10113
+templateid 10113
+templateid 10113
+templateid 10113
+templateid 10113
+templateid 10113
+templateid 10113
+templateid 10113
+host1 10114
+host1 10115
+
+
+
+hostDB1T1 version oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},version] 1
+itemids ['25492', '25493', '25494']
+========================================
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},version] history raw result==
+0: {'itemid': '25493', 'clock': '1566813053', 'value': 'Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production', 'ns': '809941321'}
+1: {'itemid': '25493', 'clock': '1566812993', 'value': 'Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production', 'ns': '461443938'}
+2: {'itemid': '25493', 'clock': '1566812933', 'value': 'Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production', 'ns': '242415204'}
+3: {'itemid': '25493', 'clock': '1566812873', 'value': 'Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production', 'ns': '159696523'}
+4: {'itemid': '25493', 'clock': '1566812813', 'value': 'Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production', 'ns': '657568695'}
+5: {'itemid': '25493', 'clock': '1566812753', 'value': 'Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production', 'ns': '895641642'}
+6: {'itemid': '25493', 'clock': '1566812693', 'value': 'Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production', 'ns': '953703430'}
+7: {'itemid': '25493', 'clock': '1566812633', 'value': 'Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production', 'ns': '795245801'}
+8: {'itemid': '25493', 'clock': '1566812573', 'value': 'Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production', 'ns': '437175454'}
+9: {'itemid': '25493', 'clock': '1566812513', 'value': 'Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production', 'ns': '664903115'}
+
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},version] history human format result==
+Try with Exception
+name 'long' is not defined
+
+
+hostDB2T1 version oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},version] 1
+itemids ['25492', '25493', '25494']
+========================================
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},version] history raw result==
+0: {'itemid': '25494', 'clock': '1566813054', 'value': 'Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production', 'ns': '552526003'}
+1: {'itemid': '25494', 'clock': '1566812995', 'value': 'Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production', 'ns': '132948441'}
+2: {'itemid': '25494', 'clock': '1566812934', 'value': 'Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production', 'ns': '726965553'}
+3: {'itemid': '25494', 'clock': '1566812874', 'value': 'Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production', 'ns': '674528675'}
+4: {'itemid': '25494', 'clock': '1566812814', 'value': 'Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production', 'ns': '804500945'}
+5: {'itemid': '25494', 'clock': '1566812754', 'value': 'Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production', 'ns': '378103987'}
+6: {'itemid': '25494', 'clock': '1566812694', 'value': 'Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production', 'ns': '436922597'}
+7: {'itemid': '25494', 'clock': '1566812634', 'value': 'Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production', 'ns': '290293508'}
+8: {'itemid': '25494', 'clock': '1566812574', 'value': 'Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production', 'ns': '932193778'}
+9: {'itemid': '25494', 'clock': '1566812514', 'value': 'Oracle Database 11g Enterprise Edition Release 11.2.0.3.0 - 64bit Production', 'ns': '814159647'}
+
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},version] history human format result==
+Try with Exception
+name 'long' is not defined
+
+
+
+hostDB1T1 dbname oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},dbname] 1
+itemids ['25495', '25496', '25497']
+========================================
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},dbname] history raw result==
+0: {'itemid': '25496', 'clock': '1566813056', 'value': 'ORCL', 'ns': '165864526'}
+1: {'itemid': '25496', 'clock': '1566812996', 'value': 'ORCL', 'ns': '295716451'}
+2: {'itemid': '25496', 'clock': '1566812936', 'value': 'ORCL', 'ns': '843796862'}
+3: {'itemid': '25496', 'clock': '1566812876', 'value': 'ORCL', 'ns': '849076450'}
+4: {'itemid': '25496', 'clock': '1566812816', 'value': 'ORCL', 'ns': '471585092'}
+5: {'itemid': '25496', 'clock': '1566812756', 'value': 'ORCL', 'ns': '874397862'}
+6: {'itemid': '25496', 'clock': '1566812696', 'value': 'ORCL', 'ns': '943150154'}
+7: {'itemid': '25496', 'clock': '1566812636', 'value': 'ORCL', 'ns': '798858051'}
+8: {'itemid': '25496', 'clock': '1566812576', 'value': 'ORCL', 'ns': '429353274'}
+9: {'itemid': '25496', 'clock': '1566812516', 'value': 'ORCL', 'ns': '309396438'}
+
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},dbname] history human format result==
+Try with Exception
+name 'long' is not defined
+
+
+hostDB2T1 dbname oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},dbname] 1
+itemids ['25495', '25496', '25497']
+========================================
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},dbname] history raw result==
+0: {'itemid': '25497', 'clock': '1566813057', 'value': 'ORCL', 'ns': '497401904'}
+1: {'itemid': '25497', 'clock': '1566812997', 'value': 'ORCL', 'ns': '450648425'}
+2: {'itemid': '25497', 'clock': '1566812938', 'value': 'ORCL', 'ns': '9029296'}
+3: {'itemid': '25497', 'clock': '1566812877', 'value': 'ORCL', 'ns': '961156349'}
+4: {'itemid': '25497', 'clock': '1566812817', 'value': 'ORCL', 'ns': '811667985'}
+5: {'itemid': '25497', 'clock': '1566812757', 'value': 'ORCL', 'ns': '438965444'}
+6: {'itemid': '25497', 'clock': '1566812697', 'value': 'ORCL', 'ns': '280603298'}
+7: {'itemid': '25497', 'clock': '1566812638', 'value': 'ORCL', 'ns': '110359669'}
+8: {'itemid': '25497', 'clock': '1566812577', 'value': 'ORCL', 'ns': '835013694'}
+9: {'itemid': '25497', 'clock': '1566812517', 'value': 'ORCL', 'ns': '646061629'}
+
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},dbname] history human format result==
+Try with Exception
+name 'long' is not defined
+
+
+
+hostDB1T1 dbsystime oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},dbsystime] 1
+itemids ['25498', '25499', '25500']
+========================================
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},dbsystime] history raw result==
+0: {'itemid': '25499', 'clock': '1566813059', 'value': '2019-08-26 09:50:43', 'ns': '705872011'}
+1: {'itemid': '25499', 'clock': '1566812999', 'value': '2019-08-26 09:49:43', 'ns': '601667861'}
+2: {'itemid': '25499', 'clock': '1566812939', 'value': '2019-08-26 09:48:43', 'ns': '207722577'}
+3: {'itemid': '25499', 'clock': '1566812879', 'value': '2019-08-26 09:47:43', 'ns': '437588327'}
+4: {'itemid': '25499', 'clock': '1566812819', 'value': '2019-08-26 09:46:43', 'ns': '961571907'}
+5: {'itemid': '25499', 'clock': '1566812759', 'value': '2019-08-26 09:45:43', 'ns': '851621936'}
+6: {'itemid': '25499', 'clock': '1566812699', 'value': '2019-08-26 09:44:43', 'ns': '866637960'}
+7: {'itemid': '25499', 'clock': '1566812639', 'value': '2019-08-26 09:43:43', 'ns': '276671928'}
+8: {'itemid': '25499', 'clock': '1566812579', 'value': '2019-08-26 09:42:43', 'ns': '156334383'}
+9: {'itemid': '25499', 'clock': '1566812519', 'value': '2019-08-26 09:41:43', 'ns': '963873805'}
+
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},dbsystime] history human format result==
+Try with Exception
+name 'long' is not defined
+
+
+hostDB2T1 dbsystime oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},dbsystime] 1
+itemids ['25498', '25499', '25500']
+========================================
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},dbsystime] history raw result==
+0: {'itemid': '25500', 'clock': '1566813060', 'value': '2019-08-26 09:50:44', 'ns': '853342834'}
+1: {'itemid': '25500', 'clock': '1566813000', 'value': '2019-08-26 09:49:44', 'ns': '759477330'}
+2: {'itemid': '25500', 'clock': '1566812940', 'value': '2019-08-26 09:48:44', 'ns': '422778229'}
+3: {'itemid': '25500', 'clock': '1566812880', 'value': '2019-08-26 09:47:44', 'ns': '842919011'}
+4: {'itemid': '25500', 'clock': '1566812820', 'value': '2019-08-26 09:46:44', 'ns': '551483717'}
+5: {'itemid': '25500', 'clock': '1566812761', 'value': '2019-08-26 09:45:44', 'ns': '136545711'}
+6: {'itemid': '25500', 'clock': '1566812700', 'value': '2019-08-26 09:44:44', 'ns': '158494807'}
+7: {'itemid': '25500', 'clock': '1566812640', 'value': '2019-08-26 09:43:44', 'ns': '532410123'}
+8: {'itemid': '25500', 'clock': '1566812580', 'value': '2019-08-26 09:42:44', 'ns': '844632819'}
+9: {'itemid': '25500', 'clock': '1566812520', 'value': '2019-08-26 09:41:44', 'ns': '337169233'}
+
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},dbsystime] history human format result==
+Try with Exception
+name 'long' is not defined
+
+
+
+hostDB1T1 logmode oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},logmode] 1
+itemids ['25501', '25502', '25503']
+========================================
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},logmode] history raw result==
+0: {'itemid': '25502', 'clock': '1566813062', 'value': 'ARCHIVELOG', 'ns': '505305483'}
+1: {'itemid': '25502', 'clock': '1566813002', 'value': 'ARCHIVELOG', 'ns': '924273009'}
+2: {'itemid': '25502', 'clock': '1566812942', 'value': 'ARCHIVELOG', 'ns': '623944564'}
+3: {'itemid': '25502', 'clock': '1566812883', 'value': 'ARCHIVELOG', 'ns': '132530170'}
+4: {'itemid': '25502', 'clock': '1566812822', 'value': 'ARCHIVELOG', 'ns': '896812906'}
+5: {'itemid': '25502', 'clock': '1566812762', 'value': 'ARCHIVELOG', 'ns': '291634367'}
+6: {'itemid': '25502', 'clock': '1566812702', 'value': 'ARCHIVELOG', 'ns': '589017568'}
+7: {'itemid': '25502', 'clock': '1566812642', 'value': 'ARCHIVELOG', 'ns': '797421520'}
+8: {'itemid': '25502', 'clock': '1566812583', 'value': 'ARCHIVELOG', 'ns': '129209305'}
+9: {'itemid': '25502', 'clock': '1566812523', 'value': 'ARCHIVELOG', 'ns': '28426203'}
+
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},logmode] history human format result==
+Try with Exception
+name 'long' is not defined
+
+
+hostDB2T1 logmode oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},logmode] 1
+itemids ['25501', '25502', '25503']
+========================================
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},logmode] history raw result==
+0: {'itemid': '25503', 'clock': '1566813063', 'value': 'ARCHIVELOG', 'ns': '672662558'}
+1: {'itemid': '25503', 'clock': '1566813003', 'value': 'ARCHIVELOG', 'ns': '621243358'}
+2: {'itemid': '25503', 'clock': '1566812943', 'value': 'ARCHIVELOG', 'ns': '799503796'}
+3: {'itemid': '25503', 'clock': '1566812883', 'value': 'ARCHIVELOG', 'ns': '313942986'}
+4: {'itemid': '25503', 'clock': '1566812823', 'value': 'ARCHIVELOG', 'ns': '597222234'}
+5: {'itemid': '25503', 'clock': '1566812763', 'value': 'ARCHIVELOG', 'ns': '454911521'}
+6: {'itemid': '25503', 'clock': '1566812704', 'value': 'ARCHIVELOG', 'ns': '18973387'}
+7: {'itemid': '25503', 'clock': '1566812643', 'value': 'ARCHIVELOG', 'ns': '976560452'}
+8: {'itemid': '25503', 'clock': '1566812583', 'value': 'ARCHIVELOG', 'ns': '292812975'}
+9: {'itemid': '25503', 'clock': '1566812523', 'value': 'ARCHIVELOG', 'ns': '199801532'}
+
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},logmode] history human format result==
+Try with Exception
+name 'long' is not defined
+
+
+
+hostDB1T1 dbstatus oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},dbstatus] 1
+itemids ['25504', '25505', '25506']
+========================================
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},dbstatus] history raw result==
+0: {'itemid': '25505', 'clock': '1566813066', 'value': 'OPEN', 'ns': '9917663'}
+1: {'itemid': '25505', 'clock': '1566813006', 'value': 'OPEN', 'ns': '64275433'}
+2: {'itemid': '25505', 'clock': '1566812945', 'value': 'OPEN', 'ns': '951859863'}
+3: {'itemid': '25505', 'clock': '1566812885', 'value': 'OPEN', 'ns': '525622911'}
+4: {'itemid': '25505', 'clock': '1566812826', 'value': 'OPEN', 'ns': '21017371'}
+5: {'itemid': '25505', 'clock': '1566812765', 'value': 'OPEN', 'ns': '826671938'}
+6: {'itemid': '25505', 'clock': '1566812705', 'value': 'OPEN', 'ns': '175434601'}
+7: {'itemid': '25505', 'clock': '1566812645', 'value': 'OPEN', 'ns': '312077403'}
+8: {'itemid': '25505', 'clock': '1566812585', 'value': 'OPEN', 'ns': '531228182'}
+9: {'itemid': '25505', 'clock': '1566812525', 'value': 'OPEN', 'ns': '630039588'}
+
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},dbstatus] history human format result==
+Try with Exception
+name 'long' is not defined
+
+
+hostDB2T1 dbstatus oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},dbstatus] 1
+itemids ['25504', '25505', '25506']
+========================================
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},dbstatus] history raw result==
+0: {'itemid': '25506', 'clock': '1566813066', 'value': 'OPEN', 'ns': '266389398'}
+1: {'itemid': '25506', 'clock': '1566813006', 'value': 'OPEN', 'ns': '474844277'}
+2: {'itemid': '25506', 'clock': '1566812946', 'value': 'OPEN', 'ns': '619348427'}
+3: {'itemid': '25506', 'clock': '1566812886', 'value': 'OPEN', 'ns': '678013280'}
+4: {'itemid': '25506', 'clock': '1566812826', 'value': 'OPEN', 'ns': '463277304'}
+5: {'itemid': '25506', 'clock': '1566812766', 'value': 'OPEN', 'ns': '891778417'}
+6: {'itemid': '25506', 'clock': '1566812706', 'value': 'OPEN', 'ns': '557959345'}
+7: {'itemid': '25506', 'clock': '1566812646', 'value': 'OPEN', 'ns': '716307863'}
+8: {'itemid': '25506', 'clock': '1566812586', 'value': 'OPEN', 'ns': '682966936'}
+9: {'itemid': '25506', 'clock': '1566812527', 'value': 'OPEN', 'ns': '112080659'}
+
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},dbstatus] history human format result==
+Try with Exception
+name 'long' is not defined
+
+
+
+hostDB1T1 currentscn oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},currentscn] 3
+itemids ['25507', '25508', '25509']
+========================================
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},currentscn] history raw result==
+0: {'itemid': '25508', 'clock': '1566813068', 'value': '3639185', 'ns': '432019525'}
+1: {'itemid': '25508', 'clock': '1566813008', 'value': '3638863', 'ns': '829150736'}
+2: {'itemid': '25508', 'clock': '1566812948', 'value': '3638560', 'ns': '987486282'}
+3: {'itemid': '25508', 'clock': '1566812889', 'value': '3638244', 'ns': '6413801'}
+4: {'itemid': '25508', 'clock': '1566812828', 'value': '3637893', 'ns': '863548370'}
+5: {'itemid': '25508', 'clock': '1566812768', 'value': '3637590', 'ns': '454792676'}
+6: {'itemid': '25508', 'clock': '1566812708', 'value': '3637247', 'ns': '727789049'}
+7: {'itemid': '25508', 'clock': '1566812649', 'value': '3636932', 'ns': '141211015'}
+8: {'itemid': '25508', 'clock': '1566812588', 'value': '3636611', 'ns': '854617353'}
+9: {'itemid': '25508', 'clock': '1566812528', 'value': '3636303', 'ns': '292401666'}
+
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},currentscn] history human format result==
+Try with Exception
+name 'long' is not defined
+
+
+hostDB2T1 currentscn oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},currentscn] 3
+itemids ['25507', '25508', '25509']
+========================================
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},currentscn] history raw result==
+0: {'itemid': '25509', 'clock': '1566813069', 'value': '3639196', 'ns': '592496742'}
+1: {'itemid': '25509', 'clock': '1566813009', 'value': '3638871', 'ns': '157034824'}
+2: {'itemid': '25509', 'clock': '1566812950', 'value': '3638570', 'ns': '111686272'}
+3: {'itemid': '25509', 'clock': '1566812889', 'value': '3638250', 'ns': '182749522'}
+4: {'itemid': '25509', 'clock': '1566812830', 'value': '3637909', 'ns': '83883023'}
+5: {'itemid': '25509', 'clock': '1566812769', 'value': '3637600', 'ns': '795295831'}
+6: {'itemid': '25509', 'clock': '1566812709', 'value': '3637254', 'ns': '776018580'}
+7: {'itemid': '25509', 'clock': '1566812649', 'value': '3636942', 'ns': '307824265'}
+8: {'itemid': '25509', 'clock': '1566812589', 'value': '3636625', 'ns': '380739436'}
+9: {'itemid': '25509', 'clock': '1566812529', 'value': '3636314', 'ns': '459990214'}
+
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},currentscn] history human format result==
+Try with Exception
+name 'long' is not defined
+
+
+
+hostDB1T1 archthreadseq oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},archthreadseq] 1
+itemids ['25510', '25511', '25512']
+========================================
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},archthreadseq] history raw result==
+0: {'itemid': '25511', 'clock': '1566813071', 'value': '1,32', 'ns': '751725034'}
+1: {'itemid': '25511', 'clock': '1566813011', 'value': '1,32', 'ns': '329384349'}
+2: {'itemid': '25511', 'clock': '1566812951', 'value': '1,32', 'ns': '273507745'}
+3: {'itemid': '25511', 'clock': '1566812891', 'value': '1,32', 'ns': '542287901'}
+4: {'itemid': '25511', 'clock': '1566812831', 'value': '1,32', 'ns': '211590936'}
+5: {'itemid': '25511', 'clock': '1566812771', 'value': '1,32', 'ns': '963327134'}
+6: {'itemid': '25511', 'clock': '1566812711', 'value': '1,32', 'ns': '942852488'}
+7: {'itemid': '25511', 'clock': '1566812651', 'value': '1,32', 'ns': '472990033'}
+8: {'itemid': '25511', 'clock': '1566812591', 'value': '1,32', 'ns': '550708379'}
+9: {'itemid': '25511', 'clock': '1566812531', 'value': '1,32', 'ns': '734229136'}
+
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},archthreadseq] history human format result==
+Try with Exception
+name 'long' is not defined
+
+
+hostDB2T1 archthreadseq oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},archthreadseq] 1
+itemids ['25510', '25511', '25512']
+========================================
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},archthreadseq] history raw result==
+0: {'itemid': '25512', 'clock': '1566813072', 'value': '1,32', 'ns': '922569947'}
+1: {'itemid': '25512', 'clock': '1566813012', 'value': '1,32', 'ns': '951800730'}
+2: {'itemid': '25512', 'clock': '1566812952', 'value': '1,32', 'ns': '868755260'}
+3: {'itemid': '25512', 'clock': '1566812892', 'value': '1,32', 'ns': '892032854'}
+4: {'itemid': '25512', 'clock': '1566812832', 'value': '1,32', 'ns': '847862831'}
+5: {'itemid': '25512', 'clock': '1566812773', 'value': '1,32', 'ns': '127031434'}
+6: {'itemid': '25512', 'clock': '1566812713', 'value': '1,32', 'ns': '112482723'}
+7: {'itemid': '25512', 'clock': '1566812653', 'value': '1,32', 'ns': '75414199'}
+8: {'itemid': '25512', 'clock': '1566812592', 'value': '1,32', 'ns': '319887294'}
+9: {'itemid': '25512', 'clock': '1566812532', 'value': '1,32', 'ns': '241751677'}
+
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},archthreadseq] history human format result==
+Try with Exception
+name 'long' is not defined
+
+
+
+hostDB1T1 flash_areausage oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},flash_areausage] 0
+itemids ['25513', '25514', '25515']
+========================================
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},flash_areausage] history raw result==
+0: {'itemid': '25514', 'clock': '1566813075', 'value': '0.0000', 'ns': '137764879'}
+1: {'itemid': '25514', 'clock': '1566813015', 'value': '0.0000', 'ns': '45987509'}
+2: {'itemid': '25514', 'clock': '1566812955', 'value': '0.0000', 'ns': '72730421'}
+3: {'itemid': '25514', 'clock': '1566812895', 'value': '0.0000', 'ns': '104435435'}
+4: {'itemid': '25514', 'clock': '1566812835', 'value': '0.0000', 'ns': '8607850'}
+5: {'itemid': '25514', 'clock': '1566812774', 'value': '0.0000', 'ns': '355234375'}
+6: {'itemid': '25514', 'clock': '1566812714', 'value': '0.0000', 'ns': '304728339'}
+7: {'itemid': '25514', 'clock': '1566812654', 'value': '0.0000', 'ns': '314759020'}
+8: {'itemid': '25514', 'clock': '1566812595', 'value': '0.0000', 'ns': '79445577'}
+9: {'itemid': '25514', 'clock': '1566812534', 'value': '0.0000', 'ns': '804524465'}
+
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},flash_areausage] history human format result==
+Try with Exception
+name 'long' is not defined
+
+
+hostDB2T1 flash_areausage oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},flash_areausage] 0
+itemids ['25513', '25514', '25515']
+========================================
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},flash_areausage] history raw result==
+0: {'itemid': '25515', 'clock': '1566813075', 'value': '0.0000', 'ns': '339372095'}
+1: {'itemid': '25515', 'clock': '1566813015', 'value': '0.0000', 'ns': '515837742'}
+2: {'itemid': '25515', 'clock': '1566812955', 'value': '0.0000', 'ns': '495668926'}
+3: {'itemid': '25515', 'clock': '1566812895', 'value': '0.0000', 'ns': '451936787'}
+4: {'itemid': '25515', 'clock': '1566812835', 'value': '0.0000', 'ns': '416589464'}
+5: {'itemid': '25515', 'clock': '1566812775', 'value': '0.0000', 'ns': '670437789'}
+6: {'itemid': '25515', 'clock': '1566812715', 'value': '0.0000', 'ns': '519641785'}
+7: {'itemid': '25515', 'clock': '1566812655', 'value': '0.0000', 'ns': '747377230'}
+8: {'itemid': '25515', 'clock': '1566812595', 'value': '0.0000', 'ns': '281898564'}
+9: {'itemid': '25515', 'clock': '1566812535', 'value': '0.0000', 'ns': '945262215'}
+
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},flash_areausage] history human format result==
+Try with Exception
+name 'long' is not defined
+
+
+
+hostDB1T1 backup_status oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},backup_status] 1
+itemids ['25516', '25517', '25518']
+========================================
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},backup_status] history raw result==
+0: {'itemid': '25517', 'clock': '1566813077', 'value': '', 'ns': '491148550'}
+1: {'itemid': '25517', 'clock': '1566813017', 'value': '', 'ns': '570399771'}
+2: {'itemid': '25517', 'clock': '1566812957', 'value': '', 'ns': '660700892'}
+3: {'itemid': '25517', 'clock': '1566812897', 'value': '', 'ns': '598894860'}
+4: {'itemid': '25517', 'clock': '1566812837', 'value': '', 'ns': '576049491'}
+5: {'itemid': '25517', 'clock': '1566812777', 'value': '', 'ns': '520034497'}
+6: {'itemid': '25517', 'clock': '1566812717', 'value': '', 'ns': '667817590'}
+7: {'itemid': '25517', 'clock': '1566812657', 'value': '', 'ns': '827637619'}
+8: {'itemid': '25517', 'clock': '1566812597', 'value': '', 'ns': '433462245'}
+9: {'itemid': '25517', 'clock': '1566812537', 'value': '', 'ns': '959431227'}
+
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},backup_status] history human format result==
+Try with Exception
+name 'long' is not defined
+
+
+hostDB2T1 backup_status oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},backup_status] 1
+itemids ['25516', '25517', '25518']
+========================================
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},backup_status] history raw result==
+0: {'itemid': '25518', 'clock': '1566813078', 'value': '', 'ns': '651899744'}
+1: {'itemid': '25518', 'clock': '1566813018', 'value': '', 'ns': '665916004'}
+2: {'itemid': '25518', 'clock': '1566812958', 'value': '', 'ns': '641184005'}
+3: {'itemid': '25518', 'clock': '1566812898', 'value': '', 'ns': '630552122'}
+4: {'itemid': '25518', 'clock': '1566812838', 'value': '', 'ns': '567499314'}
+5: {'itemid': '25518', 'clock': '1566812778', 'value': '', 'ns': '677289129'}
+6: {'itemid': '25518', 'clock': '1566812718', 'value': '', 'ns': '855745296'}
+7: {'itemid': '25518', 'clock': '1566812658', 'value': '', 'ns': '892015076'}
+8: {'itemid': '25518', 'clock': '1566812598', 'value': '', 'ns': '435919363'}
+9: {'itemid': '25518', 'clock': '1566812539', 'value': '', 'ns': '146862530'}
+
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},backup_status] history human format result==
+Try with Exception
+name 'long' is not defined
+
+
+
+hostDB1T1 log_transfermode oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},log_transfermode] 1
+itemids ['25519', '25520', '25521']
+========================================
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},log_transfermode] history raw result==
+0: {'itemid': '25520', 'clock': '1566813080', 'value': '', 'ns': '146715468'}
+1: {'itemid': '25520', 'clock': '1566813020', 'value': '', 'ns': '723446077'}
+2: {'itemid': '25520', 'clock': '1566812960', 'value': '', 'ns': '793397480'}
+3: {'itemid': '25520', 'clock': '1566812900', 'value': '', 'ns': '749883183'}
+4: {'itemid': '25520', 'clock': '1566812840', 'value': '', 'ns': '722703711'}
+5: {'itemid': '25520', 'clock': '1566812780', 'value': '', 'ns': '734537651'}
+6: {'itemid': '25520', 'clock': '1566812721', 'value': '', 'ns': '70865090'}
+7: {'itemid': '25520', 'clock': '1566812660', 'value': '', 'ns': '984693441'}
+8: {'itemid': '25520', 'clock': '1566812600', 'value': '', 'ns': '555025731'}
+9: {'itemid': '25520', 'clock': '1566812540', 'value': '', 'ns': '325506098'}
+
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},log_transfermode] history human format result==
+Try with Exception
+name 'long' is not defined
+
+
+hostDB2T1 log_transfermode oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},log_transfermode] 1
+itemids ['25519', '25520', '25521']
+========================================
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},log_transfermode] history raw result==
+0: {'itemid': '25521', 'clock': '1566813081', 'value': '', 'ns': '292872576'}
+1: {'itemid': '25521', 'clock': '1566813021', 'value': '', 'ns': '824925181'}
+2: {'itemid': '25521', 'clock': '1566812961', 'value': '', 'ns': '815397128'}
+3: {'itemid': '25521', 'clock': '1566812901', 'value': '', 'ns': '929549527'}
+4: {'itemid': '25521', 'clock': '1566812841', 'value': '', 'ns': '725529541'}
+5: {'itemid': '25521', 'clock': '1566812781', 'value': '', 'ns': '817395817'}
+6: {'itemid': '25521', 'clock': '1566812721', 'value': '', 'ns': '225272210'}
+7: {'itemid': '25521', 'clock': '1566812662', 'value': '', 'ns': '39086091'}
+8: {'itemid': '25521', 'clock': '1566812601', 'value': '', 'ns': '582794059'}
+9: {'itemid': '25521', 'clock': '1566812541', 'value': '', 'ns': '159001612'}
+
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},log_transfermode] history human format result==
+Try with Exception
+name 'long' is not defined
+
+
+
+hostDB1T1 show_users oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},show_users] 4
+itemids ['25522', '25523', '25524']
+========================================
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},show_users] history raw result==
+0: {'itemid': '25523', 'clock': '1566813083', 'value': '{"data": [{"{#DBUSER}": "ANONYMOUS"}, {"{#DBUSER}": "APEX_030200"}, {"{#DBUSER}": "APEX_PUBLIC_USER"}, {"{#DBUSER}": "APPQOSSYS"}, {"{#DBUSER}": "CTXSYS"}, {"{#DBUSER}": "DBSNMP"}, {"{#DBUSER}": "DIP"}, {"{#DBUSER}": "EXFSYS"}, {"{#DBUSER}": "FLOWS_FILES"}, {"{#DBUSER}": "MDDATA"}, {"{#DBUSER}": "MDSYS"}, {"{#DBUSER}": "MGMT_VIEW"}, {"{#DBUSER}": "OLAPSYS"}, {"{#DBUSER}": "ORACLE_OCM"}, {"{#DBUSER}": "ORDDATA"}, {"{#DBUSER}": "ORDPLUGINS"}, {"{#DBUSER}": "ORDSYS"}, {"{#DBUSER}": "OUTLN"}, {"{#DBUSER}": "OWBSYS"}, {"{#DBUSER}": "OWBSYS_AUDIT"}, {"{#DBUSER}": "SCOTT"}, {"{#DBUSER}": "SI_INFORMTN_SCHEMA"}, {"{#DBUSER}": "SPATIAL_CSW_ADMIN_USR"}, {"{#DBUSER}": "SPATIAL_WFS_ADMIN_USR"}, {"{#DBUSER}": "SYS"}, {"{#DBUSER}": "SYSMAN"}, {"{#DBUSER}": "SYSTEM"}, {"{#DBUSER}": "WMSYS"}, {"{#DBUSER}": "XDB"}, {"{#DBUSER}": "XS$NULL"}, {"{#DBUSER}": "ZABBIX"}]}', 'ns': '449549100'}
+1: {'itemid': '25523', 'clock': '1566813023', 'value': '{"data": [{"{#DBUSER}": "ANONYMOUS"}, {"{#DBUSER}": "APEX_030200"}, {"{#DBUSER}": "APEX_PUBLIC_USER"}, {"{#DBUSER}": "APPQOSSYS"}, {"{#DBUSER}": "CTXSYS"}, {"{#DBUSER}": "DBSNMP"}, {"{#DBUSER}": "DIP"}, {"{#DBUSER}": "EXFSYS"}, {"{#DBUSER}": "FLOWS_FILES"}, {"{#DBUSER}": "MDDATA"}, {"{#DBUSER}": "MDSYS"}, {"{#DBUSER}": "MGMT_VIEW"}, {"{#DBUSER}": "OLAPSYS"}, {"{#DBUSER}": "ORACLE_OCM"}, {"{#DBUSER}": "ORDDATA"}, {"{#DBUSER}": "ORDPLUGINS"}, {"{#DBUSER}": "ORDSYS"}, {"{#DBUSER}": "OUTLN"}, {"{#DBUSER}": "OWBSYS"}, {"{#DBUSER}": "OWBSYS_AUDIT"}, {"{#DBUSER}": "SCOTT"}, {"{#DBUSER}": "SI_INFORMTN_SCHEMA"}, {"{#DBUSER}": "SPATIAL_CSW_ADMIN_USR"}, {"{#DBUSER}": "SPATIAL_WFS_ADMIN_USR"}, {"{#DBUSER}": "SYS"}, {"{#DBUSER}": "SYSMAN"}, {"{#DBUSER}": "SYSTEM"}, {"{#DBUSER}": "WMSYS"}, {"{#DBUSER}": "XDB"}, {"{#DBUSER}": "XS$NULL"}, {"{#DBUSER}": "ZABBIX"}]}', 'ns': '876981296'}
+2: {'itemid': '25523', 'clock': '1566812963', 'value': '{"data": [{"{#DBUSER}": "ANONYMOUS"}, {"{#DBUSER}": "APEX_030200"}, {"{#DBUSER}": "APEX_PUBLIC_USER"}, {"{#DBUSER}": "APPQOSSYS"}, {"{#DBUSER}": "CTXSYS"}, {"{#DBUSER}": "DBSNMP"}, {"{#DBUSER}": "DIP"}, {"{#DBUSER}": "EXFSYS"}, {"{#DBUSER}": "FLOWS_FILES"}, {"{#DBUSER}": "MDDATA"}, {"{#DBUSER}": "MDSYS"}, {"{#DBUSER}": "MGMT_VIEW"}, {"{#DBUSER}": "OLAPSYS"}, {"{#DBUSER}": "ORACLE_OCM"}, {"{#DBUSER}": "ORDDATA"}, {"{#DBUSER}": "ORDPLUGINS"}, {"{#DBUSER}": "ORDSYS"}, {"{#DBUSER}": "OUTLN"}, {"{#DBUSER}": "OWBSYS"}, {"{#DBUSER}": "OWBSYS_AUDIT"}, {"{#DBUSER}": "SCOTT"}, {"{#DBUSER}": "SI_INFORMTN_SCHEMA"}, {"{#DBUSER}": "SPATIAL_CSW_ADMIN_USR"}, {"{#DBUSER}": "SPATIAL_WFS_ADMIN_USR"}, {"{#DBUSER}": "SYS"}, {"{#DBUSER}": "SYSMAN"}, {"{#DBUSER}": "SYSTEM"}, {"{#DBUSER}": "WMSYS"}, {"{#DBUSER}": "XDB"}, {"{#DBUSER}": "XS$NULL"}, {"{#DBUSER}": "ZABBIX"}]}', 'ns': '953720516'}
+3: {'itemid': '25523', 'clock': '1566812903', 'value': '{"data": [{"{#DBUSER}": "ANONYMOUS"}, {"{#DBUSER}": "APEX_030200"}, {"{#DBUSER}": "APEX_PUBLIC_USER"}, {"{#DBUSER}": "APPQOSSYS"}, {"{#DBUSER}": "CTXSYS"}, {"{#DBUSER}": "DBSNMP"}, {"{#DBUSER}": "DIP"}, {"{#DBUSER}": "EXFSYS"}, {"{#DBUSER}": "FLOWS_FILES"}, {"{#DBUSER}": "MDDATA"}, {"{#DBUSER}": "MDSYS"}, {"{#DBUSER}": "MGMT_VIEW"}, {"{#DBUSER}": "OLAPSYS"}, {"{#DBUSER}": "ORACLE_OCM"}, {"{#DBUSER}": "ORDDATA"}, {"{#DBUSER}": "ORDPLUGINS"}, {"{#DBUSER}": "ORDSYS"}, {"{#DBUSER}": "OUTLN"}, {"{#DBUSER}": "OWBSYS"}, {"{#DBUSER}": "OWBSYS_AUDIT"}, {"{#DBUSER}": "SCOTT"}, {"{#DBUSER}": "SI_INFORMTN_SCHEMA"}, {"{#DBUSER}": "SPATIAL_CSW_ADMIN_USR"}, {"{#DBUSER}": "SPATIAL_WFS_ADMIN_USR"}, {"{#DBUSER}": "SYS"}, {"{#DBUSER}": "SYSMAN"}, {"{#DBUSER}": "SYSTEM"}, {"{#DBUSER}": "WMSYS"}, {"{#DBUSER}": "XDB"}, {"{#DBUSER}": "XS$NULL"}, {"{#DBUSER}": "ZABBIX"}]}', 'ns': '955077630'}
+4: {'itemid': '25523', 'clock': '1566812843', 'value': '{"data": [{"{#DBUSER}": "ANONYMOUS"}, {"{#DBUSER}": "APEX_030200"}, {"{#DBUSER}": "APEX_PUBLIC_USER"}, {"{#DBUSER}": "APPQOSSYS"}, {"{#DBUSER}": "CTXSYS"}, {"{#DBUSER}": "DBSNMP"}, {"{#DBUSER}": "DIP"}, {"{#DBUSER}": "EXFSYS"}, {"{#DBUSER}": "FLOWS_FILES"}, {"{#DBUSER}": "MDDATA"}, {"{#DBUSER}": "MDSYS"}, {"{#DBUSER}": "MGMT_VIEW"}, {"{#DBUSER}": "OLAPSYS"}, {"{#DBUSER}": "ORACLE_OCM"}, {"{#DBUSER}": "ORDDATA"}, {"{#DBUSER}": "ORDPLUGINS"}, {"{#DBUSER}": "ORDSYS"}, {"{#DBUSER}": "OUTLN"}, {"{#DBUSER}": "OWBSYS"}, {"{#DBUSER}": "OWBSYS_AUDIT"}, {"{#DBUSER}": "SCOTT"}, {"{#DBUSER}": "SI_INFORMTN_SCHEMA"}, {"{#DBUSER}": "SPATIAL_CSW_ADMIN_USR"}, {"{#DBUSER}": "SPATIAL_WFS_ADMIN_USR"}, {"{#DBUSER}": "SYS"}, {"{#DBUSER}": "SYSMAN"}, {"{#DBUSER}": "SYSTEM"}, {"{#DBUSER}": "WMSYS"}, {"{#DBUSER}": "XDB"}, {"{#DBUSER}": "XS$NULL"}, {"{#DBUSER}": "ZABBIX"}]}', 'ns': '881645545'}
+5: {'itemid': '25523', 'clock': '1566812783', 'value': '{"data": [{"{#DBUSER}": "ANONYMOUS"}, {"{#DBUSER}": "APEX_030200"}, {"{#DBUSER}": "APEX_PUBLIC_USER"}, {"{#DBUSER}": "APPQOSSYS"}, {"{#DBUSER}": "CTXSYS"}, {"{#DBUSER}": "DBSNMP"}, {"{#DBUSER}": "DIP"}, {"{#DBUSER}": "EXFSYS"}, {"{#DBUSER}": "FLOWS_FILES"}, {"{#DBUSER}": "MDDATA"}, {"{#DBUSER}": "MDSYS"}, {"{#DBUSER}": "MGMT_VIEW"}, {"{#DBUSER}": "OLAPSYS"}, {"{#DBUSER}": "ORACLE_OCM"}, {"{#DBUSER}": "ORDDATA"}, {"{#DBUSER}": "ORDPLUGINS"}, {"{#DBUSER}": "ORDSYS"}, {"{#DBUSER}": "OUTLN"}, {"{#DBUSER}": "OWBSYS"}, {"{#DBUSER}": "OWBSYS_AUDIT"}, {"{#DBUSER}": "SCOTT"}, {"{#DBUSER}": "SI_INFORMTN_SCHEMA"}, {"{#DBUSER}": "SPATIAL_CSW_ADMIN_USR"}, {"{#DBUSER}": "SPATIAL_WFS_ADMIN_USR"}, {"{#DBUSER}": "SYS"}, {"{#DBUSER}": "SYSMAN"}, {"{#DBUSER}": "SYSTEM"}, {"{#DBUSER}": "WMSYS"}, {"{#DBUSER}": "XDB"}, {"{#DBUSER}": "XS$NULL"}, {"{#DBUSER}": "ZABBIX"}]}', 'ns': '875637644'}
+6: {'itemid': '25523', 'clock': '1566812723', 'value': '{"data": [{"{#DBUSER}": "ANONYMOUS"}, {"{#DBUSER}": "APEX_030200"}, {"{#DBUSER}": "APEX_PUBLIC_USER"}, {"{#DBUSER}": "APPQOSSYS"}, {"{#DBUSER}": "CTXSYS"}, {"{#DBUSER}": "DBSNMP"}, {"{#DBUSER}": "DIP"}, {"{#DBUSER}": "EXFSYS"}, {"{#DBUSER}": "FLOWS_FILES"}, {"{#DBUSER}": "MDDATA"}, {"{#DBUSER}": "MDSYS"}, {"{#DBUSER}": "MGMT_VIEW"}, {"{#DBUSER}": "OLAPSYS"}, {"{#DBUSER}": "ORACLE_OCM"}, {"{#DBUSER}": "ORDDATA"}, {"{#DBUSER}": "ORDPLUGINS"}, {"{#DBUSER}": "ORDSYS"}, {"{#DBUSER}": "OUTLN"}, {"{#DBUSER}": "OWBSYS"}, {"{#DBUSER}": "OWBSYS_AUDIT"}, {"{#DBUSER}": "SCOTT"}, {"{#DBUSER}": "SI_INFORMTN_SCHEMA"}, {"{#DBUSER}": "SPATIAL_CSW_ADMIN_USR"}, {"{#DBUSER}": "SPATIAL_WFS_ADMIN_USR"}, {"{#DBUSER}": "SYS"}, {"{#DBUSER}": "SYSMAN"}, {"{#DBUSER}": "SYSTEM"}, {"{#DBUSER}": "WMSYS"}, {"{#DBUSER}": "XDB"}, {"{#DBUSER}": "XS$NULL"}, {"{#DBUSER}": "ZABBIX"}]}', 'ns': '381763181'}
+7: {'itemid': '25523', 'clock': '1566812663', 'value': '{"data": [{"{#DBUSER}": "ANONYMOUS"}, {"{#DBUSER}": "APEX_030200"}, {"{#DBUSER}": "APEX_PUBLIC_USER"}, {"{#DBUSER}": "APPQOSSYS"}, {"{#DBUSER}": "CTXSYS"}, {"{#DBUSER}": "DBSNMP"}, {"{#DBUSER}": "DIP"}, {"{#DBUSER}": "EXFSYS"}, {"{#DBUSER}": "FLOWS_FILES"}, {"{#DBUSER}": "MDDATA"}, {"{#DBUSER}": "MDSYS"}, {"{#DBUSER}": "MGMT_VIEW"}, {"{#DBUSER}": "OLAPSYS"}, {"{#DBUSER}": "ORACLE_OCM"}, {"{#DBUSER}": "ORDDATA"}, {"{#DBUSER}": "ORDPLUGINS"}, {"{#DBUSER}": "ORDSYS"}, {"{#DBUSER}": "OUTLN"}, {"{#DBUSER}": "OWBSYS"}, {"{#DBUSER}": "OWBSYS_AUDIT"}, {"{#DBUSER}": "SCOTT"}, {"{#DBUSER}": "SI_INFORMTN_SCHEMA"}, {"{#DBUSER}": "SPATIAL_CSW_ADMIN_USR"}, {"{#DBUSER}": "SPATIAL_WFS_ADMIN_USR"}, {"{#DBUSER}": "SYS"}, {"{#DBUSER}": "SYSMAN"}, {"{#DBUSER}": "SYSTEM"}, {"{#DBUSER}": "WMSYS"}, {"{#DBUSER}": "XDB"}, {"{#DBUSER}": "XS$NULL"}, {"{#DBUSER}": "ZABBIX"}]}', 'ns': '193797790'}
+8: {'itemid': '25523', 'clock': '1566812603', 'value': '{"data": [{"{#DBUSER}": "ANONYMOUS"}, {"{#DBUSER}": "APEX_030200"}, {"{#DBUSER}": "APEX_PUBLIC_USER"}, {"{#DBUSER}": "APPQOSSYS"}, {"{#DBUSER}": "CTXSYS"}, {"{#DBUSER}": "DBSNMP"}, {"{#DBUSER}": "DIP"}, {"{#DBUSER}": "EXFSYS"}, {"{#DBUSER}": "FLOWS_FILES"}, {"{#DBUSER}": "MDDATA"}, {"{#DBUSER}": "MDSYS"}, {"{#DBUSER}": "MGMT_VIEW"}, {"{#DBUSER}": "OLAPSYS"}, {"{#DBUSER}": "ORACLE_OCM"}, {"{#DBUSER}": "ORDDATA"}, {"{#DBUSER}": "ORDPLUGINS"}, {"{#DBUSER}": "ORDSYS"}, {"{#DBUSER}": "OUTLN"}, {"{#DBUSER}": "OWBSYS"}, {"{#DBUSER}": "OWBSYS_AUDIT"}, {"{#DBUSER}": "SCOTT"}, {"{#DBUSER}": "SI_INFORMTN_SCHEMA"}, {"{#DBUSER}": "SPATIAL_CSW_ADMIN_USR"}, {"{#DBUSER}": "SPATIAL_WFS_ADMIN_USR"}, {"{#DBUSER}": "SYS"}, {"{#DBUSER}": "SYSMAN"}, {"{#DBUSER}": "SYSTEM"}, {"{#DBUSER}": "WMSYS"}, {"{#DBUSER}": "XDB"}, {"{#DBUSER}": "XS$NULL"}, {"{#DBUSER}": "ZABBIX"}]}', 'ns': '597474118'}
+9: {'itemid': '25523', 'clock': '1566812543', 'value': '{"data": [{"{#DBUSER}": "ANONYMOUS"}, {"{#DBUSER}": "APEX_030200"}, {"{#DBUSER}": "APEX_PUBLIC_USER"}, {"{#DBUSER}": "APPQOSSYS"}, {"{#DBUSER}": "CTXSYS"}, {"{#DBUSER}": "DBSNMP"}, {"{#DBUSER}": "DIP"}, {"{#DBUSER}": "EXFSYS"}, {"{#DBUSER}": "FLOWS_FILES"}, {"{#DBUSER}": "MDDATA"}, {"{#DBUSER}": "MDSYS"}, {"{#DBUSER}": "MGMT_VIEW"}, {"{#DBUSER}": "OLAPSYS"}, {"{#DBUSER}": "ORACLE_OCM"}, {"{#DBUSER}": "ORDDATA"}, {"{#DBUSER}": "ORDPLUGINS"}, {"{#DBUSER}": "ORDSYS"}, {"{#DBUSER}": "OUTLN"}, {"{#DBUSER}": "OWBSYS"}, {"{#DBUSER}": "OWBSYS_AUDIT"}, {"{#DBUSER}": "SCOTT"}, {"{#DBUSER}": "SI_INFORMTN_SCHEMA"}, {"{#DBUSER}": "SPATIAL_CSW_ADMIN_USR"}, {"{#DBUSER}": "SPATIAL_WFS_ADMIN_USR"}, {"{#DBUSER}": "SYS"}, {"{#DBUSER}": "SYSMAN"}, {"{#DBUSER}": "SYSTEM"}, {"{#DBUSER}": "WMSYS"}, {"{#DBUSER}": "XDB"}, {"{#DBUSER}": "XS$NULL"}, {"{#DBUSER}": "ZABBIX"}]}', 'ns': '308689829'}
+
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},show_users] history human format result==
+Try with Exception
+name 'long' is not defined
+
+
+hostDB2T1 show_users oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},show_users] 4
+itemids ['25522', '25523', '25524']
+========================================
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},show_users] history raw result==
+0: {'itemid': '25524', 'clock': '1566813084', 'value': '{"data": [{"{#DBUSER}": "ANONYMOUS"}, {"{#DBUSER}": "APEX_030200"}, {"{#DBUSER}": "APEX_PUBLIC_USER"}, {"{#DBUSER}": "APPQOSSYS"}, {"{#DBUSER}": "CTXSYS"}, {"{#DBUSER}": "DBSNMP"}, {"{#DBUSER}": "DIP"}, {"{#DBUSER}": "EXFSYS"}, {"{#DBUSER}": "FLOWS_FILES"}, {"{#DBUSER}": "MDDATA"}, {"{#DBUSER}": "MDSYS"}, {"{#DBUSER}": "MGMT_VIEW"}, {"{#DBUSER}": "OLAPSYS"}, {"{#DBUSER}": "ORACLE_OCM"}, {"{#DBUSER}": "ORDDATA"}, {"{#DBUSER}": "ORDPLUGINS"}, {"{#DBUSER}": "ORDSYS"}, {"{#DBUSER}": "OUTLN"}, {"{#DBUSER}": "OWBSYS"}, {"{#DBUSER}": "OWBSYS_AUDIT"}, {"{#DBUSER}": "SCOTT"}, {"{#DBUSER}": "SI_INFORMTN_SCHEMA"}, {"{#DBUSER}": "SPATIAL_CSW_ADMIN_USR"}, {"{#DBUSER}": "SPATIAL_WFS_ADMIN_USR"}, {"{#DBUSER}": "SYS"}, {"{#DBUSER}": "SYSMAN"}, {"{#DBUSER}": "SYSTEM"}, {"{#DBUSER}": "WMSYS"}, {"{#DBUSER}": "XDB"}, {"{#DBUSER}": "XS$NULL"}, {"{#DBUSER}": "ZABBIX"}]}', 'ns': '654460429'}
+1: {'itemid': '25524', 'clock': '1566813024', 'value': '{"data": [{"{#DBUSER}": "ANONYMOUS"}, {"{#DBUSER}": "APEX_030200"}, {"{#DBUSER}": "APEX_PUBLIC_USER"}, {"{#DBUSER}": "APPQOSSYS"}, {"{#DBUSER}": "CTXSYS"}, {"{#DBUSER}": "DBSNMP"}, {"{#DBUSER}": "DIP"}, {"{#DBUSER}": "EXFSYS"}, {"{#DBUSER}": "FLOWS_FILES"}, {"{#DBUSER}": "MDDATA"}, {"{#DBUSER}": "MDSYS"}, {"{#DBUSER}": "MGMT_VIEW"}, {"{#DBUSER}": "OLAPSYS"}, {"{#DBUSER}": "ORACLE_OCM"}, {"{#DBUSER}": "ORDDATA"}, {"{#DBUSER}": "ORDPLUGINS"}, {"{#DBUSER}": "ORDSYS"}, {"{#DBUSER}": "OUTLN"}, {"{#DBUSER}": "OWBSYS"}, {"{#DBUSER}": "OWBSYS_AUDIT"}, {"{#DBUSER}": "SCOTT"}, {"{#DBUSER}": "SI_INFORMTN_SCHEMA"}, {"{#DBUSER}": "SPATIAL_CSW_ADMIN_USR"}, {"{#DBUSER}": "SPATIAL_WFS_ADMIN_USR"}, {"{#DBUSER}": "SYS"}, {"{#DBUSER}": "SYSMAN"}, {"{#DBUSER}": "SYSTEM"}, {"{#DBUSER}": "WMSYS"}, {"{#DBUSER}": "XDB"}, {"{#DBUSER}": "XS$NULL"}, {"{#DBUSER}": "ZABBIX"}]}', 'ns': '975803006'}
+2: {'itemid': '25524', 'clock': '1566812964', 'value': '{"data": [{"{#DBUSER}": "ANONYMOUS"}, {"{#DBUSER}": "APEX_030200"}, {"{#DBUSER}": "APEX_PUBLIC_USER"}, {"{#DBUSER}": "APPQOSSYS"}, {"{#DBUSER}": "CTXSYS"}, {"{#DBUSER}": "DBSNMP"}, {"{#DBUSER}": "DIP"}, {"{#DBUSER}": "EXFSYS"}, {"{#DBUSER}": "FLOWS_FILES"}, {"{#DBUSER}": "MDDATA"}, {"{#DBUSER}": "MDSYS"}, {"{#DBUSER}": "MGMT_VIEW"}, {"{#DBUSER}": "OLAPSYS"}, {"{#DBUSER}": "ORACLE_OCM"}, {"{#DBUSER}": "ORDDATA"}, {"{#DBUSER}": "ORDPLUGINS"}, {"{#DBUSER}": "ORDSYS"}, {"{#DBUSER}": "OUTLN"}, {"{#DBUSER}": "OWBSYS"}, {"{#DBUSER}": "OWBSYS_AUDIT"}, {"{#DBUSER}": "SCOTT"}, {"{#DBUSER}": "SI_INFORMTN_SCHEMA"}, {"{#DBUSER}": "SPATIAL_CSW_ADMIN_USR"}, {"{#DBUSER}": "SPATIAL_WFS_ADMIN_USR"}, {"{#DBUSER}": "SYS"}, {"{#DBUSER}": "SYSMAN"}, {"{#DBUSER}": "SYSTEM"}, {"{#DBUSER}": "WMSYS"}, {"{#DBUSER}": "XDB"}, {"{#DBUSER}": "XS$NULL"}, {"{#DBUSER}": "ZABBIX"}]}', 'ns': '970680972'}
+3: {'itemid': '25524', 'clock': '1566812905', 'value': '{"data": [{"{#DBUSER}": "ANONYMOUS"}, {"{#DBUSER}": "APEX_030200"}, {"{#DBUSER}": "APEX_PUBLIC_USER"}, {"{#DBUSER}": "APPQOSSYS"}, {"{#DBUSER}": "CTXSYS"}, {"{#DBUSER}": "DBSNMP"}, {"{#DBUSER}": "DIP"}, {"{#DBUSER}": "EXFSYS"}, {"{#DBUSER}": "FLOWS_FILES"}, {"{#DBUSER}": "MDDATA"}, {"{#DBUSER}": "MDSYS"}, {"{#DBUSER}": "MGMT_VIEW"}, {"{#DBUSER}": "OLAPSYS"}, {"{#DBUSER}": "ORACLE_OCM"}, {"{#DBUSER}": "ORDDATA"}, {"{#DBUSER}": "ORDPLUGINS"}, {"{#DBUSER}": "ORDSYS"}, {"{#DBUSER}": "OUTLN"}, {"{#DBUSER}": "OWBSYS"}, {"{#DBUSER}": "OWBSYS_AUDIT"}, {"{#DBUSER}": "SCOTT"}, {"{#DBUSER}": "SI_INFORMTN_SCHEMA"}, {"{#DBUSER}": "SPATIAL_CSW_ADMIN_USR"}, {"{#DBUSER}": "SPATIAL_WFS_ADMIN_USR"}, {"{#DBUSER}": "SYS"}, {"{#DBUSER}": "SYSMAN"}, {"{#DBUSER}": "SYSTEM"}, {"{#DBUSER}": "WMSYS"}, {"{#DBUSER}": "XDB"}, {"{#DBUSER}": "XS$NULL"}, {"{#DBUSER}": "ZABBIX"}]}', 'ns': '90405640'}
+4: {'itemid': '25524', 'clock': '1566812844', 'value': '{"data": [{"{#DBUSER}": "ANONYMOUS"}, {"{#DBUSER}": "APEX_030200"}, {"{#DBUSER}": "APEX_PUBLIC_USER"}, {"{#DBUSER}": "APPQOSSYS"}, {"{#DBUSER}": "CTXSYS"}, {"{#DBUSER}": "DBSNMP"}, {"{#DBUSER}": "DIP"}, {"{#DBUSER}": "EXFSYS"}, {"{#DBUSER}": "FLOWS_FILES"}, {"{#DBUSER}": "MDDATA"}, {"{#DBUSER}": "MDSYS"}, {"{#DBUSER}": "MGMT_VIEW"}, {"{#DBUSER}": "OLAPSYS"}, {"{#DBUSER}": "ORACLE_OCM"}, {"{#DBUSER}": "ORDDATA"}, {"{#DBUSER}": "ORDPLUGINS"}, {"{#DBUSER}": "ORDSYS"}, {"{#DBUSER}": "OUTLN"}, {"{#DBUSER}": "OWBSYS"}, {"{#DBUSER}": "OWBSYS_AUDIT"}, {"{#DBUSER}": "SCOTT"}, {"{#DBUSER}": "SI_INFORMTN_SCHEMA"}, {"{#DBUSER}": "SPATIAL_CSW_ADMIN_USR"}, {"{#DBUSER}": "SPATIAL_WFS_ADMIN_USR"}, {"{#DBUSER}": "SYS"}, {"{#DBUSER}": "SYSMAN"}, {"{#DBUSER}": "SYSTEM"}, {"{#DBUSER}": "WMSYS"}, {"{#DBUSER}": "XDB"}, {"{#DBUSER}": "XS$NULL"}, {"{#DBUSER}": "ZABBIX"}]}', 'ns': '880497511'}
+5: {'itemid': '25524', 'clock': '1566812784', 'value': '{"data": [{"{#DBUSER}": "ANONYMOUS"}, {"{#DBUSER}": "APEX_030200"}, {"{#DBUSER}": "APEX_PUBLIC_USER"}, {"{#DBUSER}": "APPQOSSYS"}, {"{#DBUSER}": "CTXSYS"}, {"{#DBUSER}": "DBSNMP"}, {"{#DBUSER}": "DIP"}, {"{#DBUSER}": "EXFSYS"}, {"{#DBUSER}": "FLOWS_FILES"}, {"{#DBUSER}": "MDDATA"}, {"{#DBUSER}": "MDSYS"}, {"{#DBUSER}": "MGMT_VIEW"}, {"{#DBUSER}": "OLAPSYS"}, {"{#DBUSER}": "ORACLE_OCM"}, {"{#DBUSER}": "ORDDATA"}, {"{#DBUSER}": "ORDPLUGINS"}, {"{#DBUSER}": "ORDSYS"}, {"{#DBUSER}": "OUTLN"}, {"{#DBUSER}": "OWBSYS"}, {"{#DBUSER}": "OWBSYS_AUDIT"}, {"{#DBUSER}": "SCOTT"}, {"{#DBUSER}": "SI_INFORMTN_SCHEMA"}, {"{#DBUSER}": "SPATIAL_CSW_ADMIN_USR"}, {"{#DBUSER}": "SPATIAL_WFS_ADMIN_USR"}, {"{#DBUSER}": "SYS"}, {"{#DBUSER}": "SYSMAN"}, {"{#DBUSER}": "SYSTEM"}, {"{#DBUSER}": "WMSYS"}, {"{#DBUSER}": "XDB"}, {"{#DBUSER}": "XS$NULL"}, {"{#DBUSER}": "ZABBIX"}]}', 'ns': '886228045'}
+6: {'itemid': '25524', 'clock': '1566812724', 'value': '{"data": [{"{#DBUSER}": "ANONYMOUS"}, {"{#DBUSER}": "APEX_030200"}, {"{#DBUSER}": "APEX_PUBLIC_USER"}, {"{#DBUSER}": "APPQOSSYS"}, {"{#DBUSER}": "CTXSYS"}, {"{#DBUSER}": "DBSNMP"}, {"{#DBUSER}": "DIP"}, {"{#DBUSER}": "EXFSYS"}, {"{#DBUSER}": "FLOWS_FILES"}, {"{#DBUSER}": "MDDATA"}, {"{#DBUSER}": "MDSYS"}, {"{#DBUSER}": "MGMT_VIEW"}, {"{#DBUSER}": "OLAPSYS"}, {"{#DBUSER}": "ORACLE_OCM"}, {"{#DBUSER}": "ORDDATA"}, {"{#DBUSER}": "ORDPLUGINS"}, {"{#DBUSER}": "ORDSYS"}, {"{#DBUSER}": "OUTLN"}, {"{#DBUSER}": "OWBSYS"}, {"{#DBUSER}": "OWBSYS_AUDIT"}, {"{#DBUSER}": "SCOTT"}, {"{#DBUSER}": "SI_INFORMTN_SCHEMA"}, {"{#DBUSER}": "SPATIAL_CSW_ADMIN_USR"}, {"{#DBUSER}": "SPATIAL_WFS_ADMIN_USR"}, {"{#DBUSER}": "SYS"}, {"{#DBUSER}": "SYSMAN"}, {"{#DBUSER}": "SYSTEM"}, {"{#DBUSER}": "WMSYS"}, {"{#DBUSER}": "XDB"}, {"{#DBUSER}": "XS$NULL"}, {"{#DBUSER}": "ZABBIX"}]}', 'ns': '540263136'}
+7: {'itemid': '25524', 'clock': '1566812664', 'value': '{"data": [{"{#DBUSER}": "ANONYMOUS"}, {"{#DBUSER}": "APEX_030200"}, {"{#DBUSER}": "APEX_PUBLIC_USER"}, {"{#DBUSER}": "APPQOSSYS"}, {"{#DBUSER}": "CTXSYS"}, {"{#DBUSER}": "DBSNMP"}, {"{#DBUSER}": "DIP"}, {"{#DBUSER}": "EXFSYS"}, {"{#DBUSER}": "FLOWS_FILES"}, {"{#DBUSER}": "MDDATA"}, {"{#DBUSER}": "MDSYS"}, {"{#DBUSER}": "MGMT_VIEW"}, {"{#DBUSER}": "OLAPSYS"}, {"{#DBUSER}": "ORACLE_OCM"}, {"{#DBUSER}": "ORDDATA"}, {"{#DBUSER}": "ORDPLUGINS"}, {"{#DBUSER}": "ORDSYS"}, {"{#DBUSER}": "OUTLN"}, {"{#DBUSER}": "OWBSYS"}, {"{#DBUSER}": "OWBSYS_AUDIT"}, {"{#DBUSER}": "SCOTT"}, {"{#DBUSER}": "SI_INFORMTN_SCHEMA"}, {"{#DBUSER}": "SPATIAL_CSW_ADMIN_USR"}, {"{#DBUSER}": "SPATIAL_WFS_ADMIN_USR"}, {"{#DBUSER}": "SYS"}, {"{#DBUSER}": "SYSMAN"}, {"{#DBUSER}": "SYSTEM"}, {"{#DBUSER}": "WMSYS"}, {"{#DBUSER}": "XDB"}, {"{#DBUSER}": "XS$NULL"}, {"{#DBUSER}": "ZABBIX"}]}', 'ns': '354055195'}
+8: {'itemid': '25524', 'clock': '1566812604', 'value': '{"data": [{"{#DBUSER}": "ANONYMOUS"}, {"{#DBUSER}": "APEX_030200"}, {"{#DBUSER}": "APEX_PUBLIC_USER"}, {"{#DBUSER}": "APPQOSSYS"}, {"{#DBUSER}": "CTXSYS"}, {"{#DBUSER}": "DBSNMP"}, {"{#DBUSER}": "DIP"}, {"{#DBUSER}": "EXFSYS"}, {"{#DBUSER}": "FLOWS_FILES"}, {"{#DBUSER}": "MDDATA"}, {"{#DBUSER}": "MDSYS"}, {"{#DBUSER}": "MGMT_VIEW"}, {"{#DBUSER}": "OLAPSYS"}, {"{#DBUSER}": "ORACLE_OCM"}, {"{#DBUSER}": "ORDDATA"}, {"{#DBUSER}": "ORDPLUGINS"}, {"{#DBUSER}": "ORDSYS"}, {"{#DBUSER}": "OUTLN"}, {"{#DBUSER}": "OWBSYS"}, {"{#DBUSER}": "OWBSYS_AUDIT"}, {"{#DBUSER}": "SCOTT"}, {"{#DBUSER}": "SI_INFORMTN_SCHEMA"}, {"{#DBUSER}": "SPATIAL_CSW_ADMIN_USR"}, {"{#DBUSER}": "SPATIAL_WFS_ADMIN_USR"}, {"{#DBUSER}": "SYS"}, {"{#DBUSER}": "SYSMAN"}, {"{#DBUSER}": "SYSTEM"}, {"{#DBUSER}": "WMSYS"}, {"{#DBUSER}": "XDB"}, {"{#DBUSER}": "XS$NULL"}, {"{#DBUSER}": "ZABBIX"}]}', 'ns': '734844161'}
+9: {'itemid': '25524', 'clock': '1566812544', 'value': '{"data": [{"{#DBUSER}": "ANONYMOUS"}, {"{#DBUSER}": "APEX_030200"}, {"{#DBUSER}": "APEX_PUBLIC_USER"}, {"{#DBUSER}": "APPQOSSYS"}, {"{#DBUSER}": "CTXSYS"}, {"{#DBUSER}": "DBSNMP"}, {"{#DBUSER}": "DIP"}, {"{#DBUSER}": "EXFSYS"}, {"{#DBUSER}": "FLOWS_FILES"}, {"{#DBUSER}": "MDDATA"}, {"{#DBUSER}": "MDSYS"}, {"{#DBUSER}": "MGMT_VIEW"}, {"{#DBUSER}": "OLAPSYS"}, {"{#DBUSER}": "ORACLE_OCM"}, {"{#DBUSER}": "ORDDATA"}, {"{#DBUSER}": "ORDPLUGINS"}, {"{#DBUSER}": "ORDSYS"}, {"{#DBUSER}": "OUTLN"}, {"{#DBUSER}": "OWBSYS"}, {"{#DBUSER}": "OWBSYS_AUDIT"}, {"{#DBUSER}": "SCOTT"}, {"{#DBUSER}": "SI_INFORMTN_SCHEMA"}, {"{#DBUSER}": "SPATIAL_CSW_ADMIN_USR"}, {"{#DBUSER}": "SPATIAL_WFS_ADMIN_USR"}, {"{#DBUSER}": "SYS"}, {"{#DBUSER}": "SYSMAN"}, {"{#DBUSER}": "SYSTEM"}, {"{#DBUSER}": "WMSYS"}, {"{#DBUSER}": "XDB"}, {"{#DBUSER}": "XS$NULL"}, {"{#DBUSER}": "ZABBIX"}]}', 'ns': '464166075'}
+
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},show_users] history human format result==
+Try with Exception
+name 'long' is not defined
+
+
+
+hostDB1T1 user_status oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},user_status,SYSTEM] 1
+itemids ['25525', '25526', '25527']
+========================================
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},user_status,SYSTEM] history raw result==
+0: {'itemid': '25526', 'clock': '1566813086', 'value': 'OPEN', 'ns': '650052644'}
+1: {'itemid': '25526', 'clock': '1566813027', 'value': 'OPEN', 'ns': '25690079'}
+2: {'itemid': '25526', 'clock': '1566812967', 'value': 'OPEN', 'ns': '102858637'}
+3: {'itemid': '25526', 'clock': '1566812906', 'value': 'OPEN', 'ns': '238914623'}
+4: {'itemid': '25526', 'clock': '1566812847', 'value': 'OPEN', 'ns': '27016353'}
+5: {'itemid': '25526', 'clock': '1566812786', 'value': 'OPEN', 'ns': '969492016'}
+6: {'itemid': '25526', 'clock': '1566812726', 'value': 'OPEN', 'ns': '692545283'}
+7: {'itemid': '25526', 'clock': '1566812666', 'value': 'OPEN', 'ns': '499556788'}
+8: {'itemid': '25526', 'clock': '1566812606', 'value': 'OPEN', 'ns': '776519106'}
+9: {'itemid': '25526', 'clock': '1566812546', 'value': 'OPEN', 'ns': '474933853'}
+
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},user_status,SYSTEM] history human format result==
+Try with Exception
+name 'long' is not defined
+
+
+hostDB2T1 user_status oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},user_status,SYSTEM] 1
+itemids ['25525', '25526', '25527']
+========================================
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},user_status,SYSTEM] history raw result==
+0: {'itemid': '25527', 'clock': '1566813087', 'value': 'OPEN', 'ns': '800643075'}
+1: {'itemid': '25527', 'clock': '1566813027', 'value': 'OPEN', 'ns': '184571428'}
+2: {'itemid': '25527', 'clock': '1566812967', 'value': 'OPEN', 'ns': '282314490'}
+3: {'itemid': '25527', 'clock': '1566812907', 'value': 'OPEN', 'ns': '388852913'}
+4: {'itemid': '25527', 'clock': '1566812847', 'value': 'OPEN', 'ns': '194212704'}
+5: {'itemid': '25527', 'clock': '1566812788', 'value': 'OPEN', 'ns': '22678747'}
+6: {'itemid': '25527', 'clock': '1566812727', 'value': 'OPEN', 'ns': '840712260'}
+7: {'itemid': '25527', 'clock': '1566812667', 'value': 'OPEN', 'ns': '650327884'}
+8: {'itemid': '25527', 'clock': '1566812607', 'value': 'OPEN', 'ns': '747507923'}
+9: {'itemid': '25527', 'clock': '1566812547', 'value': 'OPEN', 'ns': '615513832'}
+
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},user_status,SYSTEM] history human format result==
+Try with Exception
+name 'long' is not defined
+
+
+
+hostDB1T1 tablespace oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},tablespace,SYSTEM] 3
+itemids ['25528', '25529', '25530']
+========================================
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},tablespace,SYSTEM] history raw result==
+0: {'itemid': '25529', 'clock': '1566813089', 'value': '3', 'ns': '834908442'}
+1: {'itemid': '25529', 'clock': '1566813029', 'value': '3', 'ns': '354703548'}
+2: {'itemid': '25529', 'clock': '1566812969', 'value': '3', 'ns': '464654118'}
+3: {'itemid': '25529', 'clock': '1566812909', 'value': '3', 'ns': '557666359'}
+4: {'itemid': '25529', 'clock': '1566812849', 'value': '3', 'ns': '387440984'}
+5: {'itemid': '25529', 'clock': '1566812789', 'value': '3', 'ns': '188841952'}
+6: {'itemid': '25529', 'clock': '1566812730', 'value': '3', 'ns': '7883364'}
+7: {'itemid': '25529', 'clock': '1566812669', 'value': '3', 'ns': '829963146'}
+8: {'itemid': '25529', 'clock': '1566812609', 'value': '3', 'ns': '905530180'}
+9: {'itemid': '25529', 'clock': '1566812549', 'value': '3', 'ns': '694935246'}
+
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},tablespace,SYSTEM] history human format result==
+Try with Exception
+name 'long' is not defined
+
+
+hostDB2T1 tablespace oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},tablespace,SYSTEM] 3
+itemids ['25528', '25529', '25530']
+========================================
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},tablespace,SYSTEM] history raw result==
+0: {'itemid': '25530', 'clock': '1566813090', 'value': '3', 'ns': '823156631'}
+1: {'itemid': '25530', 'clock': '1566813030', 'value': '3', 'ns': '518783568'}
+2: {'itemid': '25530', 'clock': '1566812970', 'value': '3', 'ns': '642461857'}
+3: {'itemid': '25530', 'clock': '1566812910', 'value': '3', 'ns': '735160428'}
+4: {'itemid': '25530', 'clock': '1566812850', 'value': '3', 'ns': '564528899'}
+5: {'itemid': '25530', 'clock': '1566812790', 'value': '3', 'ns': '368700010'}
+6: {'itemid': '25530', 'clock': '1566812730', 'value': '3', 'ns': '185676826'}
+7: {'itemid': '25530', 'clock': '1566812671', 'value': '3', 'ns': '1917217'}
+8: {'itemid': '25530', 'clock': '1566812610', 'value': '3', 'ns': '917420023'}
+9: {'itemid': '25530', 'clock': '1566812550', 'value': '3', 'ns': '168973514'}
+
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},tablespace,SYSTEM] history human format result==
+Try with Exception
+name 'long' is not defined
+
+
+
+hostDB1T1 query_sessions oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},query_sessions] 3
+itemids ['25531', '25532', '25533']
+========================================
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},query_sessions] history raw result==
+0: {'itemid': '25532', 'clock': '1566813092', 'value': '5', 'ns': '967430501'}
+1: {'itemid': '25532', 'clock': '1566813032', 'value': '5', 'ns': '828776499'}
+2: {'itemid': '25532', 'clock': '1566812972', 'value': '5', 'ns': '804234300'}
+3: {'itemid': '25532', 'clock': '1566812912', 'value': '5', 'ns': '908930497'}
+4: {'itemid': '25532', 'clock': '1566812852', 'value': '5', 'ns': '728442170'}
+5: {'itemid': '25532', 'clock': '1566812792', 'value': '5', 'ns': '159262122'}
+6: {'itemid': '25532', 'clock': '1566812732', 'value': '5', 'ns': '366963088'}
+7: {'itemid': '25532', 'clock': '1566812672', 'value': '5', 'ns': '178002121'}
+8: {'itemid': '25532', 'clock': '1566812612', 'value': '5', 'ns': '940853029'}
+9: {'itemid': '25532', 'clock': '1566812552', 'value': '5', 'ns': '327108265'}
+
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},query_sessions] history human format result==
+Try with Exception
+name 'long' is not defined
+
+
+hostDB2T1 query_sessions oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},query_sessions] 3
+itemids ['25531', '25532', '25533']
+========================================
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},query_sessions] history raw result==
+0: {'itemid': '25533', 'clock': '1566813093', 'value': '5', 'ns': '990882590'}
+1: {'itemid': '25533', 'clock': '1566813033', 'value': '5', 'ns': '994333807'}
+2: {'itemid': '25533', 'clock': '1566812973', 'value': '5', 'ns': '970509956'}
+3: {'itemid': '25533', 'clock': '1566812914', 'value': '5', 'ns': '72862817'}
+4: {'itemid': '25533', 'clock': '1566812853', 'value': '5', 'ns': '905994592'}
+5: {'itemid': '25533', 'clock': '1566812793', 'value': '5', 'ns': '319590530'}
+6: {'itemid': '25533', 'clock': '1566812733', 'value': '5', 'ns': '536203024'}
+7: {'itemid': '25533', 'clock': '1566812673', 'value': '5', 'ns': '159389769'}
+8: {'itemid': '25533', 'clock': '1566812614', 'value': '5', 'ns': '67050217'}
+9: {'itemid': '25533', 'clock': '1566812553', 'value': '5', 'ns': '546815894'}
+
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},query_sessions] history human format result==
+Try with Exception
+name 'long' is not defined
+
+
+
+hostDB1T1 query_lock oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},query_lock] 3
+itemids ['25534', '25535', '25536']
+========================================
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},query_lock] history raw result==
+0: {'itemid': '25535', 'clock': '1566813096', 'value': '0', 'ns': '85842373'}
+1: {'itemid': '25535', 'clock': '1566813036', 'value': '0', 'ns': '206404353'}
+2: {'itemid': '25535', 'clock': '1566812976', 'value': '0', 'ns': '250330754'}
+3: {'itemid': '25535', 'clock': '1566812915', 'value': '0', 'ns': '335786628'}
+4: {'itemid': '25535', 'clock': '1566812856', 'value': '0', 'ns': '150932939'}
+5: {'itemid': '25535', 'clock': '1566812795', 'value': '0', 'ns': '565895972'}
+6: {'itemid': '25535', 'clock': '1566812735', 'value': '0', 'ns': '809188982'}
+7: {'itemid': '25535', 'clock': '1566812675', 'value': '0', 'ns': '442221320'}
+8: {'itemid': '25535', 'clock': '1566812615', 'value': '0', 'ns': '318503254'}
+9: {'itemid': '25535', 'clock': '1566812555', 'value': '0', 'ns': '815438314'}
+
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},query_lock] history human format result==
+Try with Exception
+name 'long' is not defined
+
+
+hostDB2T1 query_lock oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},query_lock] 3
+itemids ['25534', '25535', '25536']
+========================================
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},query_lock] history raw result==
+0: {'itemid': '25536', 'clock': '1566813096', 'value': '0', 'ns': '333149443'}
+1: {'itemid': '25536', 'clock': '1566813036', 'value': '0', 'ns': '460022744'}
+2: {'itemid': '25536', 'clock': '1566812976', 'value': '0', 'ns': '501809467'}
+3: {'itemid': '25536', 'clock': '1566812916', 'value': '0', 'ns': '585843046'}
+4: {'itemid': '25536', 'clock': '1566812856', 'value': '0', 'ns': '401672421'}
+5: {'itemid': '25536', 'clock': '1566812796', 'value': '0', 'ns': '254932559'}
+6: {'itemid': '25536', 'clock': '1566812737', 'value': '0', 'ns': '68863043'}
+7: {'itemid': '25536', 'clock': '1566812676', 'value': '0', 'ns': '432697395'}
+8: {'itemid': '25536', 'clock': '1566812616', 'value': '0', 'ns': '573901181'}
+9: {'itemid': '25536', 'clock': '1566812556', 'value': '0', 'ns': '885929833'}
+
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},query_lock] history human format result==
+Try with Exception
+name 'long' is not defined
+
+
+
+hostDB1T1 deadlocks oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},deadlocks] 3
+itemids ['25537', '25538', '25539']
+========================================
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},deadlocks] history raw result==
+0: {'itemid': '25538', 'clock': '1566813098', 'value': '0', 'ns': '605834529'}
+1: {'itemid': '25538', 'clock': '1566813038', 'value': '0', 'ns': '733058512'}
+2: {'itemid': '25538', 'clock': '1566812978', 'value': '0', 'ns': '762676470'}
+3: {'itemid': '25538', 'clock': '1566812918', 'value': '0', 'ns': '849589086'}
+4: {'itemid': '25538', 'clock': '1566812858', 'value': '0', 'ns': '664934087'}
+5: {'itemid': '25538', 'clock': '1566812798', 'value': '0', 'ns': '522575607'}
+6: {'itemid': '25538', 'clock': '1566812738', 'value': '0', 'ns': '346913627'}
+7: {'itemid': '25538', 'clock': '1566812678', 'value': '0', 'ns': '701235547'}
+8: {'itemid': '25538', 'clock': '1566812618', 'value': '0', 'ns': '834939292'}
+9: {'itemid': '25538', 'clock': '1566812558', 'value': '0', 'ns': '960165459'}
+
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},deadlocks] history human format result==
+Try with Exception
+name 'long' is not defined
+
+
+hostDB2T1 deadlocks oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},deadlocks] 3
+itemids ['25537', '25538', '25539']
+========================================
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},deadlocks] history raw result==
+0: {'itemid': '25539', 'clock': '1566813099', 'value': '0', 'ns': '909853574'}
+1: {'itemid': '25539', 'clock': '1566813039', 'value': '0', 'ns': '999886599'}
+2: {'itemid': '25539', 'clock': '1566812980', 'value': '0', 'ns': '36148149'}
+3: {'itemid': '25539', 'clock': '1566812919', 'value': '0', 'ns': '265304968'}
+4: {'itemid': '25539', 'clock': '1566812859', 'value': '0', 'ns': '930441044'}
+5: {'itemid': '25539', 'clock': '1566812799', 'value': '0', 'ns': '640590671'}
+6: {'itemid': '25539', 'clock': '1566812739', 'value': '0', 'ns': '607717354'}
+7: {'itemid': '25539', 'clock': '1566812679', 'value': '0', 'ns': '717420462'}
+8: {'itemid': '25539', 'clock': '1566812620', 'value': '0', 'ns': '97722917'}
+9: {'itemid': '25539', 'clock': '1566812560', 'value': '0', 'ns': '80162358'}
+
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},deadlocks] history human format result==
+Try with Exception
+name 'long' is not defined
+
+
+
+hostDB1T1 query_redologs oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},query_redologs] 3
+itemids ['25540', '25541', '25542']
+========================================
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},query_redologs] history raw result==
+0: {'itemid': '25541', 'clock': '1566813102', 'value': '0', 'ns': '86300874'}
+1: {'itemid': '25541', 'clock': '1566813042', 'value': '0', 'ns': '158037083'}
+2: {'itemid': '25541', 'clock': '1566812981', 'value': '0', 'ns': '240054276'}
+3: {'itemid': '25541', 'clock': '1566812921', 'value': '0', 'ns': '441479029'}
+4: {'itemid': '25541', 'clock': '1566812862', 'value': '0', 'ns': '135425092'}
+5: {'itemid': '25541', 'clock': '1566812801', 'value': '0', 'ns': '715640528'}
+6: {'itemid': '25541', 'clock': '1566812741', 'value': '0', 'ns': '793051024'}
+7: {'itemid': '25541', 'clock': '1566812681', 'value': '0', 'ns': '881788133'}
+8: {'itemid': '25541', 'clock': '1566812621', 'value': '0', 'ns': '269207707'}
+9: {'itemid': '25541', 'clock': '1566812561', 'value': '0', 'ns': '258206582'}
+
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},query_redologs] history human format result==
+Try with Exception
+name 'long' is not defined
+
+
+hostDB2T1 query_redologs oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},query_redologs] 3
+itemids ['25540', '25541', '25542']
+========================================
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},query_redologs] history raw result==
+0: {'itemid': '25542', 'clock': '1566813102', 'value': '0', 'ns': '260524155'}
+1: {'itemid': '25542', 'clock': '1566813042', 'value': '0', 'ns': '332385531'}
+2: {'itemid': '25542', 'clock': '1566812982', 'value': '0', 'ns': '421998632'}
+3: {'itemid': '25542', 'clock': '1566812922', 'value': '0', 'ns': '620157656'}
+4: {'itemid': '25542', 'clock': '1566812862', 'value': '0', 'ns': '311482701'}
+5: {'itemid': '25542', 'clock': '1566812802', 'value': '0', 'ns': '744346586'}
+6: {'itemid': '25542', 'clock': '1566812742', 'value': '0', 'ns': '966428371'}
+7: {'itemid': '25542', 'clock': '1566812682', 'value': '0', 'ns': '997596821'}
+8: {'itemid': '25542', 'clock': '1566812622', 'value': '0', 'ns': '448999015'}
+9: {'itemid': '25542', 'clock': '1566812562', 'value': '0', 'ns': '436000963'}
+
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},query_redologs] history human format result==
+Try with Exception
+name 'long' is not defined
+
+
+
+hostDB1T1 query_rollbacks oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},query_rollbacks] 3
+itemids ['25543', '25544', '25545']
+========================================
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},query_rollbacks] history raw result==
+0: {'itemid': '25544', 'clock': '1566813104', 'value': '0', 'ns': '467660869'}
+1: {'itemid': '25544', 'clock': '1566813044', 'value': '0', 'ns': '501585046'}
+2: {'itemid': '25544', 'clock': '1566812984', 'value': '0', 'ns': '588676106'}
+3: {'itemid': '25544', 'clock': '1566812924', 'value': '0', 'ns': '790633820'}
+4: {'itemid': '25544', 'clock': '1566812864', 'value': '0', 'ns': '481644627'}
+5: {'itemid': '25544', 'clock': '1566812804', 'value': '0', 'ns': '809826985'}
+6: {'itemid': '25544', 'clock': '1566812745', 'value': '0', 'ns': '27746841'}
+7: {'itemid': '25544', 'clock': '1566812685', 'value': '0', 'ns': '49180828'}
+8: {'itemid': '25544', 'clock': '1566812624', 'value': '0', 'ns': '619924128'}
+9: {'itemid': '25544', 'clock': '1566812564', 'value': '0', 'ns': '612583331'}
+
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},query_rollbacks] history human format result==
+Try with Exception
+name 'long' is not defined
+
+
+hostDB2T1 query_rollbacks oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},query_rollbacks] 3
+itemids ['25543', '25544', '25545']
+========================================
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},query_rollbacks] history raw result==
+0: {'itemid': '25545', 'clock': '1566813105', 'value': '0', 'ns': '630941266'}
+1: {'itemid': '25545', 'clock': '1566813045', 'value': '0', 'ns': '161659774'}
+2: {'itemid': '25545', 'clock': '1566812985', 'value': '0', 'ns': '751512800'}
+3: {'itemid': '25545', 'clock': '1566812925', 'value': '0', 'ns': '955250154'}
+4: {'itemid': '25545', 'clock': '1566812865', 'value': '0', 'ns': '686641390'}
+5: {'itemid': '25545', 'clock': '1566812805', 'value': '0', 'ns': '880983437'}
+6: {'itemid': '25545', 'clock': '1566812745', 'value': '0', 'ns': '190864853'}
+7: {'itemid': '25545', 'clock': '1566812685', 'value': '0', 'ns': '212007431'}
+8: {'itemid': '25545', 'clock': '1566812625', 'value': '0', 'ns': '788570803'}
+9: {'itemid': '25545', 'clock': '1566812565', 'value': '0', 'ns': '778902351'}
+
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},query_rollbacks] history human format result==
+Try with Exception
+name 'long' is not defined
+
+
+
+hostDB1T1 check_archive oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},check_archive,DATA] 3
+itemids ['25546', '25547', '25548']
+========================================
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},check_archive,DATA] history raw result==
+0: {'itemid': '25547', 'clock': '1566813107', 'value': '2', 'ns': '813216743'}
+1: {'itemid': '25547', 'clock': '1566813047', 'value': '2', 'ns': '206273445'}
+2: {'itemid': '25547', 'clock': '1566812987', 'value': '2', 'ns': '929698316'}
+3: {'itemid': '25547', 'clock': '1566812928', 'value': '2', 'ns': '20770315'}
+4: {'itemid': '25547', 'clock': '1566812867', 'value': '2', 'ns': '858684648'}
+5: {'itemid': '25547', 'clock': '1566812807', 'value': '2', 'ns': '917927252'}
+6: {'itemid': '25547', 'clock': '1566812747', 'value': '2', 'ns': '366163268'}
+7: {'itemid': '25547', 'clock': '1566812687', 'value': '2', 'ns': '393165637'}
+8: {'itemid': '25547', 'clock': '1566812627', 'value': '2', 'ns': '969508129'}
+9: {'itemid': '25547', 'clock': '1566812567', 'value': '2', 'ns': '952984228'}
+
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},check_archive,DATA] history human format result==
+Try with Exception
+name 'long' is not defined
+
+
+hostDB2T1 check_archive oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},check_archive,DATA] 3
+itemids ['25546', '25547', '25548']
+========================================
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},check_archive,DATA] history raw result==
+0: {'itemid': '25548', 'clock': '1566813109', 'value': '2', 'ns': '21550297'}
+1: {'itemid': '25548', 'clock': '1566813048', 'value': '2', 'ns': '329801567'}
+2: {'itemid': '25548', 'clock': '1566812989', 'value': '2', 'ns': '124177146'}
+3: {'itemid': '25548', 'clock': '1566812928', 'value': '2', 'ns': '206162619'}
+4: {'itemid': '25548', 'clock': '1566812869', 'value': '2', 'ns': '43235405'}
+5: {'itemid': '25548', 'clock': '1566812808', 'value': '2', 'ns': '984251815'}
+6: {'itemid': '25548', 'clock': '1566812748', 'value': '2', 'ns': '548910811'}
+7: {'itemid': '25548', 'clock': '1566812688', 'value': '2', 'ns': '574760656'}
+8: {'itemid': '25548', 'clock': '1566812629', 'value': '2', 'ns': '101410979'}
+9: {'itemid': '25548', 'clock': '1566812569', 'value': '2', 'ns': '60014447'}
+
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},check_archive,DATA] history human format result==
+Try with Exception
+name 'long' is not defined
+
+
+
+hostDB1T1 logfilesync oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},logfilesync] 3
+itemids ['25549', '25550', '25551']
+========================================
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},logfilesync] history raw result==
+0: {'itemid': '25550', 'clock': '1566813110', 'value': '56751', 'ns': '625303964'}
+1: {'itemid': '25550', 'clock': '1566813050', 'value': '56740', 'ns': '664199477'}
+2: {'itemid': '25550', 'clock': '1566812990', 'value': '56730', 'ns': '465093536'}
+3: {'itemid': '25550', 'clock': '1566812930', 'value': '56721', 'ns': '550485261'}
+4: {'itemid': '25550', 'clock': '1566812870', 'value': '56711', 'ns': '472695645'}
+5: {'itemid': '25550', 'clock': '1566812811', 'value': '56700', 'ns': '219857346'}
+6: {'itemid': '25550', 'clock': '1566812751', 'value': '56689', 'ns': '152422475'}
+7: {'itemid': '25550', 'clock': '1566812691', 'value': '56679', 'ns': '200002382'}
+8: {'itemid': '25550', 'clock': '1566812630', 'value': '56668', 'ns': '711997160'}
+9: {'itemid': '25550', 'clock': '1566812570', 'value': '56659', 'ns': '455165757'}
+
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},logfilesync] history human format result==
+Try with Exception
+name 'long' is not defined
+
+
+hostDB2T1 logfilesync oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},logfilesync] 3
+itemids ['25549', '25550', '25551']
+========================================
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},logfilesync] history raw result==
+0: {'itemid': '25551', 'clock': '1566813112', 'value': '18897', 'ns': '220437964'}
+1: {'itemid': '25551', 'clock': '1566813051', 'value': '18887', 'ns': '833446284'}
+2: {'itemid': '25551', 'clock': '1566812992', 'value': '18877', 'ns': '306496458'}
+3: {'itemid': '25551', 'clock': '1566812932', 'value': '18867', 'ns': '327967846'}
+4: {'itemid': '25551', 'clock': '1566812872', 'value': '18856', 'ns': '269578087'}
+5: {'itemid': '25551', 'clock': '1566812811', 'value': '18840', 'ns': '487502459'}
+6: {'itemid': '25551', 'clock': '1566812751', 'value': '18829', 'ns': '482269145'}
+7: {'itemid': '25551', 'clock': '1566812691', 'value': '18819', 'ns': '539374198'}
+8: {'itemid': '25551', 'clock': '1566812631', 'value': '18809', 'ns': '334041534'}
+9: {'itemid': '25551', 'clock': '1566812572', 'value': '18798', 'ns': '286099048'}
+
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},logfilesync] history human format result==
+Try with Exception
+name 'long' is not defined
+
+
+
+hostDB1T1 bufbusywaits oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},bufbusywaits] 3
+itemids ['25552', '25553', '25554']
+========================================
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},bufbusywaits] history raw result==
+0: {'itemid': '25553', 'clock': '1566813113', 'value': '5', 'ns': '693248504'}
+1: {'itemid': '25553', 'clock': '1566813054', 'value': '5', 'ns': '73787667'}
+2: {'itemid': '25553', 'clock': '1566812993', 'value': '5', 'ns': '791627106'}
+3: {'itemid': '25553', 'clock': '1566812933', 'value': '5', 'ns': '580570222'}
+4: {'itemid': '25553', 'clock': '1566812873', 'value': '5', 'ns': '496192802'}
+5: {'itemid': '25553', 'clock': '1566812813', 'value': '5', 'ns': '868002106'}
+6: {'itemid': '25553', 'clock': '1566812754', 'value': '5', 'ns': '225486861'}
+7: {'itemid': '25553', 'clock': '1566812694', 'value': '5', 'ns': '289021931'}
+8: {'itemid': '25553', 'clock': '1566812634', 'value': '5', 'ns': '139621708'}
+9: {'itemid': '25553', 'clock': '1566812573', 'value': '5', 'ns': '771855100'}
+
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},bufbusywaits] history human format result==
+Try with Exception
+name 'long' is not defined
+
+
+hostDB2T1 bufbusywaits oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},bufbusywaits] 3
+itemids ['25552', '25553', '25554']
+========================================
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},bufbusywaits] history raw result==
+0: {'itemid': '25554', 'clock': '1566813115', 'value': '4', 'ns': '37434713'}
+1: {'itemid': '25554', 'clock': '1566813054', 'value': '4', 'ns': '404172758'}
+2: {'itemid': '25554', 'clock': '1566812995', 'value': '4', 'ns': '124783545'}
+3: {'itemid': '25554', 'clock': '1566812934', 'value': '4', 'ns': '664951990'}
+4: {'itemid': '25554', 'clock': '1566812874', 'value': '4', 'ns': '609599203'}
+5: {'itemid': '25554', 'clock': '1566812815', 'value': '4', 'ns': '132770260'}
+6: {'itemid': '25554', 'clock': '1566812754', 'value': '4', 'ns': '707823639'}
+7: {'itemid': '25554', 'clock': '1566812694', 'value': '4', 'ns': '772060921'}
+8: {'itemid': '25554', 'clock': '1566812634', 'value': '4', 'ns': '625923192'}
+9: {'itemid': '25554', 'clock': '1566812575', 'value': '4', 'ns': '264529680'}
+
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},bufbusywaits] history human format result==
+Try with Exception
+name 'long' is not defined
+
+
+
+hostDB1T1 lastarclog oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},lastarclog] 3
+itemids ['25555', '25556', '25557']
+========================================
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},lastarclog] history raw result==
+0: {'itemid': '25556', 'clock': '1566813116', 'value': '32', 'ns': '231411986'}
+1: {'itemid': '25556', 'clock': '1566813056', 'value': '32', 'ns': '332391607'}
+2: {'itemid': '25556', 'clock': '1566812996', 'value': '32', 'ns': '298525527'}
+3: {'itemid': '25556', 'clock': '1566812936', 'value': '32', 'ns': '893222385'}
+4: {'itemid': '25556', 'clock': '1566812876', 'value': '32', 'ns': '794369801'}
+5: {'itemid': '25556', 'clock': '1566812816', 'value': '32', 'ns': '304392239'}
+6: {'itemid': '25556', 'clock': '1566812757', 'value': '32', 'ns': '37460899'}
+7: {'itemid': '25556', 'clock': '1566812697', 'value': '32', 'ns': '111030299'}
+8: {'itemid': '25556', 'clock': '1566812636', 'value': '32', 'ns': '979832448'}
+9: {'itemid': '25556', 'clock': '1566812576', 'value': '32', 'ns': '597841778'}
+
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},lastarclog] history human format result==
+Try with Exception
+name 'long' is not defined
+
+
+hostDB2T1 lastarclog oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},lastarclog] 3
+itemids ['25555', '25556', '25557']
+========================================
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},lastarclog] history raw result==
+0: {'itemid': '25557', 'clock': '1566813117', 'value': '32', 'ns': '422246540'}
+1: {'itemid': '25557', 'clock': '1566813057', 'value': '32', 'ns': '659973113'}
+2: {'itemid': '25557', 'clock': '1566812997', 'value': '32', 'ns': '460733751'}
+3: {'itemid': '25557', 'clock': '1566812938', 'value': '32', 'ns': '57431411'}
+4: {'itemid': '25557', 'clock': '1566812878', 'value': '32', 'ns': '22459855'}
+5: {'itemid': '25557', 'clock': '1566812817', 'value': '32', 'ns': '645162639'}
+6: {'itemid': '25557', 'clock': '1566812757', 'value': '32', 'ns': '277912083'}
+7: {'itemid': '25557', 'clock': '1566812697', 'value': '32', 'ns': '446695465'}
+8: {'itemid': '25557', 'clock': '1566812638', 'value': '32', 'ns': '135439370'}
+9: {'itemid': '25557', 'clock': '1566812578', 'value': '32', 'ns': '1194703'}
+
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},lastarclog] history human format result==
+Try with Exception
+name 'long' is not defined
+
+
+
+hostDB1T1 redowrites oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},redowrites] 3
+itemids ['25558', '25559', '25560']
+========================================
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},redowrites] history raw result==
+0: {'itemid': '25559', 'clock': '1566813059', 'value': '349695', 'ns': '933522571'}
+1: {'itemid': '25559', 'clock': '1566812999', 'value': '349636', 'ns': '728057866'}
+2: {'itemid': '25559', 'clock': '1566812939', 'value': '349576', 'ns': '274807436'}
+3: {'itemid': '25559', 'clock': '1566812879', 'value': '349517', 'ns': '289809718'}
+4: {'itemid': '25559', 'clock': '1566812820', 'value': '349459', 'ns': '132033665'}
+5: {'itemid': '25559', 'clock': '1566812759', 'value': '349398', 'ns': '706743316'}
+6: {'itemid': '25559', 'clock': '1566812699', 'value': '349337', 'ns': '712783115'}
+7: {'itemid': '25559', 'clock': '1566812639', 'value': '349281', 'ns': '371399229'}
+8: {'itemid': '25559', 'clock': '1566812579', 'value': '349220', 'ns': '416764510'}
+9: {'itemid': '25559', 'clock': '1566812520', 'value': '349160', 'ns': '188373288'}
+
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},redowrites] history human format result==
+Try with Exception
+name 'long' is not defined
+
+
+hostDB2T1 redowrites oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},redowrites] 3
+itemids ['25558', '25559', '25560']
+========================================
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},redowrites] history raw result==
+0: {'itemid': '25560', 'clock': '1566813061', 'value': '154056', 'ns': '67677566'}
+1: {'itemid': '25560', 'clock': '1566813000', 'value': '153997', 'ns': '999663034'}
+2: {'itemid': '25560', 'clock': '1566812940', 'value': '153936', 'ns': '461718736'}
+3: {'itemid': '25560', 'clock': '1566812880', 'value': '153871', 'ns': '697812826'}
+4: {'itemid': '25560', 'clock': '1566812820', 'value': '153811', 'ns': '405751116'}
+5: {'itemid': '25560', 'clock': '1566812761', 'value': '153753', 'ns': '119946408'}
+6: {'itemid': '25560', 'clock': '1566812700', 'value': '153695', 'ns': '420523404'}
+7: {'itemid': '25560', 'clock': '1566812640', 'value': '153633', 'ns': '552273273'}
+8: {'itemid': '25560', 'clock': '1566812580', 'value': '153574', 'ns': '684680362'}
+9: {'itemid': '25560', 'clock': '1566812520', 'value': '153518', 'ns': '599942326'}
+
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},redowrites] history human format result==
+Try with Exception
+name 'long' is not defined
+
+
+
+hostDB1T1 rollbacks oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},rollbacks] 3
+itemids ['25561', '25562', '25563']
+========================================
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},rollbacks] history raw result==
+0: {'itemid': '25562', 'clock': '1566813062', 'value': '149647', 'ns': '342071160'}
+1: {'itemid': '25562', 'clock': '1566813003', 'value': '149619', 'ns': '179915980'}
+2: {'itemid': '25562', 'clock': '1566812942', 'value': '149589', 'ns': '687108472'}
+3: {'itemid': '25562', 'clock': '1566812883', 'value': '149560', 'ns': '109358398'}
+4: {'itemid': '25562', 'clock': '1566812823', 'value': '149532', 'ns': '160005280'}
+5: {'itemid': '25562', 'clock': '1566812762', 'value': '149503', 'ns': '394298214'}
+6: {'itemid': '25562', 'clock': '1566812702', 'value': '149474', 'ns': '858485378'}
+7: {'itemid': '25562', 'clock': '1566812642', 'value': '149444', 'ns': '893411871'}
+8: {'itemid': '25562', 'clock': '1566812583', 'value': '149415', 'ns': '123694451'}
+9: {'itemid': '25562', 'clock': '1566812522', 'value': '149386', 'ns': '868458564'}
+
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},rollbacks] history human format result==
+Try with Exception
+name 'long' is not defined
+
+
+hostDB2T1 rollbacks oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},rollbacks] 3
+itemids ['25561', '25562', '25563']
+========================================
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},rollbacks] history raw result==
+0: {'itemid': '25563', 'clock': '1566813063', 'value': '50076', 'ns': '935558582'}
+1: {'itemid': '25563', 'clock': '1566813003', 'value': '50046', 'ns': '452392004'}
+2: {'itemid': '25563', 'clock': '1566812943', 'value': '50018', 'ns': '951697463'}
+3: {'itemid': '25563', 'clock': '1566812883', 'value': '49988', 'ns': '375234469'}
+4: {'itemid': '25563', 'clock': '1566812823', 'value': '49959', 'ns': '421784427'}
+5: {'itemid': '25563', 'clock': '1566812763', 'value': '49931', 'ns': '653595240'}
+6: {'itemid': '25563', 'clock': '1566812704', 'value': '49902', 'ns': '131167957'}
+7: {'itemid': '25563', 'clock': '1566812644', 'value': '49873', 'ns': '168836084'}
+8: {'itemid': '25563', 'clock': '1566812583', 'value': '49843', 'ns': '383994788'}
+9: {'itemid': '25563', 'clock': '1566812523', 'value': '49815', 'ns': '463036490'}
+
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},rollbacks] history human format result==
+Try with Exception
+name 'long' is not defined
+
+
+
+hostDB1T1 commits oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},commits] 3
+itemids ['25564', '25565', '25566']
+========================================
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},commits] history raw result==
+0: {'itemid': '25565', 'clock': '1566813066', 'value': '5372', 'ns': '104151778'}
+1: {'itemid': '25565', 'clock': '1566813005', 'value': '5372', 'ns': '904161051'}
+2: {'itemid': '25565', 'clock': '1566812946', 'value': '5372', 'ns': '218816533'}
+3: {'itemid': '25565', 'clock': '1566812885', 'value': '5372', 'ns': '578800746'}
+4: {'itemid': '25565', 'clock': '1566812825', 'value': '5372', 'ns': '874372143'}
+5: {'itemid': '25565', 'clock': '1566812765', 'value': '5372', 'ns': '730799824'}
+6: {'itemid': '25565', 'clock': '1566812705', 'value': '5372', 'ns': '404854367'}
+7: {'itemid': '25565', 'clock': '1566812645', 'value': '5372', 'ns': '569290784'}
+8: {'itemid': '25565', 'clock': '1566812585', 'value': '5369', 'ns': '559980069'}
+9: {'itemid': '25565', 'clock': '1566812525', 'value': '5369', 'ns': '903602691'}
+
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},commits] history human format result==
+Try with Exception
+name 'long' is not defined
+
+
+hostDB2T1 commits oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},commits] 3
+itemids ['25564', '25565', '25566']
+========================================
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},commits] history raw result==
+0: {'itemid': '25566', 'clock': '1566813066', 'value': '6502', 'ns': '280158235'}
+1: {'itemid': '25566', 'clock': '1566813006', 'value': '6502', 'ns': '325166456'}
+2: {'itemid': '25566', 'clock': '1566812946', 'value': '6502', 'ns': '475535559'}
+3: {'itemid': '25566', 'clock': '1566812886', 'value': '6499', 'ns': '835446751'}
+4: {'itemid': '25566', 'clock': '1566812826', 'value': '6499', 'ns': '315935825'}
+5: {'itemid': '25566', 'clock': '1566812767', 'value': '6499', 'ns': '93900936'}
+6: {'itemid': '25566', 'clock': '1566812706', 'value': '6499', 'ns': '430210383'}
+7: {'itemid': '25566', 'clock': '1566812646', 'value': '6499', 'ns': '981879491'}
+8: {'itemid': '25566', 'clock': '1566812586', 'value': '6499', 'ns': '829240201'}
+9: {'itemid': '25566', 'clock': '1566812527', 'value': '6499', 'ns': '168926138'}
+
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},commits] history human format result==
+Try with Exception
+name 'long' is not defined
+
+
+
+hostDB1T1 dbfilesize oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},dbfilesize] 3
+itemids ['25567', '25568', '25569']
+========================================
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},dbfilesize] history raw result==
+0: {'itemid': '25568', 'clock': '1566813068', 'value': '1913651200', 'ns': '446442721'}
+1: {'itemid': '25568', 'clock': '1566813008', 'value': '1913651200', 'ns': '661542722'}
+2: {'itemid': '25568', 'clock': '1566812948', 'value': '1913651200', 'ns': '803361856'}
+3: {'itemid': '25568', 'clock': '1566812888', 'value': '1913651200', 'ns': '865396301'}
+4: {'itemid': '25568', 'clock': '1566812828', 'value': '1913651200', 'ns': '702671852'}
+5: {'itemid': '25568', 'clock': '1566812768', 'value': '1913651200', 'ns': '288964136'}
+6: {'itemid': '25568', 'clock': '1566812708', 'value': '1913651200', 'ns': '610014159'}
+7: {'itemid': '25568', 'clock': '1566812649', 'value': '1913651200', 'ns': '149062790'}
+8: {'itemid': '25568', 'clock': '1566812589', 'value': '1913651200', 'ns': '13977127'}
+9: {'itemid': '25568', 'clock': '1566812528', 'value': '1913651200', 'ns': '353256822'}
+
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},dbfilesize] history human format result==
+Try with Exception
+name 'long' is not defined
+
+
+hostDB2T1 dbfilesize oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},dbfilesize] 3
+itemids ['25567', '25568', '25569']
+========================================
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},dbfilesize] history raw result==
+0: {'itemid': '25569', 'clock': '1566813069', 'value': '1913651200', 'ns': '613379260'}
+1: {'itemid': '25569', 'clock': '1566813009', 'value': '1913651200', 'ns': '184415585'}
+2: {'itemid': '25569', 'clock': '1566812950', 'value': '1913651200', 'ns': '129856070'}
+3: {'itemid': '25569', 'clock': '1566812889', 'value': '1913651200', 'ns': '353182930'}
+4: {'itemid': '25569', 'clock': '1566812830', 'value': '1913651200', 'ns': '43903964'}
+5: {'itemid': '25569', 'clock': '1566812769', 'value': '1913651200', 'ns': '632803344'}
+6: {'itemid': '25569', 'clock': '1566812709', 'value': '1913651200', 'ns': '900637031'}
+7: {'itemid': '25569', 'clock': '1566812649', 'value': '1913651200', 'ns': '336573807'}
+8: {'itemid': '25569', 'clock': '1566812589', 'value': '1913651200', 'ns': '214031936'}
+9: {'itemid': '25569', 'clock': '1566812529', 'value': '1913651200', 'ns': '541193787'}
+
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},dbfilesize] history human format result==
+Try with Exception
+name 'long' is not defined
+
+
+
+hostDB1T1 rcachehit oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},rcachehit] 0
+itemids ['25570', '25571', '25572']
+========================================
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},rcachehit] history raw result==
+0: {'itemid': '25571', 'clock': '1566813072', 'value': '99.7211', 'ns': '187252829'}
+1: {'itemid': '25571', 'clock': '1566813011', 'value': '99.7211', 'ns': '785893639'}
+2: {'itemid': '25571', 'clock': '1566812951', 'value': '99.7210', 'ns': '712219180'}
+3: {'itemid': '25571', 'clock': '1566812892', 'value': '99.7210', 'ns': '135548287'}
+4: {'itemid': '25571', 'clock': '1566812831', 'value': '99.7210', 'ns': '681805743'}
+5: {'itemid': '25571', 'clock': '1566812772', 'value': '99.7210', 'ns': '487977868'}
+6: {'itemid': '25571', 'clock': '1566812712', 'value': '99.7210', 'ns': '497672190'}
+7: {'itemid': '25571', 'clock': '1566812651', 'value': '99.7210', 'ns': '914779731'}
+8: {'itemid': '25571', 'clock': '1566812592', 'value': '99.7210', 'ns': '154238766'}
+9: {'itemid': '25571', 'clock': '1566812532', 'value': '99.7209', 'ns': '83006575'}
+
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},rcachehit] history human format result==
+Try with Exception
+name 'long' is not defined
+
+
+hostDB2T1 rcachehit oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},rcachehit] 0
+itemids ['25570', '25571', '25572']
+========================================
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},rcachehit] history raw result==
+0: {'itemid': '25572', 'clock': '1566813072', 'value': '99.8278', 'ns': '771652758'}
+1: {'itemid': '25572', 'clock': '1566813012', 'value': '99.8278', 'ns': '910155525'}
+2: {'itemid': '25572', 'clock': '1566812952', 'value': '99.8278', 'ns': '862456810'}
+3: {'itemid': '25572', 'clock': '1566812892', 'value': '99.8278', 'ns': '724931307'}
+4: {'itemid': '25572', 'clock': '1566812832', 'value': '99.8277', 'ns': '784624170'}
+5: {'itemid': '25572', 'clock': '1566812773', 'value': '99.8277', 'ns': '175750134'}
+6: {'itemid': '25572', 'clock': '1566812713', 'value': '99.8277', 'ns': '87989751'}
+7: {'itemid': '25572', 'clock': '1566812653', 'value': '99.8277', 'ns': '146452270'}
+8: {'itemid': '25572', 'clock': '1566812592', 'value': '99.8277', 'ns': '912630143'}
+9: {'itemid': '25572', 'clock': '1566812532', 'value': '99.8277', 'ns': '582088945'}
+
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},rcachehit] history human format result==
+Try with Exception
+name 'long' is not defined
+
+
+
+hostDB1T1 dsksortratio oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},dsksortratio] 0
+itemids ['25573', '25574', '25575']
+========================================
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},dsksortratio] history raw result==
+0: {'itemid': '25574', 'clock': '1566813075', 'value': '0.0000', 'ns': '131745641'}
+1: {'itemid': '25574', 'clock': '1566813015', 'value': '0.0000', 'ns': '301820290'}
+2: {'itemid': '25574', 'clock': '1566812955', 'value': '0.0000', 'ns': '226290940'}
+3: {'itemid': '25574', 'clock': '1566812895', 'value': '0.0000', 'ns': '245574012'}
+4: {'itemid': '25574', 'clock': '1566812835', 'value': '0.0000', 'ns': '211548660'}
+5: {'itemid': '25574', 'clock': '1566812774', 'value': '0.0000', 'ns': '569902232'}
+6: {'itemid': '25574', 'clock': '1566812714', 'value': '0.0000', 'ns': '486789522'}
+7: {'itemid': '25574', 'clock': '1566812654', 'value': '0.0000', 'ns': '536465173'}
+8: {'itemid': '25574', 'clock': '1566812595', 'value': '0.0000', 'ns': '290607669'}
+9: {'itemid': '25574', 'clock': '1566812534', 'value': '0.0000', 'ns': '622189637'}
+
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},dsksortratio] history human format result==
+Try with Exception
+name 'long' is not defined
+
+
+hostDB2T1 dsksortratio oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},dsksortratio] 0
+itemids ['25573', '25574', '25575']
+========================================
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},dsksortratio] history raw result==
+0: {'itemid': '25575', 'clock': '1566813075', 'value': '0.0000', 'ns': '495425679'}
+1: {'itemid': '25575', 'clock': '1566813015', 'value': '0.0000', 'ns': '415843647'}
+2: {'itemid': '25575', 'clock': '1566812955', 'value': '0.0000', 'ns': '465793922'}
+3: {'itemid': '25575', 'clock': '1566812895', 'value': '0.0000', 'ns': '476904461'}
+4: {'itemid': '25575', 'clock': '1566812835', 'value': '0.0000', 'ns': '372683159'}
+5: {'itemid': '25575', 'clock': '1566812775', 'value': '0.0000', 'ns': '371425477'}
+6: {'itemid': '25575', 'clock': '1566812715', 'value': '0.0000', 'ns': '852027476'}
+7: {'itemid': '25575', 'clock': '1566812655', 'value': '0.0000', 'ns': '680097536'}
+8: {'itemid': '25575', 'clock': '1566812595', 'value': '0.0000', 'ns': '398314850'}
+9: {'itemid': '25575', 'clock': '1566812535', 'value': '0.0000', 'ns': '992686815'}
+
+item:oracle.query[{$USERNAME},{$PASSWORD},{$ADDRESS},{$DATABASE},dsksortratio] history human format result==
+Try with Exception
+name 'long' is not defined
+
+
+
+hostDB1T1 linux_cpucpu system.cpu.util[,user] 0
+itemids ['25576', '25577', '25578']
+========================================
+item:system.cpu.util[,user] history raw result==
+0: {'itemid': '25577', 'clock': '1566813077', 'value': '3.8054', 'ns': '491734165'}
+1: {'itemid': '25577', 'clock': '1566813017', 'value': '3.8033', 'ns': '417315002'}
+2: {'itemid': '25577', 'clock': '1566812957', 'value': '3.7147', 'ns': '496726370'}
+3: {'itemid': '25577', 'clock': '1566812897', 'value': '3.8165', 'ns': '477873414'}
+4: {'itemid': '25577', 'clock': '1566812837', 'value': '3.8416', 'ns': '373584443'}
+5: {'itemid': '25577', 'clock': '1566812777', 'value': '3.8696', 'ns': '372377081'}
+6: {'itemid': '25577', 'clock': '1566812717', 'value': '3.7660', 'ns': '520669955'}
+7: {'itemid': '25577', 'clock': '1566812657', 'value': '3.7459', 'ns': '681174687'}
+8: {'itemid': '25577', 'clock': '1566812597', 'value': '3.8136', 'ns': '282995310'}
+9: {'itemid': '25577', 'clock': '1566812537', 'value': '3.7994', 'ns': '946217357'}
+
+item:system.cpu.util[,user] history human format result==
+Try with Exception
+name 'long' is not defined
+
+
+hostDB2T1 linux_cpucpu system.cpu.util[,user] 0
+itemids ['25576', '25577', '25578']
+========================================
+item:system.cpu.util[,user] history raw result==
+0: {'itemid': '25578', 'clock': '1566813078', 'value': '3.6929', 'ns': '496392464'}
+1: {'itemid': '25578', 'clock': '1566813018', 'value': '3.8499', 'ns': '571154626'}
+2: {'itemid': '25578', 'clock': '1566812958', 'value': '3.7136', 'ns': '497532477'}
+3: {'itemid': '25578', 'clock': '1566812898', 'value': '3.7379', 'ns': '478917521'}
+4: {'itemid': '25578', 'clock': '1566812838', 'value': '3.6555', 'ns': '568146231'}
+5: {'itemid': '25578', 'clock': '1566812778', 'value': '3.7654', 'ns': '521177383'}
+6: {'itemid': '25578', 'clock': '1566812718', 'value': '3.6638', 'ns': '668723227'}
+7: {'itemid': '25578', 'clock': '1566812658', 'value': '3.7083', 'ns': '748527257'}
+8: {'itemid': '25578', 'clock': '1566812598', 'value': '3.7056', 'ns': '291725353'}
+9: {'itemid': '25578', 'clock': '1566812538', 'value': '3.6434', 'ns': '947183537'}
+
+item:system.cpu.util[,user] history human format result==
+Try with Exception
+name 'long' is not defined
+
+
+
+hostDB1T1 linux_memorymem vm.memory.size[pused] 0
+itemids ['25579', '25580', '25581']
+========================================
+item:vm.memory.size[pused] history raw result==
+0: {'itemid': '25580', 'clock': '1566813080', 'value': '86.4392', 'ns': '1744369'}
+1: {'itemid': '25580', 'clock': '1566813020', 'value': '86.4958', 'ns': '666949042'}
+2: {'itemid': '25580', 'clock': '1566812960', 'value': '86.5182', 'ns': '642163505'}
+3: {'itemid': '25580', 'clock': '1566812900', 'value': '86.4027', 'ns': '600425094'}
+4: {'itemid': '25580', 'clock': '1566812840', 'value': '86.4149', 'ns': '577070589'}
+5: {'itemid': '25580', 'clock': '1566812780', 'value': '86.4173', 'ns': '571477424'}
+6: {'itemid': '25580', 'clock': '1566812720', 'value': '86.4435', 'ns': '853368810'}
+7: {'itemid': '25580', 'clock': '1566812660', 'value': '86.4354', 'ns': '828842046'}
+8: {'itemid': '25580', 'clock': '1566812600', 'value': '86.4337', 'ns': '399866809'}
+9: {'itemid': '25580', 'clock': '1566812540', 'value': '86.6304', 'ns': '147874434'}
+
+item:vm.memory.size[pused] history human format result==
+Try with Exception
+name 'long' is not defined
+
+
+hostDB2T1 linux_memorymem vm.memory.size[pused] 0
+itemids ['25579', '25580', '25581']
+========================================
+item:vm.memory.size[pused] history raw result==
+0: {'itemid': '25581', 'clock': '1566813081', 'value': '67.3892', 'ns': '147594649'}
+1: {'itemid': '25581', 'clock': '1566813021', 'value': '67.4620', 'ns': '724213120'}
+2: {'itemid': '25581', 'clock': '1566812961', 'value': '67.6228', 'ns': '794169604'}
+3: {'itemid': '25581', 'clock': '1566812901', 'value': '67.5941', 'ns': '631804212'}
+4: {'itemid': '25581', 'clock': '1566812841', 'value': '67.5986', 'ns': '578048954'}
+5: {'itemid': '25581', 'clock': '1566812781', 'value': '67.5957', 'ns': '678320875'}
+6: {'itemid': '25581', 'clock': '1566812721', 'value': '67.5445', 'ns': '225802949'}
+7: {'itemid': '25581', 'clock': '1566812661', 'value': '67.5702', 'ns': '893165212'}
+8: {'itemid': '25581', 'clock': '1566812601', 'value': '67.5674', 'ns': '434874207'}
+9: {'itemid': '25581', 'clock': '1566812541', 'value': '67.5579', 'ns': '1492171'}
+
+item:vm.memory.size[pused] history human format result==
+Try with Exception
+name 'long' is not defined
